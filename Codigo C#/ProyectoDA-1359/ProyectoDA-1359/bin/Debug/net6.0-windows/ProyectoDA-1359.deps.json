@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ProyectoDA-1359/1.0.0": {
+        "runtime": {
+          "ProyectoDA-1359.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProyectoDA-1359/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

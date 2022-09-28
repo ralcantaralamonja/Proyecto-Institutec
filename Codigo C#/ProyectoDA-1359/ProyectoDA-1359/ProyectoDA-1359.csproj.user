@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update=".Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrAgregarCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrBuscarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrBuscarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrBuscarDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update=".cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrMostrarTarifaCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrRegistrarDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrRegistroAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrReporteAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrReporteDeCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrReporteDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FmrReporteMatriculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MDI_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
