@@ -1,4 +1,4 @@
-USE InstutuTec
+USE InstituTec
 GO
 
 ALTER TABLE TB_profesor
@@ -104,35 +104,35 @@ Values('2023-03','20230827','20231223')
 
 -- Agragar Datos a la Tabla TB_Profesor
 -- =================================
+CREATE NONCLUSTERED INDEX AplNomProf
+	ON TB_PROFESOR(ApeProfesor,NomProfesor)
 
 
 
-
-Insert Into TB_profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor, EmailProfesor) Values ('P001','DAVID ENRIQUE','ALLASI BARDALES','57914411','La Molina','994258631','DALLASIB@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P002','ARCE SÁNCHEZ','NORVIL ANTONIO','13056023','Breña','997605040','NARCES@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P003','RAMOS LING','ITALO DAVID','08421861','San Miguel','969460717','IRAMOSL@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P004','SAKAMOTO ORTEGA','DANIEL FRANCISCO','56140614','San miguel','965309482','DSAKAMOTOO@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P005','VILLAR BOJOVIC','ANDRES ALEKSANDAR MILUTIN','02902488','Lince','999092126','AVILLARB@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P006','NUÑEZ SANCHEZ','ANDRES JOSE','57916305','Los Olivos','991491526','ANUNEZS@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P007','QUIROGA FARRO','AZUCENA PAOLA','33962873','Puente piedra','912401505','AQUIROGAFARRO@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P008','VINCES LOPEZ','EVELIN DOLORES','68704612','San martin','912401505','EVINCESL@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P009','QUIROZ PACAYA','CARLI ESTHER','07903683','Los Olivos','none','CQUIROZP@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P010','RENTERIA PEREZ','PRISCILA CECILIA','13052847','San Juan del Lurigancho','none','PRENTERIAP@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P011','CHUMPITAZ CHAVEZ','WENDY ROSY','80841236','Villa el Salvador','none','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P012','EVANGELISTA ROSAS','ANDREA GABRIELA','20359729','Rimac','none','AEVANGELISTAR@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P013','DIAZ RODRÍGUEZ','GILBERTO ALEXIS','20947531','San Juan de Miraflores','none','GDIAZR@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P014','ARANDA VICENTE','RAUL MANUEL','70095888','Jesús Maria','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P015','LAGOS CUSICHI','TATIANA NAHOMI','81729332','Independencia','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P016','CRUZ ZAPATA','ERICSSON HANS','13877827','Villa Maria del Triunfo','none','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P017','RAMIREZ CRUZ','ABIGAIL ANA','02013171','Miraflores','none','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P018','MILLA CHIPANA','HENRY WILLIAN','93953444','San Martin de Porres','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P019','VILLACORTAv GUZMAN','LUIGGI','91030463','El Agustino','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P020','RATTO ALVARADO','MARIAJOSE','73448499','Carabayllo','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P021','PALMA POMA','RODRIGO GABRIEL','96608344','Rimac','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P022','NAJARRO JANAMPA','JENIFER','03161596','Lima','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P023','RODRIGUEZ DIAZ','LESLY DIANA','20723655','Magdalena','None','@instutuTec.edu.pe')	
-Insert Into TB_Profesor(IdProfesor,NomProfesor,ApeProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P024','ALFARO ARAOZ','MEYLI ESTEFANIA','83263318','San isidro','None','@instutuTec.edu.pe')
-
+Insert Into TB_profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor, EmailProfesor) Values ('P001','ALLASI BARDALES','DAVID ENRIQUE','57914411','La Molina','994258631','DALLASIB@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P002','ARCE SÁNCHEZ','NORVIL ANTONIO','13056023','Breña','997605040','NARCES@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P003','RAMOS LING','ITALO DAVID','08421861','San Miguel','969460717','IRAMOSL@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P004','SAKAMOTO ORTEGA','DANIEL FRANCISCO','56140614','San miguel','965309482','DSAKAMOTOO@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P005','VILLAR BOJOVIC','ANDRES ALEKSANDAR MILUTIN','02902488','Lince','999092126','AVILLARB@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P006','NUÑEZ SANCHEZ','ANDRES JOSE','57916305','Los Olivos','991491526','ANUNEZS@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P007','QUIROGA FARRO','AZUCENA PAOLA','33962873','Puente piedra','912401505','AQUIROGAFARRO@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P008','VINCES LOPEZ','EVELIN DOLORES','68704612','San martin','912401505','EVINCESL@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P009','QUIROZ PACAYA','CARLI ESTHER','07903683','Los Olivos','none','CQUIROZP@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P010','RENTERIA PEREZ','PRISCILA CECILIA','13052847','San Juan del Lurigancho','none','PRENTERIAP@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P011','CHUMPITAZ CHAVEZ','WENDY ROSY','80841236','Villa el Salvador','none','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P012','EVANGELISTA ROSAS','ANDREA GABRIELA','20359729','Rimac','none','AEVANGELISTAR@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P013','DIAZ RODRÍGUEZ','GILBERTO ALEXIS','20947531','San Juan de Miraflores','none','GDIAZR@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P014','ARANDA VICENTE','RAUL MANUEL','70095888','Jesús Maria','None','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P015','LAGOS CUSICHI','TATIANA NAHOMI','81729332','Independencia','None','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P016','CRUZ ZAPATA','ERICSSON HANS','13877827','Villa Maria del Triunfo','none','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P017','RAMIREZ CRUZ','ABIGAIL ANA','02013171','Miraflores','none','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P018','MILLA CHIPANA','HENRY WILLIAN','93953444','San Martin de Porres','None','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P019','VILLACORTA GUZMAN','LUIGGI','91030463','El Agustino','None','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P020','RATTO ALVARADO','MARIAJOSE','73448499','Carabayllo','None','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P021','PALMA POMA','RODRIGO GABRIEL','96608344','Rimac','None','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P022','NAJARRO JANAMPA','JENIFER','03161596','Lima','None','@instutuTec.edu.pe')
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P023','RODRIGUEZ DIAZ','LESLY DIANA','20723655','Magdalena','None','@instutuTec.edu.pe')	
+Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P024','ALFARO ARAOZ','MEYLI ESTEFANIA','83263318','San isidro','None','@instutuTec.edu.pe')
 /*
 Select COUNT(IdProfesor) from TB_Profesor
 X if (x <100) -> p0x else -> P099
@@ -144,6 +144,9 @@ P024  POSIBLE STORE PARA INSERT AUTOMATICO
 -- ===============================
 
 -- delete TB_Alumno
+
+CREATE NONCLUSTERED INDEX AplNomAlum
+	ON TB_Alumno(ApeAlumno,NomAlumno)
 
 Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0001','ALEXIS SALVADOR','GUERRERO HUAMAN','09000228','SAN BORJA','48932571','alexis_guerrero_huaman@instututec.com')
 Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0002','ALEXANDRA JULIETH','LOPEZ SHAPIAMA','60121975','SURCO','27815432', 'alexandra_lopez@instutec.com')
@@ -193,215 +196,22 @@ insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, 
 
 -- Ciclo: 2023-01
 
-
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 1,'2023-01','C001','P003','Lu y Mi 19-22 Horas',10,10,1,200)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 2,'2023-01','C002','P002','Mi y Vi 19-22 Horas',10,10,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 3,'2023-01','C003','P005','Ma y Ju 19-22 Horas',10,10,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 4,'2023-01','C004','P001','Ju y Sa 19-22 Horas',10,10,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 5,'2023-01','C005','P001','Lu y Mi 19-22 Horas',10,10,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 6,'2023-01','C006','P002','Ma y Ju 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 7,'2023-01','C007','P004','Mi y Vi 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 8,'2023-01','C008','P004','Ma y Ju 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 9,'2023-01','C009','P002','Lu y Mi 19-22 Horas',20,0,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 10,'2023-01','C010','P002','Ju y Sa 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 11,'2023-01','C011','P002','Lu y Mi 19-22 Horas',20,0,1,300)
-
-
--- Ciclo: 2023-02
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 12,'2023-02','C001','P003','Lu y Mi 19-22 Horas',10,10,1,200)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 13,'2023-02','C002','P002','Mi y Vi 19-22 Horas',10,10,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 14,'2023-02','C003','P005','Ma y Ju 19-22 Horas',10,10,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 15,'2023-02','C004','P001','Ju y Sa 19-22 Horas',10,10,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 16,'2023-02','C005','P001','Lu y Mi 19-22 Horas',10,10,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 17,'2023-02','C006','P002','Ma y Ju 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 18,'2023-02','C007','P004','Mi y Vi 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 19,'2023-02','C008','P004','Ma y Ju 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 20,'2023-02','C009','P002','Lu y Mi 19-22 Horas',20,0,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 21,'2023-02','C010','P002','Ju y Sa 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 22,'2023-02','C011','P002','Lu y Mi 19-22 Horas',20,0,1,300)
-
-
-
--- Ciclo: 2023-03
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 23,'2023-02','C001','P003','Lu y Mi 19-22 Horas',10,10,1,200)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 24,'2023-02','C002','P002','Mi y Vi 19-22 Horas',10,10,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 25,'2023-02','C003','P005','Ma y Ju 19-22 Horas',10,10,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 26,'2023-02','C004','P001','Ju y Sa 19-22 Horas',10,10,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 27,'2023-02','C005','P001','Lu y Mi 19-22 Horas',10,10,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 28,'2023-02','C006','P002','Ma y Ju 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 29,'2023-02','C007','P004','Mi y Vi 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 30,'2023-02','C008','P004','Ma y Ju 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 31,'2023-02','C009','P002','Lu y Mi 19-22 Horas',20,0,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 32,'2023-02','C010','P002','Ju y Sa 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 33,'2023-02','C011','P002','Lu y Mi 19-22 Horas',20,0,1,300)
-
--- Ciclo: 2023-04
-
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 34,'2023-02','C001','P003','Lu y Mi 19-22 Horas',10,10,1,200)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 35,'2023-02','C002','P002','Mi y Vi 19-22 Horas',10,10,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 36,'2023-02','C003','P005','Ma y Ju 19-22 Horas',10,10,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 37,'2023-02','C004','P001','Ju y Sa 19-22 Horas',10,10,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 38,'2023-02','C005','P001','Lu y Mi 19-22 Horas',10,10,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 39,'2023-02','C006','P002','Ma y Ju 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 40,'2023-02','C007','P004','Mi y Vi 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 41,'2023-02','C008','P004','Ma y Ju 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 42,'2023-02','C009','P002','Lu y Mi 19-22 Horas',20,0,1,250)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 43,'2023-02','C010','P002','Ju y Sa 19-22 Horas',20,0,1,300)
-Insert Into TB_CursoProgramado (IdCursoProg,IdPeriodo,IdCurso,IdProfesor,Horario,Vacantes,Matriculados,Activo,PreCursoProg ) Values( 44,'2023-02','C011','P002','Lu y Mi 19-22 Horas',20,0,1,300)
-
+Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values(1,'C003','2023-01','P003',300,'Jue 19-22')
 
 
 -- Agregar Datos a la Tabla TB_Matricula
 -- ==================================
 
--- Ciclo: 2023-01     Curso: C001
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0001','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0002','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0003','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0004','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0005','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0006','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0007','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0008','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0009','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0010','20230104')
-
-
--- Ciclo: 2023-01     Curso: C002
-
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values(2,'A0001','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0002','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0003','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0004','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0005','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0006','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0007','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0008','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0009','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0010','20230104')
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0011','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0012','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0013','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0014','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0015','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0016','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0017','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0018','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0019','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 2,'A0020','20230104')
-
-
 -- Ciclo: 2023-01     Curso: C003
 
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0021','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0022','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0023','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0024','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0025','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0026','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0027','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0028','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0029','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 3,'A0030','20230104')
 
-
--- Ciclo: 2023-01     Curso: C004
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0001','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0003','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0005','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0007','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0009','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0011','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0013','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0015','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0017','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 4,'A0019','20230104')
-
-
--- Ciclo: 2023-01     Curso: C005
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0002','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0004','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0006','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0008','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0010','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0012','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0014','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0016','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0018','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 5,'A0020','20230104')
-
-
--- Ciclo: 2023-02     Curso: C001
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0001','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0002','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0003','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0004','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0005','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0006','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0007','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0008','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0009','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 12,'A0010','20230104')
-
-
--- Ciclo: 2023-02     Curso: C002
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0011','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0012','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0013','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0014','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0015','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0016','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0017','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0018','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0019','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 13,'A0020','20230104')
-
-
--- Ciclo: 2023-02     Curso: C003
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0021','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0022','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0023','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0024','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0025','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0026','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0027','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0028','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0029','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 14,'A0030','20230104')
-
-
--- Ciclo: 2023-02     Curso: C004
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0001','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0003','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0005','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0007','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0009','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0011','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0013','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0015','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0017','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 15,'A0019','20230104')
-
-
--- Ciclo: 2023-02     Curso: C005
-
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0002','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0004','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0006','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0008','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0010','20230103')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0012','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0014','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0016','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0018','20230104')
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula ) Values( 16,'A0020','20230104')
-
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0001',GETDATE())
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0002',GETDATE())
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0003',GETDATE())
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0004',GETDATE())
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0005',GETDATE())
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0006',GETDATE())
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0007',GETDATE())
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0008',GETDATE())
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0009',GETDATE())
+Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0010',GETDATE())

@@ -2,11 +2,11 @@ USE MASTER
 GO
 -- DROP DATABASE InstutuTec
 --Elimando la base de datos por si fue creada
-IF EXISTS ( SELECT name FROM sysdatabases WHERE name = 'InstutuTec' )
-	DROP DATABASE InstutuTec
+IF EXISTS ( SELECT name FROM sysdatabases WHERE name = 'InstituTec' )
+	DROP DATABASE InstituTec
 go
 --creando la base de datos
-CREATE DATABASE InstutuTec
+CREATE DATABASE InstituTec
 ON PRIMARY
 (NAME =  EduTec_Dat, FILENAME='D:\Sql\Databases\InstituTec.mdf', 
  SIZE = 5MB, MAXSIZE = 200, FILEGROWTH = 1 )
@@ -15,7 +15,7 @@ LOG ON
  SIZE = 1MB, MAXSIZE = 200, FILEGROWTH= 1MB)
 GO
 --usando la base de datos creada
-USE InstutuTec
+USE InstituTec
 
 
 
