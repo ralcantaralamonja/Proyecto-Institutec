@@ -8,10 +8,10 @@ go
 --creando la base de datos
 CREATE DATABASE InstutuTec
 ON PRIMARY
-(NAME =  EduTec_Dat, FILENAME='path\InstituTec.mdf', 
+(NAME =  EduTec_Dat, FILENAME='D:\Sql\Databases\InstituTec.mdf', 
  SIZE = 5MB, MAXSIZE = 200, FILEGROWTH = 1 )
 LOG ON
-(NAME = EduTec_Log, FILENAME ='path\InstituTec.ldf',
+(NAME = EduTec_Log, FILENAME ='D:\Sql\Databases\InstituTec.ldf',
  SIZE = 1MB, MAXSIZE = 200, FILEGROWTH= 1MB)
 GO
 --usando la base de datos creada
@@ -25,6 +25,7 @@ USE InstutuTec
 
 CREATE TABLE TB_Alumno (
        IdAlumno             char(5) NOT NULL,
+	   Ndocum				varchar(8) NOT NULL,
        NomAlumno            varchar(30) NOT NULL,
        ApeAlumno            varchar(30) NOT NULL,
        DisAlumno            varchar(50) NULL,
@@ -54,7 +55,7 @@ go
 CREATE TABLE TB_CursoProgramado (
        IdCursoProg          int NOT NULL,
        IdCurso              char(4) NOT NULL,
-       IdPeriodo              char(7) NOT NULL,
+       IdPeriodo            char(7) NOT NULL,
        IdProfesor           char(4) NULL,
        Vacantes             tinyint NOT NULL DEFAULT 20,
        PreCursoProg         money NOT NULL,
@@ -76,7 +77,8 @@ go
 
 CREATE TABLE TB_Profesor (
        IdProfesor           char(4) NOT NULL,
-       NomProfesor          varchar(30) NOT NULL,
+       Ndocum				varchar (8) NOT NULL,
+	   NomProfesor          varchar(30) NOT NULL,
        ApeProfesor          varchar(30) NOT NULL,
        DisProfesor          varchar(50) NULL,
        TelProfesor          varchar(12) NULL,
