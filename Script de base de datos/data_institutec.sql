@@ -1,16 +1,6 @@
 USE InstituTec
 GO
 
-ALTER TABLE TB_profesor
-ADD CONSTRAINT NdocumProfe	
-UNIQUE(Ndocum)
-go
-
-ALTER TABLE TB_Alumno
-ADD CONSTRAINT NdocumAlum
-UNIQUE(Ndocum)
-go
-
 -- Agregar Datos a la Tabla Local
 -- ===============================
 
@@ -196,22 +186,16 @@ insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, 
 
 -- Ciclo: 2023-01
 
-Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values(1,'C003','2023-01','P003',300,'Jue 19-22')
-
-
+Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT001','C003','2023-01','P003',300,'Jue 19-22')
+Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT002','C003','2023-01','P004',300,'Mie 19-22')
+Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT003','C004','2023-01','P002',350,'Vie 19-22')
+Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT004','C004','2023-01','P005',350,'Mar 19-22')
+Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT005','C006','2023-01','P002',350,'Lun 19-22')
+Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT006','C006','2023-01','P005',350,'Sab 19-22')
 -- Agregar Datos a la Tabla TB_Matricula
 -- ==================================
 
--- Ciclo: 2023-01     Curso: C003
+ 
 
 
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0001',GETDATE())
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0002',GETDATE())
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0003',GETDATE())
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0004',GETDATE())
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0005',GETDATE())
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0006',GETDATE())
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0007',GETDATE())
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0008',GETDATE())
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0009',GETDATE())
-Insert Into TB_Matricula( IdCursoProg,IdAlumno,FecMatricula) Values( 1,'A0010',GETDATE())
+ 
