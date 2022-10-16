@@ -40,7 +40,7 @@ FecNac date ,
 SexPro char(1),
 FecIng date,
 Estado bit DEFAULT 1,
-Id_Ubigeo char (12),
+Id_Ubi char (12),
 IdEspc tinyint NOT NULL
 --Especialidad , ¿Si tiene mas de 1 espescialidad?
 )
@@ -85,13 +85,19 @@ DesCar varchar(50) NOT NULL
 GO
 
 Create Table TB_Matricula(
-IdMatr char(4) NOT NULL,
+NroMat char(7) NOT NULL,
 IdSeme char(7) NOT NULL,
+EstMat tinyint NOT NULL,
 CodCar char(4) NOT NULL,
 IdAlum char(4) NOT NULL,
+FecMat Date default getdate()
+)
 
-FecMat Date default getdate(),
-IdPeri tinyint NOT NULL
+GO
+
+Create Table TB_Estado_Matricula(
+EstMat tinyint NOT NULL,
+DesEst varchar (50)
 )
 
 GO
@@ -107,7 +113,8 @@ GO
 Create table TB_Alumno(
 IdAlum char(4) NOT NULL,
 Ndocum char(8) NOT NULL,
-IdMatr char(4) NOT NULL,
+NroMat char(7) NOT NULL,
+IdFacu char(6) NOT NULL,
 NamAlu varchar(50) NOT NULL,
 LasAlu varchar(50) NOT NULL,
 TelAlu char(9) NOT NULL,
@@ -115,24 +122,31 @@ CorAlu varchar(50),
 Estado bit default 1,
 SexAlu char(1),
 FecNac date,
-IdFacu char(6) NOT NULL,
-Id_Ubigeo char(12) NOT NULL
+Id_Ubi char(12) NOT NULL
 )
 
 GO
 
 Create table Tb_Ubigeo(
 
-Id_Ubigeo char(12) NOT NULL,
+Id_Ubi char(12) NOT NULL,
 IdDepa varchar (100),
 IdProv varchar (100),
 IdDist varchar (100),
-Departamento varchar (100),
-Provincia varchar (100),
-Distrito varchar (100)
+Depart varchar (100),
+Provin varchar (100),
+Distri varchar (100)
 
 )
 
+GO
+
+Create Table TB_Detalle_De_Matricula(
+NroMat char(7) NOT NULL,
+IdSeme char(7) NOT NULL,
+IdAlum char(4) NOT NULL
+
+)
 
 GO
 
@@ -178,6 +192,12 @@ PRIMARY KEY (IdSeme)
 
 GO
 
+ALTER TABLE TB_ESTADO_MATRICULA 
+ADD CONSTRAINT PK_TB_ESTADO_MATRICULA
+PRIMARY KEY (EstMat)
+
+GO
+
 ALTER TABLE TB_Horario 
 ADD CONSTRAINT PK_TB_Horario
 PRIMARY KEY (IdCods,Idcurs)
@@ -204,7 +224,7 @@ GO
 
 ALTER TABLE TB_Matricula 
 ADD CONSTRAINT PK_TB_Matricula
-PRIMARY KEY (IdMatr)
+PRIMARY KEY (NroMat)
 
 GO
 
@@ -246,18 +266,46 @@ GO
 
 ALTER TABLE TB_Ubigeo
 ADD CONSTRAINT PK_TB_Ubigeo
-PRIMARY KEY (Id_Ubigeo)
+PRIMARY KEY (Id_Ubi)
+
+GO
+
+ALTER TABLE TB_Detalle_De_Matricula
+ADD CONSTRAINT PK_Detalle_De_Matricula
+PRIMARY KEY (NroMat,IdSeme)
+
+GO
 
 --Creando Foreign Key
+/*
+La tabla TB_Detalle_De_Matricula tiene como campo
+NroMat que es llave primaria en la tabla TB_Matricula
+*/
+ALTER TABLE TB_Detalle_De_Matricula 
+ADD CONSTRAINT FK_DetMatNum
+FOREIGN KEY (NroMat)  
+REFERENCES TB_Matricula
 
+GO
+/*
+La tabla TB_Detalle_De_Matricula tiene como campo
+IdSeme que es llave primaria en la tabla TB_Semestre
+*/
+ALTER TABLE TB_Detalle_De_Matricula 
+ADD CONSTRAINT FK_DetMatSem
+FOREIGN KEY (IdSeme)  
+REFERENCES TB_Semestre
+
+GO
 /*
 La tabla TB_Profesor tiene como campo
 IdProf que es llave primaria en la tabla TB_Ubigeo_Prof
 */
+GO
 
 ALTER TABLE TB_Profesor 
 ADD CONSTRAINT FK_ubgProf
-FOREIGN KEY (Id_Ubigeo)  
+FOREIGN KEY (Id_Ubi)  
 REFERENCES TB_Ubigeo
 
 GO
@@ -327,21 +375,12 @@ IdAlum que es llave primaria en la Tb_Ubigeo_Alum
 */
 ALTER TABLE TB_Alumno   
 ADD CONSTRAINT FK_UbgAlu
-FOREIGN KEY (Id_Ubigeo)  
+FOREIGN KEY (Id_Ubi)  
 REFERENCES  Tb_Ubigeo
 
 GO
 
-/*
-La tabla TB_Alumno tiene como campo
-XXX que es llave primaria en la XXXX
-*/
-ALTER TABLE  TB_Alumno    
-ADD CONSTRAINT FK_Alum_Matri 
-FOREIGN KEY (IdMatr)  
-REFERENCES  TB_Matricula
-
-GO
+ 
 
 /*
 La tabla TB_Alumno tiene como campo
@@ -398,6 +437,27 @@ ADD CONSTRAINT FK_Mat_Sem
 FOREIGN KEY (IdSeme)  
 REFERENCES TB_Semestre
 
+GO
+
+/*
+La tabla TB_Matricula tiene como campo
+EstMat que es llave primaria en la XXXX
+*/
+ALTER TABLE TB_Matricula 
+ADD CONSTRAINT FK_Estado_Pago
+FOREIGN KEY (EstMat)  
+REFERENCES  TB_ESTADO_MATRICULA
+
+GO
+
+/*
+La tabla TB_Matricula tiene como campo
+IdAlum que es llave primaria en la TB_Alumno
+*/
+ALTER TABLE TB_Matricula   
+ADD CONSTRAINT FK_Mat_Alu 
+FOREIGN KEY (IdAlum)  
+REFERENCES  Tb_Alumno
 
 -- plantilla
 /*
@@ -415,11 +475,8 @@ REFERENCES  Tb_
 /*
 
 
-Create Table TB_Pago(
-)
-Create Table TB_Detalle_De_Matricula(
-IdSeme char(7) NOT NULL,
-)
+
+
 Create Table TB_User(
 )
 Create Table TB_Auditoria (
