@@ -9,14 +9,14 @@ CREATE DATABASE InstituTec -- creando la base de datos
 ON PRIMARY --definiendo archivo main
 (	
 	NAME             =  TESTEO_MDF, 
-	FILENAME     = 'D:\Databases\InstituTec.mdf', 
+	FILENAME     = 'path\InstituTec.mdf', 
 	SIZE               = 5 MB, 
 	MAXSIZE        = 200, 
 	FILEGROWTH = 5)
 LOG ON --definiendo archivo de logs
 (	
 	NAME				  = TESTEO_LOGS, 
-	FILENAME		  = 'D:\Databases\InstituTec_Log.ldf',
+	FILENAME		  = 'path\InstituTec_Log.ldf',
 	SIZE				  = 1MB, 
 	MAXSIZE		  = 100, 
 	FILEGROWTH = 1MB)
