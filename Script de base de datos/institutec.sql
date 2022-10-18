@@ -9,14 +9,14 @@ CREATE DATABASE InstituTec -- creando la base de datos
 ON PRIMARY --definiendo archivo main
 (	
 	NAME             =  TESTEO_MDF, 
-	FILENAME     = 'path\InstituTec.mdf', 
+	FILENAME     = 'D:\Databases\InstituTec.mdf', 
 	SIZE               = 5 MB, 
 	MAXSIZE        = 200, 
 	FILEGROWTH = 5)
 LOG ON --definiendo archivo de logs
 (	
 	NAME				  = TESTEO_LOGS, 
-	FILENAME		  = 'path\InstituTec_Log.ldf',
+	FILENAME		  = 'D:\Databases\InstituTec_Log.ldf',
 	SIZE				  = 1MB, 
 	MAXSIZE		  = 100, 
 	FILEGROWTH = 1MB)
@@ -40,9 +40,8 @@ FecNac date ,
 SexPro char(1),
 FecIng date,
 Estado bit DEFAULT 1,
-Id_Ubi char (12),
+Id_Ubi char (6),
 IdEspc tinyint NOT NULL
---Especialidad , ¿Si tiene mas de 1 espescialidad?
 )
 
 GO
@@ -113,26 +112,25 @@ GO
 Create table TB_Alumno(
 IdAlum char(4) NOT NULL,
 Ndocum char(8) NOT NULL,
-NroMat char(7) NOT NULL,
 IdFacu char(6) NOT NULL,
 NamAlu varchar(50) NOT NULL,
 LasAlu varchar(50) NOT NULL,
-TelAlu char(9) NOT NULL,
+TelAlu char(9) DEFAULT '999999999',
 CorAlu varchar(50),
 Estado bit default 1,
 SexAlu char(1),
 FecNac date,
-Id_Ubi char(12) NOT NULL
+Id_Ubi char(6) NOT NULL
 )
 
 GO
 
 Create table Tb_Ubigeo(
 
-Id_Ubi char(12) NOT NULL,
-IdDepa varchar (100),
-IdProv varchar (100),
-IdDist varchar (100),
+Id_Ubi char(6) NOT NULL,
+IdDepa varchar (2),
+IdProv varchar (2),
+IdDist varchar (2),
 Depart varchar (100),
 Provin varchar (100),
 Distri varchar (100)
@@ -162,7 +160,6 @@ GO
 
 Create Table TB_Facultad(
 IdFacu char(6) NOT NULL,
-CodCar char(4) NOT NULL,
 DesFac varchar(50)
 )
 
@@ -236,7 +233,7 @@ GO
 
 ALTER TABLE TB_Espc_Prof 
 ADD CONSTRAINT PK_TB_Espc_Prof  
-PRIMARY KEY (IdEspc) 
+PRIMARY KEY (IdProf,IdEspc) 
 
 GO
 
@@ -320,13 +317,13 @@ REFERENCES TB_Profesor
 
 GO
 /*
-La tabla TB_Profesor tiene como campo
+La tabla TB_Espc_Prof tiene como campo
 IdEspc que es llave primaria en la tabla TB_Espc_Prof
 */
-ALTER TABLE TB_Profesor    
+ALTER TABLE TB_Espc_Prof    
 ADD CONSTRAINT FK_Esp_Prof
-FOREIGN KEY (IdEspc)  
-REFERENCES  TB_Espc_Prof
+FOREIGN KEY (IdProf)  
+REFERENCES  TB_Profesor
 
 GO
 /*

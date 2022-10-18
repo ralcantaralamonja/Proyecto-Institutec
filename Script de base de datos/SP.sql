@@ -1,4 +1,60 @@
--- Primer SP de consulta
+/*STORE PROCEDURE INSERTA UN ALUMNO CON LOS CAMPOS OBLIGATORIOS Y CREA LA
+LLAVE PRIMARYA CORRELACIONAL*/
+
+CREATE PROCEDURE usp_InsertarAlumno
+@NamAlu varchar(30),  
+@LasAlu varchar(30),
+@Ndocum char(8),
+@IdFacu char(6),
+@Id_Ubi varchar(20) 
+  
+AS  
+declare @IdAlum char(4)  
+declare @cont int  
+set @cont=(Select count(*) from TB_Alumno)  
+if @cont=0   
+       set @IdAlum ='A001'  
+else  
+        set @IdAlum=(Select 'A' +Right(Max (Right(IdAlum,3)+ 1001 ),3)   
+    From TB_Alumno)  
+	 
+insert into TB_Alumno(IdAlum,NamAlu,LasAlu,Ndocum,IdFacu,Id_Ubi) values(@IdAlum,@NamAlu,@LasAlu,@Ndocum,@IdFacu,@Id_Ubi)  
+
+
+/*Esta vista permite ver que carrera facultad pertenece cada carrera*/
+Create View VW_Facultad_Carrera
+as
+Select 
+Car.CodCar 'Codigo',
+Car.DesCar 'Carrera',
+Facu.DesFac 'Facultad'
+From Tb_Carrera as Car INNER JOIN TB_Facultad as Facu on Facu.IdFacu = Car.IdFacu
+
+
+/*Esta vista permite ver lso distritos y su ubigeo*/
+
+Create view VW_verDistrito
+as
+Select Id_ubi, distri from Tb_Ubigeo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--**********************************************************************************************
+
+
+-- SP de consulta
 /*
 Este Store procedure retorna los alumnos matriculados del curso 
 consultado y con el profesor pide 2 parametros de entrada que
