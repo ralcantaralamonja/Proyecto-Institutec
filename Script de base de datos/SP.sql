@@ -39,7 +39,11 @@ Select Id_ubi, distri from Tb_Ubigeo
 
 
 
+/*Vista de facultades del instituto*/
 
+Create View VW_Facultad
+as
+Select * from TB_Facultad
 
 
 
