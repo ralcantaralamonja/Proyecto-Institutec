@@ -1,0 +1,17 @@
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\bin\Debug\net6.0\ProyInstitutec_BL.deps.json
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\bin\Debug\net6.0\ProyInstitutec_BL.dll
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\bin\Debug\net6.0\ProyInstitutec_BL.pdb
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\bin\Debug\net6.0\ProyInstitutec_ADO.dll
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\bin\Debug\net6.0\ProyInstitutec_BE.dll
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\bin\Debug\net6.0\ProyInstitutec_ADO.pdb
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\bin\Debug\net6.0\ProyInstitutec_BE.pdb
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\ProyInstitutec_BL.csproj.AssemblyReference.cache
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\ProyInstitutec_BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\ProyInstitutec_BL.AssemblyInfoInputs.cache
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\ProyInstitutec_BL.AssemblyInfo.cs
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\ProyInstitutec_BL.csproj.CoreCompileInputs.cache
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\ProyInstitutec_BL.csproj.CopyComplete
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\ProyInstitutec_BL.dll
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\refint\ProyInstitutec_BL.dll
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\ProyInstitutec_BL.pdb
+D:\Proyecto-Institutec\Codigo C#\Institutec_NCapas\ProyInstitutec_BL\obj\Debug\net6.0\ref\ProyInstitutec_BL.dll
