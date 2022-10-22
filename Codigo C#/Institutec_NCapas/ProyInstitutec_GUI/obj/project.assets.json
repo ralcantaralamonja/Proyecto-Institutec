@@ -796,23 +796,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LESLY\\.nuget\\packages\\": {},
+    "C:\\Users\\Ricardo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
+      "projectUniqueName": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
       "projectName": "ProyInstitutec_GUI",
-      "projectPath": "D:\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
-      "packagesPath": "C:\\Users\\LESLY\\.nuget\\packages\\",
-      "outputPath": "D:\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_GUI\\obj\\",
+      "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
+      "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+      "outputPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\LESLY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -821,18 +821,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BE\\ProyInstitutec_BE.csproj": {
-              "projectPath": "D:\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BE\\ProyInstitutec_BE.csproj"
+            "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BE\\ProyInstitutec_BE.csproj": {
+              "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BE\\ProyInstitutec_BE.csproj"
             },
-            "D:\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BL\\ProyInstitutec_BL.csproj": {
-              "projectPath": "D:\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BL\\ProyInstitutec_BL.csproj"
+            "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BL\\ProyInstitutec_BL.csproj": {
+              "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BL\\ProyInstitutec_BL.csproj"
             }
           }
         }

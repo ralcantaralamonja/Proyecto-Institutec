@@ -1,13 +1,16 @@
 /*STORE PROCEDURE INSERTA UN ALUMNO CON LOS CAMPOS OBLIGATORIOS Y CREA LA
 LLAVE PRIMARYA CORRELACIONAL*/
 
-CREATE PROCEDURE usp_InsertarAlumno
+ALTER PROCEDURE usp_InsertarAlumno
 @NamAlu varchar(30),  
 @LasAlu varchar(30),
 @Ndocum char(8),
 @IdFacu char(6),
-@Id_Ubi varchar(20) 
-  
+@Id_Ubi varchar(20),
+@Idsexo	bit,
+@FecNac	date =NULL, 	
+@CorAlu	varchar	(50) = NULL,
+@TelAlu	char(9)=NULL
 AS  
 declare @IdAlum char(4)  
 declare @cont int  
@@ -18,7 +21,8 @@ else
         set @IdAlum=(Select 'A' +Right(Max (Right(IdAlum,3)+ 1001 ),3)   
     From TB_Alumno)  
 	 
-insert into TB_Alumno(IdAlum,NamAlu,LasAlu,Ndocum,IdFacu,Id_Ubi) values(@IdAlum,@NamAlu,@LasAlu,@Ndocum,@IdFacu,@Id_Ubi)  
+insert into TB_Alumno(IdAlum,NamAlu,LasAlu,Ndocum,IdFacu,Id_Ubi,Idsexo,FecNac,CorAlu,TelAlu) values(@IdAlum,@NamAlu,@LasAlu,@Ndocum,@IdFacu,@Id_Ubi,@Idsexo,@FecNac,@CorAlu,@TelAlu)   
+GO
 
 
 /*Esta vista permite ver que carrera facultad pertenece cada carrera*/
@@ -38,7 +42,6 @@ as
 Select Id_ubi, distri from Tb_Ubigeo
 
 
-
 /*Vista de facultades del instituto*/
 
 Create View VW_Facultad
@@ -46,7 +49,10 @@ as
 Select * from TB_Facultad
 
 
-
+/*Vista que muestra los sexos*/
+Create view VW_sexo
+as
+Select * from TB_SEXO
 
 
 
