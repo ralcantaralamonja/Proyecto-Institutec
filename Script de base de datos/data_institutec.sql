@@ -1,7 +1,3 @@
-USE InstituTec
-GO
-
-
 -- Agregar Datos a la Tabla Facultad
 -- ===============================
 
@@ -128,7 +124,6 @@ Insert into TB_Espc_Prof (IdEspc,DesEsc) values(10,'Desarrollo movidles')
  
 -- Agregar Datos a la Tabla Alumno
 -- ===============================
-<<<<<<< HEAD
 EXECUTE USP_INSERTARALUMNO 'ALEXANDRA JULIETH','LOPEZ','SHAPIAMA','60121975','Facu05','140102','F'
 EXECUTE USP_INSERTARALUMNO 'ALEXANDRA CAROLINE','BENDEZU','SEIJAS','70202922','Facu05','140103','F'
 EXECUTE USP_INSERTARALUMNO 'PAOLA JACKELINE','GUARDALES','QUEZADA','59842369','Facu05','140125','F'
