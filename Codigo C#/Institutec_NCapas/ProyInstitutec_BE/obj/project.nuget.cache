@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "eyxW2IrFmUcnQayaP1baoOxvhMh9hjaYFqFvLJIWN+g2BPiTpsb+Sx2b7CNVjVEYRqXQG8/DLhoFo2N8/GpKKw==",
+  "success": true,
+  "projectFilePath": "D:\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BE\\ProyInstitutec_BE.csproj",
+=======
   "dgSpecHash": "jVDb6MgFoc4k6HHx+tfvc/3pn/OwqIeGCaEd/rtfouHkUp93k/1EvNn8QzaEKLyhtN1jdwhIPPeQyRd0uKNYrw==",
   "success": true,
   "projectFilePath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Codigo C#\\Institutec_NCapas\\ProyInstitutec_BE\\ProyInstitutec_BE.csproj",
+>>>>>>> 5b45eda0aa45818214c985969f2b4a4588ef82ed
   "expectedPackageFiles": [],
   "logs": []
 }

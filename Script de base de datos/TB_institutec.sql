@@ -1,7 +1,3 @@
-USE InstituTec
-
-GO
-
 --Creando Llave unica UK
 
 -- Llave unica para documento de alumnos

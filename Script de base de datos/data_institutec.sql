@@ -128,6 +128,7 @@ Insert into TB_Espc_Prof (IdEspc,DesEsc) values(10,'Desarrollo movidles')
  
 -- Agregar Datos a la Tabla Alumno
 -- ===============================
+<<<<<<< HEAD
 EXECUTE USP_INSERTARALUMNO 'ALEXANDRA JULIETH','LOPEZ','SHAPIAMA','60121975','Facu05','140102','F'
 EXECUTE USP_INSERTARALUMNO 'ALEXANDRA CAROLINE','BENDEZU','SEIJAS','70202922','Facu05','140103','F'
 EXECUTE USP_INSERTARALUMNO 'PAOLA JACKELINE','GUARDALES','QUEZADA','59842369','Facu05','140125','F'
@@ -149,6 +150,7 @@ EXECUTE USP_INSERTARALUMNO 'JOSE LUIS','DEJO',' WONG','44838283','Facu05','14011
 EXECUTE USP_INSERTARALUMNO 'ARTURO MARIO','RAMIREZ',' SANCHEZ','45142009','Facu05','140114','M'
 EXECUTE USP_INSERTARALUMNO 'JORGE LUIS','TORRES',' AHEN','27562726','Facu05', '140112','M'
 EXECUTE USP_INSERTARALUMNO 'CAMILA','CUEVA',' VITERI','78164851','FACU05','140112','F'
+
 
 -- Agragar Datos a la Tabla TB_Profesor
 -- =================================
@@ -179,6 +181,4 @@ Execute usp_InsertarProfesor 'LESLY DIANA','RODRIGUEZ',' DIAZ','20723655','lesly
 Execute usp_InsertarProfesor 'MEYLI ESTEFANIA','ALFARO','ARAOZ','83263318','estefaniaaraoz@gmail.com','F','140113'
 
 
- -- Agragar Datos a la Tabla Curso
--- ==============================
  
