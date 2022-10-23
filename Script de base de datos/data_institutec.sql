@@ -1,34 +1,6 @@
 USE InstituTec
 GO
---Creando indices 
 
---Indice que ordena alfabetimante cada distrito
-
-CREATE NONCLUSTERED INDEX OrdenarPorNombre
-	ON Tb_Ubigeo(distri)
-
---Indice que ordena alfabetimante Alumnos por apellido
-
-CREATE NONCLUSTERED INDEX OrdenarPorApelAlum
-	ON TB_Alumno(LasAlu)
-
--- Fin de indices
-
-
---Creando UK
-
--- Llave unica para documento de alumnos
-ALTER TABLE TB_Alumno	
-ADD CONSTRAINT DocAlum	
-UNIQUE(Ndocum)
-
--- Llave unica para documento de profesor
-
-ALTER TABLE TB_Profesor 	
-ADD CONSTRAINT DocPro	
-UNIQUE(Ndocum)
-
--- Fin de UK
 
 -- Agregar Datos a la Tabla Facultad
 -- ===============================
@@ -45,32 +17,31 @@ Insert into TB_Facultad (IdFacu, DesFac) values ('Facu06','Facultad de Hotelerí
 -- Agragar Datos a la Tabla Carrera
 -- ===============================
 
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C001','Facu01','Diseño Gráfico')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C002','Facu01','Diseño de Interiores')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C003','Facu01','Diseño y Desarrollo de Videojuegos')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C004','Facu01','Animación Digital y Diseño 3D')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C005','Facu01','Diseño de Medios Interactivos (UX)')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C006','Facu02','Periodismo Deportivo')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C007','Facu02','Comunicación Audiovisual')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C008','Facu02','Comunicación Integral')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C009','Facu02','Fotografía y Producción de Imagen')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C010','Facu03','Marketing y Gestión de Moda')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C011','Facu03','Marketing')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C012','Facu03','Publicidad y Medios Digitales')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C013','Facu03','Gestión Comercial y Negocios Digitales')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C014','Facu04','Administración de Empresas')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C015','Facu04','Negocios Internacionales')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C016','Facu04','Administración y Finanzas')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C017','Facu04','Recursos Humanos')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C018','Facu04','Administración Bancaria')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C019','Facu04','Gestión Logística Integral')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C020','Facu05','Desarrollo de Software')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C021','Facu05','Redes y Comunicaciones')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C022','Facu05','Sistemas de Información')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C023','Facu06','Hotelería')
-Insert into Tb_Carrera(CodCar,IdFacu,DesCar) values ('C024','Facu06','Turismo')
-
-
+Execute usp_InsertarCarrera 'Facu01','Diseño Gráfico'
+Execute usp_InsertarCarrera 'Facu01','Diseño de Interiores'
+Execute usp_InsertarCarrera 'Facu01','Diseño y Desarrollo de Videojuegos'
+Execute usp_InsertarCarrera 'Facu01','Animación Digital y Diseño 3D'
+Execute usp_InsertarCarrera 'Facu01','Diseño de Medios Interactivos (UX)'
+Execute usp_InsertarCarrera 'Facu02','Periodismo Deportivo'
+Execute usp_InsertarCarrera 'Facu02','Comunicación Audiovisual'
+Execute usp_InsertarCarrera 'Facu02','Comunicación Integral'
+Execute usp_InsertarCarrera 'Facu02','Fotografía y Producción de Imagen'
+Execute usp_InsertarCarrera 'Facu03','Marketing y Gestión de Moda'
+Execute usp_InsertarCarrera 'Facu03','Marketing'
+Execute usp_InsertarCarrera 'Facu03','Publicidad y Medios Digitales'
+Execute usp_InsertarCarrera 'Facu03','Gestión Comercial y Negocios Digitales'
+Execute usp_InsertarCarrera 'Facu04','Administración de Empresas'
+Execute usp_InsertarCarrera 'Facu04','Negocios Internacionales'
+Execute usp_InsertarCarrera 'Facu04','Administración y Finanzas'
+Execute usp_InsertarCarrera 'Facu04','Recursos Humanos'
+Execute usp_InsertarCarrera 'Facu04','Administración Bancaria'
+Execute usp_InsertarCarrera 'Facu04','Gestión Logística Integral'
+Execute usp_InsertarCarrera 'Facu05','Desarrollo de Software'
+Execute usp_InsertarCarrera 'Facu05','Redes y Comunicaciones'
+Execute usp_InsertarCarrera 'Facu05','Sistemas de Información'
+Execute usp_InsertarCarrera 'Facu06','Hotelería'
+Execute usp_InsertarCarrera 'Facu06','Turismo'
+ 
 -- Agragar Datos a la Tabla Ciclo
 -- ===============================
 
@@ -132,195 +103,82 @@ Insert into Tb_Ubigeo (Id_Ubi,IdDepa,IdProv,IdDist,Depart,Provin,Distri) values 
 Insert into Tb_Ubigeo (Id_Ubi,IdDepa,IdProv,IdDist,Depart,Provin,Distri) values ('140142','14',	'42','42','Lima','Lima','Los Olivos')
 Insert into Tb_Ubigeo (Id_Ubi,IdDepa,IdProv,IdDist,Depart,Provin,Distri) values ('140143','14',	'43','43','Lima','Lima','Santa Anita')
 
--- Agregar Datos a la Tabla Sexo
--- ===============================
-Insert into TB_Sexo(Idsexo,Dessex) values (0,'F')
-Insert into TB_Sexo(Idsexo,Dessex) values (1,'M')
 
+-- Agregar Datos a la Tabla Local
+-- ===============================
+insert into TB_local (IdCent,Desloc,Dirloc) values ('SI','Local de San Isidro','Av. Sanchez Carrión 285')
+insert into TB_local (IdCent,Desloc,Dirloc) values ('LM','Local de La Molina','Av. La Fontana 955')
+insert into TB_local (IdCent,Desloc,Dirloc) values ('MI','Local de Miraflores','Av. Benavides 778')
+insert into TB_local (IdCent,Desloc,Dirloc) values ('RM','Local remoto','Aula virtual')
+insert into TB_local (IdCent,Desloc,Dirloc) values ('MD','Local de Magdalena','Jr, Jirón Jose Galvez 386')
+insert into TB_local (IdCent,Desloc,Dirloc) values ('LN','Local de Lima norte',' Av Industrial 3458, San Martín de Porres 15311')
+
+-- Agregar Datos a la Tabla TB_Espc_Prof
+-- ===============================
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(1,'Desarrollo de sistemas')
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(2,'Seguridad Informatica')
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(3,'Programacion')
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(4,'Robotica')
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(5,'Base de datos')
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(6,'Big data')
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(7,'Servidores')
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(8,'Iot')
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(9,'Desarrollo de aplicacioens en Cloud')
+Insert into TB_Espc_Prof (IdEspc,DesEsc) values(10,'Desarrollo movidles')
+ 
 -- Agregar Datos a la Tabla Alumno
 -- ===============================
-EXECUTE USP_INSERTARALUMNO 'ALEXIS SALVADOR','GUERRERO HUAMAN','09000228','Facu05','140140',1 
-EXECUTE USP_INSERTARALUMNO 'ALEXANDRA JULIETH','LOPEZ SHAPIAMA','60121975','Facu05','140102',0
-EXECUTE USP_INSERTARALUMNO 'ALEXANDRA CAROLINE','BENDEZU SEIJAS','70202922','Facu05','140103',0
-EXECUTE USP_INSERTARALUMNO 'PAOLA JACKELINE','GUARDALES QUEZADA','59842369','Facu05','140125',0
-EXECUTE USP_INSERTARALUMNO 'SUSAN INGRID','MENDO BEZADA','81840471','Facu05','140104',0
-EXECUTE USP_INSERTARALUMNO 'NICOLE MIRELLA','PLAZA HIDALGO','92900341','Facu05','140105',0
-EXECUTE USP_INSERTARALUMNO 'GABRIELA MIRANDA','SALAZAR LEDESMA','94941620','Facu05','140107',0
-EXECUTE USP_INSERTARALUMNO 'FABIO CESAR','SILVA GONZALES','38160300','Facu05','140108',1
-EXECUTE USP_INSERTARALUMNO 'KAREN LILIANA','REYES ROMERO','54568430','Facu05','140133',0
-EXECUTE USP_INSERTARALUMNO 'LIZ MARY','TICONA RAMOS','34184084','Facu05','140133',0
-EXECUTE USP_INSERTARALUMNO 'LESLY LUZMILA','CANALES GALVEZ','16397541','Facu05','140106',0
-EXECUTE USP_INSERTARALUMNO 'ANDY NESTOR','TUFINO MALPARTIDA','47622648','Facu05','140135',1
-EXECUTE USP_INSERTARALUMNO 'MARIANA YOSELIN','HUAYNATE MIRAMIRA','76344220','Facu05','140134',0
-EXECUTE USP_INSERTARALUMNO 'FRANCISCO PABLO','VILLACORTA PONCE','97614497','Facu05','140110',1
-EXECUTE USP_INSERTARALUMNO 'JULISSA STEFANYA','QUISPE PEREZ','31607096','Facu05','140109',0
-EXECUTE USP_INSERTARALUMNO 'FERNANDA MADELEIN','RIVERA GARCÍA','57794067','Facu05','140101',0
-EXECUTE USP_INSERTARALUMNO 'CESAR AUGUSTO','PEREDA RAMIREZ','84855224','Facu05','140111',1
-EXECUTE USP_INSERTARALUMNO 'MARIA DEL CARMEN','RODRIGUEZ PALOMINO','83438408','Facu05','140142',0
-EXECUTE USP_INSERTARALUMNO 'JOSE LUIS','DEJO WONG','44838283','Facu05','140116',1
-EXECUTE USP_INSERTARALUMNO 'ARTURO MARIO','RAMIREZ SANCHEZ','45142009','Facu05','140114',1
-EXECUTE USP_INSERTARALUMNO 'JORGE LUIS','TORRES AHEN','27562726','Facu05', '140112',1
-EXECUTE USP_INSERTARALUMNO 'CAMILA','CUEVA VITERI','78164851','FACU05','140112',0
-
---Hasta aca
---------------------------------------------------------------------------------------------------------------------
-
--- Agragar Datos a la Tabla Curso
--- ==============================
---Select * from TB_Curso
-
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C001','A','Windows 10',1)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C002','A','Excel empresarial',1)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C003','A','Gestión de dispositivos',2)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C004','B','Diseño y Programación de Base de Datos',2)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C005','B','Analisis y Diseño de Sistemas',1)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C006','B','Fundamentos de Programación',3)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C007','C','Programación Avanzada de Bases de Datos',3)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C008','C','MS Visual Basic.Net - Componentes',1)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C009','C','Diseño de Sistemas con UML',2)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C010','C','Desarrollo de Apliaciones 1',2)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C011','C','Analitica de sistemas empresariales',3)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C012','C','POO con C#', 3)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C013','D','Windows Server 1', 1)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C014','D','Windows Server 2', 3)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C015','D','Administración y gestión de servidores Windows Server',2)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C016','D','Linux Server 1', 2)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C017','D','Linux Server 2', 1)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C018','D','Red hat Enterprise Linux', 1)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C019','D','Virtualización de data centers',2)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C020','E','Administración y Gestión de Base de Datos',3)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C021','E','Alta disponibilidad y Redundancia de Base de Datos',1)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal)  
-Values('C022','E','Mineria de datos',3)
-Insert Into TB_Curso(IdCurso,IdTarifa,NomCurso,IdLocal) 
-Values('C023','E','Inteligencia de negocios orientada a las Bases de datos',1)
-
-
-
---delete TB_profesor
+EXECUTE USP_INSERTARALUMNO 'ALEXANDRA JULIETH','LOPEZ','SHAPIAMA','60121975','Facu05','140102','F'
+EXECUTE USP_INSERTARALUMNO 'ALEXANDRA CAROLINE','BENDEZU','SEIJAS','70202922','Facu05','140103','F'
+EXECUTE USP_INSERTARALUMNO 'PAOLA JACKELINE','GUARDALES','QUEZADA','59842369','Facu05','140125','F'
+EXECUTE USP_INSERTARALUMNO 'SUSAN INGRID','MENDO','BEZADA','81840471','Facu05','140104','F'
+EXECUTE USP_INSERTARALUMNO 'NICOLE MIRELLA','PLAZA','HIDALGO','92900341','Facu05','140105','F'
+EXECUTE USP_INSERTARALUMNO 'GABRIELA MIRANDA','SALAZAR','LEDESMA','94941620','Facu05','140107','F'
+EXECUTE USP_INSERTARALUMNO 'FABIO CESAR','SILVA','GONZALES','38160300','Facu05','140108','M'
+EXECUTE USP_INSERTARALUMNO 'KAREN LILIANA','REYES','ROMERO','54568430','Facu05','140133','F'
+EXECUTE USP_INSERTARALUMNO 'LIZ MARY','TICONA','RAMOS','34184084','Facu05','140133','F'
+EXECUTE USP_INSERTARALUMNO 'LESLY LUZMILA','CANALES','GALVEZ','16397541','Facu05','140106','F'
+EXECUTE USP_INSERTARALUMNO 'ANDY NESTOR','TUFINO',' MALPARTIDA','47622648','Facu05','140135','M'
+EXECUTE USP_INSERTARALUMNO 'MARIANA YOSELIN','HUAYNATE',' MIRAMIRA','76344220','Facu05','140134','F'
+EXECUTE USP_INSERTARALUMNO 'FRANCISCO PABLO','VILLACORTA',' PONCE','97614497','Facu05','140110','M'
+EXECUTE USP_INSERTARALUMNO 'JULISSA STEFANYA','QUISPE',' PEREZ','31607096','Facu05','140109','F'
+EXECUTE USP_INSERTARALUMNO 'FERNANDA MADELEIN','RIVERA',' GARCÍA','57794067','Facu05','140101','F'
+EXECUTE USP_INSERTARALUMNO 'CESAR AUGUSTO','PEREDA',' RAMIREZ','84855224','Facu05','140111','M'
+EXECUTE USP_INSERTARALUMNO 'MARIA DEL CARMEN','RODRIGUEZ',' PALOMINO','83438408','Facu05','140142','F'
+EXECUTE USP_INSERTARALUMNO 'JOSE LUIS','DEJO',' WONG','44838283','Facu05','140116','M'
+EXECUTE USP_INSERTARALUMNO 'ARTURO MARIO','RAMIREZ',' SANCHEZ','45142009','Facu05','140114','M'
+EXECUTE USP_INSERTARALUMNO 'JORGE LUIS','TORRES',' AHEN','27562726','Facu05', '140112','M'
+EXECUTE USP_INSERTARALUMNO 'CAMILA','CUEVA',' VITERI','78164851','FACU05','140112','F'
 
 -- Agragar Datos a la Tabla TB_Profesor
 -- =================================
  
+Execute usp_InsertarProfesor 'DAVID ENRIQUE','ALLASI','BARDALES','71493503','dallasib@gmail.com','M','140109'
+Execute usp_InsertarProfesor 'NORVIL ANTONIO','ARCE','SÁNCHEZ','13056023','narces@gmail.com','M','140103'
+Execute usp_InsertarProfesor 'ITALO DAVID','RAMOS','LING','08421861','italoramos@gmail.com','M','140101'  
+Execute usp_InsertarProfesor 'DANIEL FRANCISCO','SAKAMOTO','ORTEGA','56140614','dsakamoto@gmail.com','M','140106'
+Execute usp_InsertarProfesor 'ANDRES ALEKSANDAR MILUTIN','VILLAR','BOJOVIC','02902488','avillarb@gmail.com','M','140110'  
+Execute usp_InsertarProfesor 'ANDRES JOSE','NUÑEZ','SANCHEZ','57916305','josesanchez@gmail.com','M','140109'  
+Execute usp_InsertarProfesor 'AZUCENA PAOLA','QUIROGA', 'FARRO','33962873','paolafarro@gmail.com','F','140111'
+Execute usp_InsertarProfesor 'EVELIN DOLORES','VINCES','LOPEZ','68704612','evenlinlopez@gmail.com','F','140112'
+Execute usp_InsertarProfesor 'CARLI ESTHER','QUIROZ','PACAYA','07903683','estherquiroz@gmail.com','F','140105'
+Execute usp_InsertarProfesor 'PRISCILA CECILIA','RENTERIA','PEREZ','13052847','priscilaperez@gmail.com','F','140114'
+Execute usp_InsertarProfesor 'WENDY ROSY','CHUMPITAZ','CHAVEZ','80841236','wendychavez@gmail.com','F','140117'
+Execute usp_InsertarProfesor 'ANDREA GABRIELA','EVANGELISTA','ROSAS','20359729','andrearosas@gmail.com','F','140120'
+Execute usp_InsertarProfesor 'GILBERTO ALEXIS','DIAZ',' RODRÍGUEZ','20947531','alexisdiaz@gmail.com','M','140102'
+Execute usp_InsertarProfesor 'RAUL MANUEL','ARANDA',' VICENTE','70095888','manuelvicente@gmail.com','M','140130'
+Execute usp_InsertarProfesor 'TATIANA NAHOMI','LAGOS',' CUSICHI','81729332','nahomilagos@gmail.com','F','140122'
+Execute usp_InsertarProfesor 'ERICSSON HANS','CRUZ',' ZAPATA','13877827','hanszapata@gmail.com','M','140140' 	 
+Execute usp_InsertarProfesor 'ABIGAIL ANA','RAMIREZ',' CRUZ','02013171','anacruz@gmail.com','F','140143'	 
+Execute usp_InsertarProfesor 'HENRY WILLIAN','MILLA',' CHIPANA','93953444','henrymilla@gmail.com','M','140129' 
+Execute usp_InsertarProfesor 'LUIGGI','VILLACORTA',' GUZMAN','91030463','luiggiguzman@gmail.com','M','140125' 
+Execute usp_InsertarProfesor 'MARIAJOSE','RATTO',' ALVARADO','73448499','mariaalvarado@gmail.com','F','140141'
+Execute usp_InsertarProfesor 'RODRIGO GABRIEL','PALMA',' POMA','96608344','rodrigopoma@gmail.com','M','140127' 
+Execute usp_InsertarProfesor 'JENIFER','NAJARRO',' JANAMPA','03161596','jenifernajarro@gmail.com','F','140138'
+Execute usp_InsertarProfesor 'LESLY DIANA','RODRIGUEZ',' DIAZ','20723655','leslydiaz@gmail.com','F','140126'
+Execute usp_InsertarProfesor 'MEYLI ESTEFANIA','ALFARO','ARAOZ','83263318','estefaniaaraoz@gmail.com','F','140113'
 
 
-
-Insert Into TB_profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor, EmailProfesor) Values ('P001','ALLASI BARDALES','DAVID ENRIQUE','57914411','La Molina','994258631','DALLASIB@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P002','ARCE SÁNCHEZ','NORVIL ANTONIO','13056023','Breña','997605040','NARCES@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P003','RAMOS LING','ITALO DAVID','08421861','San Miguel','969460717','IRAMOSL@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P004','SAKAMOTO ORTEGA','DANIEL FRANCISCO','56140614','San miguel','965309482','DSAKAMOTOO@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P005','VILLAR BOJOVIC','ANDRES ALEKSANDAR MILUTIN','02902488','Lince','999092126','AVILLARB@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P006','NUÑEZ SANCHEZ','ANDRES JOSE','57916305','Los Olivos','991491526','ANUNEZS@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P007','QUIROGA FARRO','AZUCENA PAOLA','33962873','Puente piedra','912401505','AQUIROGAFARRO@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P008','VINCES LOPEZ','EVELIN DOLORES','68704612','San martin','912401505','EVINCESL@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P009','QUIROZ PACAYA','CARLI ESTHER','07903683','Los Olivos','none','CQUIROZP@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P010','RENTERIA PEREZ','PRISCILA CECILIA','13052847','San Juan del Lurigancho','none','PRENTERIAP@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P011','CHUMPITAZ CHAVEZ','WENDY ROSY','80841236','Villa el Salvador','none','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P012','EVANGELISTA ROSAS','ANDREA GABRIELA','20359729','Rimac','none','AEVANGELISTAR@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P013','DIAZ RODRÍGUEZ','GILBERTO ALEXIS','20947531','San Juan de Miraflores','none','GDIAZR@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P014','ARANDA VICENTE','RAUL MANUEL','70095888','Jesús Maria','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P015','LAGOS CUSICHI','TATIANA NAHOMI','81729332','Independencia','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P016','CRUZ ZAPATA','ERICSSON HANS','13877827','Villa Maria del Triunfo','none','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P017','RAMIREZ CRUZ','ABIGAIL ANA','02013171','Miraflores','none','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P018','MILLA CHIPANA','HENRY WILLIAN','93953444','San Martin de Porres','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P019','VILLACORTA GUZMAN','LUIGGI','91030463','El Agustino','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P020','RATTO ALVARADO','MARIAJOSE','73448499','Carabayllo','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P021','PALMA POMA','RODRIGO GABRIEL','96608344','Rimac','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P022','NAJARRO JANAMPA','JENIFER','03161596','Lima','None','@instutuTec.edu.pe')
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P023','RODRIGUEZ DIAZ','LESLY DIANA','20723655','Magdalena','None','@instutuTec.edu.pe')	
-Insert Into TB_Profesor(IdProfesor,ApeProfesor,NomProfesor,Ndocum,DisProfesor,TelProfesor,EmailProfesor) Values ('P024','ALFARO ARAOZ','MEYLI ESTEFANIA','83263318','San isidro','None','@instutuTec.edu.pe')
-/*
-Select COUNT(IdProfesor) from TB_Profesor
-X if (x <100) -> p0x else -> P099
-P024  POSIBLE STORE PARA INSERT AUTOMATICO
-*/
-
-
-
-
--- delete TB_Alumno
-
-
-
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0001','ALEXIS SALVADOR','GUERRERO HUAMAN','09000228','SAN BORJA','48932571','alexis_guerrero_huaman@instututec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0002','ALEXANDRA JULIETH','LOPEZ SHAPIAMA','60121975','SURCO','27815432', 'alexandra_lopez@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0003','ALEXANDRA CAROLINE','BENDEZU SEIJAS','70202922','LA MOLINA','55577203', 'alexandra_bendezu_seijas@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0004','PAOLA JACKELINE','GUARDALES QUEZADA','59842369','SURCO','36994054','paola_guardale_quezada@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0005','SUSAN INGRID','MENDO BEZADA','81840471','SAN JUAN DE LURIGANCHO','77696438', 'susan_mendo_bezada@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0006','NICOLE MIRELLA','PLAZA HIDALGO','92900341','EL AGUSTINO','37724589', 'nicole_plaza_hidalgo@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0007','GABRIELA','SALAZAR LEDESMA','94941620','MIRAFLORES','80676519','gabriela_salazar_ledesma@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0008','FABIO CESAR','SILVA GONZALES','38160300','MAGDALENA DEL MAR','80670097', 'fabio_silva_gonzales@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0009','KAREN LILIANA','REYES ROMERO','54568430','SAN ISIDRO','27261800', 'karen_reyes_romero@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0010','LIZ MARY','TICONA RAMOS','34184084','SANTA ANITA','49725839', 'liz_ticona_ramos@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0011','LESLY LUZMILA','CANALES GALVEZ','16397541','SANTIAGO DE SURCO','61267099', 'lesly_canales_galves@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0012','ANDY NESTOR','TUFINO MALPARTIDA','47622648','LA MOLINA','96144263','andy_tufino_malpartida@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0013','MARIANA YOSELIN','HUAYNATE MIRAMIRA','76344220','CERCADO DE LIMA','22268980', 'mariana_huaynate_miramira@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0014','FRANCISCO PABLO','VILLACORTA PONCE','97614497','PUEBLO LIBRE','72853148', 'francisco_villacorta_ponce@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0015','JULISSA','QUISPE PEREZ','31607096','SAN BORJA','74690198', 'julissa_quispe_perez@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) Values ('A0016','FERNANDA','RIVERA GARCÍA','57794067','CHORRILLOS','43815147','fernanda_rivera_garcia@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0017','CESAR','PEREDA RAMIREZ','84855224','SAN BORJA','98765432','cesar_pereda_ramirez@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0018','MARIA','RODRIGUEZ PALOMINO','83438408','ATE','96548732','maria_rodriguez_palomino@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0019','JOSE','DEJO WONG','44838283','LA MOLINA','971853461','jose_dejo_wong@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0020','ARTURO','RAMIREZ SANCHEZ','45142009','BARRANCO','945633321','arturo_ramirez_sanchez@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0021','JORGE','TORRES AHEN','27562726','SURQUILLO','96060341', 'jorge_torres_ahen@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0022','GLADYS','CONCHA LEON','78164851','COMAS','974356164','gladys_concha_leon@instutec.com')
-Insert Into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0023','Claudia','Quispe','53970612','COMAS','974356164','gladys_concha_leon@instutec.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0024','Beatriz','Perez','86688197','SANTA ANITA','977445512','beatriz_perez@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0025','Ernesto','Veliz','71057347','CHOSICA','931426787','ernesto_veliz@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0026','Felix','Panduro','57502112','SAN BORJA','98732145','felix_panduro@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0027','Camila','Razo','29707291','SAN ISIDRO','965432198','camilia_razo@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0028','Renzo','Echegoyen','04805949','SURQUILLO','958647167','renzo_echegoyen@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0029','Alejandra','Barrionuevo','92278833','SAN BARTOLO','902455556','alejandra_barrionuevo@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0030','Pedro','Castillo','98949426','CHOSICA','945319542','pedro_castillo@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0031','Alan','Garcia','65523636','LA MOLINA','966604223','alan_garcia@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0032','Luis','Quilca','24086043','PUEBLO LIBRE','951363592','luis_quilca@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0033','Ricardo','Nue','69213215','LINCE','960960971','ricardo_nue@colegio.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0034','REMO','OLAYA GARCIA','93128609','LINCE','960960971','remo_olaya_ garcia@instutec.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0035','ALONSO','PEREZ GARCIA','57379547','SANTIAGO DE SURCO','965600971','alonso_perez_garcia@instutec.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0036','DIEGO','VIVANCO ANAYA','14089492','LINCE','950960971','diego_vivanco_anaya@instutec.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0037','IVANNA','LOPEZ GARCIA','36591776','LINCE','950967971','ivanna_lopez_garcia@instutec.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0038','LAURA','ILLARRAMENDI LUYO','91030242','SAN BORJA','950960321','laura_illaramendi_luyo@instutec.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0039','ANDREA','POZA GOMEZ','58883702','SAN ISIDRO','950900271','andrea_poza_gomez@instutec.com')
-insert into TB_Alumno(IdAlumno,NomAlumno,ApeAlumno,ndocum,DisAlumno, TelAlumno, EmailAlumno) values ('A0040','ANDY','MENDEZ AMPUERO','97272848','ATE','950960900','andy_mendez_ampuero@instutec.com')
-
-
-
--- Agregar Datos a la Tabla TB_CursoProgramado
--- ========================================
-
--- Ciclo: 2023-01
-
-Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT001','C003','2023-01','P003',300,'Jue 19-22')
-Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT002','C003','2023-01','P004',300,'Mie 19-22')
-Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT003','C004','2023-01','P002',350,'Vie 19-22')
-Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT004','C004','2023-01','P005',350,'Mar 19-22')
-Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT005','C006','2023-01','P002',350,'Lun 19-22')
-Insert Into TB_CursoProgramado(IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values('MAT006','C006','2023-01','P005',350,'Sab 19-22')
--- Agregar Datos a la Tabla TB_Matricula
--- ==================================
-
- 
-
-
+ -- Agragar Datos a la Tabla Curso
+-- ==============================
  

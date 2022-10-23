@@ -1,69 +1,3 @@
-/*STORE PROCEDURE INSERTA UN ALUMNO CON LOS CAMPOS OBLIGATORIOS Y CREA LA
-LLAVE PRIMARYA CORRELACIONAL*/
-
-ALTER PROCEDURE usp_InsertarAlumno
-@NamAlu varchar(30),  
-@LasAlu varchar(30),
-@Ndocum char(8),
-@IdFacu char(6),
-@Id_Ubi varchar(20),
-@Idsexo	bit,
-@FecNac	date =NULL, 	
-@CorAlu	varchar	(50) = NULL,
-@TelAlu	char(9)=NULL
-AS  
-declare @IdAlum char(4)  
-declare @cont int  
-set @cont=(Select count(*) from TB_Alumno)  
-if @cont=0   
-       set @IdAlum ='A001'  
-else  
-        set @IdAlum=(Select 'A' +Right(Max (Right(IdAlum,3)+ 1001 ),3)   
-    From TB_Alumno)  
-	 
-insert into TB_Alumno(IdAlum,NamAlu,LasAlu,Ndocum,IdFacu,Id_Ubi,Idsexo,FecNac,CorAlu,TelAlu) values(@IdAlum,@NamAlu,@LasAlu,@Ndocum,@IdFacu,@Id_Ubi,@Idsexo,@FecNac,@CorAlu,@TelAlu)   
-GO
-
-
-/*Esta vista permite ver que carrera facultad pertenece cada carrera*/
-Create View VW_Facultad_Carrera
-as
-Select 
-Car.CodCar 'Codigo',
-Car.DesCar 'Carrera',
-Facu.DesFac 'Facultad'
-From Tb_Carrera as Car INNER JOIN TB_Facultad as Facu on Facu.IdFacu = Car.IdFacu
-
-
-/*Esta vista permite ver lso distritos y su ubigeo*/
-
-Create view VW_verDistrito
-as
-Select Id_ubi, distri from Tb_Ubigeo
-
-
-/*Vista de facultades del instituto*/
-
-Create View VW_Facultad
-as
-Select * from TB_Facultad
-
-
-/*Vista que muestra los sexos*/
-Create view VW_sexo
-as
-Select * from TB_SEXO
-
-
-
-
-
-
-
-
---**********************************************************************************************
-
-
 -- SP de consulta
 /*
 Este Store procedure retorna los alumnos matriculados del curso 
@@ -336,51 +270,9 @@ VALUES
 
 
 
---Beta crea un correconial de id
-CREATE TRIGGER TR_ins_Matricula 
-ON Tb_CursoProgramado 
-AFTER INSERT  
-AS 
-BEGIN 
-declare @captura varchar(2)
-declare @verd char(6) 
-declare @IdCursoProg char(6) 
-declare @IdCurso char(4) 
-declare @IdPeriodo char(7) 
-declare @IdProfesor char(4) 
-declare @PreCursoProg money 
-declare @Horario varchar (24) 
-select @captura = (count(*)+1) from TB_CursoProgramado 
-SET @captura = convert (char(6),@captura) SET @IdCursoProg  ='MAT00'+@captura 
-select @verd =  IdCursoProg FROM inserted 
-IF (@verd) = '' 
-begin 
-Insert Into TB_CursoProgramado (IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values(@IdCursoProg,@IdCurso,@IdPeriodo,@IdProfesor,@PreCursoProg,@Horario)  end  
-end  
+ 
 
---beta 
-CREATE TRIGGER TR_ins_Matricula 
-ON Tb_CursoProgramado 
-AFTER INSERT  
-AS 
-BEGIN 
-declare @captura varchar(2)
-declare @verd char(6) 
-declare @IdCursoProg char(6) 
-declare @IdCurso char(4) 
-declare @IdPeriodo char(7) 
-declare @IdProfesor char(4) 
-declare @PreCursoProg money 
-declare @Horario varchar (24) 
-select @captura = (count(*)+1) from TB_CursoProgramado
-SET @IdCursoProg  =CAST('MAT00'+@captura AS char(6))
-select @verd =  IdCursoProg FROM inserted 
-IF (@verd) = null
-begin 
-Insert Into TB_CursoProgramado (IdCursoProg,IdCurso,IdPeriodo,IdProfesor,PreCursoProg,Horario) values(@IdCursoProg,@IdCurso,@IdPeriodo,@IdProfesor,@PreCursoProg,@Horario)  end  
-end  
-go
-
+ 
 -/*Se crea vista que ayuda a saber que profesor dicta un curso*/
 
 Create view VW_CursoDictadoPorProfesor
@@ -424,3 +316,16 @@ IdAlumno 'ID',ApeAlumno+' '+NomAlumno 'Alumno'
 from TB_Alumno
 
 
+--Creando indices 
+
+/*
+CREATE NONCLUSTERED INDEX OrdenarPorNombre
+	ON Tb_Ubigeo(distri)
+
+GO
+
+CREATE NONCLUSTERED INDEX OrdenarPorApelAlum
+	ON TB_Alumno(LasAlu)
+
+-- Fin de indices
+*/

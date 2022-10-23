@@ -1,0 +1,26 @@
+- Crear constraint para sexo
+	Solo debe permitirce ingresar M de masculino o F de feminino
+	
+- Crear constraint para fecha de nacimiento	
+	Solo debe poder ingresar mayores a 15 en alumno y profesor >18
+
+- Crear constraint para fecha de ingreso , no pueda superar
+	a actual.
+
+Crear sp para tabla cliente que  muestre
+	solo alumnos activos
+	que muestre su distrito
+	Muestre facultad en letras
+*/
+ beta 
+Select IdAlum,Ndocum,LasAlu,NamAlu,IdFacu from TB_Alumno
+
+
+Crear sp de update para datos alumno
+Crear sp de delete para datos alumno
+
+Crear sp para tabla profesor que  muestre sus datos
+Crear sp de update para datos profesor
+Crear sp de delete para datos profesor
+
+

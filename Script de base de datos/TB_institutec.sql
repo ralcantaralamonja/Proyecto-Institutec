@@ -1,200 +1,28 @@
- USE MASTER 
---Elimando la base de datos por si fue creada
-IF EXISTS ( SELECT name FROM sysdatabases WHERE name = 'InstituTec' )
-	DROP DATABASE InstituTec
-USE MASTER --redirigiendo a la master para crear base de datos
---DROP  DATABASE InstituTec
-GO
-CREATE DATABASE InstituTec -- creando la base de datos
-ON PRIMARY --definiendo archivo main
-(	
-	NAME             =  TESTEO_MDF, 
-	FILENAME     = 'D:\Databases\InstituTec.mdf', 
-	SIZE               = 5 MB, 
-	MAXSIZE        = 200, 
-	FILEGROWTH = 5)
-LOG ON --definiendo archivo de logs
-(	
-	NAME				  = TESTEO_LOGS, 
-	FILENAME		  = 'D:\Databases\InstituTec_Log.ldf',
-	SIZE				  = 1MB, 
-	MAXSIZE		  = 100, 
-	FILEGROWTH = 1MB)
-GO
-
-USE InstituTec --Usando la base de datos
-
-GO
---Creando tablas
-
-Create Table TB_Profesor(
-IdProf char(4) NOT NULL,
-Ndocum char(8) NOT NULL,
-NomPro varchar(50) NOT NULL,
-ApePat varchar(50) NOT NULL,
-ApeMat varchar(50) NOT NULL,
-CorPer varchar(50) NOT NULL,
-CorIns varchar(50),
-TelPro char(9) DEFAULT '999999999',
-FecNac date ,
-Idsexo bit NOT NULL,
-FecIng date,
-Estado bit DEFAULT 1,
-Id_Ubi char (6)
-)
+USE InstituTec
 
 GO
 
-Create Table TB_Espc_Prof(
-IdEspc tinyint NOT NULL, 
-DesEsc varchar(60)  
-)
+--Creando Llave unica UK
+
+-- Llave unica para documento de alumnos
+
+ALTER TABLE TB_Alumno	
+ADD CONSTRAINT DocAlum	
+UNIQUE(Ndocum)
 
 GO
 
-Create Table TB_Det_Espc(
-IdEspc tinyint NOT NULL,   
-IdProf char(4) 
+-- Llave unica para documento de profesor
 
-)
-
-GO
-
-Create Table Tb_Seccion(
-IdCods char(6) NOT NULL,
-IdCurs char(4) NOT NULL,
-IdProf char(4) NOT NULL,
-Activo bit DEFAULT 1,
-Vacant tinyint DEFAULT 30
-)
+ALTER TABLE TB_Profesor 	
+ADD CONSTRAINT DocPro	
+UNIQUE(Ndocum)
 
 GO
 
-Create Table Tb_Curso(
-IdCurs char(4) NOT NULL,
-NomCur varchar(50) NOT NULL,
-Activo bit default 1,
-IdCent char(2) NOT NULL,
-CodCar char(4) NOT NULL
+--Creando Llave primaria PK
 
-)
-
-GO
-
-Create Table Tb_Carrera(
-CodCar char(4) NOT NULL,
-IdFacu char(6) NOT NULL,
-DesCar varchar(50) NOT NULL
-)
-
-GO
-
-Create Table TB_Matricula(
-NroMat char(7) NOT NULL,
-IdSeme char(7) NOT NULL,
-EstMat tinyint NOT NULL,
-CodCar char(4) NOT NULL,
-IdAlum char(4) NOT NULL,
-FecMat Date default getdate()
-)
-
-GO
-
-Create Table TB_Estado_Matricula(
-EstMat tinyint NOT NULL,
-DesEst varchar (50)
-)
-
-GO
-
-Create table TB_local(
-IdCent char(2) NOT NULL,
-Desloc varchar(50),
-Dirloc varchar(50)
-)
-
-GO
-
-Create table TB_Alumno(
-IdAlum char(4) NOT NULL,
-Ndocum char(8) NOT NULL,
-IdFacu char(6) NOT NULL,
-NamAlu varchar(50) NOT NULL,
-LasAlu varchar(50) NOT NULL,
-TelAlu char(9) DEFAULT '999999999',
-CorAlu varchar(50),
-Estado bit default 1,
-Idsexo bit NOT NULL,
-FecNac date,
-Id_Ubi char(6) NOT NULL
-)
-
-GO
-
-Create table Tb_Ubigeo(
-
-Id_Ubi char(6) NOT NULL,
-IdDepa varchar (2),
-IdProv varchar (2),
-IdDist varchar (2),
-Depart varchar (100),
-Provin varchar (100),
-Distri varchar (100)
-
-)
-
-GO
-
-Create Table TB_Detalle_De_Matricula(
-NroMat char(7) NOT NULL,
-IdSeme char(7) NOT NULL,
-IdAlum char(4) NOT NULL
-
-)
-
-GO
-
-Create table TB_Aula(
-IdAula char(2) NOT NULL,
-IdCent char(2) NOT NULL,
-AfoAul tinyint DEFAULT 30,
-Habita bit default 1,
-DesAlu varchar(50),
-)
-
-GO
-
-Create Table TB_Facultad(
-IdFacu char(6) NOT NULL,
-DesFac varchar(50)
-)
-
-GO
-
-Create Table TB_Horario(
-IdCods char(6) NOT NULL,
-IdCurs char(4) NOT NULL,
-Horari char(5)
-)
-
-GO
-
-Create Table TB_Semestre(
-IdSeme char(7) NOT NULL,
-Descrp varchar(50),
-FecInc date,
-FecFin date 
-)
-
-GO
-
-Create Table TB_Sexo(
-Idsexo bit NOT NULL,
-Dessex char(1)
-)
-
-GO
---Creando Primary Key.
+--Llave primaria de TB_Semestre es IdSeme 
 
 ALTER TABLE TB_Semestre 
 ADD CONSTRAINT PK_TB_Semestre
@@ -202,11 +30,15 @@ PRIMARY KEY (IdSeme)
 
 GO
 
+--Llave primaria de TB_ESTADO_MATRICULA es EstMat 
+
 ALTER TABLE TB_ESTADO_MATRICULA 
 ADD CONSTRAINT PK_TB_ESTADO_MATRICULA
 PRIMARY KEY (EstMat)
 
 GO
+
+--Llave primaria de TB_Horario es IdCods,Idcurs 
 
 ALTER TABLE TB_Horario 
 ADD CONSTRAINT PK_TB_Horario
@@ -214,11 +46,15 @@ PRIMARY KEY (IdCods,Idcurs)
 
 GO
 
+--Llave primaria de TB_Facultad es IdFacu
+
 ALTER TABLE TB_Facultad 
 ADD CONSTRAINT PK_TB_Facultad
 PRIMARY KEY (IdFacu)
 
 GO
+
+--Llave primaria de TB_Aula es IdAula
 
 ALTER TABLE TB_Aula 
 ADD CONSTRAINT PK_TB_Aula
@@ -226,11 +62,15 @@ PRIMARY KEY (IdAula)
 
 GO
 
+--Llave primaria de TB_local es IdCent
+
 ALTER TABLE TB_local 
 ADD CONSTRAINT PK_TB_local
 PRIMARY KEY (IdCent)
 
 GO
+
+--Llave primaria de TB_Matricula es NroMat
 
 ALTER TABLE TB_Matricula 
 ADD CONSTRAINT PK_TB_Matricula
@@ -238,87 +78,80 @@ PRIMARY KEY (NroMat)
 
 GO
 
+--Llave primaria de TB_Profesor es IdProf
+
 ALTER TABLE TB_Profesor 
 ADD CONSTRAINT PK_TB_Profesor
 PRIMARY KEY (IdProf)
 
 GO
 
+--Llave primaria de TB_Espc_Prof es IdEspc
+ 
 ALTER TABLE TB_Espc_Prof 
 ADD CONSTRAINT PK_TB_Espc_Prof  
 PRIMARY KEY (IdEspc) 
 
 GO
-
+  
+--Llave primaria de TB_Det_Espc es IdEspc
+ 
 ALTER TABLE TB_Det_Espc
 ADD CONSTRAINT PK_TB_Espc_Profe 
 PRIMARY KEY (IdEspc) 
 
 GO
-
+  
+--Llave primaria de Tb_Seccion es IdCodS,IdCurs
+ 
 ALTER TABLE Tb_Seccion 
 ADD CONSTRAINT PK_Tb_Seccion  
 PRIMARY KEY (IdCodS,IdCurs)
 
 GO
-
+  
+--Llave primaria de Tb_Curso es IdCurs
+ 
 ALTER TABLE Tb_Curso 
 ADD CONSTRAINT PK_Tb_Curso 
 PRIMARY KEY (IdCurs)
 
 GO
-
+  
+--Llave primaria de Tb_Carrera es CodCar
+ 
 ALTER TABLE Tb_Carrera 
 ADD CONSTRAINT PK_Tb_Carrera 
 PRIMARY KEY (CodCar)
 
 GO
-
+  
+--Llave primaria de TB_Alumno es IdAlum
+ 
 ALTER TABLE TB_Alumno 
 ADD CONSTRAINT PK_TB_Alumno
 PRIMARY KEY (IdAlum)
 
 GO
-
+  
+--Llave primaria de PK_TB_Ubigeo es Id_Ubi
+ 
 ALTER TABLE TB_Ubigeo
 ADD CONSTRAINT PK_TB_Ubigeo
 PRIMARY KEY (Id_Ubi)
 
 GO
-
+  
+--Llave primaria de TB_Detalle_De_Matricula es NroMat,IdSeme
+ 
 ALTER TABLE TB_Detalle_De_Matricula
 ADD CONSTRAINT PK_Detalle_De_Matricula
 PRIMARY KEY (NroMat,IdSeme)
 
 GO
-  
-ALTER TABLE TB_Sexo 
-ADD CONSTRAINT PK_Sexo
-PRIMARY KEY (Idsexo)
 
-GO
 --Creando Foreign Key
 
-/*La tabla TB_Profesor tiene como campo
-IdProf que es llave primaria en la tabla TB_Ubigeo_Prof
-*/
- 
-
-ALTER TABLE TB_Profesor 
-ADD CONSTRAINT FK_SexProf
-FOREIGN KEY (Idsexo)  
-REFERENCES TB_Sexo
-
-GO
-/*La tabla TB_Profesor tiene como campo
-IdProf que es llave primaria en la tabla TB_Ubigeo_Prof
-*/
-ALTER TABLE TB_Alumno 
-ADD CONSTRAINT FK_SexAlum
-FOREIGN KEY (Idsexo)  
-REFERENCES TB_Sexo
-
-GO
 /*
 La tabla TB_Detalle_De_Matricula tiene como campo
 NroMat que es llave primaria en la tabla TB_Matricula
@@ -515,7 +348,19 @@ ADD CONSTRAINT FK_Mat_Alu
 FOREIGN KEY (IdAlum)  
 REFERENCES  Tb_Alumno
 
--- plantilla
+
+/*
+Futuras tablas a implementar
+
+Create Table TB_User(
+
+)
+Create Table TB_Auditoria (
+)
+
+*/
+
+-- plantilla para crear llave foranea
 /*
 La tabla XXXX tiene como campo
 XXX que es llave primaria en la XXXX
@@ -525,17 +370,3 @@ ADD CONSTRAINT FK_
 FOREIGN KEY ( )  
 REFERENCES  Tb_ 
 */
-
- 
-
-/*
-
-
-
-
-Create Table TB_User(
-)
-Create Table TB_Auditoria (
-)
-*/
- 
