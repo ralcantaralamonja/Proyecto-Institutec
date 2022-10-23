@@ -1,6 +1,6 @@
 Instructivo para correr base de datos.
 
-1.Correr scrip DB_institutec (Cambiar ruta mdf y ldf)
+1.Correr scrip DB_institutec (Cambiar ruta mdf y ldf) ejeplo D:\Databases
 2.Correr scrip TB_institutec
 3.Correr scrip SP_institutec
 4.Correr scrip DATA_institutec
