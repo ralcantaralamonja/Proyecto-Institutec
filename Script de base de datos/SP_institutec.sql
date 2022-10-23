@@ -23,7 +23,7 @@ else
     From TB_Alumno)  
 	 
 insert into TB_Alumno(IdAlum,NomAlu,ApePat,ApeMat,Ndocum,IdFacu,Id_Ubi,Sexoal,FecNac,CorAlu,TelAlu) values
-			(@IdAlum,@NamAlu,@ApeMat,@ApeMat,@Ndocum,@IdFacu,@Id_Ubi,@Sexoal,@FecNac,@CorAlu,@TelAlu)   
+					(@IdAlum,@NamAlu,@ApePat,@ApeMat,@Ndocum,@IdFacu,@Id_Ubi,@Sexoal,@FecNac,@CorAlu,@TelAlu)   
 GO
 
 /*STORE PROCEDURE INSERTA UN PROFESOR CON LOS CAMPOS OBLIGATORIOS Y CREA LA
@@ -71,6 +71,18 @@ else
     From TB_Carrera)  
 	 
 insert into Tb_Carrera(CodCar,IdFacu,DesCar) values(@CodCar,@IdFacu,@DesCar)   
+
+GO
+
+CREATE PROCEDURE usp_VerAlumno
+as
+Select 
+A.IdAlum 'ID',A.ApePat+' '+A.ApeMat 'Apellidos',
+A.NomAlu 'Nombre',A.Sexoal 'Genero',U.Distri 'Distrito',F.DesFac 'Facultad'
+From TB_Alumno as A
+INNER JOIN TB_FACULTAD AS F ON F.IdFacu  = A.IdFacu
+INNER JOIN Tb_Ubigeo AS U ON U.Id_Ubi = A.Id_Ubi
+ORDER BY A.ApePat
 
 GO
 
