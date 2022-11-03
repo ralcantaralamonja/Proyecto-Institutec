@@ -4,5 +4,4 @@ participantes
 
 * Alcantara Lamonja	Ricardo Luis Alejandro 
 * Gamero Llanto	Brigith Estefanny Selena
-* Quiñones González	Lesly Fiorella 
 
