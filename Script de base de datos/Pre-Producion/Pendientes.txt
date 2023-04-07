@@ -1,3 +1,10 @@
+1. Completar tabla cursos.
+2. Actualizar, Eliminar, Consultar
+3. Validar indices y funciones
+4. Tabla usuario con auditoria
+5. Por revisar el campo DesAlu  de la tabla TB_aula
+
+***************************************************************
 - Crear constraint para sexo
 	Solo debe permitirce ingresar M de masculino o F de feminino
 	

@@ -74,6 +74,29 @@ insert into Tb_Carrera(CodCar,IdFacu,DesCar) values(@CodCar,@IdFacu,@DesCar)
 
 GO
 
+/*STORE PROCEDURE INSERTA UN CURSO  CON LOS CAMPOS OBLIGATORIOS Y CREA LA
+LLAVE PRIMARYA CORRELACIONAL*/
+
+CREATE PROCEDURE usp_InsertarCurso
+@NomCur varchar(50),
+@Activo bit,
+@IdCent char(2),
+@CodCar char(4)
+AS  
+declare @IdCurs char(4)  
+declare @cont int  
+set @cont=(Select count(*) from TB_Curso)  
+if @cont=0   
+       set @IdCurs='CU01'  
+else  
+        set @IdCurs=(Select 'CU' +Right(Max (Right(CodCar,2)+ 1001 ),2)   
+    From Tb_Curso)  
+	 
+insert into Tb_Curso(IdCurs,NomCur,Activo,IdCent,CodCar) values(@IdCurs,@NomCur,@Activo,@IdCent,@CodCar)   
+
+/*STORE PROCEDURE PERMITE VER A LOS ALUMNOS ORDENADOR POR ORDEN 
+DE APELLIDOS PATERNO*/
+
 CREATE PROCEDURE usp_VerAlumno
 as
 Select 
