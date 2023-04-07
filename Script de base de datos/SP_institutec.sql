@@ -7,7 +7,7 @@ CREATE PROCEDURE usp_InsertarAlumno
 @ApeMat varchar(50),
 @Ndocum char(8),
 @IdFacu char(6),
-@Id_Ubi varchar(20),
+@Id_Ubi char(8),
 @Sexoal	char(1),
 @FecNac	date =NULL, 	
 @CorAlu	varchar	(50) = NULL,
