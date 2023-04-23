@@ -1,5 +1,5 @@
 ***Actual***
---  Actualizar - Eliminar - Consultar 
+--  Actualizar - Eliminar 
 
 Hacer SP de uptate BRIGITH
 Tabla curso (pasar de activo a inactivo) por curso , centro
@@ -13,18 +13,6 @@ Boorar profe ,alumno, curso
 //por ver que esos registros terminen en una tabla de borrado
 NO OLVIDAR EL WHERE PARA EVITAR BORRADO DE TODOS LOS DATOS
 Llenar la tabla correo institucional en tabla profesor
-
-Hacer sp de ver
-
-Ver curso  solo activos
-ver profesor 
-
-Hacer consulta ORLANDO
-
-Especialidad de los profes 
-y incribir a los profes en especialidad
-Mostrar las especialidades de los profesores	
-
 
 
 -- Aumentar campo hora en tabla curso
