@@ -1,61 +1,19 @@
 ***Actual***
---  Actualizar - Eliminar 
 
-Hacer SP de uptate BRIGITH
-Tabla curso (pasar de activo a inactivo) por curso , centro
-Tabla profe (Idubigeo,telf,activo)
-Tabla alumno (ubego, telf,correo per,activo)
-NO OLVIDAR EL WHERE PARA EVITAR CHANCADO DE DATOS
-*/
+1. Revisión de toda la base de datos
+2. Triggers en update/Delete  
+3. Implementar Tabla usuario
+4. Implementar auditoria a la tabla usuario 
+4. Validar índices y funciones
 
-Hacer SP de delete AMBAR
-Boorar profe ,alumno, curso 
-//por ver que esos registros terminen en una tabla de borrado
-NO OLVIDAR EL WHERE PARA EVITAR BORRADO DE TODOS LOS DATOS
-Llenar la tabla correo institucional en tabla profesor
+Por validar :
 
+- Aumentar campo hora en tabla curso
+- Ver tabla horaio poner hora inicio - hora fin
+- Por ver poner campo creditos en el curso// el alumno 
 
--- Aumentar campo hora en tabla curso
--- Ver tabla horaio poner hora inicio - hora fin
--- Borrar correo personal y llenar el institucional
--- Por ver poner campo creditos en el curso// el alumno 
--- Ingresar campos Corro institucional en tabla profe
+Posibles contrainst :
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-***Antiguo***
-1. Completar tabla cursos.
-2. Actualizar, Eliminar, Consultar
-3. Validar indices y funciones
-4. Tabla usuario con auditoria
-5. Por revisar el campo DesAlu  de la tabla TB_aula
-
-
-
-
-***************************************************************
 - Crear constraint para sexo
 	Solo debe permitirce ingresar M de masculino o F de feminino
 	
@@ -65,20 +23,27 @@ Llenar la tabla correo institucional en tabla profesor
 - Crear constraint para fecha de ingreso , no pueda superar
 	a actual.
 
-Crear sp para tabla cliente que  muestre
+Crear sp para tabla Alumno profe que  muestre
 	solo alumnos activos
 	que muestre su distrito
 	Muestre facultad en letras
-*/
- beta 
-Select IdAlum,Ndocum,LasAlu,NamAlu,IdFacu from TB_Alumno
 
 
-Crear sp de update para datos alumno
-Crear sp de delete para datos alumno
 
-Crear sp para tabla profesor que  muestre sus datos
-Crear sp de update para datos profesor
-Crear sp de delete para datos profesor
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
