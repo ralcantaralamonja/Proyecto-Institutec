@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Proy_InstitutecBE/1.0.0": {
+        "runtime": {
+          "Proy_InstitutecBE.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Proy_InstitutecBE/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
