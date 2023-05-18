@@ -1,32 +1,21 @@
-***Actual***
 
-1. Revisión de toda la base de datos
-2. Triggers en update/Delete  
-3. Implementar Tabla usuario
-4. Implementar auditoria a la tabla usuario 
-4. Validar índices y funciones
+- Carreras deben coincidir con tabla alumno y matricula (revisar sp insertar matricula)
+validar campo carrera en la tabla matricula 
+1. Llenar Det_Mat
+2. Validar llenado de Det_mat (sea automatico) 
+3. Generar validaciones con login
+4. Auditoria de tb usuario con Triggers
+5. Mantenimiento a las tablas (profe,alum,curso,seccion)
 
-Por validar :
 
-- Aumentar campo hora en tabla curso
-- Ver tabla horaio poner hora inicio - hora fin
-- Por ver poner campo creditos en el curso// el alumno 
+***** por ver ********
+- Llenar aulas , validar local con aulas , sección con locales
+(Al final un aula no puede estar con 2 profes en el mismo horario)
+(tener mapeo de aulas ocupadas)
 
-Posibles contrainst :
+- un profe no puede dictar otra clase el mismo dia y horario 
 
-- Crear constraint para sexo
-	Solo debe permitirce ingresar M de masculino o F de feminino
-	
-- Crear constraint para fecha de nacimiento	
-	Solo debe poder ingresar mayores a 15 en alumno y profesor >18
 
-- Crear constraint para fecha de ingreso , no pueda superar
-	a actual.
-
-Crear sp para tabla Alumno profe que  muestre
-	solo alumnos activos
-	que muestre su distrito
-	Muestre facultad en letras
 
 
 

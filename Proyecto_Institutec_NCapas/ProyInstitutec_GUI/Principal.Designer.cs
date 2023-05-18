@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIPrincipal));
             menuStrip1 = new MenuStrip();
             mantenimientoToolStripMenuItem = new ToolStripMenuItem();
-            consultasToolStripMenuItem = new ToolStripMenuItem();
             profesorToolStripMenuItem = new ToolStripMenuItem();
             estudianteToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
+            consultasToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -45,7 +45,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { mantenimientoToolStripMenuItem, consultasToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(826, 33);
+            menuStrip1.Size = new Size(826, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -53,45 +53,47 @@
             // 
             mantenimientoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { profesorToolStripMenuItem, estudianteToolStripMenuItem, salirToolStripMenuItem });
             mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            mantenimientoToolStripMenuItem.Size = new Size(148, 29);
+            mantenimientoToolStripMenuItem.Size = new Size(101, 20);
             mantenimientoToolStripMenuItem.Text = "Mantenimiento";
-            // 
-            // consultasToolStripMenuItem
-            // 
-            consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            consultasToolStripMenuItem.Size = new Size(105, 29);
-            consultasToolStripMenuItem.Text = "Consultas";
             // 
             // profesorToolStripMenuItem
             // 
+            profesorToolStripMenuItem.BackgroundImage = (Image)resources.GetObject("profesorToolStripMenuItem.BackgroundImage");
+            profesorToolStripMenuItem.BackgroundImageLayout = ImageLayout.Center;
             profesorToolStripMenuItem.Name = "profesorToolStripMenuItem";
-            profesorToolStripMenuItem.Size = new Size(270, 34);
+            profesorToolStripMenuItem.Size = new Size(129, 22);
             profesorToolStripMenuItem.Text = "Profesor";
             // 
             // estudianteToolStripMenuItem
             // 
             estudianteToolStripMenuItem.Name = "estudianteToolStripMenuItem";
-            estudianteToolStripMenuItem.Size = new Size(270, 34);
+            estudianteToolStripMenuItem.Size = new Size(129, 22);
             estudianteToolStripMenuItem.Text = "Estudiante";
             // 
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(270, 34);
+            salirToolStripMenuItem.Size = new Size(129, 22);
             salirToolStripMenuItem.Text = "Salir";
+            // 
+            // consultasToolStripMenuItem
+            // 
+            consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            consultasToolStripMenuItem.Size = new Size(71, 20);
+            consultasToolStripMenuItem.Text = "Consultas";
             // 
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(24, 24);
-            statusStrip1.Location = new Point(0, 746);
+            statusStrip1.Location = new Point(0, 752);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(826, 28);
+            statusStrip1.Size = new Size(826, 22);
             statusStrip1.TabIndex = 2;
             statusStrip1.Text = "statusStrip1";
             // 
             // MDIPrincipal
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
