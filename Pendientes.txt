@@ -1,11 +1,7 @@
-
-- Carreras deben coincidir con tabla alumno y matricula (revisar sp insertar matricula)
-validar campo carrera en la tabla matricula 
-1. Llenar Det_Mat
-2. Validar llenado de Det_mat (sea automatico) 
-3. Generar validaciones con login
-4. Auditoria de tb usuario con Triggers
-5. Mantenimiento a las tablas (profe,alum,curso,seccion)
+1. Generar validaciones con login C#
+2. Mantenimiento a las tablas (profe,alum,curso,seccion) C#
+3. Auditoria de tb usuario con Triggers SQL
+4. Crear Sp para registrar un alumno en un curso  SQL
 
 
 ***** por ver ********
