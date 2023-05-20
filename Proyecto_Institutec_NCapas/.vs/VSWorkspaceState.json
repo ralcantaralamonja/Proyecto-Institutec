@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProyInstitutec_GUI"
+    "\\ProyInstitutec_GUI",
+    "\\ProyInstitutec_GUI\\Properties",
+    "\\Proy_InstitutecBE",
+    "\\Proy_InstitutecBL",
+    "\\Proy_Institutec_ADO"
   ],
-  "SelectedNode": "\\ProyInstitutec_GUI\\ActualizarProfesor.cs",
+  "SelectedNode": "\\ProyInstitutec_GUI\\Profesor.cs",
   "PreviewInSolutionExplorer": false
 }
