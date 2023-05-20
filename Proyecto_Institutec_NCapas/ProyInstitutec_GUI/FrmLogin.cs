@@ -22,5 +22,10 @@ namespace ProyInstitutec_GUI
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
