@@ -15,7 +15,7 @@ namespace ProyInstitutec_GUI
     public partial class frmLogin : Form
     {
         Int16 intentos = 0;
-        Int16 tiempo = 30;
+        Int16 tiempo = 1060;
 
         UsuarioBE objUsuarioBE = new UsuarioBE();
         UsuarioBl objUsuarioBL = new UsuarioBl();
@@ -38,29 +38,41 @@ namespace ProyInstitutec_GUI
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txtLogin.Text.Trim() != String.Empty & txtPassword.Text.Trim() != String.Empty)
+
+            if (txtLogin.Text.Trim() != "" & txtPassword.Text.Trim() != "")
             {
+                // Codifique...
+                //obtenemos las credenciales del usuario logueado
                 objUsuarioBE = objUsuarioBL.ConsultarUsuario(txtLogin.Text.Trim());
 
-                if (objUsuarioBE.Login_Usuario == null) //SI NO EXISTE EL USUARIO
+                if (objUsuarioBE.Login_Usuario == null) // si el usuario no existe
                 {
-                    MessageBox.Show("Usuario no existe","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Usuario no existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     intentos += 1;
                     ValidaAccesos();
                 }
-                else if (objUsuarioBE.Login_Usuario == txtLogin.Text.Trim() && 
-                    objUsuarioBE.Pass_Usuario == txtPassword.Text.Trim())
+                else if (objUsuarioBE.Login_Usuario == txtLogin.Text.Trim() && objUsuarioBE.Pass_Usuario == txtPassword.Text.Trim()) //si existe usuario
                 {
-                    // Credenciales correctas
+                    //si las credenciales son correctas...
                     this.Hide();
                     timer1.Enabled = false;
-
-                    // Registramos las credenciales
                     clsCredenciales.Login_Usuario = objUsuarioBE.Login_Usuario;
                     clsCredenciales.Pass_Usuario = objUsuarioBE.Pass_Usuario;
-                    clsCredenciales.Niv_Usuario = objUsuarioBE.Niv_Usuario;          
+                    clsCredenciales.Niv_Usuario = objUsuarioBE.Niv_Usuario;
                     MDIPrincipal mdi = new MDIPrincipal();
-                        mdi.ShowDialog();
+                    mdi.ShowDialog();
+
+                }
+
+
+
+                else
+                {
+                    MessageBox.Show("Usuario o Password incorrectos",
+                    "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    intentos += 1;
+                    ValidaAccesos();
+
                 }
             }
             else
@@ -70,12 +82,13 @@ namespace ProyInstitutec_GUI
                 intentos += 1;
                 ValidaAccesos();
             }
+
         }
         private void ValidaAccesos()
         {
-            if (intentos == 3)
+            if (intentos == 20)
             {
-                MessageBox.Show("Lo sentimos,  sobrepaso el numero de intentos","Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lo sentimos,  sobrepaso el numero de intentos", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
 

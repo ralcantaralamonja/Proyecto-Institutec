@@ -72,7 +72,6 @@
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(150, 26);
             txtPassword.TabIndex = 3;
-          
             // 
             // btnAceptar
             // 
@@ -82,6 +81,7 @@
             btnAceptar.TabIndex = 4;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // btnCancelar
             // 
@@ -91,6 +91,7 @@
             btnCancelar.TabIndex = 5;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // timer1
             // 

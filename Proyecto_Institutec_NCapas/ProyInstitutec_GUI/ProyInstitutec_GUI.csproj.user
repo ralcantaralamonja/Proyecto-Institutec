@@ -7,7 +7,7 @@
     <Compile Update="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Principal.cs">
+    <Compile Update="MDIPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Profesor.cs">

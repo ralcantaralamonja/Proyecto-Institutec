@@ -37,7 +37,7 @@ namespace Proy_Institutec_ADO
                     objUsuarioBE.Login_Usuario = dtr["Login_Usuario"].ToString();
                     objUsuarioBE.Pass_Usuario = dtr["Pass_Usuario"].ToString();
                     objUsuarioBE.Niv_Usuario = Convert.ToInt16(dtr["Niv_Usuario"]);
-                    objUsuarioBE.Est_Usuario = Convert.ToInt16(dtr["Est_Usuario"]);
+                    objUsuarioBE.Est_Usuario = Convert.ToInt16(dtr["Est_usuario"]);
                     objUsuarioBE.Fec_Registro = Convert.ToDateTime(dtr["Fec_Registro"]);
                     objUsuarioBE.Usu_Registro = dtr["Usu_Registro"].ToString();
                 }
