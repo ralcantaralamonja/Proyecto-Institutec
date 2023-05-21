@@ -15,7 +15,7 @@ namespace ProyInstitutec_GUI
     public partial class frmLogin : Form
     {
         Int16 intentos = 0;
-        Int16 tiempo = 1060;
+        Int16 tiempo = 30;
 
         UsuarioBE objUsuarioBE = new UsuarioBE();
         UsuarioBl objUsuarioBL = new UsuarioBl();
@@ -86,7 +86,7 @@ namespace ProyInstitutec_GUI
         }
         private void ValidaAccesos()
         {
-            if (intentos == 20)
+            if (intentos == 3)
             {
                 MessageBox.Show("Lo sentimos,  sobrepaso el numero de intentos", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
