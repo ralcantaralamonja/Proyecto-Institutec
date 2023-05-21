@@ -27,7 +27,6 @@ C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_G
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\Proy_InstitutecBL.pdb
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\Proy_Institutec_ADO.pdb
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.csproj.AssemblyReference.cache
-C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.Form1.resources
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.Properties.Resources.resources
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.csproj.GenerateResource.cache
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.GeneratedMSBuildEditorConfig.editorconfig
@@ -42,7 +41,6 @@ C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_G
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ref\ProyInstitutec_GUI.dll
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.ActualizarProfesor.resources
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmLogin.resources
-C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.InsertarProfesor.resources
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.MDIPrincipal.resources
 C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.Profesor.resources
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\ProyInstitutec_GUI.exe
