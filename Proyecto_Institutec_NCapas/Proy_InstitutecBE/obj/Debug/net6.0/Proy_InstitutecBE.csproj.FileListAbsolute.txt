@@ -22,3 +22,11 @@ E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACI
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\refint\Proy_InstitutecBE.dll
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.pdb
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\ref\Proy_InstitutecBE.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.csproj.AssemblyReference.cache
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.GeneratedMSBuildEditorConfig.editorconfig
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.AssemblyInfoInputs.cache
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.AssemblyInfo.cs
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.csproj.CoreCompileInputs.cache
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\refint\Proy_InstitutecBE.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.pdb

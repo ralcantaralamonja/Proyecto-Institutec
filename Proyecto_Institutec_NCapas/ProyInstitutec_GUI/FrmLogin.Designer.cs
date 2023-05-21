@@ -1,6 +1,6 @@
 ﻿namespace ProyInstitutec_GUI
 {
-    partial class FrmLogin
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtLogin = new TextBox();
+            txtPassword = new TextBox();
             btnAceptar = new Button();
             btnCancelar = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // label1
@@ -56,19 +58,21 @@
             label2.TabIndex = 1;
             label2.Text = "Pasword:";
             // 
-            // textBox1
+            // txtLogin
             // 
-            textBox1.Location = new Point(170, 39);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 26);
-            textBox1.TabIndex = 2;
+            txtLogin.Location = new Point(170, 39);
+            txtLogin.Name = "txtLogin";
+            txtLogin.Size = new Size(150, 26);
+            txtLogin.TabIndex = 2;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(170, 80);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 26);
-            textBox2.TabIndex = 3;
+            txtPassword.Location = new Point(170, 80);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(150, 26);
+            txtPassword.TabIndex = 3;
+          
             // 
             // btnAceptar
             // 
@@ -88,15 +92,21 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // FrmLogin
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
+            // frmLogin
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(524, 191);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtLogin);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
@@ -106,7 +116,7 @@
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
-            Name = "FrmLogin";
+            Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ingrese su Login y Password";
             Load += FrmLogin_Load;
@@ -118,9 +128,10 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtLogin;
+        private TextBox txtPassword;
         private Button btnAceptar;
         private Button btnCancelar;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -16,5 +16,15 @@ namespace ProyInstitutec_GUI
         {
             InitializeComponent();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void MDIPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
