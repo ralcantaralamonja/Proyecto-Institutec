@@ -85,7 +85,7 @@ namespace Proy_Institutec_ADO
 
                 }
                 dtr.Close();
-                return objobjCarreraBE;
+                return objCarreraBE;
 
 
 
@@ -123,8 +123,8 @@ namespace Proy_Institutec_ADO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_InsertarCarrera";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@CodCar", objCarreraBE.CodCar);
-                cmd.Parameters.AddWithValue("@IdFacu", objCarreraBE.IdFac);
+                cmd.Parameters.AddWithValue("@CodCar", objCarreraBE.CodCard);
+                cmd.Parameters.AddWithValue("@IdFacu", objCarreraBE.IdFacu);
                 cmd.Parameters.AddWithValue("@vUsu_Registro", objCarreraBE.Usu_Registro);
                 
 
@@ -159,7 +159,7 @@ namespace Proy_Institutec_ADO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_ActualizarCarrera";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@vcod", objCarreraBE.CodCar); //que dato actualizare
+                cmd.Parameters.AddWithValue("@vcod", objCarreraBE.CodCard); //que dato actualizare
 
                 //---------------faltra corregir
             //    cmd.Parameters.AddWithValue("@vdes", objCarreraBE.Des_pro);

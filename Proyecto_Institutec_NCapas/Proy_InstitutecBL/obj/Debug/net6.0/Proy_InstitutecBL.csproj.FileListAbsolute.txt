@@ -40,3 +40,12 @@ D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_
 D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.dll
 D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\refint\Proy_InstitutecBL.dll
 D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.pdb
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBL.deps.json
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBL.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBL.pdb
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBE.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_Institutec_ADO.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBE.pdb
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_Institutec_ADO.pdb
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.csproj.CopyComplete
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\ref\Proy_InstitutecBL.dll

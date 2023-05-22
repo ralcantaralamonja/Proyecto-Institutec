@@ -34,7 +34,7 @@ namespace Proy_InstitutecBL
         }
         public Boolean EliminarCarrera(String strCodigo)
         {
-            return objCarreraADO..EliminarCarrera(strCodigo);
+            return objCarreraADO.EliminarCarrera(strCodigo);
         }
     }
 }
