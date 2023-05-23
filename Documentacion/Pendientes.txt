@@ -1,0 +1,35 @@
+1. Mantenimiento a las tablas (profesor, alumno,curso,carrera) C# 
+2. El nombre de usuario debe salir en la formulario MDIcontainer 
+3. En la parte superior tiempo de sesión 
+4. Acomodar formulario MDI
+5. Cuando uno de enter en el login debe validar
+
+***** por ver ********
+Auditoria de tb usuario con Triggers SQL
+Crear Sp para registrar un alumno en un curso  SQL
+(Al final un aula no puede estar con 2 profes en el mismo horario)
+(tener mapeo de aulas ocupadas)
+
+- un profe no puede dictar otra clase el mismo dia y horario 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

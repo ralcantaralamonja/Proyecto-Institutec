@@ -149,12 +149,13 @@
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 2, 3, 2);
-            MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             Name = "MDIPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Menú Principal";
             WindowState = FormWindowState.Maximized;
             Load += MDIPrincipal_Load;
+            Resize += MDIPrincipal_Resize;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             statusStrip1.ResumeLayout(false);

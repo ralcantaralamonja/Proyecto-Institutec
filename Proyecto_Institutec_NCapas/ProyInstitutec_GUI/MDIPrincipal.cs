@@ -44,5 +44,10 @@ namespace ProyInstitutec_GUI
         {
             Application.Exit();
         }
+
+        private void MDIPrincipal_Resize(object sender, EventArgs e)
+        {
+            this.Refresh();
+        }
     }
 }
