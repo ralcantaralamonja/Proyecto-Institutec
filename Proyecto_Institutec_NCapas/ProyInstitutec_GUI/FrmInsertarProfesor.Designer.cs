@@ -1,6 +1,6 @@
 ﻿namespace ProyInstitutec_GUI
 {
-    partial class ActualizarProfesor
+    partial class FrmInsertarProfesor
     {
         /// <summary>
         /// Required designer variable.

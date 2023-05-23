@@ -1,6 +1,6 @@
 ﻿namespace ProyInstitutec_GUI
 {
-    partial class Profesor
+    partial class FrmProfesor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProfesor));
             label1 = new Label();
             mskDNIProfesor = new TextBox();
             dtgProfesor = new DataGridView();
@@ -55,7 +56,7 @@
             label1.Location = new Point(64, 55);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(184, 20);
+            label1.Size = new Size(123, 13);
             label1.TabIndex = 0;
             label1.Text = "Ingrese Dni del Profesor:";
             label1.Click += label1_Click;
@@ -65,7 +66,7 @@
             mskDNIProfesor.Location = new Point(255, 52);
             mskDNIProfesor.Margin = new Padding(3, 2, 3, 2);
             mskDNIProfesor.Name = "mskDNIProfesor";
-            mskDNIProfesor.Size = new Size(181, 26);
+            mskDNIProfesor.Size = new Size(181, 20);
             mskDNIProfesor.TabIndex = 1;
             // 
             // dtgProfesor
@@ -78,7 +79,7 @@
             dtgProfesor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgProfesor.Columns.AddRange(new DataGridViewColumn[] { Codigo, Column1, Nombre, Column2, Apellidos, dataGridViewTextBoxColumn1, Column4, Column5, Column3, Column6 });
             dtgProfesor.Location = new Point(36, 94);
-            dtgProfesor.Margin = new Padding(4, 4, 4, 4);
+            dtgProfesor.Margin = new Padding(4);
             dtgProfesor.Name = "dtgProfesor";
             dtgProfesor.ReadOnly = true;
             dtgProfesor.RowHeadersVisible = false;
@@ -168,6 +169,7 @@
             btnInsertar.TabIndex = 5;
             btnInsertar.Text = "Insertar";
             btnInsertar.UseVisualStyleBackColor = true;
+            btnInsertar.Click += btnInsertar_Click;
             // 
             // btnActualizar
             // 
@@ -188,6 +190,7 @@
             btnSalir.TabIndex = 7;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // label2
             // 
@@ -195,7 +198,7 @@
             label2.Location = new Point(1131, 592);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(81, 20);
+            label2.Size = new Size(54, 13);
             label2.TabIndex = 3;
             label2.Text = "Registros:";
             label2.Click += label2_Click;
@@ -210,9 +213,9 @@
             LblRegistros.Size = new Size(80, 34);
             LblRegistros.TabIndex = 4;
             // 
-            // Profesor
+            // FrmProfesor
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1371, 709);
             Controls.Add(LblRegistros);
@@ -224,13 +227,13 @@
             Controls.Add(label1);
             Controls.Add(dtgProfesor);
             Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
-            MinimizeBox = false;
-            Name = "Profesor";
+            Name = "FrmProfesor";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Mantenimiento de Profesor";
+            Text = "Ver Profesor";
             ((System.ComponentModel.ISupportInitialize)dtgProfesor).EndInit();
             ResumeLayout(false);
             PerformLayout();

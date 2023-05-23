@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Proy_InstitutecBE;
+using Proy_InstitutecBL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,10 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ProyInstitutec_GUI
 {
     public partial class MDIPrincipal : Form
     {
+        private object objUsuarioBE;
+
         public MDIPrincipal()
         {
             InitializeComponent();
@@ -25,6 +30,19 @@ namespace ProyInstitutec_GUI
         private void MDIPrincipal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void profesorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmProfesor objProfesor = new FrmProfesor();
+            objProfesor.MdiParent = this;
+            objProfesor.Show();
+
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

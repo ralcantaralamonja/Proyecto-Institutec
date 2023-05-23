@@ -39,7 +39,7 @@ namespace ProyInstitutec_GUI
         private void btnAceptar_Click(object sender, EventArgs e)
         {
 
-            if (txtLogin.Text.Trim() != "" & txtPassword.Text.Trim() != "")
+            if (txtLogin.Text.Trim() != String.Empty & txtPassword.Text.Trim() != String.Empty)
             {
                 // Codifique...
                 //obtenemos las credenciales del usuario logueado
@@ -121,7 +121,7 @@ namespace ProyInstitutec_GUI
         {
             if (e.KeyCode == Keys.Enter)
             {
-                btnAceptar.PerformClick();
+
 
             }
         }
@@ -130,5 +130,9 @@ namespace ProyInstitutec_GUI
 
         }
 
+        private void frmLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }

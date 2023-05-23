@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace ProyInstitutec_GUI
 {
-    public partial class Profesor : Form
+    public partial class FrmInsertarProfesor : Form
     {
-        public Profesor()
+        public FrmInsertarProfesor()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
