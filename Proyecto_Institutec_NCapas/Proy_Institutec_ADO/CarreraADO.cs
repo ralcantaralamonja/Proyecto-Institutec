@@ -71,28 +71,14 @@ namespace Proy_Institutec_ADO
                 if(dtr.HasRows == true)
                 {
                     dtr.Read();
-                    //-------------------FALTA CORREGIR 
-                  //  objobjCarreraBE.Cod_pro = dtr["Cod_pro"].ToString();
-                  //  objobjCarreraBE.Des_pro = dtr["Des_pro"].ToString() ;
-                   // objobjCarreraBE.Pre_pro = Convert.ToSingle(dtr["Pre_pro"]);
-                  //  objobjCarreraBE.Stk_act = Convert.ToInt16(dtr["Stk_act"]);
-                  //  objobjCarreraBE.Stk_min = Convert.ToInt16(dtr["Stk_min"]);
-                  //  objobjCarreraBE.Id_UM = Convert.ToInt16(dtr["Id_UM"]);
-                  //  objobjCarreraBE.Id_Cat = Convert.ToInt16(dtr["Id_Cat"]);
-                 //   objobjCarreraBE.Importado = Convert.ToInt16(dtr["Importado"]);
-                  //  objobjCarreraBE.Est_pro = Convert.ToInt16(dtr["Est_pro"]);
-
+                 
+                  objCarreraBE.CodCard = dtr["CodCard"].ToString();
+                  objCarreraBE.IdFacu = dtr["IdFacu"].ToString();
+                  objCarreraBE.DesCar = dtr["DesCar"].ToString() ;
 
                 }
                 dtr.Close();
                 return objCarreraBE;
-
-
-
-
-
-
-
 
             }
             catch (SqlException ex)
@@ -123,12 +109,10 @@ namespace Proy_Institutec_ADO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_InsertarCarrera";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@CodCar", objCarreraBE.CodCard);
-                cmd.Parameters.AddWithValue("@IdFacu", objCarreraBE.IdFacu);
-                cmd.Parameters.AddWithValue("@vUsu_Registro", objCarreraBE.Usu_Registro);
+                cmd.Parameters.AddWithValue("@vIdFacu", objCarreraBE.IdFacu);
+                cmd.Parameters.AddWithValue("@vDesCar", objCarreraBE.DesCar);
+                cmd.Parameters.AddWithValue("@vUsu_Regi", objCarreraBE.Usu_Registro);
                 
-
-
                 cnx.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -160,21 +144,10 @@ namespace Proy_Institutec_ADO
                 cmd.CommandText = "usp_ActualizarCarrera";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@vcod", objCarreraBE.CodCard); //que dato actualizare
-
-                //---------------faltra corregir
-            //    cmd.Parameters.AddWithValue("@vdes", objCarreraBE.Des_pro);
-             //   cmd.Parameters.AddWithValue("@pre", objCarreraBE.Pre_pro);
-             //   cmd.Parameters.AddWithValue("@vstka", objCarreraBE.Stk_act);
-             //   cmd.Parameters.AddWithValue("@vstkm", objCarreraBE.Stk_min);
-             //   cmd.Parameters.AddWithValue("@vld_UM", objCarreraBE.Id_UM);
-             //   cmd.Parameters.AddWithValue("@vld_Cat", objCarreraBE.Id_Cat);
+                cmd.Parameters.AddWithValue("@vidfacu", objCarreraBE.IdFacu);
+                cmd.Parameters.AddWithValue("@vdescar", objCarreraBE.DesCar);
+                cmd.Parameters.AddWithValue("@vusu_ult_regis", objCarreraBE.Usu_Ult_Mod); // ultimo usuario que cambio
                 
-
-                cmd.Parameters.AddWithValue("@Usu_Ult_Mod", objCarreraBE.Usu_Ult_Mod); // ultimo usuario que cambio
-                
-
-
-
 
         cnx.Open();
                 cmd.ExecuteNonQuery();
@@ -209,7 +182,7 @@ namespace Proy_Institutec_ADO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_BorrarCarrera";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@vcod", strCodigo); //lo que boirrare
+                cmd.Parameters.AddWithValue("@vcod", strCodigo); //lo que borrare
 
                 cnx.Open() ;
                 cmd.ExecuteNonQuery();

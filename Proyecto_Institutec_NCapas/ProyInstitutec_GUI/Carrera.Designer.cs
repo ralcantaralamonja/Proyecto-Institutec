@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             label1 = new Label();
-            mskNomCarrera = new TextBox();
+            txtNomCarrera = new TextBox();
             dgtCarrera = new DataGridView();
             CodCar = new DataGridViewTextBoxColumn();
             DesCar = new DataGridViewTextBoxColumn();
@@ -53,13 +53,14 @@
             label1.TabIndex = 1;
             label1.Text = "Ingrese nombre de la Carrera:";
             // 
-            // mskNomCarrera
+            // txtNomCarrera
             // 
-            mskNomCarrera.Location = new Point(212, 22);
-            mskNomCarrera.Margin = new Padding(3, 2, 3, 2);
-            mskNomCarrera.Name = "mskNomCarrera";
-            mskNomCarrera.Size = new Size(309, 20);
-            mskNomCarrera.TabIndex = 2;
+            txtNomCarrera.Location = new Point(212, 22);
+            txtNomCarrera.Margin = new Padding(3, 2, 3, 2);
+            txtNomCarrera.Name = "txtNomCarrera";
+            txtNomCarrera.Size = new Size(309, 20);
+            txtNomCarrera.TabIndex = 2;
+            txtNomCarrera.TextChanged += txtNomCarrera_TextChanged;
             // 
             // dgtCarrera
             // 
@@ -82,8 +83,8 @@
             // CodCar
             // 
             CodCar.DataPropertyName = "CodCar";
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            CodCar.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            CodCar.DefaultCellStyle = dataGridViewCellStyle1;
             CodCar.HeaderText = "Codigo";
             CodCar.Name = "CodCar";
             CodCar.ReadOnly = true;
@@ -132,6 +133,7 @@
             btnSalir.TabIndex = 10;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnActualizar
             // 
@@ -142,6 +144,7 @@
             btnActualizar.TabIndex = 9;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // btnInsertar
             // 
@@ -152,6 +155,7 @@
             btnInsertar.TabIndex = 8;
             btnInsertar.Text = "Insertar";
             btnInsertar.UseVisualStyleBackColor = true;
+            btnInsertar.Click += btnInsertar_Click;
             // 
             // Carrera
             // 
@@ -164,7 +168,7 @@
             Controls.Add(lblRegistros);
             Controls.Add(label2);
             Controls.Add(dgtCarrera);
-            Controls.Add(mskNomCarrera);
+            Controls.Add(txtNomCarrera);
             Controls.Add(label1);
             Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             MaximizeBox = false;
@@ -182,7 +186,7 @@
         #endregion
 
         private Label label1;
-        private TextBox mskNomCarrera;
+        private TextBox txtNomCarrera;
         private DataGridView dgtCarrera;
         private Label label2;
         private Label lblRegistros;
