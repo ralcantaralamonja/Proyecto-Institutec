@@ -60,7 +60,7 @@ namespace ProyInstitutec_GUI
             try
             {
                 // instancia
-                InsertarCarrera objMan02 = new InsertarCarrera(); 
+                InsertarCarrera objMan02 = new InsertarCarrera();
                 objMan02.ShowDialog();
 
                 //refrescamos el datagrid - para que se vea apenas se haga el cambio

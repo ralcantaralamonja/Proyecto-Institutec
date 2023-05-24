@@ -73,10 +73,10 @@ namespace Proy_Institutec_ADO
                     dtr.Read();
                  
                   objCarreraBE.CodCard = dtr["CodCar"].ToString();
-                    objCarreraBE.IdFacu = dtr["DesFac"].ToString();
+                  objCarreraBE.DesFac = dtr["DesFac"].ToString();
                   objCarreraBE.DesCar = dtr["DesCar"].ToString() ;
+                    objCarreraBE.IdFacu = dtr["IdFacu"].ToString();
 
-    
 
                 }
                 dtr.Close();
@@ -147,6 +147,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@vcod", objCarreraBE.CodCard); //que dato actualizare
                 cmd.Parameters.AddWithValue("@vidfacu", objCarreraBE.IdFacu);
+                cmd.Parameters.AddWithValue("@vdesFac", objCarreraBE.DesFac);
                 cmd.Parameters.AddWithValue("@vdescar", objCarreraBE.DesCar);
                 cmd.Parameters.AddWithValue("@vusu_ult_regis", objCarreraBE.Usu_Ult_Mod); // ultimo usuario que cambio
                 

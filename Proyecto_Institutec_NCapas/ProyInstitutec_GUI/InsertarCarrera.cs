@@ -65,7 +65,7 @@ namespace ProyInstitutec_GUI
         {
             try
             {
-                //Codifique
+          
                 //validamos
                 if (txtDescripcion.Text.Trim() == String.Empty)
                 {
@@ -81,7 +81,7 @@ namespace ProyInstitutec_GUI
                 objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString(); //corregir si es el id.cat segun base
 
 
-                //formulario de logeo - momentaneamente usuario de registro
+                //formulario de logeo 
                 objCarreraBE.Usu_Registro = clsCredenciales.Login_Usuario;
 
                 //insertamos el registro
