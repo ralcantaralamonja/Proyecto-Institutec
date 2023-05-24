@@ -45,7 +45,7 @@
             label1.Location = new Point(67, 39);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(52, 20);
+            label1.Size = new Size(36, 13);
             label1.TabIndex = 0;
             label1.Text = "Login:";
             // 
@@ -54,7 +54,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(67, 83);
             label2.Name = "label2";
-            label2.Size = new Size(74, 20);
+            label2.Size = new Size(51, 13);
             label2.TabIndex = 1;
             label2.Text = "Pasword:";
             // 
@@ -62,7 +62,7 @@
             // 
             txtLogin.Location = new Point(170, 39);
             txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(150, 26);
+            txtLogin.Size = new Size(150, 20);
             txtLogin.TabIndex = 2;
             // 
             // txtPassword
@@ -70,7 +70,7 @@
             txtPassword.Location = new Point(170, 80);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(150, 26);
+            txtPassword.Size = new Size(150, 20);
             txtPassword.TabIndex = 3;
             // 
             // btnAceptar
@@ -101,7 +101,7 @@
             // 
             // frmLogin
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(524, 191);
             Controls.Add(btnCancelar);
@@ -120,7 +120,7 @@
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ingrese su Login y Password";
-            Load += FrmLogin_Load;
+            KeyDown += frmLogin_KeyDown;
             ResumeLayout(false);
             PerformLayout();
         }

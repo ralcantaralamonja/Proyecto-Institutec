@@ -119,16 +119,14 @@ namespace ProyInstitutec_GUI
 
         private void frmLogin_KeyDown(object sender, KeyEventArgs e)
         {
+            // Para al pulsar Enter acceder al MDI...
             if (e.KeyCode == Keys.Enter)
             {
                 btnAceptar.PerformClick();
 
             }
         }
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
 
-        }
 
     }
-}
+} 

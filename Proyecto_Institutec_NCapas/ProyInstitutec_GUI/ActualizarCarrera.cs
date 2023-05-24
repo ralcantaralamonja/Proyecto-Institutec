@@ -41,14 +41,16 @@ namespace ProyInstitutec_GUI
                 DataTable dt = objFacultadBL.ListarFacultad();
                 DataRow dr;
 
-                //FALTA REVISAR POR EL STORE PROCE DE FACULTAD
+                //FACULTAD
                 dr = dt.NewRow();
                 dr["IdFacu"] = 0;
                 dr["DesFac"] = "--Seleccione--";
                 dt.Rows.InsertAt(dr, 0);
                 cboFacultad.DataSource = dt;
-                cboFacultad.ValueMember = "IdFacu";
                 cboFacultad.DisplayMember = "DesFac";
+                cboFacultad.ValueMember = "IdFacu";
+                
+
 
                 // mostrar producto
                 objCarreraBE = objCarreraBL.ConsultarCarrera(this.Codigo);
@@ -58,8 +60,8 @@ namespace ProyInstitutec_GUI
                 txtDescripcion.Text = objCarreraBE.DesCar;
 
 
-                //combos Facultad FALTA
-//---------------------------------cboFacultad.SelectedValue = objCarreraBE.Id_Cat;
+                //combos Facultad 
+                cboFacultad.SelectedValue = objCarreraBE.IdFacu;
 
 
 
@@ -100,8 +102,8 @@ namespace ProyInstitutec_GUI
                 objCarreraBE.DesCar = txtDescripcion.Text;
 
 
-                //FALTA VER EL CODIGO
-//--------------------------objCarreraBE.Id_Cat = Convert.ToInt16(cboFacultad.SelectedValue);
+                objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString();
+
 
 
                 //formulario de logeo 

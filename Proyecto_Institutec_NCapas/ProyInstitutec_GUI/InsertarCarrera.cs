@@ -44,12 +44,9 @@ namespace ProyInstitutec_GUI
                 dr["DesFac"] = "--Seleccione--";
                 //primera fila que se visualice:
                 dt.Rows.InsertAt(dr, 0);
-
                 cboFacultad.DataSource = dt;
-                cboFacultad.ValueMember = "IdFacu";
                 cboFacultad.DisplayMember = "DesFac";
-
-
+                cboFacultad.ValueMember = "IdFacu";
 
 
             }
@@ -79,8 +76,9 @@ namespace ProyInstitutec_GUI
                     throw new Exception("Debe seleccionar una Facultad");
                 }
 
-
-               // objCarreraBE.IdFacu = Convert.ToInt16(cboFacultad.SelectedValue); //corregir si es el id.cat segun base
+                //cargamos la entidad de negocio
+                objCarreraBE.DesCar = txtDescripcion.Text;
+                objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString(); //corregir si es el id.cat segun base
 
 
                 //formulario de logeo - momentaneamente usuario de registro

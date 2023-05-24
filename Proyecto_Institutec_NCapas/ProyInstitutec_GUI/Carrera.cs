@@ -79,7 +79,7 @@ namespace ProyInstitutec_GUI
             try
             {
                 // Codifique
-                //MAN03  - falta
+                //MAN03  
                 ActualizarCarrera objMan03 = new ActualizarCarrera();
                 objMan03.Codigo = dgtCarrera.CurrentRow.Cells[0].Value.ToString();
                 objMan03.ShowDialog();
@@ -98,9 +98,6 @@ namespace ProyInstitutec_GUI
         {
             this.Close();
         }
-
-        // emilinar??????
-
 
     }
 }
