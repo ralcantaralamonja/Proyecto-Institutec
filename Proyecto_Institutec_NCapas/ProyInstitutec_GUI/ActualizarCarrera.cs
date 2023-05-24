@@ -43,14 +43,12 @@ namespace ProyInstitutec_GUI
 
                 //FALTA REVISAR POR EL STORE PROCE DE FACULTAD
                 dr = dt.NewRow();
-                dr["Id_cat"] = 0;
-                dr["Des_cat"] = "--Seleccione--";
+                dr["IdFacu"] = 0;
+                dr["DesFac"] = "--Seleccione--";
                 dt.Rows.InsertAt(dr, 0);
                 cboFacultad.DataSource = dt;
-                cboFacultad.ValueMember = "Id_cat";
-                cboFacultad.DisplayMember = "Des_cat";
-
-
+                cboFacultad.ValueMember = "IdFacu";
+                cboFacultad.DisplayMember = "DesFac";
 
                 // mostrar producto
                 objCarreraBE = objCarreraBL.ConsultarCarrera(this.Codigo);
@@ -106,7 +104,7 @@ namespace ProyInstitutec_GUI
 //--------------------------objCarreraBE.Id_Cat = Convert.ToInt16(cboFacultad.SelectedValue);
 
 
-                //formulario de logeo - momentaneamente usuario de registro
+                //formulario de logeo 
                 objCarreraBE.Usu_Ult_Mod = clsCredenciales.Login_Usuario;
 
                 //actualizamos el registro

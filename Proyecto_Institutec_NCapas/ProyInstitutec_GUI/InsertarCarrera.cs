@@ -38,17 +38,16 @@ namespace ProyInstitutec_GUI
 
 
                 //instancia de datarow , instancia de fila
-                //FALTA CORREGIR SEGUN FACULTAD
                 DataRow dr;
                 dr = dt.NewRow(); // fila vacia
-                dr["Id_Cat"] = 0;
-                dr["Des_cat"] = "--Seleccione--";
+                dr["IdFacu"] = 0;
+                dr["DesFac"] = "--Seleccione--";
                 //primera fila que se visualice:
                 dt.Rows.InsertAt(dr, 0);
 
                 cboFacultad.DataSource = dt;
-                cboFacultad.ValueMember = "Id_Cat";
-                cboFacultad.DisplayMember = "Des_cat";
+                cboFacultad.ValueMember = "IdFacu";
+                cboFacultad.DisplayMember = "DesFac";
 
 
 
@@ -81,7 +80,7 @@ namespace ProyInstitutec_GUI
                 }
 
 
-  //-------------objCarreraBE.Id_Cat = Convert.ToInt16(cboFacultad.SelectedValue); //corregir si es el id.cat segun base
+               // objCarreraBE.IdFacu = Convert.ToInt16(cboFacultad.SelectedValue); //corregir si es el id.cat segun base
 
 
                 //formulario de logeo - momentaneamente usuario de registro

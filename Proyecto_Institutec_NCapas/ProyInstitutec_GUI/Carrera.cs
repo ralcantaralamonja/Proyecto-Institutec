@@ -35,7 +35,8 @@ namespace ProyInstitutec_GUI
             // Codifique
             //Construimos el dtv
             dtv = new DataView(objCarreraBL.ListarCarrera());
-            dtv.RowFilter = "DesCar like '% " + strFiltro + "%";
+            dtv.RowFilter = "DesCar like '%" + strFiltro + "%'";
+
             dgtCarrera.DataSource = dtv;
             lblRegistros.Text = dgtCarrera.Rows.Count.ToString();
         }
