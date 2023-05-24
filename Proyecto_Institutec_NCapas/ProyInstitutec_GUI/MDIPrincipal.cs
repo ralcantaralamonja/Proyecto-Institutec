@@ -25,6 +25,18 @@ namespace ProyInstitutec_GUI
         private void MDIPrincipal_Load(object sender, EventArgs e)
         {
             this.lblUsuario.Text = clsCredenciales.Login_Usuario;
+
+            //para niveles de acceso: roles y opciones a ver ... parcial solo Mantenimiento
+            if (clsCredenciales.Niv_Usuario == 1)
+            {
+                consultasToolStripMenuItem.Visible = true;
+                mantenimientoToolStripMenuItem.Visible = false; //EJEMPLO ANTES DEL PARCIAL CON USUARIO JLEON
+                
+            }
+            else if (clsCredenciales.Niv_Usuario == 2) {
+                mantenimientoToolStripMenuItem.Visible = true;
+                consultasToolStripMenuItem.Visible = true;
+            }
         }
 
         private void carreraToolStripMenuItem_Click(object sender, EventArgs e)
