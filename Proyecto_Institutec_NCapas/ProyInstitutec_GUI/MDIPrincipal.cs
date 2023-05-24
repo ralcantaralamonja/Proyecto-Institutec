@@ -24,7 +24,7 @@ namespace ProyInstitutec_GUI
 
         private void MDIPrincipal_Load(object sender, EventArgs e)
         {
-
+            this.lblUsuario.Text = clsCredenciales.Login_Usuario;
         }
 
         private void carreraToolStripMenuItem_Click(object sender, EventArgs e)

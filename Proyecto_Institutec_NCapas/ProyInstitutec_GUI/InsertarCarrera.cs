@@ -78,7 +78,7 @@ namespace ProyInstitutec_GUI
 
                 //cargamos la entidad de negocio
                 objCarreraBE.DesCar = txtDescripcion.Text;
-                objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString(); //corregir si es el id.cat segun base
+                objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString(); 
 
 
                 //formulario de logeo 
