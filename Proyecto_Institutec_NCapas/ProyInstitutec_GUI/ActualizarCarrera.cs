@@ -52,7 +52,7 @@ namespace ProyInstitutec_GUI
                 
 
 
-                // mostrar producto
+                // mostrar carrera
                 objCarreraBE = objCarreraBL.ConsultarCarrera(this.Codigo);
 
                 //mostramos los datos
