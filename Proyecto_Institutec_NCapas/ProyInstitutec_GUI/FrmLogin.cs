@@ -25,17 +25,6 @@ namespace ProyInstitutec_GUI
             InitializeComponent();
         }
 
-        private void txtLogin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        bool autentic = false;
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
 
@@ -117,10 +106,6 @@ namespace ProyInstitutec_GUI
             Application.Exit();
         }
 
-        private void frmLogin_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
 
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
