@@ -32,16 +32,6 @@
             label1 = new Label();
             mskDNIProfesor = new TextBox();
             dtgProfesor = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
-            Column1 = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Apellidos = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            Column5 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column6 = new DataGridViewTextBoxColumn();
             btnInsertar = new Button();
             btnActualizar = new Button();
             btnSalir = new Button();
@@ -65,9 +55,11 @@
             // 
             mskDNIProfesor.Location = new Point(255, 52);
             mskDNIProfesor.Margin = new Padding(3, 2, 3, 2);
+            mskDNIProfesor.MaxLength = 8;
             mskDNIProfesor.Name = "mskDNIProfesor";
             mskDNIProfesor.Size = new Size(181, 20);
             mskDNIProfesor.TabIndex = 1;
+            mskDNIProfesor.TextChanged += mskDNIProfesor_TextChanged;
             // 
             // dtgProfesor
             // 
@@ -77,7 +69,6 @@
             dtgProfesor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgProfesor.BackgroundColor = SystemColors.AppWorkspace;
             dtgProfesor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgProfesor.Columns.AddRange(new DataGridViewColumn[] { Codigo, Column1, Nombre, Column2, Apellidos, dataGridViewTextBoxColumn1, Column4, Column5, Column3, Column6 });
             dtgProfesor.Location = new Point(36, 94);
             dtgProfesor.Margin = new Padding(4);
             dtgProfesor.Name = "dtgProfesor";
@@ -89,76 +80,6 @@
             dtgProfesor.Size = new Size(1279, 452);
             dtgProfesor.TabIndex = 2;
             dtgProfesor.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // Codigo
-            // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.MinimumWidth = 8;
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Nombre";
-            Column1.MinimumWidth = 8;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            // 
-            // Nombre
-            // 
-            Nombre.HeaderText = "Apellidos";
-            Nombre.MinimumWidth = 8;
-            Nombre.Name = "Nombre";
-            Nombre.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "DNI";
-            Column2.MinimumWidth = 8;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            // 
-            // Apellidos
-            // 
-            Apellidos.HeaderText = "Correo";
-            Apellidos.MinimumWidth = 8;
-            Apellidos.Name = "Apellidos";
-            Apellidos.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.HeaderText = "Telefono";
-            dataGridViewTextBoxColumn1.MinimumWidth = 8;
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Especialidad";
-            Column4.MinimumWidth = 8;
-            Column4.Name = "Column4";
-            Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            Column5.HeaderText = "Género";
-            Column5.MinimumWidth = 8;
-            Column5.Name = "Column5";
-            Column5.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Fecha de Ingreso";
-            Column3.MinimumWidth = 8;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            Column6.HeaderText = "Estado";
-            Column6.MinimumWidth = 8;
-            Column6.Name = "Column6";
-            Column6.ReadOnly = true;
             // 
             // btnInsertar
             // 
@@ -212,6 +133,7 @@
             LblRegistros.Name = "LblRegistros";
             LblRegistros.Size = new Size(80, 34);
             LblRegistros.TabIndex = 4;
+            LblRegistros.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // FrmProfesor
             // 
@@ -234,6 +156,7 @@
             Name = "FrmProfesor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ver Profesor";
+            Load += FrmProfesor_Load;
             ((System.ComponentModel.ISupportInitialize)dtgProfesor).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -244,16 +167,6 @@
         private Label label1;
         private TextBox mskDNIProfesor;
         private DataGridView dtgProfesor;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Nombre;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Apellidos;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column6;
         private Button btnInsertar;
         private Button btnActualizar;
         private Button btnSalir;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proy_InstitutecBL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Proy_InstitutecBL;
 namespace ProyInstitutec_GUI
 {
     public partial class FrmProfesor : Form
     {
+        ProfesoreBL objprofesorBL = new ProfesoreBL();
+        DataView dtv;
+
         public FrmProfesor()
         {
             InitializeComponent();
@@ -40,7 +44,25 @@ namespace ProyInstitutec_GUI
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Hide();    
+            this.Hide();
+        }
+
+        private void FrmProfesor_Load(object sender, EventArgs e)
+        {
+            CargarDatos("");
+        }
+        private void CargarDatos(String strFiltro)
+        {
+            dtv = new DataView(objprofesorBL.ListarProfesor());
+            dtv.RowFilter = "DNI like '%" + strFiltro + "%'";
+            dtgProfesor.DataSource = dtv;
+            LblRegistros.Text = dtgProfesor.Rows.Count.ToString();
+
+        }
+
+        private void mskDNIProfesor_TextChanged(object sender, EventArgs e)
+        {
+            CargarDatos(mskDNIProfesor.Text.Trim());
         }
     }
 }
