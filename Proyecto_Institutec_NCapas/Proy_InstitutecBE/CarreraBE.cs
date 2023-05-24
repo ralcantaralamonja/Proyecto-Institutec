@@ -10,6 +10,8 @@ namespace Proy_InstitutecBE
     {
         public String CodCard  { get; set; }
         public String IdFacu  { get; set; }
+
+        public String DesFac { get; set; }
         public String DesCar { get; set; }
         public DateTime Fec_Registro   { get; set; }
         public String Usu_Registro { get; set; }

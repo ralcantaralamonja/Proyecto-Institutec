@@ -73,7 +73,7 @@ namespace Proy_Institutec_ADO
                     dtr.Read();
                  
                   objCarreraBE.CodCard = dtr["CodCard"].ToString();
-                    objCarreraBE.IdFacu = dtr["IdFacu"].ToString();
+                    objCarreraBE.IdFacu = dtr["DesFac"].ToString();
                   objCarreraBE.DesCar = dtr["DesCar"].ToString() ;
 
     
