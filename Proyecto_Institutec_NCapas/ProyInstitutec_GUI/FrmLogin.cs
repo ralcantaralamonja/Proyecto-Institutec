@@ -119,14 +119,18 @@ namespace ProyInstitutec_GUI
 
         private void frmLogin_KeyDown(object sender, KeyEventArgs e)
         {
+
+        }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
             // Para al pulsar Enter acceder al MDI...
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyChar == 13)
             {
+
                 btnAceptar.PerformClick();
 
             }
         }
-
-
     }
-} 
+}

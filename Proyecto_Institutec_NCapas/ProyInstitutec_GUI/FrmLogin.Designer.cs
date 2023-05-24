@@ -72,6 +72,7 @@
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(150, 20);
             txtPassword.TabIndex = 3;
+            txtPassword.KeyPress += txtPassword_KeyPress;
             // 
             // btnAceptar
             // 
@@ -103,7 +104,7 @@
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(524, 191);
+            ClientSize = new Size(524, 156);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Controls.Add(txtPassword);
@@ -119,8 +120,7 @@
             MinimizeBox = false;
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Ingrese su Login y Password";
-            KeyDown += frmLogin_KeyDown;
+            Text = "Ingrese su Usuario y Password";
             ResumeLayout(false);
             PerformLayout();
         }
