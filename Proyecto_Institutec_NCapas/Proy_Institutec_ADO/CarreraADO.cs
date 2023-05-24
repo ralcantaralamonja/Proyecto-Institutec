@@ -35,9 +35,9 @@ namespace Proy_Institutec_ADO
 
                 SqlDataAdapter ada = new SqlDataAdapter(cmd);
                 DataSet dts = new DataSet();
-                ada.Fill(dts, "Carrera");
+                ada.Fill(dts, "Carreras");
 
-                return dts.Tables["Carrera"];
+                return dts.Tables["Carreras"];
 
 
             }

@@ -26,5 +26,12 @@ namespace ProyInstitutec_GUI
         {
 
         }
+
+        private void carreraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Carrera objFormCarrera = new Carrera();
+            objFormCarrera.MdiParent = this;
+            objFormCarrera.Show();
+        }
     }
 }
