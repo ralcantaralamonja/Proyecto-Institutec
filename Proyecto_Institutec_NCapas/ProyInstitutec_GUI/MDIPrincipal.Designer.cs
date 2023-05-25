@@ -38,7 +38,7 @@
             salirToolStripMenuItem1 = new ToolStripMenuItem();
             consultasToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
-            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            lbl1 = new ToolStripStatusLabel();
             lblUsuario = new ToolStripStatusLabel();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
@@ -95,6 +95,7 @@
             carreraToolStripMenuItem.Name = "carreraToolStripMenuItem";
             carreraToolStripMenuItem.Size = new Size(180, 22);
             carreraToolStripMenuItem.Text = "Carrera";
+            carreraToolStripMenuItem.Click += carreraToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem1
             // 
@@ -113,19 +114,29 @@
             // 
             // statusStrip1
             // 
-            statusStrip1.ImageScalingSize = new Size(24, 24);
-            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, lblUsuario });
+            statusStrip1.Items.AddRange(new ToolStripItem[] { lbl1, lblUsuario });
             statusStrip1.Location = new Point(0, 752);
             statusStrip1.Name = "statusStrip1";
+            statusStrip1.Padding = new Padding(1, 0, 16, 0);
             statusStrip1.Size = new Size(826, 22);
-            statusStrip1.TabIndex = 2;
+            statusStrip1.TabIndex = 4;
             statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // lbl1
             // 
-            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(50, 17);
-            toolStripStatusLabel1.Text = "Usuario:";
+            lbl1.BackColor = SystemColors.ActiveCaptionText;
+            lbl1.ForeColor = SystemColors.ButtonHighlight;
+            lbl1.Name = "lbl1";
+            lbl1.Size = new Size(50, 17);
+            lbl1.Text = "Usuario:";
+            // 
+            // lblUsuario
+            // 
+            lblUsuario.BackColor = SystemColors.ActiveCaption;
+            lblUsuario.ForeColor = SystemColors.ButtonHighlight;
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(19, 17);
+            lblUsuario.Text = "....";
             // 
             // lblUsuario
             // 
@@ -173,10 +184,10 @@
         private ToolStripMenuItem estudianteToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem consultasToolStripMenuItem;
-        private StatusStrip statusStrip1;
         private ToolStripMenuItem carreraToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem1;
-        private ToolStripStatusLabel toolStripStatusLabel1;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel lbl1;
         private ToolStripStatusLabel lblUsuario;
     }
 }
