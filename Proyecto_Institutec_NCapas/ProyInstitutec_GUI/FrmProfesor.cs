@@ -54,7 +54,7 @@ namespace ProyInstitutec_GUI
         private void CargarDatos(String strFiltro)
         {
             dtv = new DataView(objprofesorBL.ListarProfesor());
-            dtv.RowFilter = "DNI like '%" + strFiltro + "%'";
+            dtv.RowFilter = "DNI like '" + strFiltro + "%'";
             dtgProfesor.DataSource = dtv;
             LblRegistros.Text = dtgProfesor.Rows.Count.ToString();
 

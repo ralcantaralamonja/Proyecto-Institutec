@@ -43,7 +43,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(64, 55);
+            label1.Location = new Point(36, 38);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(123, 13);
@@ -53,7 +53,7 @@
             // 
             // mskDNIProfesor
             // 
-            mskDNIProfesor.Location = new Point(255, 52);
+            mskDNIProfesor.Location = new Point(176, 38);
             mskDNIProfesor.Margin = new Padding(3, 2, 3, 2);
             mskDNIProfesor.MaxLength = 8;
             mskDNIProfesor.Name = "mskDNIProfesor";
