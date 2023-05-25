@@ -120,14 +120,7 @@
             MinimizeBox = false;
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
-<<<<<<< HEAD
-            Text = "Ingrese su Login y Password";
-            Load += FrmLogin_Load;
-            KeyDown += frmLogin_KeyDown;
-            KeyPress += frmLogin_KeyPress;
-=======
             Text = "Ingrese su Usuario y Password";
->>>>>>> Carrera
             ResumeLayout(false);
             PerformLayout();
         }

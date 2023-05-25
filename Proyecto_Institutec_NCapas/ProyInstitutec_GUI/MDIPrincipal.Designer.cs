@@ -37,12 +37,8 @@
             carreraToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem1 = new ToolStripMenuItem();
             consultasToolStripMenuItem = new ToolStripMenuItem();
-            statusStrip1 = new StatusStrip();
-<<<<<<< HEAD
             toolStripStatusLabel1 = new ToolStripStatusLabel();
-=======
             lbl1 = new ToolStripStatusLabel();
->>>>>>> Carrera
             lblUsuario = new ToolStripStatusLabel();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();

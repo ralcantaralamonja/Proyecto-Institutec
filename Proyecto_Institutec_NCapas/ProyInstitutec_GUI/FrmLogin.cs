@@ -109,21 +109,6 @@ namespace ProyInstitutec_GUI
 
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
-<<<<<<< HEAD
-        
-        }
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmLogin_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 13) {
-                
-            }
-        }
-=======
             // Para al pulsar Enter acceder al MDI...
             if (e.KeyChar == 13)
             {
@@ -132,6 +117,5 @@ namespace ProyInstitutec_GUI
 
             }
         }
->>>>>>> Carrera
     }
 }
