@@ -39,7 +39,9 @@ namespace ProyInstitutec_GUI
         private void btnInsertar_Click(object sender, EventArgs e)
         {
             FrmInsertarProfesor objInsertarProfesor = new FrmInsertarProfesor();
-            objInsertarProfesor.Show();
+            objInsertarProfesor.ShowDialog();
+            //Refrescamos datagrid
+            CargarDatos(mskDNIProfesor.Text.Trim());
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
