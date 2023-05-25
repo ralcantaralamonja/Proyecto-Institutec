@@ -42,11 +42,12 @@ namespace ProyInstitutec_GUI
             objInsertarProfesor.ShowDialog();
             //Refrescamos datagrid
             CargarDatos(mskDNIProfesor.Text.Trim());
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void FrmProfesor_Load(object sender, EventArgs e)

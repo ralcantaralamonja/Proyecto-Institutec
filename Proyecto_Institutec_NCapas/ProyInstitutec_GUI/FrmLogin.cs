@@ -109,7 +109,10 @@ namespace ProyInstitutec_GUI
 
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
-        
+            if (e.KeyChar == 13)
+            {
+                btnAceptar.PerformClick();
+            }
         }
         private void FrmLogin_Load(object sender, EventArgs e)
         {

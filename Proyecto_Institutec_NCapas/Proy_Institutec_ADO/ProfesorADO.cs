@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace Proy_Institutec_ADO
 {
@@ -16,6 +17,7 @@ namespace Proy_Institutec_ADO
         SqlConnection cnx = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dtr;
+        ProfesorBE objProfesorBE = new ProfesorBE();
         public DataTable ListarProfesor()
         {
            
@@ -80,5 +82,46 @@ namespace Proy_Institutec_ADO
                     
                         }
         }
+
+        public Boolean InsertarProfesor (ProfesorBE objProfesorBE) {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_InsertarProfesor";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@Ndocum", objProfesorBE.Ndocum);
+                cmd.Parameters.AddWithValue("@NomPro", objProfesorBE.NomPro);
+                cmd.Parameters.AddWithValue("@ApePat", objProfesorBE.ApePat);
+                cmd.Parameters.AddWithValue("@ApeMat", objProfesorBE.ApeMat);
+                cmd.Parameters.AddWithValue("@Id_Ubi", objProfesorBE.Id_Ubi);
+                cmd.Parameters.AddWithValue("@Sexopr", objProfesorBE.Sexopr);
+                cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
+                cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
+                //
+                cnx.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+
+            }
+            catch (SqlException ex)
+            {
+
+                throw new Exception(ex.Message);
+                return false;
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+
+            }
+            
+        }
+
+        //crear actualizar cnx.ConnectionString = MiConexion.GetCnx();
     }
 }

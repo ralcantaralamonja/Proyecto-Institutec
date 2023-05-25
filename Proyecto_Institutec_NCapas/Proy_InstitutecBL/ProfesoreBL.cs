@@ -18,5 +18,10 @@ namespace Proy_InstitutecBL
         return objProfesorADO.ListarProfesor();
        
         }
+        public Boolean InsertarProfesor(ProfesorBE objProfesorBE) {
+            return objProfesorADO.InsertarProfesor(objProfesorBE);
+
+
+        }
     }
 }
