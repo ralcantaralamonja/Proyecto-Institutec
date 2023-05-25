@@ -38,7 +38,11 @@
             salirToolStripMenuItem1 = new ToolStripMenuItem();
             consultasToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
+<<<<<<< HEAD
             toolStripStatusLabel1 = new ToolStripStatusLabel();
+=======
+            lbl1 = new ToolStripStatusLabel();
+>>>>>>> Carrera
             lblUsuario = new ToolStripStatusLabel();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
@@ -67,7 +71,11 @@
             profesorToolStripMenuItem.BackgroundImage = (Image)resources.GetObject("profesorToolStripMenuItem.BackgroundImage");
             profesorToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
             profesorToolStripMenuItem.Name = "profesorToolStripMenuItem";
+<<<<<<< HEAD
             profesorToolStripMenuItem.Size = new Size(180, 22);
+=======
+            profesorToolStripMenuItem.Size = new Size(129, 22);
+>>>>>>> Carrera
             profesorToolStripMenuItem.Text = "Profesor";
             profesorToolStripMenuItem.Click += profesorToolStripMenuItem_Click;
             // 
@@ -76,7 +84,11 @@
             estudianteToolStripMenuItem.BackgroundImage = (Image)resources.GetObject("estudianteToolStripMenuItem.BackgroundImage");
             estudianteToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
             estudianteToolStripMenuItem.Name = "estudianteToolStripMenuItem";
+<<<<<<< HEAD
             estudianteToolStripMenuItem.Size = new Size(180, 22);
+=======
+            estudianteToolStripMenuItem.Size = new Size(129, 22);
+>>>>>>> Carrera
             estudianteToolStripMenuItem.Text = "Estudiante";
             // 
             // salirToolStripMenuItem
@@ -84,7 +96,11 @@
             salirToolStripMenuItem.BackgroundImage = (Image)resources.GetObject("salirToolStripMenuItem.BackgroundImage");
             salirToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+<<<<<<< HEAD
             salirToolStripMenuItem.Size = new Size(180, 22);
+=======
+            salirToolStripMenuItem.Size = new Size(129, 22);
+>>>>>>> Carrera
             salirToolStripMenuItem.Text = "Curso";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
@@ -93,15 +109,24 @@
             carreraToolStripMenuItem.BackgroundImage = (Image)resources.GetObject("carreraToolStripMenuItem.BackgroundImage");
             carreraToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
             carreraToolStripMenuItem.Name = "carreraToolStripMenuItem";
+<<<<<<< HEAD
             carreraToolStripMenuItem.Size = new Size(180, 22);
+=======
+            carreraToolStripMenuItem.Size = new Size(129, 22);
+>>>>>>> Carrera
             carreraToolStripMenuItem.Text = "Carrera";
+            carreraToolStripMenuItem.Click += carreraToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem1
             // 
             salirToolStripMenuItem1.BackgroundImage = (Image)resources.GetObject("salirToolStripMenuItem1.BackgroundImage");
             salirToolStripMenuItem1.BackgroundImageLayout = ImageLayout.None;
             salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+<<<<<<< HEAD
             salirToolStripMenuItem1.Size = new Size(180, 22);
+=======
+            salirToolStripMenuItem1.Size = new Size(129, 22);
+>>>>>>> Carrera
             salirToolStripMenuItem1.Text = "Salir";
             salirToolStripMenuItem1.Click += salirToolStripMenuItem1_Click;
             // 
@@ -113,19 +138,44 @@
             // 
             // statusStrip1
             // 
+<<<<<<< HEAD
             statusStrip1.ImageScalingSize = new Size(24, 24);
             statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1, lblUsuario });
             statusStrip1.Location = new Point(0, 752);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Size = new Size(826, 22);
             statusStrip1.TabIndex = 2;
+=======
+            statusStrip1.Items.AddRange(new ToolStripItem[] { lbl1, lblUsuario });
+            statusStrip1.Location = new Point(0, 752);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Padding = new Padding(1, 0, 16, 0);
+            statusStrip1.Size = new Size(826, 22);
+            statusStrip1.TabIndex = 4;
+>>>>>>> Carrera
             statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // lbl1
             // 
+<<<<<<< HEAD
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             toolStripStatusLabel1.Size = new Size(50, 17);
             toolStripStatusLabel1.Text = "Usuario:";
+=======
+            lbl1.BackColor = SystemColors.ActiveCaptionText;
+            lbl1.ForeColor = SystemColors.ButtonHighlight;
+            lbl1.Name = "lbl1";
+            lbl1.Size = new Size(50, 17);
+            lbl1.Text = "Usuario:";
+            // 
+            // lblUsuario
+            // 
+            lblUsuario.BackColor = SystemColors.ActiveCaption;
+            lblUsuario.ForeColor = SystemColors.ButtonHighlight;
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(19, 17);
+            lblUsuario.Text = "....";
+>>>>>>> Carrera
             // 
             // lblUsuario
             // 
@@ -173,10 +223,14 @@
         private ToolStripMenuItem estudianteToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem consultasToolStripMenuItem;
-        private StatusStrip statusStrip1;
         private ToolStripMenuItem carreraToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem1;
+<<<<<<< HEAD
         private ToolStripStatusLabel toolStripStatusLabel1;
+=======
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel lbl1;
+>>>>>>> Carrera
         private ToolStripStatusLabel lblUsuario;
     }
 }

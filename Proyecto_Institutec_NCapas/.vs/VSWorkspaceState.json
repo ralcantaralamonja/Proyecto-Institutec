@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProyInstitutec_GUI"
+    "\\ProyInstitutec_GUI",
+    "\\Proy_InstitutecBE",
+    "\\Proy_InstitutecBL",
+    "\\Proy_Institutec_ADO"
   ],
-  "SelectedNode": "\\ProyInstitutec_GUI\\FrmLogin.cs",
+  "SelectedNode": "\\Proyecto_Institutec_NCapas.sln",
   "PreviewInSolutionExplorer": false
 }

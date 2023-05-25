@@ -86,6 +86,7 @@ E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACI
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.pdb
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.genruntimeconfig.cache
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ref\ProyInstitutec_GUI.dll
+<<<<<<< HEAD
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmInsertarProfesor.resources
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmProfesor.resources
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\ProyInstitutec_GUI.exe
@@ -136,3 +137,53 @@ C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ref\ProyInstitutec_GUI.dll
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmCursoMan02.resources
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmCursoMan03.resources
+=======
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\ProyInstitutec_GUI.exe
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\ProyInstitutec_GUI.dll.config
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\ProyInstitutec_GUI.deps.json
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\ProyInstitutec_GUI.runtimeconfig.json
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\ProyInstitutec_GUI.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\ProyInstitutec_GUI.pdb
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\System.Security.Permissions.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\Proy_InstitutecBE.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\Proy_InstitutecBL.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\Proy_Institutec_ADO.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\Proy_InstitutecBE.pdb
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\Proy_InstitutecBL.pdb
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\bin\Debug\net6.0-windows\Proy_Institutec_ADO.pdb
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.csproj.AssemblyReference.cache
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.ActualizarProfesor.resources
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.frmLogin.resources
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.MDIPrincipal.resources
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.Profesor.resources
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.Properties.Resources.resources
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.csproj.GenerateResource.cache
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.AssemblyInfoInputs.cache
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.AssemblyInfo.cs
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.csproj.CoreCompileInputs.cache
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.csproj.CopyComplete
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\refint\ProyInstitutec_GUI.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.pdb
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.genruntimeconfig.cache
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ref\ProyInstitutec_GUI.dll
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.Carrera.resources
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.ActualizarCarrera.resources
+D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.InsertarCarrera.resources
+>>>>>>> Carrera

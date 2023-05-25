@@ -1,8 +1,21 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "jMubZJ5Rzd+mQASnTU13bG4LYf9xQkh2byustO/5nU33deE01VfFkpVffl8eKn9CRioO80/VlX+MdywVMasHxQ==",
   "success": true,
   "projectFilePath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
+=======
+  "dgSpecHash": "Zd7u6X0OPEnx+vEXfu2esn9CtWDdUFod9OWCyZVuylEojGl0D8I6ohDirCHbQXO/W0BNkDtFwt9ZJcOYR+BN6Q==",
+  "success": true,
+  "projectFilePath": "D:\\ambar\\isil 2023 01\\aplicaciones de desarrollo I\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
+>>>>>>> Carrera
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché D:\\ambar\\isil 2023 01\\aplicaciones de desarrollo I\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
