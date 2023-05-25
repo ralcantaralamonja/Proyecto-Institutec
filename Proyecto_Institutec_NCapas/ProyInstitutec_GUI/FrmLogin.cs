@@ -119,11 +119,7 @@ namespace ProyInstitutec_GUI
 
         private void frmLogin_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-
-
-            }
+        
         }
         private void FrmLogin_Load(object sender, EventArgs e)
         {
@@ -132,7 +128,9 @@ namespace ProyInstitutec_GUI
 
         private void frmLogin_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (e.KeyChar == 13) {
+                
+            }
         }
     }
 }
