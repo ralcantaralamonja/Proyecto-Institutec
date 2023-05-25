@@ -49,5 +49,12 @@ namespace ProyInstitutec_GUI
         {
             this.Refresh();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCursoMan01 objFrmCursoMan01 = new FrmCursoMan01();
+            objFrmCursoMan01.MdiParent = this;
+            objFrmCursoMan01.Show();
+        }
     }
 }
