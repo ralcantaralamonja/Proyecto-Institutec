@@ -25,16 +25,21 @@ namespace ProyInstitutec_GUI
         {
             try
             {
+                
                 objProfesorBE = objProfesorBL.ConsultarProfesor(this.Codigo);
+                DateTime ingreso = objProfesorBE.FecIng;
                 lblCodigo.Text = objProfesorBE.IdProf;
                 txtNompro.Text = objProfesorBE.NomPro;
                 txtApeMat.Text = objProfesorBE.ApeMat;
                 txtApePat.Text = objProfesorBE.ApePat;
                 txtTelf.Text = objProfesorBE.TelPro;
-                if (objProfesorBE.Estado == true) {
+                dtpFecIng.Value = ingreso;
+                if (objProfesorBE.Estado == true)
+                {
                     optActivo.Checked = true;
                 }
-                else{
+                else
+                {
                     optInactivo.Checked = true;
                 }
             }
@@ -62,13 +67,13 @@ namespace ProyInstitutec_GUI
                 {
                     throw new Exception("El apellido Marteno del profesor es un campo obligatorio");
                 }
-                 
+
                 if (txtTelf.Text.Trim() == String.Empty)
                 {
                     throw new Exception("Numero de telefono debe tener 9 digitos");
                 }
 
-                
+
                 Boolean activo;
                 if (optActivo.Checked == true)
                 {
@@ -78,14 +83,16 @@ namespace ProyInstitutec_GUI
                 {
                     activo = false;
                 }
-               // DateTime fechaIng = dtpFecIng.Value;
+                 DateTime fechaIng = dtpFecIng.Value;
                 //Pasamos valores alas propiedades de la instancia...
+               
                 objProfesorBE.IdProf = lblCodigo.Text.Trim();
                 objProfesorBE.NomPro = txtNompro.Text.Trim();
                 objProfesorBE.ApeMat = txtApeMat.Text.Trim();
                 objProfesorBE.ApePat = txtApePat.Text.Trim();
                 objProfesorBE.TelPro = txtTelf.Text.Trim();
                 objProfesorBE.Estado = activo;
+                objProfesorBE.FecIng = fechaIng;
                 //objprofesorBE.FecIng = fechaIng;
                 //objprofesorBE.Id_Ubi = cboDep.SelectedValue.ToString() + cboProvincia.SelectedValue.ToString() +
                 //    cboDistrito.SelectedValue.ToString();
@@ -103,6 +110,11 @@ namespace ProyInstitutec_GUI
 
                 throw;
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -75,5 +75,17 @@ namespace ProyInstitutec_GUI
             objfrmActulizarProfesor.ShowDialog();
             CargarDatos(mskDNIProfesor.Text.Trim());
         }
+
+        private void mskDNIProfesor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != 8)
+            {
+                if (char.IsDigit(e.KeyChar) == false) // Ni tampoco es digito
+                {
+
+                    e.Handled = true; //Se atrapa el caracter y no se imprime 
+                }
+            }
+        }
     }
 }
