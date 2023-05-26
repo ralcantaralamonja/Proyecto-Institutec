@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Windows.Forms;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -65,7 +66,7 @@ namespace ProyInstitutec_GUI
         {
             try
             {
-          
+
                 //validamos
                 if (txtDescripcion.Text.Trim() == String.Empty)
                 {
@@ -78,7 +79,18 @@ namespace ProyInstitutec_GUI
 
                 //cargamos la entidad de negocio
                 objCarreraBE.DesCar = txtDescripcion.Text;
-                objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString(); 
+                objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString();
+
+                //estado de carrera
+                if (chkActivo.Checked == true)
+                {
+                    objCarreraBE.Est_carr = 1;
+                }
+                else
+                {
+                    objCarreraBE.Est_carr = 0;
+                }
+
 
 
                 //formulario de logeo 

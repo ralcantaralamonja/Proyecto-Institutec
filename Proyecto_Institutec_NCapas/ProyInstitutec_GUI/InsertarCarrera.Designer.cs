@@ -34,6 +34,8 @@
             label5 = new Label();
             btnCancelar = new Button();
             btnGrabar = new Button();
+            chkActivo = new CheckBox();
+            label8 = new Label();
             SuspendLayout();
             // 
             // txtDescripcion
@@ -72,29 +74,51 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(401, 138);
+            btnCancelar.Location = new Point(401, 162);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(103, 30);
-            btnCancelar.TabIndex = 5;
+            btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // btnGrabar
             // 
-            btnGrabar.Location = new Point(263, 138);
+            btnGrabar.Location = new Point(263, 162);
             btnGrabar.Name = "btnGrabar";
             btnGrabar.Size = new Size(103, 30);
-            btnGrabar.TabIndex = 4;
+            btnGrabar.TabIndex = 6;
             btnGrabar.Text = "Grabar";
             btnGrabar.UseVisualStyleBackColor = true;
             btnGrabar.Click += btnGrabar_Click;
+            // 
+            // chkActivo
+            // 
+            chkActivo.AutoSize = true;
+            chkActivo.Location = new Point(115, 113);
+            chkActivo.Margin = new Padding(4, 3, 4, 3);
+            chkActivo.Name = "chkActivo";
+            chkActivo.Size = new Size(65, 19);
+            chkActivo.TabIndex = 5;
+            chkActivo.Text = "Activo?";
+            chkActivo.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            label8.Location = new Point(28, 114);
+            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(93, 21);
+            label8.TabIndex = 4;
+            label8.Text = "Estado:";
             // 
             // InsertarCarrera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(534, 198);
+            ClientSize = new Size(534, 214);
+            Controls.Add(chkActivo);
+            Controls.Add(label8);
             Controls.Add(btnCancelar);
             Controls.Add(btnGrabar);
             Controls.Add(cboFacultad);
@@ -120,5 +144,7 @@
         private Label label5;
         private Button btnCancelar;
         private Button btnGrabar;
+        private CheckBox chkActivo;
+        internal Label label8;
     }
 }

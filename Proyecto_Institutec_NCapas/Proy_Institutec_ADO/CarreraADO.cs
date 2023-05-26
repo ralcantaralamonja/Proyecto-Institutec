@@ -72,10 +72,11 @@ namespace Proy_Institutec_ADO
                 {
                     dtr.Read();
                  
-                  objCarreraBE.CodCard = dtr["CodCar"].ToString();
+                  objCarreraBE.CodCar = dtr["CodCar"].ToString();
                   objCarreraBE.DesFac = dtr["DesFac"].ToString();
                   objCarreraBE.DesCar = dtr["DesCar"].ToString() ;
                     objCarreraBE.IdFacu = dtr["IdFacu"].ToString();
+                    objCarreraBE.Est_carr = Convert.ToInt16(dtr["Est_carr_2"].ToString());
 
 
                 }
@@ -114,7 +115,8 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@vIdFacu", objCarreraBE.IdFacu);
                 cmd.Parameters.AddWithValue("@vDesCar", objCarreraBE.DesCar);
                 cmd.Parameters.AddWithValue("@vUsu_Regi", objCarreraBE.Usu_Registro);
-                
+                cmd.Parameters.AddWithValue("@vest_carr", objCarreraBE.Est_carr);
+
                 cnx.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -145,14 +147,15 @@ namespace Proy_Institutec_ADO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_ActualizarCarrera";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@vcod", objCarreraBE.CodCard); //que dato actualizare
-                cmd.Parameters.AddWithValue("@vidfacu", objCarreraBE.IdFacu);
-                cmd.Parameters.AddWithValue("@vdesFac", objCarreraBE.DesFac);
                 cmd.Parameters.AddWithValue("@vdescar", objCarreraBE.DesCar);
                 cmd.Parameters.AddWithValue("@vusu_ult_regis", objCarreraBE.Usu_Ult_Mod); // ultimo usuario que cambio
-                
+                cmd.Parameters.AddWithValue("@vest_carr", objCarreraBE.Est_carr);
+                cmd.Parameters.AddWithValue("@vidfacu", objCarreraBE.IdFacu);
+                cmd.Parameters.AddWithValue("@vdesFac", objCarreraBE.DesFac);
 
-        cnx.Open();
+                cmd.Parameters.AddWithValue("@vcod", objCarreraBE.CodCar); //que dato actualizare
+
+                cnx.Open();
                 cmd.ExecuteNonQuery();
                 return true;
             }
