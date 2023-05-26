@@ -108,10 +108,11 @@ namespace ProyInstitutec_GUI
                 {
                     activo = true;
                 }
-                else {
+                else
+                {
                     activo = false;
                 }
-
+                DateTime fechaIng = dtpFecIng.Value; 
                 //Pasamos valores alas propiedades de la instancia...
                 objprofesorBE.NomPro = txtNomPro.Text.Trim();
                 objprofesorBE.ApeMat = txtApeMat.Text.Trim();
@@ -120,6 +121,7 @@ namespace ProyInstitutec_GUI
                 objprofesorBE.TelPro = txtTelf.Text.Trim();
                 objprofesorBE.Sexopr = Genero;
                 objprofesorBE.Estado = activo;
+                objprofesorBE.FecIng = fechaIng;
                 objprofesorBE.Id_Ubi = cboDep.SelectedValue.ToString() + cboProvincia.SelectedValue.ToString() +
                     cboDistrito.SelectedValue.ToString();
                 if (objprofesoreBL.InsertarProfesor(objprofesorBE) == true)

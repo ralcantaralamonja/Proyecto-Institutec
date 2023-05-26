@@ -46,7 +46,7 @@ namespace Proy_Institutec_ADO
 
             }
         }
-        public ProfesorBE ConsultarProfesor(String strDni) {
+        public ProfesorBE ConsultarProfesor(String strid) {
             try
             {
                 cnx.ConnectionString = MiConexion.GetCnx();
@@ -55,7 +55,7 @@ namespace Proy_Institutec_ADO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_ListarProfesor";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@dni", strDni);
+                cmd.Parameters.AddWithValue("@id", strid);
                 cnx.Open();
                 dtr=cmd.ExecuteReader();
                 if (dtr.HasRows == true) { 
@@ -99,6 +99,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@Sexopr", objProfesorBE.Sexopr);
                 cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
                 cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
+                cmd.Parameters.AddWithValue("@FecIng", objProfesorBE.FecIng);
                 //
                 cnx.Open();
                 cmd.ExecuteNonQuery();

@@ -52,6 +52,7 @@
             optF = new RadioButton();
             btnIngresar = new Button();
             btnCancelar = new Button();
+            dtpFecIng = new DateTimePicker();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -139,6 +140,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(dtpFecIng);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(txtApeMat);
@@ -299,6 +301,14 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
+            // dtpFecIng
+            // 
+            dtpFecIng.Format = DateTimePickerFormat.Short;
+            dtpFecIng.Location = new Point(114, 405);
+            dtpFecIng.Name = "dtpFecIng";
+            dtpFecIng.Size = new Size(136, 23);
+            dtpFecIng.TabIndex = 17;
+            // 
             // FrmInsertarProfesor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -345,5 +355,6 @@
         private Label label7;
         private Label label6;
         private TextBox txtApeMat;
+        private DateTimePicker dtpFecIng;
     }
 }
