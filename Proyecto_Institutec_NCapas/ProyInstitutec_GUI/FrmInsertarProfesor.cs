@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proy_Institutec_ADO;
 using Proy_InstitutecBE;
+using Proy_InstitutecBl;
 using Proy_InstitutecBL;
 namespace ProyInstitutec_GUI
 {

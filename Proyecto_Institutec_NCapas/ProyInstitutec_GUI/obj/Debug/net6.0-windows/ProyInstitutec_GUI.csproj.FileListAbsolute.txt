@@ -29,6 +29,7 @@ C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.csproj.AssemblyReference.cache
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.ActualizarCarrera.resources
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.Carrera.resources
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmActualizarProfesor.resources
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmCursoMan01.resources
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmCursoMan02.resources
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmCursoMan03.resources
@@ -49,4 +50,3 @@ C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.pdb
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.genruntimeconfig.cache
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ref\ProyInstitutec_GUI.dll
-C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmActualizarProfesor.resources
