@@ -58,9 +58,10 @@
             // 
             // cboCarrera
             // 
+            cboCarrera.BackColor = SystemColors.ScrollBar;
             cboCarrera.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cboCarrera.FormattingEnabled = true;
-            cboCarrera.Location = new Point(23, 171);
+            cboCarrera.Location = new Point(23, 179);
             cboCarrera.Name = "cboCarrera";
             cboCarrera.Size = new Size(397, 29);
             cboCarrera.TabIndex = 4;
@@ -79,9 +80,9 @@
             chkActivo.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             chkActivo.Location = new Point(23, 102);
             chkActivo.Name = "chkActivo";
-            chkActivo.Size = new Size(82, 25);
+            chkActivo.Size = new Size(93, 25);
             chkActivo.TabIndex = 2;
-            chkActivo.Text = "Activo";
+            chkActivo.Text = "ACTIVO";
             chkActivo.UseVisualStyleBackColor = true;
             chkActivo.CheckedChanged += chkActivo_CheckedChanged;
             // 
@@ -123,7 +124,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(455, 291);
+            ClientSize = new Size(454, 311);
             Controls.Add(label3);
             Controls.Add(btnCancelar);
             Controls.Add(btnGrabar);

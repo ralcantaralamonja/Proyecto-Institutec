@@ -59,7 +59,7 @@
             lblRegistros.BackColor = SystemColors.ButtonHighlight;
             lblRegistros.BorderStyle = BorderStyle.FixedSingle;
             lblRegistros.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblRegistros.Location = new Point(1243, 569);
+            lblRegistros.Location = new Point(1086, 564);
             lblRegistros.Name = "lblRegistros";
             lblRegistros.Size = new Size(84, 30);
             lblRegistros.TabIndex = 4;
@@ -69,7 +69,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(1137, 574);
+            label2.Location = new Point(980, 564);
             label2.Name = "label2";
             label2.Size = new Size(100, 21);
             label2.TabIndex = 3;
@@ -91,7 +91,7 @@
             btnCerrar.BackColor = SystemColors.ControlLight;
             btnCerrar.FlatStyle = FlatStyle.Flat;
             btnCerrar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCerrar.Location = new Point(1196, 615);
+            btnCerrar.Location = new Point(1045, 609);
             btnCerrar.Name = "btnCerrar";
             btnCerrar.Size = new Size(125, 40);
             btnCerrar.TabIndex = 7;
@@ -105,7 +105,7 @@
             btnActualizar.BackColor = SystemColors.ControlLight;
             btnActualizar.FlatStyle = FlatStyle.Flat;
             btnActualizar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnActualizar.Location = new Point(1010, 615);
+            btnActualizar.Location = new Point(846, 609);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(125, 40);
             btnActualizar.TabIndex = 6;
@@ -120,7 +120,7 @@
             btnInsertar.FlatStyle = FlatStyle.Flat;
             btnInsertar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnInsertar.ForeColor = SystemColors.ControlText;
-            btnInsertar.Location = new Point(874, 615);
+            btnInsertar.Location = new Point(715, 609);
             btnInsertar.Name = "btnInsertar";
             btnInsertar.Size = new Size(125, 40);
             btnInsertar.TabIndex = 5;
@@ -179,7 +179,7 @@
             dtgDatos.RowsDefaultCellStyle = dataGridViewCellStyle10;
             dtgDatos.RowTemplate.Height = 25;
             dtgDatos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtgDatos.Size = new Size(1314, 503);
+            dtgDatos.Size = new Size(1157, 503);
             dtgDatos.TabIndex = 2;
             // 
             // FrmCursoMan01
@@ -187,7 +187,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 242, 242);
-            ClientSize = new Size(1339, 667);
+            ClientSize = new Size(1184, 661);
             Controls.Add(txtFiltro);
             Controls.Add(lblRegistros);
             Controls.Add(label2);
@@ -201,7 +201,7 @@
             MinimizeBox = false;
             Name = "FrmCursoMan01";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Mantenimiento Curso";
+            Text = "MANTENIMIENTO CURSO";
             Load += FrmCursoMan01_Load;
             ((System.ComponentModel.ISupportInitialize)dtgDatos).EndInit();
             ResumeLayout(false);

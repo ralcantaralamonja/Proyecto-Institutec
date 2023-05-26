@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             label1 = new Label();
             txtNomCarrera = new TextBox();
             dgtCarrera = new DataGridView();
@@ -47,19 +51,21 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(30, 25);
+            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(12, 15);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(146, 13);
+            label1.Size = new Size(221, 21);
             label1.TabIndex = 0;
-            label1.Text = "Ingrese nombre de la Carrera:";
+            label1.Text = "FILTRO NOMBRE CARRERA:";
             // 
             // txtNomCarrera
             // 
-            txtNomCarrera.Location = new Point(212, 22);
+            txtNomCarrera.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNomCarrera.Location = new Point(240, 12);
             txtNomCarrera.Margin = new Padding(3, 2, 3, 2);
             txtNomCarrera.Name = "txtNomCarrera";
-            txtNomCarrera.Size = new Size(309, 20);
+            txtNomCarrera.Size = new Size(309, 27);
             txtNomCarrera.TabIndex = 1;
             txtNomCarrera.TextChanged += txtNomCarrera_TextChanged;
             // 
@@ -69,23 +75,54 @@
             dgtCarrera.AllowUserToDeleteRows = false;
             dgtCarrera.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgtCarrera.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgtCarrera.BackgroundColor = SystemColors.AppWorkspace;
+            dgtCarrera.BackgroundColor = SystemColors.ScrollBar;
+            dgtCarrera.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(88, 183, 213);
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.Window;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgtCarrera.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgtCarrera.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgtCarrera.Columns.AddRange(new DataGridViewColumn[] { CodCar, DesCar, DesFac, Est_carr });
-            dgtCarrera.Location = new Point(23, 77);
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Window;
+            dataGridViewCellStyle3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(88, 183, 213);
+            dataGridViewCellStyle3.SelectionForeColor = Color.White;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgtCarrera.DefaultCellStyle = dataGridViewCellStyle3;
+            dgtCarrera.GridColor = Color.FromArgb(88, 183, 213);
+            dgtCarrera.Location = new Point(13, 54);
             dgtCarrera.Name = "dgtCarrera";
             dgtCarrera.ReadOnly = true;
+            dgtCarrera.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(88, 183, 213);
+            dataGridViewCellStyle4.SelectionForeColor = Color.White;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgtCarrera.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgtCarrera.RowHeadersVisible = false;
+            dgtCarrera.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle5.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(88, 183, 213);
+            dataGridViewCellStyle5.SelectionForeColor = SystemColors.Window;
+            dgtCarrera.RowsDefaultCellStyle = dataGridViewCellStyle5;
             dgtCarrera.RowTemplate.Height = 25;
             dgtCarrera.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgtCarrera.Size = new Size(692, 217);
+            dgtCarrera.Size = new Size(1157, 503);
             dgtCarrera.TabIndex = 2;
             // 
             // CodCar
             // 
             CodCar.DataPropertyName = "CodCar";
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            CodCar.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            CodCar.DefaultCellStyle = dataGridViewCellStyle2;
             CodCar.HeaderText = "Codigo";
             CodCar.Name = "CodCar";
             CodCar.ReadOnly = true;
@@ -114,18 +151,20 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(560, 368);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(980, 564);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(54, 13);
+            label2.Size = new Size(105, 20);
             label2.TabIndex = 3;
-            label2.Text = "Registros:";
+            label2.Text = "REGISTROS";
             // 
             // lblRegistros
             // 
             lblRegistros.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            lblRegistros.BackColor = SystemColors.Window;
             lblRegistros.BorderStyle = BorderStyle.FixedSingle;
-            lblRegistros.Location = new Point(635, 358);
+            lblRegistros.Location = new Point(1086, 564);
             lblRegistros.Margin = new Padding(4, 0, 4, 0);
             lblRegistros.Name = "lblRegistros";
             lblRegistros.Size = new Size(80, 34);
@@ -134,42 +173,51 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(605, 420);
+            btnSalir.BackColor = SystemColors.ControlLight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSalir.Location = new Point(1045, 609);
             btnSalir.Margin = new Padding(4, 5, 4, 5);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(112, 35);
+            btnSalir.Size = new Size(125, 40);
             btnSalir.TabIndex = 7;
-            btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Text = "SALIR";
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(444, 420);
+            btnActualizar.BackColor = SystemColors.ControlLight;
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnActualizar.Location = new Point(846, 609);
             btnActualizar.Margin = new Padding(4, 5, 4, 5);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(112, 35);
+            btnActualizar.Size = new Size(125, 40);
             btnActualizar.TabIndex = 6;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Text = "ACTUALZAR";
+            btnActualizar.UseVisualStyleBackColor = false;
             btnActualizar.Click += btnActualizar_Click;
             // 
             // btnInsertar
             // 
-            btnInsertar.Location = new Point(283, 420);
+            btnInsertar.BackColor = SystemColors.ControlLight;
+            btnInsertar.FlatStyle = FlatStyle.Flat;
+            btnInsertar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInsertar.Location = new Point(715, 609);
             btnInsertar.Margin = new Padding(4, 5, 4, 5);
             btnInsertar.Name = "btnInsertar";
-            btnInsertar.Size = new Size(112, 35);
+            btnInsertar.Size = new Size(125, 40);
             btnInsertar.TabIndex = 5;
-            btnInsertar.Text = "Insertar";
-            btnInsertar.UseVisualStyleBackColor = true;
+            btnInsertar.Text = "INSERTAR";
+            btnInsertar.UseVisualStyleBackColor = false;
             btnInsertar.Click += btnInsertar_Click;
             // 
             // Carrera
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(750, 480);
+            ClientSize = new Size(1184, 661);
             Controls.Add(btnSalir);
             Controls.Add(btnActualizar);
             Controls.Add(btnInsertar);
@@ -185,7 +233,7 @@
             MinimizeBox = false;
             Name = "Carrera";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Mantenimiento de Carrera";
+            Text = "MANTENIMIENTO CARRERA";
             Load += Carrera_Load;
             ((System.ComponentModel.ISupportInitialize)dgtCarrera).EndInit();
             ResumeLayout(false);

@@ -83,14 +83,15 @@
             chkActivo.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             chkActivo.Location = new Point(334, 27);
             chkActivo.Name = "chkActivo";
-            chkActivo.Size = new Size(82, 25);
+            chkActivo.Size = new Size(93, 25);
             chkActivo.TabIndex = 2;
-            chkActivo.Text = "Activo";
+            chkActivo.Text = "ACTIVO";
             chkActivo.UseVisualStyleBackColor = true;
             chkActivo.CheckedChanged += chkActivo_CheckedChanged;
             // 
             // cboCarrera
             // 
+            cboCarrera.BackColor = SystemColors.ScrollBar;
             cboCarrera.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cboCarrera.FormattingEnabled = true;
             cboCarrera.Location = new Point(21, 175);
@@ -151,7 +152,7 @@
             MinimizeBox = false;
             Name = "FrmCursoMan03";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FrmCursoMan03";
+            Text = "ARTUALIZAR CURSO";
             Load += FrmCursoMan03_Load;
             ResumeLayout(false);
             PerformLayout();
