@@ -23,5 +23,14 @@ namespace Proy_InstitutecBL
 
 
         }
+        public ProfesorBE ConsultarProfesor(String strId)
+        {
+            return objProfesorADO.ConsultarProfesor(strId);
+        }
+        public Boolean ActualizarProfesor(ProfesorBE objProfesorBE)
+        {
+            return objProfesorADO.ActualizarProfesor(objProfesorBE);
+        }
+
     }
 }

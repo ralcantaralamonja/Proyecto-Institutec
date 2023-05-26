@@ -100,3 +100,4 @@ E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACI
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.pdb
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.genruntimeconfig.cache
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ref\ProyInstitutec_GUI.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\ProyInstitutec_GUI\obj\Debug\net6.0-windows\ProyInstitutec_GUI.FrmActualizarProfesor.resources

@@ -67,5 +67,13 @@ namespace ProyInstitutec_GUI
         {
             CargarDatos(mskDNIProfesor.Text.Trim());
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            FrmActualizarProfesor objfrmActulizarProfesor = new FrmActualizarProfesor();
+            objfrmActulizarProfesor.Codigo = dtgProfesor.CurrentRow.Cells[0].Value.ToString();
+            objfrmActulizarProfesor.ShowDialog();
+            CargarDatos(mskDNIProfesor.Text.Trim());
+        }
     }
 }

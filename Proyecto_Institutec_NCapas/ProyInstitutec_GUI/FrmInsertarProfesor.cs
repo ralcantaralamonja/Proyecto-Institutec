@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -112,7 +113,7 @@ namespace ProyInstitutec_GUI
                 {
                     activo = false;
                 }
-                DateTime fechaIng = dtpFecIng.Value; 
+                DateTime fechaIng = dtpFecIng.Value;
                 //Pasamos valores alas propiedades de la instancia...
                 objprofesorBE.NomPro = txtNomPro.Text.Trim();
                 objprofesorBE.ApeMat = txtApeMat.Text.Trim();
@@ -152,6 +153,11 @@ namespace ProyInstitutec_GUI
                     e.Handled = true; //Se atrapa el caracter y no se imprime 
                 }
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

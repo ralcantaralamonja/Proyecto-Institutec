@@ -60,11 +60,13 @@ namespace Proy_Institutec_ADO
                 dtr=cmd.ExecuteReader();
                 if (dtr.HasRows == true) { 
                 dtr.Read();
-                objProfesorBE.IdProf =dtr["id"].ToString();
-                objProfesorBE.NomPro = dtr["Profesor"].ToString();
+                objProfesorBE.IdProf =dtr["IdProf"].ToString();
+                objProfesorBE.NomPro = dtr["NomPro"].ToString();
+                objProfesorBE.ApePat = dtr["ApePat"].ToString();
+                objProfesorBE.ApeMat = dtr["ApeMat"].ToString();
                 objProfesorBE.Estado = Convert.ToBoolean(dtr["Estado"]);
-                objProfesorBE.Sexopr = dtr["Genero"].ToString();
-                objProfesorBE.Ndocum =dtr["DNI"].ToString();
+                objProfesorBE.TelPro = dtr["TelPro"].ToString();
+                
                 
                 }
                 dtr.Close();
@@ -122,7 +124,36 @@ namespace Proy_Institutec_ADO
             }
             
         }
+        public Boolean ActualizarProfesor(ProfesorBE objProfesorBE)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ActulizarProfesor";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@IdProf", objProfesorBE.IdProf);
+                cmd.Parameters.AddWithValue("@NomPro", objProfesorBE.NomPro);
+                cmd.Parameters.AddWithValue("@ApePat", objProfesorBE.ApePat);
+                cmd.Parameters.AddWithValue("@ApeMat", objProfesorBE.ApeMat);
+                cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
+                cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
+                
+                
+            
 
+
+                cnx.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
         //crear actualizar cnx.ConnectionString = MiConexion.GetCnx();
     }
 }

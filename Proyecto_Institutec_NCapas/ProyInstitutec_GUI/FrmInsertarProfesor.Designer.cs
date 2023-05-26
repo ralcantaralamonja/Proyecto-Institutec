@@ -38,6 +38,7 @@
             txtTelf = new TextBox();
             cboDep = new ComboBox();
             groupBox1 = new GroupBox();
+            dtpFecIng = new DateTimePicker();
             label2 = new Label();
             label4 = new Label();
             txtApeMat = new TextBox();
@@ -52,7 +53,6 @@
             optF = new RadioButton();
             btnIngresar = new Button();
             btnCancelar = new Button();
-            dtpFecIng = new DateTimePicker();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -167,6 +167,14 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos Personales";
             // 
+            // dtpFecIng
+            // 
+            dtpFecIng.Format = DateTimePickerFormat.Short;
+            dtpFecIng.Location = new Point(114, 405);
+            dtpFecIng.Name = "dtpFecIng";
+            dtpFecIng.Size = new Size(136, 23);
+            dtpFecIng.TabIndex = 17;
+            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -255,7 +263,7 @@
             groupBox2.Controls.Add(optF);
             groupBox2.Location = new Point(296, 90);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(139, 74);
+            groupBox2.Size = new Size(176, 96);
             groupBox2.TabIndex = 11;
             groupBox2.TabStop = false;
             groupBox2.Text = "Genero";
@@ -264,22 +272,22 @@
             // 
             optM.AutoSize = true;
             optM.Checked = true;
-            optM.Location = new Point(26, 47);
+            optM.Location = new Point(6, 42);
             optM.Name = "optM";
-            optM.Size = new Size(36, 19);
+            optM.Size = new Size(80, 19);
             optM.TabIndex = 9;
             optM.TabStop = true;
-            optM.Text = "M";
+            optM.Text = "Masculino";
             optM.UseVisualStyleBackColor = true;
             // 
             // optF
             // 
             optF.AutoSize = true;
-            optF.Location = new Point(92, 47);
+            optF.Location = new Point(99, 43);
             optF.Name = "optF";
-            optF.Size = new Size(31, 19);
+            optF.Size = new Size(71, 19);
             optF.TabIndex = 10;
-            optF.Text = "F";
+            optF.Text = "Femenio";
             optF.UseVisualStyleBackColor = true;
             // 
             // btnIngresar
@@ -300,19 +308,13 @@
             btnCancelar.TabIndex = 11;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // dtpFecIng
-            // 
-            dtpFecIng.Format = DateTimePickerFormat.Short;
-            dtpFecIng.Location = new Point(114, 405);
-            dtpFecIng.Name = "dtpFecIng";
-            dtpFecIng.Size = new Size(136, 23);
-            dtpFecIng.TabIndex = 17;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // FrmInsertarProfesor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(533, 603);
             Controls.Add(btnCancelar);
             Controls.Add(btnIngresar);
