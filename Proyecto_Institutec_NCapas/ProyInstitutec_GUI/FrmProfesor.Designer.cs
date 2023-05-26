@@ -101,6 +101,7 @@
             btnActualizar.TabIndex = 6;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // btnSalir
             // 

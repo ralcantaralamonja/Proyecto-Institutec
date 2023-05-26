@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace Proy_Institutec_ADO
 {
@@ -16,6 +17,7 @@ namespace Proy_Institutec_ADO
         SqlConnection cnx = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dtr;
+        ProfesorBE objProfesorBE = new ProfesorBE();
         public DataTable ListarProfesor()
         {
            
@@ -44,7 +46,7 @@ namespace Proy_Institutec_ADO
 
             }
         }
-        public ProfesorBE ConsultarProfesor(String strDni) {
+        public ProfesorBE ConsultarProfesor(String strid) {
             try
             {
                 cnx.ConnectionString = MiConexion.GetCnx();
@@ -53,16 +55,18 @@ namespace Proy_Institutec_ADO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_ListarProfesor";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@dni", strDni);
+                cmd.Parameters.AddWithValue("@id", strid);
                 cnx.Open();
                 dtr=cmd.ExecuteReader();
                 if (dtr.HasRows == true) { 
                 dtr.Read();
-                objProfesorBE.IdProf =dtr["id"].ToString();
-                objProfesorBE.NomPro = dtr["Profesor"].ToString();
+                objProfesorBE.IdProf =dtr["IdProf"].ToString();
+                objProfesorBE.NomPro = dtr["NomPro"].ToString();
+                objProfesorBE.ApePat = dtr["ApePat"].ToString();
+                objProfesorBE.ApeMat = dtr["ApeMat"].ToString();
                 objProfesorBE.Estado = Convert.ToBoolean(dtr["Estado"]);
-                objProfesorBE.Sexopr = dtr["Genero"].ToString();
-                objProfesorBE.Ndocum =dtr["DNI"].ToString();
+                objProfesorBE.TelPro = dtr["TelPro"].ToString();
+                
                 
                 }
                 dtr.Close();
@@ -80,5 +84,76 @@ namespace Proy_Institutec_ADO
                     
                         }
         }
+
+        public Boolean InsertarProfesor (ProfesorBE objProfesorBE) {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_InsertarProfesor";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@Ndocum", objProfesorBE.Ndocum);
+                cmd.Parameters.AddWithValue("@NomPro", objProfesorBE.NomPro);
+                cmd.Parameters.AddWithValue("@ApePat", objProfesorBE.ApePat);
+                cmd.Parameters.AddWithValue("@ApeMat", objProfesorBE.ApeMat);
+                cmd.Parameters.AddWithValue("@Id_Ubi", objProfesorBE.Id_Ubi);
+                cmd.Parameters.AddWithValue("@Sexopr", objProfesorBE.Sexopr);
+                cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
+                cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
+                cmd.Parameters.AddWithValue("@FecIng", objProfesorBE.FecIng);
+                //
+                cnx.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+
+            }
+            catch (SqlException ex)
+            {
+
+                throw new Exception(ex.Message);
+                return false;
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+
+            }
+            
+        }
+        public Boolean ActualizarProfesor(ProfesorBE objProfesorBE)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ActulizarProfesor";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@IdProf", objProfesorBE.IdProf);
+                cmd.Parameters.AddWithValue("@NomPro", objProfesorBE.NomPro);
+                cmd.Parameters.AddWithValue("@ApePat", objProfesorBE.ApePat);
+                cmd.Parameters.AddWithValue("@ApeMat", objProfesorBE.ApeMat);
+                cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
+                cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
+                
+                
+            
+
+
+                cnx.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        //crear actualizar cnx.ConnectionString = MiConexion.GetCnx();
     }
 }
