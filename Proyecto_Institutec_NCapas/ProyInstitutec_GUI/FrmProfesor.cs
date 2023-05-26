@@ -42,11 +42,12 @@ namespace ProyInstitutec_GUI
             objInsertarProfesor.ShowDialog();
             //Refrescamos datagrid
             CargarDatos(mskDNIProfesor.Text.Trim());
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void FrmProfesor_Load(object sender, EventArgs e)
@@ -64,6 +65,14 @@ namespace ProyInstitutec_GUI
 
         private void mskDNIProfesor_TextChanged(object sender, EventArgs e)
         {
+            CargarDatos(mskDNIProfesor.Text.Trim());
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            FrmActualizarProfesor objfrmActulizarProfesor = new FrmActualizarProfesor();
+            objfrmActulizarProfesor.Codigo = dtgProfesor.CurrentRow.Cells[0].Value.ToString();
+            objfrmActulizarProfesor.ShowDialog();
             CargarDatos(mskDNIProfesor.Text.Trim());
         }
     }

@@ -8,6 +8,9 @@
     <Compile Update="Carrera.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmActualizarProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmCursoMan01.cs">
       <SubType>Form</SubType>
     </Compile>

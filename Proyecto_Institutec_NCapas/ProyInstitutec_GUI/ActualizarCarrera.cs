@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Globalization;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -49,21 +50,22 @@ namespace ProyInstitutec_GUI
                 cboFacultad.DataSource = dt;
                 cboFacultad.DisplayMember = "DesFac";
                 cboFacultad.ValueMember = "IdFacu";
-                
+
 
 
                 // mostrar carrera
                 objCarreraBE = objCarreraBL.ConsultarCarrera(this.Codigo);
 
                 //mostramos los datos
-                lblCodigo.Text = objCarreraBE.CodCard;
+                lblCodigo.Text = objCarreraBE.CodCar;
                 txtDescripcion.Text = objCarreraBE.DesCar;
-
 
                 //combos Facultad 
                 cboFacultad.SelectedValue = objCarreraBE.IdFacu;
 
 
+                //estado , convierto a booleqan para activar
+                chkActivo.Checked = Convert.ToBoolean(objCarreraBE.Est_carr);
 
             }
             catch (Exception ex)
@@ -90,19 +92,31 @@ namespace ProyInstitutec_GUI
                 {
                     throw new Exception("La La descripcion es obligatoria.");
                 }
-                if (cboFacultad.SelectedIndex == 0 )
+                if (cboFacultad.SelectedIndex == 0)
                 {
                     throw new Exception("Debe seleccionar una Facultad");
                 }
-             
+
 
 
                 //cargamos la entidad de negocio
-                objCarreraBE.CodCard = lblCodigo.Text;
+                objCarreraBE.CodCar = lblCodigo.Text;
                 objCarreraBE.DesCar = txtDescripcion.Text;
 
 
+                //estado de carrera
+                if (chkActivo.Checked == true)
+                {
+                    objCarreraBE.Est_carr = 1;
+                }
+                else
+                {
+                    objCarreraBE.Est_carr = 0;
+                }
+
+
                 objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString();
+
 
 
 
