@@ -30,6 +30,9 @@ namespace ProyInstitutec_GUI
             {
                 FrmCursoMan02 objFrmCursoMan02 = new FrmCursoMan02();
                 objFrmCursoMan02.Show();
+
+                //Refrescamos el datagrid...
+                CargarDatos(txtFiltro.Text.Trim());
             }
             catch (Exception ex)
             {
@@ -44,7 +47,11 @@ namespace ProyInstitutec_GUI
             try
             {
                 FrmCursoMan03 objFrmCursoMan03 = new FrmCursoMan03();
-                objFrmCursoMan03.Show();
+                objFrmCursoMan03.Codigo = dtgDatos.CurrentRow.Cells[0].Value.ToString();
+                objFrmCursoMan03.ShowDialog();
+
+                //Refrescamos el datagrid
+                CargarDatos(txtFiltro.Text.Trim());
             }
             catch (Exception ex)
             {
@@ -79,6 +86,11 @@ namespace ProyInstitutec_GUI
 
                 MessageBox.Show("Error" + ex.Message);
             }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 

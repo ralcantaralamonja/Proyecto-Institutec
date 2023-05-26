@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proy_InstitutecBE
 {
-    public  class CursoBE
+    public class CursoBE
     {
         //entidad de negocio Curso
         public string IdCurs { get; set; }
@@ -17,6 +17,7 @@ namespace Proy_InstitutecBE
         public string Usu_Registro { get; set; }
         public DateTime Fec_Ult_Mod { get; set; }
         public string Usu_Ult_Mod { get; set; }
+        public string DesCar { get; set; }
     }
 }
 

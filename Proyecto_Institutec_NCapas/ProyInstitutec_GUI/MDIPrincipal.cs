@@ -36,9 +36,10 @@ namespace ProyInstitutec_GUI
             {
                 consultasToolStripMenuItem.Visible = true;
                 mantenimientoToolStripMenuItem.Visible = false; //EJEMPLO ANTES DEL PARCIAL CON USUARIO JLEON
-                
+
             }
-            else if (clsCredenciales.Niv_Usuario == 2) {
+            else if (clsCredenciales.Niv_Usuario == 2)
+            {
                 mantenimientoToolStripMenuItem.Visible = true;
                 consultasToolStripMenuItem.Visible = true;
             }

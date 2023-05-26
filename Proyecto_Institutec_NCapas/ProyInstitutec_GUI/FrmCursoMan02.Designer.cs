@@ -35,74 +35,96 @@
             chkActivo = new CheckBox();
             btnGrabar = new Button();
             btnCancelar = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(23, 19);
+            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(23, 26);
             label1.Name = "label1";
-            label1.Size = new Size(121, 15);
+            label1.Size = new Size(198, 21);
             label1.TabIndex = 0;
-            label1.Text = "Ingresar Nuevo Curso";
+            label1.Text = "INGRESE NUEVO CURSO";
             // 
             // txtIngresarCurso
             // 
-            txtIngresarCurso.Location = new Point(23, 48);
+            txtIngresarCurso.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtIngresarCurso.Location = new Point(23, 58);
             txtIngresarCurso.Name = "txtIngresarCurso";
-            txtIngresarCurso.Size = new Size(401, 23);
+            txtIngresarCurso.Size = new Size(401, 27);
             txtIngresarCurso.TabIndex = 1;
             // 
             // cboCarrera
             // 
+            cboCarrera.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cboCarrera.FormattingEnabled = true;
-            cboCarrera.Location = new Point(23, 150);
+            cboCarrera.Location = new Point(23, 171);
             cboCarrera.Name = "cboCarrera";
-            cboCarrera.Size = new Size(397, 23);
-            cboCarrera.TabIndex = 3;
+            cboCarrera.Size = new Size(397, 29);
+            cboCarrera.TabIndex = 4;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(23, 132);
+            label2.Location = new Point(23, 130);
             label2.Name = "label2";
-            label2.Size = new Size(48, 15);
-            label2.TabIndex = 4;
-            label2.Text = "Carrera:";
+            label2.Size = new Size(0, 15);
+            label2.TabIndex = 3;
             // 
             // chkActivo
             // 
             chkActivo.AutoSize = true;
-            chkActivo.Location = new Point(27, 94);
+            chkActivo.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            chkActivo.Location = new Point(23, 102);
             chkActivo.Name = "chkActivo";
-            chkActivo.Size = new Size(125, 19);
-            chkActivo.TabIndex = 5;
-            chkActivo.Text = "¿Curso Habilitado?";
+            chkActivo.Size = new Size(82, 25);
+            chkActivo.TabIndex = 2;
+            chkActivo.Text = "Activo";
             chkActivo.UseVisualStyleBackColor = true;
+            chkActivo.CheckedChanged += chkActivo_CheckedChanged;
             // 
             // btnGrabar
             // 
-            btnGrabar.Location = new Point(275, 245);
+            btnGrabar.FlatStyle = FlatStyle.Flat;
+            btnGrabar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnGrabar.Location = new Point(164, 245);
             btnGrabar.Name = "btnGrabar";
-            btnGrabar.Size = new Size(75, 23);
-            btnGrabar.TabIndex = 6;
-            btnGrabar.Text = "Grabar";
+            btnGrabar.Size = new Size(125, 40);
+            btnGrabar.TabIndex = 5;
+            btnGrabar.Text = "GRABAR";
             btnGrabar.UseVisualStyleBackColor = true;
+            btnGrabar.Click += btnGrabar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(368, 245);
+            btnCancelar.FlatStyle = FlatStyle.Flat;
+            btnCancelar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCancelar.Location = new Point(295, 245);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(75, 23);
-            btnCancelar.TabIndex = 7;
-            btnCancelar.Text = "Cancelar";
+            btnCancelar.Size = new Size(125, 40);
+            btnCancelar.TabIndex = 6;
+            btnCancelar.Text = "CANCELAR";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(23, 145);
+            label3.Name = "label3";
+            label3.Size = new Size(191, 21);
+            label3.TabIndex = 7;
+            label3.Text = "SELECCIONE CARRERA";
             // 
             // FrmCursoMan02
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(455, 291);
+            Controls.Add(label3);
             Controls.Add(btnCancelar);
             Controls.Add(btnGrabar);
             Controls.Add(chkActivo);
@@ -114,7 +136,7 @@
             MinimizeBox = false;
             Name = "FrmCursoMan02";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FrmCursoMan02";
+            Text = "CREAR CURSO ";
             Load += FrmCursoMan02_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -129,5 +151,6 @@
         private CheckBox chkActivo;
         private Button btnGrabar;
         private Button btnCancelar;
+        private Label label3;
     }
 }

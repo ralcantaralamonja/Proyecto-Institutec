@@ -28,108 +28,173 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
             txtFiltro = new TextBox();
             lblRegistros = new Label();
             label2 = new Label();
             label1 = new Label();
             btnCerrar = new Button();
             btnActualizar = new Button();
-            btnAgregar = new Button();
+            btnInsertar = new Button();
             dtgDatos = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dtgDatos).BeginInit();
             SuspendLayout();
             // 
             // txtFiltro
             // 
-            txtFiltro.Location = new Point(195, 12);
+            txtFiltro.BackColor = SystemColors.ButtonHighlight;
+            txtFiltro.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFiltro.Location = new Point(200, 12);
             txtFiltro.Name = "txtFiltro";
-            txtFiltro.Size = new Size(314, 23);
-            txtFiltro.TabIndex = 11;
+            txtFiltro.Size = new Size(335, 27);
+            txtFiltro.TabIndex = 1;
             txtFiltro.TextChanged += txtFiltro_TextChanged;
             // 
             // lblRegistros
             // 
+            lblRegistros.BackColor = SystemColors.ButtonHighlight;
             lblRegistros.BorderStyle = BorderStyle.FixedSingle;
-            lblRegistros.Location = new Point(1275, 599);
+            lblRegistros.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblRegistros.Location = new Point(1243, 569);
             lblRegistros.Name = "lblRegistros";
-            lblRegistros.Size = new Size(84, 22);
-            lblRegistros.TabIndex = 8;
+            lblRegistros.Size = new Size(84, 30);
+            lblRegistros.TabIndex = 4;
             lblRegistros.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(1186, 603);
+            label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(1137, 574);
             label2.Name = "label2";
-            label2.Size = new Size(58, 15);
-            label2.TabIndex = 9;
-            label2.Text = "Registros:";
+            label2.Size = new Size(100, 21);
+            label2.TabIndex = 3;
+            label2.Text = "REGISTROS:";
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(12, 15);
             label1.Name = "label1";
-            label1.Size = new Size(161, 15);
-            label1.TabIndex = 10;
-            label1.Text = "Ingrese filtro por descripcion:";
+            label1.Size = new Size(182, 21);
+            label1.TabIndex = 0;
+            label1.Text = "FILTRO DE BUSQUEDA:";
             // 
             // btnCerrar
             // 
-            btnCerrar.Location = new Point(1262, 665);
+            btnCerrar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnCerrar.BackColor = SystemColors.ControlLight;
+            btnCerrar.FlatStyle = FlatStyle.Flat;
+            btnCerrar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCerrar.Location = new Point(1196, 615);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(97, 32);
-            btnCerrar.TabIndex = 5;
-            btnCerrar.Text = "Salir";
-            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Size = new Size(125, 40);
+            btnCerrar.TabIndex = 7;
+            btnCerrar.Text = "SALIR";
+            btnCerrar.UseVisualStyleBackColor = false;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(1106, 665);
+            btnActualizar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnActualizar.BackColor = SystemColors.ControlLight;
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnActualizar.Location = new Point(1010, 615);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(97, 32);
+            btnActualizar.Size = new Size(125, 40);
             btnActualizar.TabIndex = 6;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Text = "ACTUALIZAR";
+            btnActualizar.UseVisualStyleBackColor = false;
             btnActualizar.Click += btnActualizar_Click;
             // 
-            // btnAgregar
+            // btnInsertar
             // 
-            btnAgregar.Location = new Point(1003, 665);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(97, 32);
-            btnAgregar.TabIndex = 7;
-            btnAgregar.Text = "Agregar";
-            btnAgregar.UseVisualStyleBackColor = true;
-            btnAgregar.Click += btnAgregar_Click;
+            btnInsertar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnInsertar.BackColor = SystemColors.ControlLight;
+            btnInsertar.FlatStyle = FlatStyle.Flat;
+            btnInsertar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInsertar.ForeColor = SystemColors.ControlText;
+            btnInsertar.Location = new Point(874, 615);
+            btnInsertar.Name = "btnInsertar";
+            btnInsertar.Size = new Size(125, 40);
+            btnInsertar.TabIndex = 5;
+            btnInsertar.Text = "INSERTAR";
+            btnInsertar.UseVisualStyleBackColor = false;
+            btnInsertar.Click += btnAgregar_Click;
             // 
             // dtgDatos
             // 
             dtgDatos.AllowUserToAddRows = false;
             dtgDatos.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(88, 183, 213);
+            dataGridViewCellStyle6.SelectionForeColor = SystemColors.Window;
+            dtgDatos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             dtgDatos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgDatos.BackgroundColor = SystemColors.ScrollBar;
+            dtgDatos.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = SystemColors.Control;
+            dataGridViewCellStyle7.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(88, 183, 213);
+            dataGridViewCellStyle7.SelectionForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
+            dtgDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             dtgDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgDatos.Location = new Point(12, 60);
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = SystemColors.Window;
+            dataGridViewCellStyle8.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(88, 183, 213);
+            dataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
+            dtgDatos.DefaultCellStyle = dataGridViewCellStyle8;
+            dtgDatos.GridColor = Color.FromArgb(88, 183, 213);
+            dtgDatos.Location = new Point(13, 54);
             dtgDatos.Name = "dtgDatos";
             dtgDatos.ReadOnly = true;
+            dtgDatos.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = SystemColors.Control;
+            dataGridViewCellStyle9.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            dtgDatos.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             dtgDatos.RowHeadersVisible = false;
+            dtgDatos.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle10.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = Color.FromArgb(88, 183, 213);
+            dataGridViewCellStyle10.SelectionForeColor = SystemColors.Window;
+            dtgDatos.RowsDefaultCellStyle = dataGridViewCellStyle10;
             dtgDatos.RowTemplate.Height = 25;
             dtgDatos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtgDatos.Size = new Size(1347, 527);
-            dtgDatos.TabIndex = 4;
+            dtgDatos.Size = new Size(1314, 503);
+            dtgDatos.TabIndex = 2;
             // 
             // FrmCursoMan01
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1371, 709);
+            BackColor = Color.FromArgb(242, 242, 242);
+            ClientSize = new Size(1339, 667);
             Controls.Add(txtFiltro);
             Controls.Add(lblRegistros);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnCerrar);
             Controls.Add(btnActualizar);
-            Controls.Add(btnAgregar);
+            Controls.Add(btnInsertar);
             Controls.Add(dtgDatos);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
@@ -151,7 +216,7 @@
         private Label label1;
         private Button btnCerrar;
         private Button btnActualizar;
-        private Button btnAgregar;
+        private Button btnInsertar;
         private DataGridView dtgDatos;
     }
 }

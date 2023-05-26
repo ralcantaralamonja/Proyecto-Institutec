@@ -65,7 +65,7 @@ namespace ProyInstitutec_GUI
         {
             try
             {
-          
+
                 //validamos
                 if (txtDescripcion.Text.Trim() == String.Empty)
                 {
@@ -78,7 +78,7 @@ namespace ProyInstitutec_GUI
 
                 //cargamos la entidad de negocio
                 objCarreraBE.DesCar = txtDescripcion.Text;
-                objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString(); 
+                objCarreraBE.IdFacu = cboFacultad.SelectedValue.ToString();
 
 
                 //formulario de logeo 

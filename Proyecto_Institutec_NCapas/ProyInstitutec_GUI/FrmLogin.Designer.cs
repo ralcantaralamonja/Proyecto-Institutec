@@ -30,68 +30,66 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            label1 = new Label();
-            label2 = new Label();
             txtLogin = new TextBox();
             txtPassword = new TextBox();
             btnAceptar = new Button();
             btnCancelar = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
+            panel1 = new Panel();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(67, 39);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(36, 13);
-            label1.TabIndex = 0;
-            label1.Text = "Login:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(67, 83);
-            label2.Name = "label2";
-            label2.Size = new Size(51, 13);
-            label2.TabIndex = 1;
-            label2.Text = "Pasword:";
             // 
             // txtLogin
             // 
-            txtLogin.Location = new Point(170, 39);
+            txtLogin.BackColor = Color.FromArgb(242, 242, 242);
+            txtLogin.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtLogin.Location = new Point(311, 91);
             txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(150, 20);
+            txtLogin.Size = new Size(398, 31);
             txtLogin.TabIndex = 2;
+            txtLogin.Text = "USUARIO";
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(170, 80);
+            txtPassword.BackColor = Color.FromArgb(242, 242, 242);
+            txtPassword.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.ForeColor = SystemColors.WindowText;
+            txtPassword.Location = new Point(311, 142);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(150, 20);
+            txtPassword.Size = new Size(398, 31);
             txtPassword.TabIndex = 3;
+            txtPassword.Text = "PASSWORD";
+            txtPassword.TextChanged += txtPassword_TextChanged;
             txtPassword.KeyPress += txtPassword_KeyPress;
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(368, 35);
+            btnAceptar.BackColor = SystemColors.ControlLight;
+            btnAceptar.FlatAppearance.BorderSize = 0;
+            btnAceptar.FlatStyle = FlatStyle.Flat;
+            btnAceptar.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAceptar.ForeColor = SystemColors.ControlText;
+            btnAceptar.Location = new Point(311, 193);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(112, 34);
+            btnAceptar.Size = new Size(398, 40);
             btnAceptar.TabIndex = 4;
-            btnAceptar.Text = "Aceptar";
-            btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Text = "INGRESAR";
+            btnAceptar.UseVisualStyleBackColor = false;
             btnAceptar.Click += btnAceptar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(368, 80);
+            btnCancelar.BackColor = SystemColors.ControlLight;
+            btnCancelar.FlatAppearance.BorderSize = 0;
+            btnCancelar.FlatStyle = FlatStyle.Flat;
+            btnCancelar.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCancelar.Location = new Point(311, 239);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(112, 34);
+            btnCancelar.Size = new Size(398, 40);
             btnCancelar.TabIndex = 5;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Text = "SALIR";
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // timer1
@@ -100,17 +98,37 @@
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(88, 183, 213);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 291);
+            panel1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(399, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(238, 33);
+            label1.TabIndex = 7;
+            label1.Text = "INSTITUTEC LOGIN";
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(524, 156);
+            BackColor = Color.FromArgb(242, 242, 242);
+            ClientSize = new Size(764, 291);
+            Controls.Add(label1);
+            Controls.Add(panel1);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Controls.Add(txtPassword);
             Controls.Add(txtLogin);
-            Controls.Add(label2);
-            Controls.Add(label1);
             Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -119,20 +137,20 @@
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
             Name = "frmLogin";
+            Opacity = 0.95D;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Ingrese su Usuario y Password";
+            Text = "INICIAR SESIÓN - INSTITUTEC 2023";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Label label2;
         private TextBox txtLogin;
         private TextBox txtPassword;
         private Button btnAceptar;
         private Button btnCancelar;
         private System.Windows.Forms.Timer timer1;
+        private Panel panel1;
+        private Label label1;
     }
 }

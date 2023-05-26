@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             txtDescripcion = new TextBox();
-            label1 = new Label();
             cboFacultad = new ComboBox();
             label5 = new Label();
             btnCancelar = new Button();
             btnGrabar = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // txtDescripcion
@@ -42,15 +42,6 @@
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new Size(389, 23);
             txtDescripcion.TabIndex = 1;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(26, 27);
-            label1.Name = "label1";
-            label1.Size = new Size(72, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Descripcion:";
             // 
             // cboFacultad
             // 
@@ -90,6 +81,15 @@
             btnGrabar.UseVisualStyleBackColor = true;
             btnGrabar.Click += btnGrabar_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(26, 27);
+            label1.Name = "label1";
+            label1.Size = new Size(72, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Descripcion:";
+            // 
             // InsertarCarrera
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -115,10 +115,10 @@
         #endregion
 
         private TextBox txtDescripcion;
-        private Label label1;
         private ComboBox cboFacultad;
         private Label label5;
         private Button btnCancelar;
         private Button btnGrabar;
+        private Label label1;
     }
 }

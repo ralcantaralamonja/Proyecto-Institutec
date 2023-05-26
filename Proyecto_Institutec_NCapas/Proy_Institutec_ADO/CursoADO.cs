@@ -29,7 +29,7 @@ namespace Proy_Institutec_ADO
                 cnx.ConnectionString = MiConexion.GetCnx();
                 cmd.Connection = cnx;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "usp_VerCursoActivo";
+                cmd.CommandText = "usp_ListarCurso";
                 cmd.Parameters.Clear();
 
                 SqlDataAdapter ada = new SqlDataAdapter(cmd);
@@ -56,16 +56,16 @@ namespace Proy_Institutec_ADO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_ConsultarCurso";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@IdCurso", strCodigo);
+                cmd.Parameters.AddWithValue("@IdCurs", strCodigo);
                 cnx.Open();
                 dtr = cmd.ExecuteReader();
 
                 if (dtr.HasRows == true)
                 {
                     dtr.Read();
-                    objCursoBE.IdCurs = dtr["IdCurs"].ToString();
-                    objCursoBE.NomCur = dtr["NomCur"].ToString();
-                    objCursoBE.Activo = Convert.ToBoolean(dtr["Activo"]);
+                    objCursoBE.IdCurs = dtr["ID"].ToString();
+                    objCursoBE.NomCur = dtr["Curso"].ToString();
+                    objCursoBE.Activo = Convert.ToInt32(dtr["Activo"]) == 1;
                     objCursoBE.CodCar = dtr["CodCar"].ToString();
                 }
                 dtr.Close();
