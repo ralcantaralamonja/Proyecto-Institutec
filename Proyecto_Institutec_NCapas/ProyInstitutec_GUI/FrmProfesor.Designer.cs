@@ -60,6 +60,7 @@
             mskDNIProfesor.Size = new Size(181, 20);
             mskDNIProfesor.TabIndex = 1;
             mskDNIProfesor.TextChanged += mskDNIProfesor_TextChanged;
+            mskDNIProfesor.KeyPress += mskDNIProfesor_KeyPress;
             // 
             // dtgProfesor
             // 

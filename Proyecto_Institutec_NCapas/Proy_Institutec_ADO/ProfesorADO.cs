@@ -66,6 +66,7 @@ namespace Proy_Institutec_ADO
                 objProfesorBE.ApeMat = dtr["ApeMat"].ToString();
                 objProfesorBE.Estado = Convert.ToBoolean(dtr["Estado"]);
                 objProfesorBE.TelPro = dtr["TelPro"].ToString();
+                objProfesorBE.FecIng = Convert.ToDateTime(dtr["FecIng"]);
                 
                 
                 }
@@ -139,7 +140,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@ApeMat", objProfesorBE.ApeMat);
                 cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
                 cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
-                
+                cmd.Parameters.AddWithValue("@FecIng", objProfesorBE.FecIng);
                 
             
 

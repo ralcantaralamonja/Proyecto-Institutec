@@ -44,6 +44,8 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            lbltiempo = new Label();
+            dtpFecIng = new DateTimePicker();
             gbActulizar.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -51,6 +53,8 @@
             // gbActulizar
             // 
             gbActulizar.BackColor = SystemColors.Control;
+            gbActulizar.Controls.Add(dtpFecIng);
+            gbActulizar.Controls.Add(lbltiempo);
             gbActulizar.Controls.Add(btnIngresar);
             gbActulizar.Controls.Add(btnSalir);
             gbActulizar.Controls.Add(groupBox1);
@@ -66,7 +70,7 @@
             gbActulizar.Controls.Add(label1);
             gbActulizar.Location = new Point(22, 12);
             gbActulizar.Name = "gbActulizar";
-            gbActulizar.Size = new Size(633, 281);
+            gbActulizar.Size = new Size(633, 333);
             gbActulizar.TabIndex = 0;
             gbActulizar.TabStop = false;
             gbActulizar.Text = "Datos a Actualizar ";
@@ -89,6 +93,7 @@
             btnSalir.TabIndex = 9;
             btnSalir.Text = "Cancelar";
             btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // groupBox1
             // 
@@ -206,11 +211,28 @@
             label1.TabIndex = 0;
             label1.Text = "ID Profesor";
             // 
+            // lbltiempo
+            // 
+            lbltiempo.AutoSize = true;
+            lbltiempo.Location = new Point(26, 279);
+            lbltiempo.Name = "lbltiempo";
+            lbltiempo.Size = new Size(86, 15);
+            lbltiempo.TabIndex = 10;
+            lbltiempo.Text = "Fecha ingreso :";
+            // 
+            // dtpFecIng
+            // 
+            dtpFecIng.Format = DateTimePickerFormat.Short;
+            dtpFecIng.Location = new Point(129, 273);
+            dtpFecIng.Name = "dtpFecIng";
+            dtpFecIng.Size = new Size(136, 23);
+            dtpFecIng.TabIndex = 11;
+            // 
             // FrmActualizarProfesor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(696, 331);
+            ClientSize = new Size(696, 381);
             Controls.Add(gbActulizar);
             Name = "FrmActualizarProfesor";
             Text = "Actulizar Profesor";
@@ -240,5 +262,7 @@
         private TextBox txtTelf;
         private Button btnIngresar;
         private Button btnSalir;
+        private DateTimePicker dtpFecIng;
+        private Label lbltiempo;
     }
 }
