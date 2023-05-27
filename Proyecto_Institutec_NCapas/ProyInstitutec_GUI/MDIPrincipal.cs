@@ -49,5 +49,37 @@ namespace ProyInstitutec_GUI
         {
             this.Refresh();
         }
+
+        private void estudianteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVerAlumno objAlumno = new FrmVerAlumno();
+            objAlumno.MdiParent = this;
+            objAlumno.Show();
+        }
+
+        private void salirToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MDIPrincipal_Frm(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void MDIPrincipal_FrmClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void MDIPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
     }
 }

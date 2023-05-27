@@ -56,7 +56,7 @@
             label1.Location = new Point(64, 55);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(123, 13);
+            label1.Size = new Size(184, 20);
             label1.TabIndex = 0;
             label1.Text = "Ingrese Dni del Profesor:";
             label1.Click += label1_Click;
@@ -66,7 +66,7 @@
             mskDNIProfesor.Location = new Point(255, 52);
             mskDNIProfesor.Margin = new Padding(3, 2, 3, 2);
             mskDNIProfesor.Name = "mskDNIProfesor";
-            mskDNIProfesor.Size = new Size(181, 20);
+            mskDNIProfesor.Size = new Size(181, 26);
             mskDNIProfesor.TabIndex = 1;
             // 
             // dtgProfesor
@@ -180,6 +180,7 @@
             btnActualizar.TabIndex = 6;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // btnSalir
             // 
@@ -198,7 +199,7 @@
             label2.Location = new Point(1131, 592);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(54, 13);
+            label2.Size = new Size(81, 20);
             label2.TabIndex = 3;
             label2.Text = "Registros:";
             label2.Click += label2_Click;
@@ -215,7 +216,7 @@
             // 
             // FrmProfesor
             // 
-            AutoScaleDimensions = new SizeF(6F, 13F);
+            AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1371, 709);
             Controls.Add(LblRegistros);
@@ -234,6 +235,7 @@
             Name = "FrmProfesor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ver Profesor";
+            Load += FrmProfesor_Load;
             ((System.ComponentModel.ISupportInitialize)dtgProfesor).EndInit();
             ResumeLayout(false);
             PerformLayout();

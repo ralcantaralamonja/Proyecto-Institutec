@@ -40,7 +40,17 @@ namespace ProyInstitutec_GUI
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Hide();    
+            this.Hide();
+        }
+
+        private void FrmProfesor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

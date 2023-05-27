@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proy_InstitutecBE", "Proy_InstitutecBE\Proy_InstitutecBE.csproj", "{8A78D6A9-3E74-4CBA-A50F-3B1086DF9F2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proy_InstitutecBE", "Proy_InstitutecBE\Proy_InstitutecBE.csproj", "{8A78D6A9-3E74-4CBA-A50F-3B1086DF9F2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proy_InstitutecBL", "Proy_InstitutecBL\Proy_InstitutecBL.csproj", "{9B6E5887-E2A2-4C7D-9E89-405B939C82B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proy_InstitutecBL", "Proy_InstitutecBL\Proy_InstitutecBL.csproj", "{9B6E5887-E2A2-4C7D-9E89-405B939C82B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proy_Institutec_ADO", "Proy_Institutec_ADO\Proy_Institutec_ADO.csproj", "{3C139F84-D75F-49D8-88AF-377A0790206D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proy_Institutec_ADO", "Proy_Institutec_ADO\Proy_Institutec_ADO.csproj", "{3C139F84-D75F-49D8-88AF-377A0790206D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyInstitutec_GUI", "ProyInstitutec_GUI\ProyInstitutec_GUI.csproj", "{679BD796-C988-4A36-9A84-F60B8CBBB68D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyInstitutec_GUI", "ProyInstitutec_GUI\ProyInstitutec_GUI.csproj", "{679BD796-C988-4A36-9A84-F60B8CBBB68D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
