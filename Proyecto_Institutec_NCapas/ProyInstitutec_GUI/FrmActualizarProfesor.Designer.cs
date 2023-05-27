@@ -100,7 +100,7 @@
             btnIngresar.Location = new Point(22, 553);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(125, 40);
-            btnIngresar.TabIndex = 9;
+            btnIngresar.TabIndex = 13;
             btnIngresar.Text = "INGRESAR";
             btnIngresar.UseVisualStyleBackColor = false;
             btnIngresar.Click += btnIngresar_Click;
@@ -112,7 +112,7 @@
             btnSalir.Location = new Point(184, 553);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(125, 40);
-            btnSalir.TabIndex = 9;
+            btnSalir.TabIndex = 14;
             btnSalir.Text = "CANCELAR";
             btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
@@ -124,7 +124,7 @@
             groupBox1.Location = new Point(22, 398);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(287, 120);
-            groupBox1.TabIndex = 8;
+            groupBox1.TabIndex = 12;
             groupBox1.TabStop = false;
             groupBox1.Text = "¿DESABILITAR PROFESOR?";
             // 
@@ -157,7 +157,7 @@
             txtTelf.MaxLength = 9;
             txtTelf.Name = "txtTelf";
             txtTelf.Size = new Size(287, 27);
-            txtTelf.TabIndex = 7;
+            txtTelf.TabIndex = 9;
             // 
             // lblCodigo
             // 
@@ -165,14 +165,14 @@
             lblCodigo.Location = new Point(141, 41);
             lblCodigo.Name = "lblCodigo";
             lblCodigo.Size = new Size(66, 23);
-            lblCodigo.TabIndex = 6;
+            lblCodigo.TabIndex = 1;
             // 
             // txtApeMat
             // 
             txtApeMat.Location = new Point(22, 236);
             txtApeMat.Name = "txtApeMat";
             txtApeMat.Size = new Size(287, 27);
-            txtApeMat.TabIndex = 5;
+            txtApeMat.TabIndex = 7;
             // 
             // txtApePat
             // 
@@ -186,7 +186,7 @@
             txtNompro.Location = new Point(22, 107);
             txtNompro.Name = "txtNompro";
             txtNompro.Size = new Size(287, 27);
-            txtNompro.TabIndex = 5;
+            txtNompro.TabIndex = 3;
             // 
             // label5
             // 
@@ -194,7 +194,7 @@
             label5.Location = new Point(22, 83);
             label5.Name = "label5";
             label5.Size = new Size(83, 21);
-            label5.TabIndex = 1;
+            label5.TabIndex = 2;
             label5.Text = "NOMBRE:";
             // 
             // label4
@@ -203,7 +203,7 @@
             label4.Location = new Point(22, 212);
             label4.Name = "label4";
             label4.Size = new Size(175, 21);
-            label4.TabIndex = 1;
+            label4.TabIndex = 6;
             label4.Text = "APELLIDO MATERNO:";
             // 
             // label3
@@ -212,7 +212,7 @@
             label3.Location = new Point(22, 147);
             label3.Name = "label3";
             label3.Size = new Size(169, 21);
-            label3.TabIndex = 1;
+            label3.TabIndex = 4;
             label3.Text = "APELLIDO PATERNO:";
             // 
             // label2
@@ -221,7 +221,7 @@
             label2.Location = new Point(22, 276);
             label2.Name = "label2";
             label2.Size = new Size(95, 21);
-            label2.TabIndex = 1;
+            label2.TabIndex = 8;
             label2.Text = "TELEFONO:";
             // 
             // label1
@@ -239,6 +239,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(380, 636);
             Controls.Add(gbActulizar);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FrmActualizarProfesor";
             Text = "Actulizar Profesor";
             Load += FrmActualizarProfesor_Load;

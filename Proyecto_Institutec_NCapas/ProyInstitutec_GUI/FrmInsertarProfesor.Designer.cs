@@ -38,7 +38,9 @@
             txtTelf = new TextBox();
             cboDep = new ComboBox();
             groupBox1 = new GroupBox();
+            btnCancelar = new Button();
             dtpFecIng = new DateTimePicker();
+            btnIngresar = new Button();
             label2 = new Label();
             label4 = new Label();
             txtApeMat = new TextBox();
@@ -51,8 +53,6 @@
             groupBox2 = new GroupBox();
             optM = new RadioButton();
             optF = new RadioButton();
-            btnIngresar = new Button();
-            btnCancelar = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -63,7 +63,7 @@
             txtNomPro.Location = new Point(19, 66);
             txtNomPro.Name = "txtNomPro";
             txtNomPro.Size = new Size(313, 27);
-            txtNomPro.TabIndex = 0;
+            txtNomPro.TabIndex = 1;
             // 
             // txtApePat
             // 
@@ -71,7 +71,7 @@
             txtApePat.Location = new Point(19, 129);
             txtApePat.Name = "txtApePat";
             txtApePat.Size = new Size(313, 27);
-            txtApePat.TabIndex = 1;
+            txtApePat.TabIndex = 3;
             // 
             // lblNombre
             // 
@@ -79,7 +79,7 @@
             lblNombre.Location = new Point(19, 42);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(83, 21);
-            lblNombre.TabIndex = 5;
+            lblNombre.TabIndex = 0;
             lblNombre.Text = "NOMBRE:";
             // 
             // lblApePat
@@ -88,7 +88,7 @@
             lblApePat.Location = new Point(18, 105);
             lblApePat.Name = "lblApePat";
             lblApePat.Size = new Size(165, 21);
-            lblApePat.TabIndex = 5;
+            lblApePat.TabIndex = 2;
             lblApePat.Text = "APELLIDO PATERNO";
             // 
             // lblApeMat
@@ -97,7 +97,7 @@
             lblApeMat.Location = new Point(19, 168);
             lblApeMat.Name = "lblApeMat";
             lblApeMat.Size = new Size(175, 21);
-            lblApeMat.TabIndex = 5;
+            lblApeMat.TabIndex = 4;
             lblApeMat.Text = "APELLIDO MATERNO:";
             lblApeMat.TextAlign = ContentAlignment.TopCenter;
             // 
@@ -107,7 +107,7 @@
             lblDni.Location = new Point(350, 42);
             lblDni.Name = "lblDni";
             lblDni.Size = new Size(43, 21);
-            lblDni.TabIndex = 5;
+            lblDni.TabIndex = 6;
             lblDni.Text = "DNI:";
             // 
             // label5
@@ -116,7 +116,7 @@
             label5.Location = new Point(19, 241);
             label5.Name = "label5";
             label5.Size = new Size(146, 21);
-            label5.TabIndex = 5;
+            label5.TabIndex = 11;
             label5.Text = "DEPARTAMENTO:";
             // 
             // txtTelf
@@ -125,7 +125,7 @@
             txtTelf.MaxLength = 9;
             txtTelf.Name = "txtTelf";
             txtTelf.Size = new Size(212, 27);
-            txtTelf.TabIndex = 1;
+            txtTelf.TabIndex = 18;
             txtTelf.KeyPress += txtDni_KeyPress;
             // 
             // cboDep
@@ -135,7 +135,7 @@
             cboDep.Location = new Point(18, 265);
             cboDep.Name = "cboDep";
             cboDep.Size = new Size(314, 29);
-            cboDep.TabIndex = 8;
+            cboDep.TabIndex = 12;
             cboDep.SelectionChangeCommitted += cboDep_SelectionChangeCommitted;
             // 
             // groupBox1
@@ -166,9 +166,22 @@
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(542, 635);
-            groupBox1.TabIndex = 9;
+            groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "DATOS PERSONALES";
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.BackColor = SystemColors.ControlLight;
+            btnCancelar.FlatStyle = FlatStyle.Flat;
+            btnCancelar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCancelar.Location = new Point(401, 576);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(125, 40);
+            btnCancelar.TabIndex = 0;
+            btnCancelar.Text = "CANCELAR";
+            btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // dtpFecIng
             // 
@@ -176,7 +189,20 @@
             dtpFecIng.Location = new Point(119, 517);
             dtpFecIng.Name = "dtpFecIng";
             dtpFecIng.Size = new Size(216, 27);
-            dtpFecIng.TabIndex = 17;
+            dtpFecIng.TabIndex = 20;
+            // 
+            // btnIngresar
+            // 
+            btnIngresar.BackColor = SystemColors.ControlLight;
+            btnIngresar.FlatStyle = FlatStyle.Flat;
+            btnIngresar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnIngresar.Location = new Point(268, 576);
+            btnIngresar.Name = "btnIngresar";
+            btnIngresar.Size = new Size(125, 40);
+            btnIngresar.TabIndex = 21;
+            btnIngresar.Text = "INGRESAR";
+            btnIngresar.UseVisualStyleBackColor = false;
+            btnIngresar.Click += btnIngresar_Click;
             // 
             // label2
             // 
@@ -184,7 +210,7 @@
             label2.Location = new Point(19, 523);
             label2.Name = "label2";
             label2.Size = new Size(86, 21);
-            label2.TabIndex = 10;
+            label2.TabIndex = 19;
             label2.Text = "INGRESO:";
             // 
             // label4
@@ -193,7 +219,7 @@
             label4.Location = new Point(18, 462);
             label4.Name = "label4";
             label4.Size = new Size(95, 21);
-            label4.TabIndex = 12;
+            label4.TabIndex = 17;
             label4.Text = "TELEFONO:";
             // 
             // txtApeMat
@@ -202,7 +228,7 @@
             txtApeMat.Location = new Point(19, 194);
             txtApeMat.Name = "txtApeMat";
             txtApeMat.Size = new Size(313, 27);
-            txtApeMat.TabIndex = 16;
+            txtApeMat.TabIndex = 5;
             // 
             // cboDistrito
             // 
@@ -211,7 +237,7 @@
             cboDistrito.Location = new Point(18, 411);
             cboDistrito.Name = "cboDistrito";
             cboDistrito.Size = new Size(314, 29);
-            cboDistrito.TabIndex = 15;
+            cboDistrito.TabIndex = 16;
             // 
             // cboProvincia
             // 
@@ -229,7 +255,7 @@
             label7.Location = new Point(18, 387);
             label7.Name = "label7";
             label7.Size = new Size(84, 21);
-            label7.TabIndex = 13;
+            label7.TabIndex = 15;
             label7.Text = "DISTRITO:";
             // 
             // label6
@@ -238,7 +264,7 @@
             label6.Location = new Point(19, 317);
             label6.Name = "label6";
             label6.Size = new Size(106, 21);
-            label6.TabIndex = 12;
+            label6.TabIndex = 13;
             label6.Text = "PROVINCIA:";
             // 
             // txtDni
@@ -247,7 +273,7 @@
             txtDni.MaxLength = 8;
             txtDni.Name = "txtDni";
             txtDni.Size = new Size(176, 27);
-            txtDni.TabIndex = 8;
+            txtDni.TabIndex = 7;
             txtDni.KeyPress += txtDni_KeyPress;
             // 
             // chkActivo
@@ -267,7 +293,7 @@
             groupBox2.Location = new Point(350, 129);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(176, 96);
-            groupBox2.TabIndex = 11;
+            groupBox2.TabIndex = 9;
             groupBox2.TabStop = false;
             groupBox2.Text = "GENERO";
             // 
@@ -278,7 +304,7 @@
             optM.Location = new Point(45, 26);
             optM.Name = "optM";
             optM.Size = new Size(126, 25);
-            optM.TabIndex = 9;
+            optM.TabIndex = 0;
             optM.TabStop = true;
             optM.Text = "MASCULINO";
             optM.UseVisualStyleBackColor = true;
@@ -289,35 +315,9 @@
             optF.Location = new Point(45, 57);
             optF.Name = "optF";
             optF.Size = new Size(112, 25);
-            optF.TabIndex = 10;
+            optF.TabIndex = 1;
             optF.Text = "FEMENINO";
             optF.UseVisualStyleBackColor = true;
-            // 
-            // btnIngresar
-            // 
-            btnIngresar.BackColor = SystemColors.ControlLight;
-            btnIngresar.FlatStyle = FlatStyle.Flat;
-            btnIngresar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnIngresar.Location = new Point(268, 576);
-            btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(125, 40);
-            btnIngresar.TabIndex = 11;
-            btnIngresar.Text = "INGRESAR";
-            btnIngresar.UseVisualStyleBackColor = false;
-            btnIngresar.Click += btnIngresar_Click;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.BackColor = SystemColors.ControlLight;
-            btnCancelar.FlatStyle = FlatStyle.Flat;
-            btnCancelar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCancelar.Location = new Point(401, 576);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(125, 40);
-            btnCancelar.TabIndex = 11;
-            btnCancelar.Text = "CANCELAR";
-            btnCancelar.UseVisualStyleBackColor = false;
-            btnCancelar.Click += btnCancelar_Click;
             // 
             // FrmInsertarProfesor
             // 
@@ -327,6 +327,8 @@
             ClientSize = new Size(570, 659);
             Controls.Add(groupBox1);
             Margin = new Padding(2);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FrmInsertarProfesor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CREAR PROFESOR";

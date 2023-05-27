@@ -60,6 +60,8 @@ namespace ProyInstitutec_GUI
             dtv.RowFilter = "DNI like '" + strFiltro + "%'";
             dtgProfesor.DataSource = dtv;
             LblRegistros.Text = dtgProfesor.Rows.Count.ToString();
+            dtgProfesor.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+
 
         }
 

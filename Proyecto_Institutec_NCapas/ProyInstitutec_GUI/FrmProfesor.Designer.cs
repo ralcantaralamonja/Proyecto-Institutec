@@ -42,6 +42,7 @@
             btnSalir = new Button();
             label2 = new Label();
             LblRegistros = new Label();
+            Id = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dtgProfesor).BeginInit();
             SuspendLayout();
             // 
@@ -82,6 +83,7 @@
             dtgProfesor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgProfesor.BackgroundColor = SystemColors.ScrollBar;
             dtgProfesor.BorderStyle = BorderStyle.None;
+            dtgProfesor.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
@@ -122,6 +124,7 @@
             dtgProfesor.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dtgProfesor.Size = new Size(1157, 503);
             dtgProfesor.TabIndex = 2;
+            dtgProfesor.TabStop = false;
             dtgProfesor.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btnInsertar
@@ -133,7 +136,7 @@
             btnInsertar.Margin = new Padding(4, 5, 4, 5);
             btnInsertar.Name = "btnInsertar";
             btnInsertar.Size = new Size(125, 40);
-            btnInsertar.TabIndex = 5;
+            btnInsertar.TabIndex = 4;
             btnInsertar.Text = "INSERTAR";
             btnInsertar.UseVisualStyleBackColor = false;
             btnInsertar.Click += btnInsertar_Click;
@@ -147,7 +150,7 @@
             btnActualizar.Margin = new Padding(4, 5, 4, 5);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(125, 40);
-            btnActualizar.TabIndex = 6;
+            btnActualizar.TabIndex = 5;
             btnActualizar.Text = "ACTUALIZAR";
             btnActualizar.UseVisualStyleBackColor = false;
             btnActualizar.Click += btnActualizar_Click;
@@ -161,7 +164,7 @@
             btnSalir.Margin = new Padding(4, 5, 4, 5);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(125, 40);
-            btnSalir.TabIndex = 7;
+            btnSalir.TabIndex = 6;
             btnSalir.Text = "SALIR";
             btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
@@ -174,7 +177,7 @@
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(100, 21);
-            label2.TabIndex = 3;
+            label2.TabIndex = 2;
             label2.Text = "REGISTROS:";
             label2.Click += label2_Click;
             // 
@@ -188,8 +191,13 @@
             LblRegistros.Margin = new Padding(4, 0, 4, 0);
             LblRegistros.Name = "LblRegistros";
             LblRegistros.Size = new Size(84, 30);
-            LblRegistros.TabIndex = 4;
+            LblRegistros.TabIndex = 3;
             LblRegistros.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // Id
+            // 
+            Id.HeaderText = "ID";
+            Id.Name = "Id";
             // 
             // FrmProfesor
             // 
@@ -209,6 +217,7 @@
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
             Name = "FrmProfesor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VER PROFESOR";
@@ -228,5 +237,6 @@
         private Button btnSalir;
         private Label label2;
         private Label LblRegistros;
+        private DataGridViewTextBoxColumn Id;
     }
 }

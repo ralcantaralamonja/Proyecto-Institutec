@@ -66,7 +66,7 @@
             label1.Location = new Point(21, 81);
             label1.Name = "label1";
             label1.Size = new Size(175, 21);
-            label1.TabIndex = 3;
+            label1.TabIndex = 1;
             label1.Text = "NOMBRE DEL CURSO:";
             // 
             // txtCurso
@@ -75,7 +75,7 @@
             txtCurso.Location = new Point(21, 105);
             txtCurso.Name = "txtCurso";
             txtCurso.Size = new Size(439, 27);
-            txtCurso.TabIndex = 4;
+            txtCurso.TabIndex = 2;
             // 
             // chkActivo
             // 
@@ -84,7 +84,7 @@
             chkActivo.Location = new Point(334, 27);
             chkActivo.Name = "chkActivo";
             chkActivo.Size = new Size(93, 25);
-            chkActivo.TabIndex = 2;
+            chkActivo.TabIndex = 0;
             chkActivo.Text = "ACTIVO";
             chkActivo.UseVisualStyleBackColor = true;
             chkActivo.CheckedChanged += chkActivo_CheckedChanged;
@@ -97,7 +97,7 @@
             cboCarrera.Location = new Point(21, 175);
             cboCarrera.Name = "cboCarrera";
             cboCarrera.Size = new Size(439, 29);
-            cboCarrera.TabIndex = 5;
+            cboCarrera.TabIndex = 4;
             // 
             // btnCancelar
             // 
@@ -107,7 +107,7 @@
             btnCancelar.Location = new Point(334, 231);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(125, 40);
-            btnCancelar.TabIndex = 7;
+            btnCancelar.TabIndex = 6;
             btnCancelar.Text = "CANCELAR";
             btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
@@ -120,7 +120,7 @@
             btnGrabar.Location = new Point(203, 231);
             btnGrabar.Name = "btnGrabar";
             btnGrabar.Size = new Size(125, 40);
-            btnGrabar.TabIndex = 6;
+            btnGrabar.TabIndex = 5;
             btnGrabar.Text = "GRABAR";
             btnGrabar.UseVisualStyleBackColor = false;
             btnGrabar.Click += btnGrabar_Click;
@@ -132,7 +132,7 @@
             label3.Location = new Point(21, 151);
             label3.Name = "label3";
             label3.Size = new Size(191, 21);
-            label3.TabIndex = 9;
+            label3.TabIndex = 3;
             label3.Text = "SELECCIONE CARRERA";
             // 
             // FrmCursoMan03
@@ -154,7 +154,7 @@
             MinimizeBox = false;
             Name = "FrmCursoMan03";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "ARTUALIZAR CURSO";
+            Text = "ACTUALIZAR CURSO";
             Load += FrmCursoMan03_Load;
             ResumeLayout(false);
             PerformLayout();
