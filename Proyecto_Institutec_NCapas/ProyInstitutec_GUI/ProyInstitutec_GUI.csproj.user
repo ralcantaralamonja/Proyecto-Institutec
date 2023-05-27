@@ -1,7 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
   <ItemGroup>
+    <Compile Update="ActualizarCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Carrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmActualizarAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmActualizarProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmCursoMan01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmCursoMan02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmCursoMan03.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmInsertarAlumno.cs">
@@ -13,13 +32,16 @@
     <Compile Update="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MDIPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FrmProfesor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmVerAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InsertarCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MDIPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

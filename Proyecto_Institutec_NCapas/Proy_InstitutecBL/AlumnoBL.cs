@@ -13,27 +13,24 @@ namespace Proy_InstitutecBL
     {
         AlumnoADO objAlumnoADO = new AlumnoADO();
 
+        public DataTable ListarAlumno()
+        {
+            return objAlumnoADO.ListarAlumno();
+        }
         public Boolean InsertarAlumno(AlumnoBE objAlumnoBE) 
         {
             return objAlumnoADO.InsertarAlumno(objAlumnoBE);
+        }
+
+        public AlumnoBE ConsultarAlumno(String strId)
+        {
+            return objAlumnoADO.ConsultarAlumno(strId);
         }
         public Boolean ActualizarAlumno(AlumnoBE objAlumnoBE) 
         {
             return objAlumnoADO.ActualizarAlumno(objAlumnoBE);
         }
-        public Boolean BorrarAlumno(String strcod) 
-        {
-            return objAlumnoADO.BorrarAlumno(strcod);
-        }
-        public DataTable ListarAlumno()
-        {
-            return objAlumnoADO.ListarAlumno();
-        }
 
-        public AlumnoBE ConsultarAlumno(String strCod)
-        {
-            return objAlumnoADO.ConsultarAlumno(strCod);
-        }
 
     }
 }

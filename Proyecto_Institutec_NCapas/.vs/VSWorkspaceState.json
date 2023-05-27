@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ProyInstitutec_GUI"
+    "\\ProyInstitutec_GUI",
+    "\\Proy_Institutec_ADO"
   ],
-  "SelectedNode": "\\ProyInstitutec_GUI\\FrmVerAlumno.cs",
+  "SelectedNode": "\\Proy_Institutec_ADO\\AlumnoADO.cs",
   "PreviewInSolutionExplorer": false
 }

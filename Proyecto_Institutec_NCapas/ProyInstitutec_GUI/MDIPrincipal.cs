@@ -29,7 +29,27 @@ namespace ProyInstitutec_GUI
 
         private void MDIPrincipal_Load(object sender, EventArgs e)
         {
+            this.lblUsuario.Text = clsCredenciales.Login_Usuario;
 
+            //para niveles de acceso: roles y opciones a ver ... parcial solo Mantenimiento
+            if (clsCredenciales.Niv_Usuario == 1)
+            {
+                consultasToolStripMenuItem.Visible = true;
+                mantenimientoToolStripMenuItem.Visible = false; //EJEMPLO ANTES DEL PARCIAL CON USUARIO JLEON
+
+            }
+            else if (clsCredenciales.Niv_Usuario == 2)
+            {
+                mantenimientoToolStripMenuItem.Visible = true;
+                consultasToolStripMenuItem.Visible = true;
+            }
+        }
+
+        private void carreraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Carrera objFormCarrera = new Carrera();
+            objFormCarrera.MdiParent = this;
+            objFormCarrera.Show();
         }
 
         private void profesorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,36 +70,18 @@ namespace ProyInstitutec_GUI
             this.Refresh();
         }
 
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCursoMan01 objFrmCursoMan01 = new FrmCursoMan01();
+            objFrmCursoMan01.MdiParent = this;
+            objFrmCursoMan01.Show();
+        }
+
         private void estudianteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmVerAlumno objAlumno = new FrmVerAlumno();
             objAlumno.MdiParent = this;
             objAlumno.Show();
-        }
-
-        private void salirToolStripMenuItem1_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MDIPrincipal_Frm(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
-        private void MDIPrincipal_FrmClosed(object sender, FormClosedEventArgs e)
-        {
-
-        }
-
-        private void MDIPrincipal_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
         }
     }
 }

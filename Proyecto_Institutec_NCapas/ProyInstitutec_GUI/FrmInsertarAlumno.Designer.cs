@@ -40,9 +40,9 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            cmbDepartamento = new ComboBox();
-            cmbProvincia = new ComboBox();
-            cmbDistrito = new ComboBox();
+            cboDep = new ComboBox();
+            cboProvincia = new ComboBox();
+            cboDistrito = new ComboBox();
             groupBox2 = new GroupBox();
             txtCorreoAlu = new TextBox();
             mskTelAlu = new MaskedTextBox();
@@ -170,29 +170,32 @@
             label6.TabIndex = 9;
             label6.Text = "Distrito:";
             // 
-            // cmbDepartamento
+            // cboDep
             // 
-            cmbDepartamento.FormattingEnabled = true;
-            cmbDepartamento.Location = new Point(183, 310);
-            cmbDepartamento.Name = "cmbDepartamento";
-            cmbDepartamento.Size = new Size(232, 33);
-            cmbDepartamento.TabIndex = 10;
+            cboDep.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboDep.FormattingEnabled = true;
+            cboDep.Location = new Point(183, 310);
+            cboDep.Name = "cboDep";
+            cboDep.Size = new Size(232, 33);
+            cboDep.TabIndex = 10;
             // 
-            // cmbProvincia
+            // cboProvincia
             // 
-            cmbProvincia.FormattingEnabled = true;
-            cmbProvincia.Location = new Point(183, 360);
-            cmbProvincia.Name = "cmbProvincia";
-            cmbProvincia.Size = new Size(231, 33);
-            cmbProvincia.TabIndex = 11;
+            cboProvincia.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboProvincia.FormattingEnabled = true;
+            cboProvincia.Location = new Point(183, 360);
+            cboProvincia.Name = "cboProvincia";
+            cboProvincia.Size = new Size(231, 33);
+            cboProvincia.TabIndex = 11;
             // 
-            // cmbDistrito
+            // cboDistrito
             // 
-            cmbDistrito.FormattingEnabled = true;
-            cmbDistrito.Location = new Point(183, 416);
-            cmbDistrito.Name = "cmbDistrito";
-            cmbDistrito.Size = new Size(253, 33);
-            cmbDistrito.TabIndex = 12;
+            cboDistrito.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboDistrito.FormattingEnabled = true;
+            cboDistrito.Location = new Point(183, 416);
+            cboDistrito.Name = "cboDistrito";
+            cboDistrito.Size = new Size(253, 33);
+            cboDistrito.TabIndex = 12;
             // 
             // groupBox2
             // 
@@ -215,6 +218,7 @@
             txtCorreoAlu.Name = "txtCorreoAlu";
             txtCorreoAlu.Size = new Size(345, 31);
             txtCorreoAlu.TabIndex = 6;
+            txtCorreoAlu.TextChanged += txtCorreoAlu_TextChanged;
             // 
             // mskTelAlu
             // 
@@ -320,11 +324,13 @@
             // 
             // cboCarrera
             // 
+            cboCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
             cboCarrera.FormattingEnabled = true;
             cboCarrera.Location = new Point(183, 267);
             cboCarrera.Name = "cboCarrera";
             cboCarrera.Size = new Size(232, 33);
             cboCarrera.TabIndex = 20;
+            cboCarrera.SelectionChangeCommitted += cboCarrera_SelectionChangeCommitted;
             // 
             // label12
             // 
@@ -337,6 +343,7 @@
             // 
             // cboFacultad
             // 
+            cboFacultad.DropDownStyle = ComboBoxStyle.DropDownList;
             cboFacultad.FormattingEnabled = true;
             cboFacultad.Location = new Point(518, 267);
             cboFacultad.Name = "cboFacultad";
@@ -358,9 +365,9 @@
             Controls.Add(btnCancelar);
             Controls.Add(button1);
             Controls.Add(groupBox2);
-            Controls.Add(cmbDistrito);
-            Controls.Add(cmbProvincia);
-            Controls.Add(cmbDepartamento);
+            Controls.Add(cboDistrito);
+            Controls.Add(cboProvincia);
+            Controls.Add(cboDep);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -396,9 +403,9 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private ComboBox cmbDepartamento;
-        private ComboBox cmbProvincia;
-        private ComboBox cmbDistrito;
+        private ComboBox cboDep;
+        private ComboBox cboProvincia;
+        private ComboBox cboDistrito;
         private GroupBox groupBox2;
         private Label label9;
         private Label label8;

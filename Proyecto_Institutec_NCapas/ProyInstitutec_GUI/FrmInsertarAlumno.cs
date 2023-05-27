@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Proy_InstitutecBE;
+using Proy_InstitutecBl;
 using Proy_InstitutecBL;
 
 namespace ProyInstitutec_GUI
@@ -17,8 +18,8 @@ namespace ProyInstitutec_GUI
     {
         AlumnoBL objAlumnoBL = new AlumnoBL();
         AlumnoBE objAlumnoBE = new AlumnoBE();
-        // FacultadBL objFacultadBL = new FacultadBL();
-        //CarreraBL objCarreraBL = new CarreraBL();
+        FacultadBL objFacultadBL = new FacultadBL();
+        CarreraBL objCarreraBL = new CarreraBL();
 
         public FrmInsertarAlumno()
         {
@@ -91,15 +92,16 @@ namespace ProyInstitutec_GUI
                 objAlumnoBE.ApePat = txtApePat.Text.Trim();
                 objAlumnoBE.Ndocum = mskDNIAlu.Text.Trim();
                 objAlumnoBE.TelAlu = mskTelAlu.Text.Trim();
+                objAlumnoBE.CorAlu = txtCorreoAlu.Text.Trim();
                 objAlumnoBE.SexoAl = Genero;
                 objAlumnoBE.Estado = activo;
                 objAlumnoBE.FecNac = fechaNac;
-                //objAlumnoBE.IdFacu = cboFacultad.SelectedValue.ToString();
-                //objAlumnoBE.CodCar = cboCarrera.SelectedValue.ToString();
-                // objAlumnoBE.Id_Ubi = cboDep.SelectedValue.ToString() + cboProvincia.SelectedValue.ToString() +
-                //    cboDistrito.SelectedValue.ToString();
+                objAlumnoBE.IdFacu = cboFacultad.SelectedValue.ToString();
+                objAlumnoBE.CodCar = cboCarrera.SelectedValue.ToString();
+                objAlumnoBE.Id_Ubi = cboDep.SelectedValue.ToString() + cboProvincia.SelectedValue.ToString() + cboDistrito.SelectedValue.ToString();
+
                 //formulario de logeo 
-                //objAlumnoBE.Usu_Registro = clsCredenciales.Login_Usuario;
+                objAlumnoBE.Usu_Registro = clsCredenciales.Login_Usuario;
                 if (objAlumnoBL.InsertarAlumno(objAlumnoBE) == true)
                 {
                     this.Close();
@@ -134,70 +136,70 @@ namespace ProyInstitutec_GUI
         private void CargarUbigeo(String IdDepa, String IdProv, String IdDist)
         {
 
-            //UbigeoBL objUbigeoBL = new UbigeoBL();
-            //cboDep.DataSource = objUbigeoBL.Ubigeo_Departamentos();
-            //cboDep.ValueMember = "IdDepa";
-            //cboDep.DisplayMember = "Departamento";
-            //cboDep.SelectedValue = IdDepa;
+            UbigeoBL objUbigeoBL = new UbigeoBL();
+            cboDep.DataSource = objUbigeoBL.Ubigeo_Departamentos();
+            cboDep.ValueMember = "IdDepa";
+            cboDep.DisplayMember = "Departamento";
+            cboDep.SelectedValue = IdDepa;
 
-            //cboProvincia.DataSource = objUbigeoBL.Ubigeo_ProvinciasDepartamento(IdDepa);
-            //cboProvincia.ValueMember = "IdProv";
-            //cboProvincia.DisplayMember = "Provincia";
-            //cboProvincia.SelectedValue = IdProv;
+            cboProvincia.DataSource = objUbigeoBL.Ubigeo_ProvinciasDepartamento(IdDepa);
+            cboProvincia.ValueMember = "IdProv";
+            cboProvincia.DisplayMember = "Provincia";
+            cboProvincia.SelectedValue = IdProv;
 
-            //cboDistrito.DataSource = objUbigeoBL.Ubigeo_DistritosProvinciaDepartamento(IdDepa, IdProv);
-            //cboDistrito.ValueMember = "IdDist";
-            //cboDistrito.DisplayMember = "Distrito";
-            //cboDistrito.SelectedValue = IdDist;
+            cboDistrito.DataSource = objUbigeoBL.Ubigeo_DistritosProvinciaDepartamento(IdDepa, IdProv);
+            cboDistrito.ValueMember = "IdDist";
+            cboDistrito.DisplayMember = "Distrito";
+            cboDistrito.SelectedValue = IdDist;
 
         }
 
         private void cboProvincia_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            // CargarUbigeo(cboDep.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
+            CargarUbigeo(cboDep.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
         }
 
         private void cboDep_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            // CargarUbigeo(cboDep.SelectedValue.ToString(), "01", "01");
+            CargarUbigeo(cboDep.SelectedValue.ToString(), "01", "01");
         }
         private void FrmInsertarAlumno_Load(object sender, EventArgs e)
         {
 
             try
             {
-                //CargarUbigeo("14", "01", "01");
+                CargarUbigeo("14", "01", "01");
 
                 // Codifique
                 //cargamos los combos
-                // DataTable dt = objFacultadBL.ListarFacultad();
+                DataTable dt = objFacultadBL.ListarFacultad();
 
 
                 //instancia de datarow , instancia de fila
-                //DataRow dr;
-                //dr = dt.NewRow(); // fila vacia
-                //dr["IdFacu"] = 0;
-                //dr["DesFac"] = "--Seleccione--";
+                DataRow dr;
+                dr = dt.NewRow(); // fila vacia
+                dr["IdFacu"] = 0;
+                dr["DesFac"] = "--Seleccione--";
                 //primera fila que se visualice:
-                //dt.Rows.InsertAt(dr, 0);
-                //cboFacultad.DataSource = dt;
-                //cboFacultad.DisplayMember = "DesFac";
-                //cboFacultad.ValueMember = "IdFacu";
+                dt.Rows.InsertAt(dr, 0);
+                cboFacultad.DataSource = dt;
+                cboFacultad.DisplayMember = "DesFac";
+                cboFacultad.ValueMember = "IdFacu";
 
 
-                // DataTable dt2 = objCarreraBL.ListarCarrera();
+                DataTable dt2 = objCarreraBL.ListarCarrera();
 
 
                 //instancia de datarow , instancia de fila
-                //DataRow dr;
-                //dr = dt2.NewRow(); // fila vacia
-                //dr["CodCar"] = 0;
-                //dr["DesCar"] = "--Seleccione--";
+                DataRow dtr;
+                dr = dt2.NewRow(); // fila vacia
+                dr["CodCar"] = 0;
+                dr["DesCar"] = "--Seleccione--";
                 //primera fila que se visualice:
-                //dt2.Rows.InsertAt(dr, 0);
-                //cboCarrera.DataSource = dt2;
-                //cboCarrera.DisplayMember = "DesFac";
-                //cboCarrera.ValueMember = "CodCar";
+                dt2.Rows.InsertAt(dr, 0);
+                cboCarrera.DataSource = dt2;
+                cboCarrera.DisplayMember = "DesCar";
+                cboCarrera.ValueMember = "CodCar";
 
             }
             catch (Exception ex)
@@ -210,6 +212,16 @@ namespace ProyInstitutec_GUI
         }
 
         private void chkActivo_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboCarrera_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCorreoAlu_TextChanged(object sender, EventArgs e)
         {
 
         }

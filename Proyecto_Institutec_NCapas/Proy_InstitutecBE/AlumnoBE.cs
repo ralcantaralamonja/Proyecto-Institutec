@@ -21,7 +21,7 @@ namespace Proy_InstitutecBE
 
         public String CorAlu { get; set;}
 
-        public bool Estado { get; set;}
+        public bool Estado { get; set; }
 
         public String SexoAl { get; set;}
 
@@ -45,7 +45,7 @@ namespace Proy_InstitutecBE
 
         public String distrito { get; set; }
 
-        public Int16 Id_Ubi { get;set;}
+        public String Id_Ubi { get;set;}
 
         public String IdFacu { get;set;}
 

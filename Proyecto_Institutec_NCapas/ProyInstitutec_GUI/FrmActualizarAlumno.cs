@@ -16,18 +16,14 @@ namespace ProyInstitutec_GUI
     {
         AlumnoBE objAlumnoBE = new AlumnoBE();
         AlumnoBL objAlumnoBL = new AlumnoBL();
-        // FacultadBL objFacultadBL = new FacultadBL();
-        //CarreraBL objCarreraBL = new CarreraBL();
+        FacultadBL objFacultadBL = new FacultadBL();
+        CarreraBL objCarreraBL = new CarreraBL();
 
         public FrmActualizarAlumno()
         {
             InitializeComponent();
         }
-        public String Codigo
-        {
-            get; set;
-        }
-
+        public String Codigo { get; set; }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -51,18 +47,12 @@ namespace ProyInstitutec_GUI
                 {
                     throw new Exception("El apellido Marteno del alumno es un campo obligatorio");
                 }
-                if (mskDNIAlumno.Text.Trim() == String.Empty || mskDNIAlumno.Text.Length != 8)
-                {
-                    throw new Exception("Dni vacio o no contiene 8 digitos");
-                }
+
                 if (mskTelAlu.Text.Trim() == String.Empty)
                 {
-                    throw new Exception("Numero de telefono invalido");
+                    throw new Exception("Numero de telefono debe tener 9 digitos");
                 }
-                if (txtCoreAlu.Text.Trim() == String.Empty)
-                {
-                    throw new Exception("Correo es un campo obligatorio");
-                }
+
 
                 Boolean activo;
                 if (chkActivo.Checked == true)
@@ -73,20 +63,16 @@ namespace ProyInstitutec_GUI
                 {
                     activo = false;
                 }
-             
+                DateTime fechaNac = dtpFecha_Nac.Value;
                 //Pasamos valores alas propiedades de la instancia...
+
+                objAlumnoBE.IdAlum = lblCodigo.Text.Trim();
                 objAlumnoBE.NomAlu = txtNombre.Text.Trim();
                 objAlumnoBE.ApeMat = txtApeMat.Text.Trim();
                 objAlumnoBE.ApePat = txtApePat.Text.Trim();
-                objAlumnoBE.Ndocum = mskDNIAlumno.Text.Trim();
                 objAlumnoBE.TelAlu = mskTelAlu.Text.Trim();
-                objAlumnoBE.CorAlu = txtCoreAlu.Text.Trim();
                 objAlumnoBE.Estado = activo;
-                //objAlumnoBE.IdFacu = cboFacultad.SelectedValue.ToString();
-                //objAlumnoBE.CodCar = cboCarrera.SelectedValue.ToString();
-
-                //formulario de logeo 
-                objAlumnoBE.Usu_Ult_Mod = clsCredenciales.Login_Usuario;
+                objAlumnoBE.FecNac = fechaNac;
 
                 if (objAlumnoBL.ActualizarAlumno(objAlumnoBE) == true)
                 {
@@ -94,14 +80,13 @@ namespace ProyInstitutec_GUI
                 }
                 else
                 {
-                    throw new Exception("No se actualizo ");
+                    throw new Exception("No se inserto ");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
-                MessageBox.Show("Error : " + ex.Message);
-
+                throw;
             }
         }
 
@@ -116,75 +101,40 @@ namespace ProyInstitutec_GUI
         {
             try
             {
-                try
+
+                objAlumnoBE = objAlumnoBL.ConsultarAlumno(this.Codigo);
+                DateTime dateTime = objAlumnoBE.FecNac;
+                lblCodigo.Text = objAlumnoBE.IdAlum;
+                txtNombre.Text = objAlumnoBE.NomAlu;
+                txtApeMat.Text = objAlumnoBE.ApeMat;
+                txtApePat.Text = objAlumnoBE.ApePat;
+                mskTelAlu.Text = objAlumnoBE.TelAlu;
+                dtpFecha_Nac.Value = dateTime;
+                if (objAlumnoBE.Estado == true)
                 {
-                    // Codifique
-                    //cargamos los combos
-                    // DataTable dt = objFacultadBL.ListarFacultad();
-
-
-                    //instancia de datarow , instancia de fila
-                    //DataRow dr;
-                    //dr = dt.NewRow(); // fila vacia
-                    //dr["IdFacu"] = 0;
-                    //dr["DesFac"] = "--Seleccione--";
-                    //primera fila que se visualice:
-                    //dt.Rows.InsertAt(dr, 0);
-                    //cboFacultad.DataSource = dt;
-                    //cboFacultad.DisplayMember = "DesFac";
-                    //cboFacultad.ValueMember = "IdFacu";
-
-
-                    //dt2 = objCarreraBL.ListarCarrera();
-
-
-                    //instancia de datarow , instancia de fila
-
-                    //dr = dt2.NewRow(); // fila vacia
-                    //dr["CodCar"] = 0;
-                    //dr["DesCar"] = "--Seleccione--";
-                    //primera fila que se visualice:
-                    //dt2.Rows.InsertAt(dr, 0);
-                    //cboCarrera.DataSource = dt2;
-                    //cboCarrera.DisplayMember = "DesFac";
-                    //cboCarrera.ValueMember = "CodCar";
-
-                    objAlumnoBE = objAlumnoBL.ConsultarAlumno(this.Codigo);
-
-                    LblCodAlu.Text = objAlumnoBE.IdAlum;
-                    txtNombre.Text = objAlumnoBE.NomAlu;
-                    txtApePat.Text = objAlumnoBE.ApePat;
-                    txtApeMat.Text = objAlumnoBE.ApeMat;
-                    mskDNIAlumno.Text = objAlumnoBE.Ndocum;
-                    txtCoreAlu.Text = objAlumnoBE.CorAlu;
-                    mskTelAlu.Text = objAlumnoBE.TelAlu;
-
-                    //combos Facultad y Carrera
-                    cboFacultad.SelectedValue = objAlumnoBE.IdFacu;
-                    cboCarrera.SelectedValue = objAlumnoBE.CodCar;
-
-
-                    //estado , convierto a booleqan para activar
-                    chkActivo.Checked = Convert.ToBoolean(objAlumnoBE.Estado);
-
-
-
+                    chkActivo.Checked = true;
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Error: " + ex.Message);
+                    chkActivo.Checked = false;
                 }
-
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Error : " + ex.Message);
-            }
 
+                throw;
+            }
 
         }
 
+        private void cboCarrera_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
 
+        private void cboCarrera_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
