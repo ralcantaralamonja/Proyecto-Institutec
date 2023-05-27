@@ -25,7 +25,7 @@ namespace ProyInstitutec_GUI
         {
             try
             {
-                
+
                 objProfesorBE = objProfesorBL.ConsultarProfesor(this.Codigo);
                 DateTime ingreso = objProfesorBE.FecIng;
                 lblCodigo.Text = objProfesorBE.IdProf;
@@ -83,9 +83,9 @@ namespace ProyInstitutec_GUI
                 {
                     activo = false;
                 }
-                 DateTime fechaIng = dtpFecIng.Value;
+                DateTime fechaIng = dtpFecIng.Value;
                 //Pasamos valores alas propiedades de la instancia...
-               
+
                 objProfesorBE.IdProf = lblCodigo.Text.Trim();
                 objProfesorBE.NomPro = txtNompro.Text.Trim();
                 objProfesorBE.ApeMat = txtApeMat.Text.Trim();

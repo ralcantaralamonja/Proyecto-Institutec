@@ -60,71 +60,71 @@
             // txtNomPro
             // 
             txtNomPro.CharacterCasing = CharacterCasing.Upper;
-            txtNomPro.Location = new Point(72, 28);
+            txtNomPro.Location = new Point(19, 66);
             txtNomPro.Name = "txtNomPro";
-            txtNomPro.Size = new Size(205, 23);
+            txtNomPro.Size = new Size(313, 27);
             txtNomPro.TabIndex = 0;
             // 
             // txtApePat
             // 
             txtApePat.CharacterCasing = CharacterCasing.Upper;
-            txtApePat.Location = new Point(114, 78);
+            txtApePat.Location = new Point(19, 129);
             txtApePat.Name = "txtApePat";
-            txtApePat.Size = new Size(163, 23);
+            txtApePat.Size = new Size(313, 27);
             txtApePat.TabIndex = 1;
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(6, 31);
+            lblNombre.Location = new Point(19, 42);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(54, 15);
+            lblNombre.Size = new Size(83, 21);
             lblNombre.TabIndex = 5;
-            lblNombre.Text = "Nombre:";
+            lblNombre.Text = "NOMBRE:";
             // 
             // lblApePat
             // 
             lblApePat.AutoSize = true;
-            lblApePat.Location = new Point(6, 78);
+            lblApePat.Location = new Point(18, 105);
             lblApePat.Name = "lblApePat";
-            lblApePat.Size = new Size(102, 15);
+            lblApePat.Size = new Size(165, 21);
             lblApePat.TabIndex = 5;
-            lblApePat.Text = "Apellido Parterno:";
+            lblApePat.Text = "APELLIDO PATERNO";
             // 
             // lblApeMat
             // 
             lblApeMat.AutoSize = true;
-            lblApeMat.Location = new Point(6, 132);
+            lblApeMat.Location = new Point(19, 168);
             lblApeMat.Name = "lblApeMat";
-            lblApeMat.Size = new Size(102, 15);
+            lblApeMat.Size = new Size(175, 21);
             lblApeMat.TabIndex = 5;
-            lblApeMat.Text = "Apellido Materno:";
+            lblApeMat.Text = "APELLIDO MATERNO:";
             lblApeMat.TextAlign = ContentAlignment.TopCenter;
             // 
             // lblDni
             // 
             lblDni.AutoSize = true;
-            lblDni.Location = new Point(296, 31);
+            lblDni.Location = new Point(350, 42);
             lblDni.Name = "lblDni";
-            lblDni.Size = new Size(28, 15);
+            lblDni.Size = new Size(43, 21);
             lblDni.TabIndex = 5;
-            lblDni.Text = "Dni:";
+            lblDni.Text = "DNI:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(6, 188);
+            label5.Location = new Point(19, 241);
             label5.Name = "label5";
-            label5.Size = new Size(83, 15);
+            label5.Size = new Size(146, 21);
             label5.TabIndex = 5;
-            label5.Text = "Departamento";
+            label5.Text = "DEPARTAMENTO:";
             // 
             // txtTelf
             // 
-            txtTelf.Location = new Point(114, 339);
+            txtTelf.Location = new Point(119, 456);
             txtTelf.MaxLength = 9;
             txtTelf.Name = "txtTelf";
-            txtTelf.Size = new Size(136, 23);
+            txtTelf.Size = new Size(212, 27);
             txtTelf.TabIndex = 1;
             txtTelf.KeyPress += txtDni_KeyPress;
             // 
@@ -132,15 +132,17 @@
             // 
             cboDep.DropDownStyle = ComboBoxStyle.DropDownList;
             cboDep.FormattingEnabled = true;
-            cboDep.Location = new Point(114, 188);
+            cboDep.Location = new Point(18, 265);
             cboDep.Name = "cboDep";
-            cboDep.Size = new Size(163, 23);
+            cboDep.Size = new Size(314, 29);
             cboDep.TabIndex = 8;
             cboDep.SelectionChangeCommitted += cboDep_SelectionChangeCommitted;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(btnCancelar);
             groupBox1.Controls.Add(dtpFecIng);
+            groupBox1.Controls.Add(btnIngresar);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(txtApeMat);
@@ -160,154 +162,161 @@
             groupBox1.Controls.Add(txtApePat);
             groupBox1.Controls.Add(lblDni);
             groupBox1.Controls.Add(lblApeMat);
-            groupBox1.Location = new Point(32, 25);
+            groupBox1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(478, 471);
+            groupBox1.Size = new Size(542, 635);
             groupBox1.TabIndex = 9;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Datos Personales";
+            groupBox1.Text = "DATOS PERSONALES";
             // 
             // dtpFecIng
             // 
             dtpFecIng.Format = DateTimePickerFormat.Short;
-            dtpFecIng.Location = new Point(114, 405);
+            dtpFecIng.Location = new Point(119, 517);
             dtpFecIng.Name = "dtpFecIng";
-            dtpFecIng.Size = new Size(136, 23);
+            dtpFecIng.Size = new Size(216, 27);
             dtpFecIng.TabIndex = 17;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(7, 411);
+            label2.Location = new Point(19, 523);
             label2.Name = "label2";
-            label2.Size = new Size(46, 15);
+            label2.Size = new Size(86, 21);
             label2.TabIndex = 10;
-            label2.Text = "Ingreso";
+            label2.Text = "INGRESO:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(7, 339);
+            label4.Location = new Point(18, 462);
             label4.Name = "label4";
-            label4.Size = new Size(55, 15);
+            label4.Size = new Size(95, 21);
             label4.TabIndex = 12;
-            label4.Text = "Telefono:";
+            label4.Text = "TELEFONO:";
             // 
             // txtApeMat
             // 
             txtApeMat.CharacterCasing = CharacterCasing.Upper;
-            txtApeMat.Location = new Point(114, 129);
+            txtApeMat.Location = new Point(19, 194);
             txtApeMat.Name = "txtApeMat";
-            txtApeMat.Size = new Size(163, 23);
+            txtApeMat.Size = new Size(313, 27);
             txtApeMat.TabIndex = 16;
             // 
             // cboDistrito
             // 
             cboDistrito.DropDownStyle = ComboBoxStyle.DropDownList;
             cboDistrito.FormattingEnabled = true;
-            cboDistrito.Location = new Point(114, 277);
+            cboDistrito.Location = new Point(18, 411);
             cboDistrito.Name = "cboDistrito";
-            cboDistrito.Size = new Size(163, 23);
+            cboDistrito.Size = new Size(314, 29);
             cboDistrito.TabIndex = 15;
             // 
             // cboProvincia
             // 
             cboProvincia.DropDownStyle = ComboBoxStyle.DropDownList;
             cboProvincia.FormattingEnabled = true;
-            cboProvincia.Location = new Point(114, 234);
+            cboProvincia.Location = new Point(18, 341);
             cboProvincia.Name = "cboProvincia";
-            cboProvincia.Size = new Size(163, 23);
+            cboProvincia.Size = new Size(314, 29);
             cboProvincia.TabIndex = 14;
             cboProvincia.SelectionChangeCommitted += cboProvincia_SelectionChangeCommitted;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(6, 280);
+            label7.Location = new Point(18, 387);
             label7.Name = "label7";
-            label7.Size = new Size(45, 15);
+            label7.Size = new Size(84, 21);
             label7.TabIndex = 13;
-            label7.Text = "Distrito";
+            label7.Text = "DISTRITO:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(6, 234);
+            label6.Location = new Point(19, 317);
             label6.Name = "label6";
-            label6.Size = new Size(56, 15);
+            label6.Size = new Size(106, 21);
             label6.TabIndex = 12;
-            label6.Text = "Provincia";
+            label6.Text = "PROVINCIA:";
             // 
             // txtDni
             // 
-            txtDni.Location = new Point(330, 28);
+            txtDni.Location = new Point(350, 66);
             txtDni.MaxLength = 8;
             txtDni.Name = "txtDni";
-            txtDni.Size = new Size(100, 23);
+            txtDni.Size = new Size(176, 27);
             txtDni.TabIndex = 8;
             txtDni.KeyPress += txtDni_KeyPress;
             // 
             // chkActivo
             // 
             chkActivo.AutoSize = true;
-            chkActivo.Location = new Point(298, 192);
+            chkActivo.Location = new Point(350, 241);
             chkActivo.Name = "chkActivo";
-            chkActivo.Size = new Size(65, 19);
+            chkActivo.Size = new Size(93, 25);
             chkActivo.TabIndex = 10;
-            chkActivo.Text = "Activo?";
+            chkActivo.Text = "ACTIVO";
             chkActivo.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
             groupBox2.Controls.Add(optM);
             groupBox2.Controls.Add(optF);
-            groupBox2.Location = new Point(296, 90);
+            groupBox2.Location = new Point(350, 129);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(176, 96);
             groupBox2.TabIndex = 11;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Genero";
+            groupBox2.Text = "GENERO";
             // 
             // optM
             // 
             optM.AutoSize = true;
             optM.Checked = true;
-            optM.Location = new Point(6, 42);
+            optM.Location = new Point(45, 26);
             optM.Name = "optM";
-            optM.Size = new Size(80, 19);
+            optM.Size = new Size(126, 25);
             optM.TabIndex = 9;
             optM.TabStop = true;
-            optM.Text = "Masculino";
+            optM.Text = "MASCULINO";
             optM.UseVisualStyleBackColor = true;
             // 
             // optF
             // 
             optF.AutoSize = true;
-            optF.Location = new Point(99, 43);
+            optF.Location = new Point(45, 57);
             optF.Name = "optF";
-            optF.Size = new Size(71, 19);
+            optF.Size = new Size(112, 25);
             optF.TabIndex = 10;
-            optF.Text = "Femenio";
+            optF.Text = "FEMENINO";
             optF.UseVisualStyleBackColor = true;
             // 
             // btnIngresar
             // 
-            btnIngresar.Location = new Point(236, 549);
+            btnIngresar.BackColor = SystemColors.ControlLight;
+            btnIngresar.FlatStyle = FlatStyle.Flat;
+            btnIngresar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnIngresar.Location = new Point(268, 576);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(103, 40);
+            btnIngresar.Size = new Size(125, 40);
             btnIngresar.TabIndex = 11;
-            btnIngresar.Text = "Ingresar";
-            btnIngresar.UseVisualStyleBackColor = true;
+            btnIngresar.Text = "INGRESAR";
+            btnIngresar.UseVisualStyleBackColor = false;
             btnIngresar.Click += btnIngresar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(417, 549);
+            btnCancelar.BackColor = SystemColors.ControlLight;
+            btnCancelar.FlatStyle = FlatStyle.Flat;
+            btnCancelar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCancelar.Location = new Point(401, 576);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(93, 40);
+            btnCancelar.Size = new Size(125, 40);
             btnCancelar.TabIndex = 11;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Text = "CANCELAR";
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // FrmInsertarProfesor
@@ -315,14 +324,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(533, 603);
-            Controls.Add(btnCancelar);
-            Controls.Add(btnIngresar);
+            ClientSize = new Size(570, 659);
             Controls.Add(groupBox1);
             Margin = new Padding(2);
             Name = "FrmInsertarProfesor";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Insertar Profesor";
+            Text = "CREAR PROFESOR";
             Load += FrmInsertarProfesor_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
