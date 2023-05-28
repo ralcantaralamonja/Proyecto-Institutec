@@ -230,7 +230,7 @@
             // 
             // dtpFecha_Nac
             // 
-            dtpFecha_Nac.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+            dtpFecha_Nac.CustomFormat = "dd/MM/yyyy ";
             dtpFecha_Nac.Format = DateTimePickerFormat.Short;
             dtpFecha_Nac.Location = new Point(337, 88);
             dtpFecha_Nac.Name = "dtpFecha_Nac";

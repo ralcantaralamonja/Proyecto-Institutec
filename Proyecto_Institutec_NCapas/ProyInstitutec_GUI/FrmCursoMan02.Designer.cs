@@ -88,6 +88,7 @@
             // 
             // btnGrabar
             // 
+            btnGrabar.BackColor = SystemColors.ControlLight;
             btnGrabar.FlatStyle = FlatStyle.Flat;
             btnGrabar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnGrabar.Location = new Point(164, 245);
@@ -95,11 +96,12 @@
             btnGrabar.Size = new Size(125, 40);
             btnGrabar.TabIndex = 5;
             btnGrabar.Text = "GRABAR";
-            btnGrabar.UseVisualStyleBackColor = true;
+            btnGrabar.UseVisualStyleBackColor = false;
             btnGrabar.Click += btnGrabar_Click;
             // 
             // btnCancelar
             // 
+            btnCancelar.BackColor = SystemColors.ControlLight;
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCancelar.Location = new Point(295, 245);
@@ -107,7 +109,7 @@
             btnCancelar.Size = new Size(125, 40);
             btnCancelar.TabIndex = 6;
             btnCancelar.Text = "CANCELAR";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // label3

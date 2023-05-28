@@ -52,7 +52,7 @@
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(8, 3, 0, 3);
             menuStrip1.Size = new Size(1101, 40);
-            menuStrip1.TabIndex = 1;
+            menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             menuStrip1.ItemClicked += menuStrip1_ItemClicked;
             // 
@@ -61,8 +61,8 @@
             mantenimientoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { profesorToolStripMenuItem, estudianteToolStripMenuItem, salirToolStripMenuItem, carreraToolStripMenuItem, salirToolStripMenuItem1 });
             mantenimientoToolStripMenuItem.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            mantenimientoToolStripMenuItem.Size = new Size(213, 34);
-            mantenimientoToolStripMenuItem.Text = "Mantenimiento";
+            mantenimientoToolStripMenuItem.Size = new Size(227, 34);
+            mantenimientoToolStripMenuItem.Text = "MANTENIMIENTO";
             // 
             // profesorToolStripMenuItem
             // 
@@ -70,7 +70,7 @@
             profesorToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
             profesorToolStripMenuItem.Name = "profesorToolStripMenuItem";
             profesorToolStripMenuItem.Size = new Size(270, 38);
-            profesorToolStripMenuItem.Text = "Profesor";
+            profesorToolStripMenuItem.Text = "PROFESOR";
             profesorToolStripMenuItem.Click += profesorToolStripMenuItem_Click;
             // 
             // estudianteToolStripMenuItem
@@ -79,8 +79,8 @@
             estudianteToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
             estudianteToolStripMenuItem.Name = "estudianteToolStripMenuItem";
             estudianteToolStripMenuItem.Size = new Size(270, 38);
-            estudianteToolStripMenuItem.Text = "Estudiante";
-            estudianteToolStripMenuItem.Click += estudianteToolStripMenuItem_Click;
+            estudianteToolStripMenuItem.Text = "ESTUDIANTE";
+            estudianteToolStripMenuItem.Click += estudianteToolStripMenuItem_Click_1;
             // 
             // salirToolStripMenuItem
             // 
@@ -88,7 +88,7 @@
             salirToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             salirToolStripMenuItem.Size = new Size(270, 38);
-            salirToolStripMenuItem.Text = "Curso";
+            salirToolStripMenuItem.Text = "CURSO";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // carreraToolStripMenuItem
@@ -97,7 +97,7 @@
             carreraToolStripMenuItem.BackgroundImageLayout = ImageLayout.None;
             carreraToolStripMenuItem.Name = "carreraToolStripMenuItem";
             carreraToolStripMenuItem.Size = new Size(270, 38);
-            carreraToolStripMenuItem.Text = "Carrera";
+            carreraToolStripMenuItem.Text = "CARRERA";
             carreraToolStripMenuItem.Click += carreraToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem1
@@ -106,15 +106,15 @@
             salirToolStripMenuItem1.BackgroundImageLayout = ImageLayout.None;
             salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
             salirToolStripMenuItem1.Size = new Size(270, 38);
-            salirToolStripMenuItem1.Text = "Salir";
+            salirToolStripMenuItem1.Text = "SALIR";
             salirToolStripMenuItem1.Click += salirToolStripMenuItem1_Click;
             // 
             // consultasToolStripMenuItem
             // 
             consultasToolStripMenuItem.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            consultasToolStripMenuItem.Size = new Size(145, 34);
-            consultasToolStripMenuItem.Text = "Consultas";
+            consultasToolStripMenuItem.Size = new Size(167, 34);
+            consultasToolStripMenuItem.Text = "CONSULTAS";
             // 
             // statusStrip1
             // 

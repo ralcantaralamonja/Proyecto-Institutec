@@ -58,7 +58,7 @@ namespace Proy_Institutec_ADO
                 AlumnoBE objAlumnoBE = new AlumnoBE();
                 cmd.Connection = cnx;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "usp_ConsultarAlumno";
+                cmd.CommandText = "usp_consultarAlumno";
                 cmd.Parameters.Clear();
                 //Codifique
                 cmd.Parameters.AddWithValue("@IdAlum", strid);

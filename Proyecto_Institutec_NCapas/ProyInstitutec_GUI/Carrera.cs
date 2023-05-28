@@ -39,6 +39,7 @@ namespace ProyInstitutec_GUI
 
             dgtCarrera.DataSource = dtv;
             lblRegistros.Text = dgtCarrera.Rows.Count.ToString();
+            dgtCarrera.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
         }
 
         private void txtNomCarrera_TextChanged(object sender, EventArgs e)

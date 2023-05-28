@@ -72,6 +72,8 @@ namespace ProyInstitutec_GUI
             dtv.RowFilter = "Curso like '%" + strFiltro + "%'";
             dtgDatos.DataSource = dtv;
             lblRegistros.Text = dtgDatos.Rows.Count.ToString();
+
+            dtgDatos.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
         }
 
         private void txtFiltro_TextChanged(object sender, EventArgs e)
@@ -91,6 +93,11 @@ namespace ProyInstitutec_GUI
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

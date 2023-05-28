@@ -117,6 +117,7 @@
             dgtCarrera.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgtCarrera.Size = new Size(1157, 503);
             dgtCarrera.TabIndex = 2;
+            dgtCarrera.TabStop = false;
             // 
             // CodCar
             // 

@@ -56,7 +56,7 @@
             // 
             // lblRegistros
             // 
-            lblRegistros.BackColor = SystemColors.ButtonHighlight;
+            lblRegistros.BackColor = SystemColors.Window;
             lblRegistros.BorderStyle = BorderStyle.FixedSingle;
             lblRegistros.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblRegistros.Location = new Point(1086, 564);
@@ -81,9 +81,10 @@
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(12, 15);
             label1.Name = "label1";
-            label1.Size = new Size(182, 21);
+            label1.Size = new Size(185, 21);
             label1.TabIndex = 0;
-            label1.Text = "FILTRO DE BUSQUEDA:";
+            label1.Text = "FILTRO POR CARRERA:";
+            label1.Click += label1_Click;
             // 
             // btnCerrar
             // 
@@ -181,6 +182,7 @@
             dtgDatos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dtgDatos.Size = new Size(1157, 503);
             dtgDatos.TabIndex = 2;
+            dtgDatos.TabStop = false;
             // 
             // FrmCursoMan01
             // 

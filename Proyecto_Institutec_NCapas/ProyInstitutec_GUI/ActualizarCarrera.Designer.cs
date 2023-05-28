@@ -43,11 +43,10 @@
             // 
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCancelar.Location = new Point(477, 385);
-            btnCancelar.Margin = new Padding(4, 5, 4, 5);
+            btnCancelar.Location = new Point(334, 231);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(179, 67);
-            btnCancelar.TabIndex = 8;
+            btnCancelar.Size = new Size(125, 40);
+            btnCancelar.TabIndex = 6;
             btnCancelar.Text = "CANCELAR";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
@@ -56,11 +55,10 @@
             // 
             btnGrabar.FlatStyle = FlatStyle.Flat;
             btnGrabar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnGrabar.Location = new Point(290, 385);
-            btnGrabar.Margin = new Padding(4, 5, 4, 5);
+            btnGrabar.Location = new Point(203, 231);
             btnGrabar.Name = "btnGrabar";
-            btnGrabar.Size = new Size(179, 67);
-            btnGrabar.TabIndex = 7;
+            btnGrabar.Size = new Size(125, 40);
+            btnGrabar.TabIndex = 5;
             btnGrabar.Text = "GRABAR";
             btnGrabar.UseVisualStyleBackColor = true;
             btnGrabar.Click += btnGrabar_Click;
@@ -71,62 +69,55 @@
             cboFacultad.DropDownStyle = ComboBoxStyle.DropDownList;
             cboFacultad.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cboFacultad.FormattingEnabled = true;
-            cboFacultad.Location = new Point(30, 292);
-            cboFacultad.Margin = new Padding(4, 5, 4, 5);
+            cboFacultad.Location = new Point(21, 175);
             cboFacultad.Name = "cboFacultad";
-            cboFacultad.Size = new Size(625, 38);
-            cboFacultad.TabIndex = 6;
-            cboFacultad.SelectedIndexChanged += cboFacultad_SelectedIndexChanged;
+            cboFacultad.Size = new Size(439, 29);
+            cboFacultad.TabIndex = 4;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(30, 252);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(21, 151);
             label5.Name = "label5";
-            label5.Size = new Size(307, 30);
-            label5.TabIndex = 5;
+            label5.Size = new Size(210, 21);
+            label5.TabIndex = 3;
             label5.Text = "SELECCIONE FACTULTAD:";
             // 
             // txtDescripcion
             // 
             txtDescripcion.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDescripcion.Location = new Point(30, 175);
-            txtDescripcion.Margin = new Padding(4, 5, 4, 5);
+            txtDescripcion.Location = new Point(21, 105);
             txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(625, 37);
-            txtDescripcion.TabIndex = 4;
+            txtDescripcion.Size = new Size(439, 27);
+            txtDescripcion.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(30, 135);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(21, 81);
             label1.Name = "label1";
-            label1.Size = new Size(236, 30);
-            label1.TabIndex = 3;
+            label1.Size = new Size(161, 21);
+            label1.TabIndex = 1;
             label1.Text = "NOMBRE CARRERA";
             // 
             // lblCodigo
             // 
             lblCodigo.BorderStyle = BorderStyle.FixedSingle;
             lblCodigo.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCodigo.Location = new Point(164, 45);
-            lblCodigo.Margin = new Padding(4, 0, 4, 0);
+            lblCodigo.Location = new Point(115, 27);
             lblCodigo.Name = "lblCodigo";
-            lblCodigo.Size = new Size(99, 37);
+            lblCodigo.Size = new Size(70, 23);
             lblCodigo.TabIndex = 1;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(30, 47);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(21, 28);
             label7.Name = "label7";
-            label7.Size = new Size(127, 30);
+            label7.Size = new Size(86, 21);
             label7.TabIndex = 0;
             label7.Text = "CÓDIGO:";
             // 
@@ -134,19 +125,19 @@
             // 
             chkActivo.AutoSize = true;
             chkActivo.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            chkActivo.Location = new Point(477, 45);
-            chkActivo.Margin = new Padding(6, 5, 6, 5);
+            chkActivo.Location = new Point(334, 27);
+            chkActivo.Margin = new Padding(4, 3, 4, 3);
             chkActivo.Name = "chkActivo";
-            chkActivo.Size = new Size(131, 34);
-            chkActivo.TabIndex = 2;
+            chkActivo.Size = new Size(93, 25);
+            chkActivo.TabIndex = 0;
             chkActivo.Text = "ACTIVO";
             chkActivo.UseVisualStyleBackColor = true;
             // 
             // ActualizarCarrera
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(690, 498);
+            ClientSize = new Size(483, 299);
             Controls.Add(chkActivo);
             Controls.Add(lblCodigo);
             Controls.Add(label7);
@@ -157,7 +148,6 @@
             Controls.Add(txtDescripcion);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4, 5, 4, 5);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "ActualizarCarrera";

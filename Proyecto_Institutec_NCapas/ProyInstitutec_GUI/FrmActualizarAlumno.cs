@@ -63,7 +63,7 @@ namespace ProyInstitutec_GUI
                 {
                     activo = false;
                 }
-                DateTime fechaNac = dtpFecha_Nac.Value;
+                DateTime fechaNac = dtpFecNac.Value;
                 //Pasamos valores alas propiedades de la instancia...
 
                 objAlumnoBE.IdAlum = lblCodigo.Text.Trim();
@@ -103,13 +103,14 @@ namespace ProyInstitutec_GUI
             {
 
                 objAlumnoBE = objAlumnoBL.ConsultarAlumno(this.Codigo);
-                DateTime dateTime = objAlumnoBE.FecNac;
+
+                DateTime fechaNac = dtpFecNac.Value;
                 lblCodigo.Text = objAlumnoBE.IdAlum;
                 txtNombre.Text = objAlumnoBE.NomAlu;
                 txtApeMat.Text = objAlumnoBE.ApeMat;
                 txtApePat.Text = objAlumnoBE.ApePat;
                 mskTelAlu.Text = objAlumnoBE.TelAlu;
-                dtpFecha_Nac.Value = dateTime;
+                dtpFecNac.Value = fechaNac;
                 if (objAlumnoBE.Estado == true)
                 {
                     chkActivo.Checked = true;
@@ -133,6 +134,11 @@ namespace ProyInstitutec_GUI
         }
 
         private void cboCarrera_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCodigo_Click(object sender, EventArgs e)
         {
 
         }
