@@ -75,6 +75,7 @@
             gbActulizar.TabIndex = 0;
             gbActulizar.TabStop = false;
             gbActulizar.Text = "DATOS A ACTUALIZAR";
+            gbActulizar.Enter += gbActulizar_Enter;
             // 
             // dtpFecIng
             // 

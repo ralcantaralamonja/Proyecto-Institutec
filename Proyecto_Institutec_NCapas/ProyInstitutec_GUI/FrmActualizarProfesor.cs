@@ -116,5 +116,10 @@ namespace ProyInstitutec_GUI
         {
             this.Close();
         }
+
+        private void gbActulizar_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
