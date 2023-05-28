@@ -42,19 +42,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(64, 55);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(92, 70);
+            label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(182, 20);
+            label1.Size = new Size(301, 25);
             label1.TabIndex = 0;
-            label1.Text = "Ingrese DNI del Alumno:";
+            label1.Text = "INGRESE DNI DEL ALUMNO:";
             // 
             // mskDNIAlumno
             // 
-            mskDNIAlumno.Location = new Point(254, 52);
-            mskDNIAlumno.Margin = new Padding(4, 5, 4, 5);
+            mskDNIAlumno.Location = new Point(408, 66);
+            mskDNIAlumno.Margin = new Padding(5, 5, 5, 5);
             mskDNIAlumno.Name = "mskDNIAlumno";
-            mskDNIAlumno.Size = new Size(112, 26);
+            mskDNIAlumno.Size = new Size(160, 34);
             mskDNIAlumno.TabIndex = 3;
             mskDNIAlumno.TextChanged += mskDNIAlumno_TextChanged;
             // 
@@ -66,15 +66,15 @@
             dtgAlumno.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgAlumno.BackgroundColor = SystemColors.AppWorkspace;
             dtgAlumno.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgAlumno.Location = new Point(62, 92);
-            dtgAlumno.Margin = new Padding(4, 5, 4, 5);
+            dtgAlumno.Location = new Point(90, 116);
+            dtgAlumno.Margin = new Padding(5, 5, 5, 5);
             dtgAlumno.Name = "dtgAlumno";
             dtgAlumno.ReadOnly = true;
             dtgAlumno.RowHeadersVisible = false;
             dtgAlumno.RowHeadersWidth = 62;
             dtgAlumno.RowTemplate.Height = 33;
             dtgAlumno.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtgAlumno.Size = new Size(1233, 471);
+            dtgAlumno.Size = new Size(1588, 589);
             dtgAlumno.TabIndex = 2;
             dtgAlumno.CellContentClick += dtgAlumno_CellContentClick;
             dtgAlumno.CellDoubleClick += dtgAlumno_CellContentClick;
@@ -82,61 +82,67 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(1132, 578);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(1415, 723);
+            label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(81, 20);
+            label2.Size = new Size(133, 25);
             label2.TabIndex = 4;
-            label2.Text = "Registros:";
+            label2.Text = "REGISTROS:";
             // 
             // lblRegistros
             // 
             lblRegistros.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             lblRegistros.BorderStyle = BorderStyle.FixedSingle;
-            lblRegistros.Location = new Point(1221, 577);
-            lblRegistros.Margin = new Padding(4, 0, 4, 0);
+            lblRegistros.Location = new Point(1572, 722);
+            lblRegistros.Margin = new Padding(5, 0, 5, 0);
             lblRegistros.Name = "lblRegistros";
-            lblRegistros.Size = new Size(80, 34);
+            lblRegistros.Size = new Size(116, 43);
             lblRegistros.TabIndex = 5;
             // 
             // btnInsertar
             // 
-            btnInsertar.Location = new Point(868, 632);
-            btnInsertar.Margin = new Padding(4, 5, 4, 5);
+            btnInsertar.BackColor = SystemColors.ControlLight;
+            btnInsertar.FlatStyle = FlatStyle.Flat;
+            btnInsertar.Location = new Point(1199, 791);
+            btnInsertar.Margin = new Padding(3, 4, 3, 4);
             btnInsertar.Name = "btnInsertar";
-            btnInsertar.Size = new Size(112, 35);
+            btnInsertar.Size = new Size(161, 45);
             btnInsertar.TabIndex = 6;
-            btnInsertar.Text = "Insertar";
-            btnInsertar.UseVisualStyleBackColor = true;
+            btnInsertar.Text = "INSERTAR";
+            btnInsertar.UseVisualStyleBackColor = false;
             btnInsertar.Click += btnInsertar_Click;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(1029, 632);
-            btnActualizar.Margin = new Padding(4, 5, 4, 5);
+            btnActualizar.BackColor = SystemColors.ControlLight;
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Location = new Point(1389, 791);
+            btnActualizar.Margin = new Padding(5, 5, 5, 5);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(112, 35);
+            btnActualizar.Size = new Size(161, 45);
             btnActualizar.TabIndex = 7;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Text = "ACTUALIZAR";
+            btnActualizar.UseVisualStyleBackColor = false;
             btnActualizar.Click += btnActualizar_Click;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(1190, 632);
-            btnSalir.Margin = new Padding(4, 5, 4, 5);
+            btnSalir.BackColor = SystemColors.ControlLight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Location = new Point(1572, 791);
+            btnSalir.Margin = new Padding(5, 5, 5, 5);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(112, 35);
+            btnSalir.Size = new Size(161, 45);
             btnSalir.TabIndex = 8;
-            btnSalir.Text = "Salir";
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Text = "SALIR";
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // FrmVerAlumno
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1371, 709);
+            ClientSize = new Size(1786, 875);
             Controls.Add(btnSalir);
             Controls.Add(btnActualizar);
             Controls.Add(btnInsertar);
@@ -145,12 +151,12 @@
             Controls.Add(dtgAlumno);
             Controls.Add(mskDNIAlumno);
             Controls.Add(label1);
-            Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "FrmVerAlumno";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "VerAlumno";
+            Text = "VER ALUMNO";
             Load += VerAlumno_Load;
             ((System.ComponentModel.ISupportInitialize)dtgAlumno).EndInit();
             ResumeLayout(false);
