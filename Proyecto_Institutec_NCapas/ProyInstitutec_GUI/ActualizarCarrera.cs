@@ -142,5 +142,10 @@ namespace ProyInstitutec_GUI
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void cboFacultad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

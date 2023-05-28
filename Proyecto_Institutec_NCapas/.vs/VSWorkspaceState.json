@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\ProyInstitutec_GUI",
-    "\\Proy_InstitutecBE",
-    "\\Proy_InstitutecBL",
     "\\Proy_Institutec_ADO"
   ],
-  "SelectedNode": "\\Proyecto_Institutec_NCapas.sln",
+  "SelectedNode": "\\Proy_Institutec_ADO\\AlumnoADO.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -76,5 +76,20 @@ namespace ProyInstitutec_GUI
             objFrmCursoMan01.MdiParent = this;
             objFrmCursoMan01.Show();
         }
+
+        private void estudianteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVerAlumno objAlumno = new FrmVerAlumno();
+            objAlumno.MdiParent = this;
+            objAlumno.Show();
+        }
+
+        private void estudianteToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmVerAlumno objAlumno = new FrmVerAlumno();
+            objAlumno.MdiParent = this;
+            objAlumno.Show();
+
+        }
     }
 }

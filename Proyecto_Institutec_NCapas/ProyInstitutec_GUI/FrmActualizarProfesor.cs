@@ -121,5 +121,13 @@ namespace ProyInstitutec_GUI
         {
 
         }
+<<<<<<< HEAD
+=======
+
+        private void optActivo_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> 055d048e3ec7c88184e2d0af79150cae8743b19a
     }
 }

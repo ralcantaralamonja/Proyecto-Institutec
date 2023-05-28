@@ -159,5 +159,10 @@ namespace ProyInstitutec_GUI
         {
             this.Close();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
