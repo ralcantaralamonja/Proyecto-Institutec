@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             gbActulizar = new GroupBox();
+            groupBox2 = new GroupBox();
+            optFemenino = new RadioButton();
+            optMasculino = new RadioButton();
+            label6 = new Label();
             dtpFecIng = new DateTimePicker();
             lbltiempo = new Label();
             btnIngresar = new Button();
@@ -46,13 +50,18 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            txtNdocum = new TextBox();
             gbActulizar.SuspendLayout();
+            groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // gbActulizar
             // 
             gbActulizar.BackColor = SystemColors.Control;
+            gbActulizar.Controls.Add(groupBox2);
+            gbActulizar.Controls.Add(txtNdocum);
+            gbActulizar.Controls.Add(label6);
             gbActulizar.Controls.Add(dtpFecIng);
             gbActulizar.Controls.Add(lbltiempo);
             gbActulizar.Controls.Add(btnIngresar);
@@ -71,16 +80,58 @@
             gbActulizar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             gbActulizar.Location = new Point(22, 12);
             gbActulizar.Name = "gbActulizar";
-            gbActulizar.Size = new Size(335, 614);
+            gbActulizar.Size = new Size(589, 660);
             gbActulizar.TabIndex = 0;
             gbActulizar.TabStop = false;
             gbActulizar.Text = "DATOS A ACTUALIZAR";
             gbActulizar.Enter += gbActulizar_Enter;
             // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(optFemenino);
+            groupBox2.Controls.Add(optMasculino);
+            groupBox2.Location = new Point(346, 171);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(200, 100);
+            groupBox2.TabIndex = 17;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Genero";
+            // 
+            // optFemenino
+            // 
+            optFemenino.AutoSize = true;
+            optFemenino.Location = new Point(24, 69);
+            optFemenino.Name = "optFemenino";
+            optFemenino.Size = new Size(112, 25);
+            optFemenino.TabIndex = 1;
+            optFemenino.TabStop = true;
+            optFemenino.Text = "FEMENINO";
+            optFemenino.UseVisualStyleBackColor = true;
+            // 
+            // optMasculino
+            // 
+            optMasculino.AutoSize = true;
+            optMasculino.Location = new Point(24, 27);
+            optMasculino.Name = "optMasculino";
+            optMasculino.Size = new Size(126, 25);
+            optMasculino.TabIndex = 0;
+            optMasculino.TabStop = true;
+            optMasculino.Text = "MASCULINO";
+            optMasculino.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(346, 39);
+            label6.Name = "label6";
+            label6.Size = new Size(43, 21);
+            label6.TabIndex = 15;
+            label6.Text = "DNI:";
+            // 
             // dtpFecIng
             // 
             dtpFecIng.Format = DateTimePickerFormat.Short;
-            dtpFecIng.Location = new Point(173, 345);
+            dtpFecIng.Location = new Point(184, 345);
             dtpFecIng.Name = "dtpFecIng";
             dtpFecIng.Size = new Size(136, 27);
             dtpFecIng.TabIndex = 11;
@@ -102,7 +153,7 @@
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(125, 40);
             btnIngresar.TabIndex = 13;
-            btnIngresar.Text = "INGRESAR";
+            btnIngresar.Text = "GRABAR";
             btnIngresar.UseVisualStyleBackColor = false;
             btnIngresar.Click += btnIngresar_Click;
             // 
@@ -163,7 +214,7 @@
             // lblCodigo
             // 
             lblCodigo.BorderStyle = BorderStyle.FixedSingle;
-            lblCodigo.Location = new Point(141, 41);
+            lblCodigo.Location = new Point(163, 39);
             lblCodigo.Name = "lblCodigo";
             lblCodigo.Size = new Size(66, 23);
             lblCodigo.TabIndex = 1;
@@ -228,17 +279,26 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(22, 41);
+            label1.Location = new Point(22, 39);
             label1.Name = "label1";
             label1.Size = new Size(113, 21);
             label1.TabIndex = 0;
             label1.Text = "ID PROFESOR";
             // 
+            // txtNdocum
+            // 
+            txtNdocum.Location = new Point(346, 107);
+            txtNdocum.MaxLength = 8;
+            txtNdocum.Name = "txtNdocum";
+            txtNdocum.Size = new Size(126, 27);
+            txtNdocum.TabIndex = 16;
+            txtNdocum.KeyPress += txtNdocum_KeyPress;
+            // 
             // FrmActualizarProfesor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(380, 636);
+            ClientSize = new Size(638, 706);
             Controls.Add(gbActulizar);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -247,6 +307,8 @@
             Load += FrmActualizarProfesor_Load;
             gbActulizar.ResumeLayout(false);
             gbActulizar.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -272,5 +334,10 @@
         private Button btnSalir;
         private DateTimePicker dtpFecIng;
         private Label lbltiempo;
+        private GroupBox groupBox2;
+        private RadioButton optMasculino;
+        private Label label6;
+        private RadioButton optFemenino;
+        private TextBox txtNdocum;
     }
 }

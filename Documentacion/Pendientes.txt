@@ -1,8 +1,6 @@
-1. Mantenimiento a las tablas (profesor, alumno,curso,carrera) C# 
-2. El nombre de usuario debe salir en la formulario MDIcontainer 
-3. En la parte superior tiempo de sesión 
-4. Acomodar formulario MDI
-5. Cuando uno de enter en el login debe validar
+1. Correciones de la bitacora (profesor, alumno,curso,carrera) C# 
+2. Aplicar auditoria en tablas con nombre de usuario 
+ 
 
 ***** por ver ********
 Auditoria de tb usuario con Triggers SQL

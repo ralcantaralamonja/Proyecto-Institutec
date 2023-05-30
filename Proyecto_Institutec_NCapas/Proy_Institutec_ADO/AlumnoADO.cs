@@ -163,7 +163,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@ApePat", objAlumnoBE.ApePat);
                 cmd.Parameters.AddWithValue("@TelAlu", objAlumnoBE.TelAlu);
                 cmd.Parameters.AddWithValue("@Estado", objAlumnoBE.Estado);
-                cmd.Parameters.AddWithValue("FecNac", objAlumnoBE.FecNac);
+                cmd.Parameters.AddWithValue("@FecNac", objAlumnoBE.FecNac);
               
                 
                 cnx.Open();
