@@ -19,6 +19,8 @@ namespace ProyInstitutec_GUI
         CursoBL objCursoBL = new CursoBL();
         CursoBE objCursoBE = new CursoBE();
         CarreraBL objCarreraBL = new CarreraBL();
+        FacultadBL objFacultadBl= new FacultadBL();
+
         public FrmCursoMan02()
         {
             InitializeComponent();
@@ -46,24 +48,29 @@ namespace ProyInstitutec_GUI
             }
         }
 
+
+
+
+
         private void btnGrabar_Click(object sender, EventArgs e)
         {
             try
             {
-                //validarmos
-                if (txtIngresarCurso.Text.Trim() == String.Empty)
+                // Validar si se ha seleccionado una carrera
+                if (cboCarrera.SelectedIndex == -1)
                 {
-                    throw new Exception("El nombre del curso es obligatorio.");
+                    MessageBox.Show("Debe seleccionar una carrera para el curso");
+                    return;
                 }
 
-                if (cboCarrera.SelectedIndex == 0)
-                {
-                    throw new Exception("Debe seleccionar una carrera para el curso");
-                }
+                // Obtener el ID de la carrera seleccionada
+                string codCar = cboCarrera.SelectedValue.ToString();
 
-                //Cargamos la entidad de negocio
+                // Resto del código para insertar el curso...
+
+                // Cargamos la entidad de negocio
                 objCursoBE.NomCur = txtIngresarCurso.Text;
-                if (chkActivo.Checked == true)
+                if (chkActivo.Checked)
                 {
                     objCursoBE.Activo = true;
                 }
@@ -71,18 +78,18 @@ namespace ProyInstitutec_GUI
                 {
                     objCursoBE.Activo = false;
                 }
-                objCursoBE.CodCar = cboCarrera.SelectedValue.ToString();
+                objCursoBE.CodCar = codCar; // Asignar el CodCar de carrera seleccionado
                 objCursoBE.Usu_Registro = "ogonzales";
 
-                //Insertamos el registro
-                if (objCursoBL.InsertarCurso(objCursoBE) == true)
+                // Insertamos el registro
+                if (objCursoBL.InsertarCurso(objCursoBE))
                 {
-                    //si se inerto el registro, cerramos el formulario...
+                    // Si se insertó el registro, cerramos el formulario...
                     this.Close();
                 }
                 else
                 {
-                    throw new Exception("Registro no insertado, contacte con el area de TI");
+                    throw new Exception("Registro no insertado, contacte con el área de TI");
                 }
             }
             catch (Exception ex)
@@ -99,6 +106,22 @@ namespace ProyInstitutec_GUI
         private void chkActivo_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cboCarrera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // Obtener el código de la carrera seleccionada
+                string codCarrera = cboCarrera.SelectedValue.ToString();
+
+                // Asignar el código de la carrera al objeto objCursoBE
+                objCursoBE.CodCar = codCarrera;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

@@ -66,10 +66,10 @@ namespace ProyInstitutec_GUI
             CargarDatos("");
         }
 
-        private void CargarDatos(String strFiltro)
+        private void CargarDatos(string strFiltro)
         {
             dtv = new DataView(objCursoBL.ListarCurso());
-            dtv.RowFilter = "Curso like '%" + strFiltro + "%'";
+            dtv.RowFilter = "Curso LIKE '%" + strFiltro + "%' OR Carrera LIKE '%" + strFiltro + "%'";
             dtgDatos.DataSource = dtv;
             lblRegistros.Text = dtgDatos.Rows.Count.ToString();
 
