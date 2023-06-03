@@ -29,9 +29,16 @@
         private void InitializeComponent()
         {
             gbActulizar = new GroupBox();
+            cboDistrito = new ComboBox();
+            cboProvincia = new ComboBox();
+            cboDep = new ComboBox();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
             groupBox2 = new GroupBox();
             optFemenino = new RadioButton();
             optMasculino = new RadioButton();
+            txtNdocum = new TextBox();
             label6 = new Label();
             dtpFecIng = new DateTimePicker();
             lbltiempo = new Label();
@@ -50,7 +57,6 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            txtNdocum = new TextBox();
             gbActulizar.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -59,6 +65,12 @@
             // gbActulizar
             // 
             gbActulizar.BackColor = SystemColors.Control;
+            gbActulizar.Controls.Add(cboDistrito);
+            gbActulizar.Controls.Add(cboProvincia);
+            gbActulizar.Controls.Add(cboDep);
+            gbActulizar.Controls.Add(label9);
+            gbActulizar.Controls.Add(label8);
+            gbActulizar.Controls.Add(label7);
             gbActulizar.Controls.Add(groupBox2);
             gbActulizar.Controls.Add(txtNdocum);
             gbActulizar.Controls.Add(label6);
@@ -80,19 +92,73 @@
             gbActulizar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             gbActulizar.Location = new Point(22, 12);
             gbActulizar.Name = "gbActulizar";
-            gbActulizar.Size = new Size(589, 660);
+            gbActulizar.Size = new Size(589, 728);
             gbActulizar.TabIndex = 0;
             gbActulizar.TabStop = false;
             gbActulizar.Text = "DATOS A ACTUALIZAR";
             gbActulizar.Enter += gbActulizar_Enter;
             // 
+            // cboDistrito
+            // 
+            cboDistrito.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboDistrito.FormattingEnabled = true;
+            cboDistrito.Location = new Point(21, 473);
+            cboDistrito.Name = "cboDistrito";
+            cboDistrito.Size = new Size(287, 29);
+            cboDistrito.TabIndex = 24;
+            // 
+            // cboProvincia
+            // 
+            cboProvincia.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboProvincia.FormattingEnabled = true;
+            cboProvincia.Location = new Point(22, 388);
+            cboProvincia.Name = "cboProvincia";
+            cboProvincia.Size = new Size(287, 29);
+            cboProvincia.TabIndex = 23;
+            // 
+            // cboDep
+            // 
+            cboDep.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboDep.FormattingEnabled = true;
+            cboDep.Location = new Point(22, 305);
+            cboDep.Name = "cboDep";
+            cboDep.Size = new Size(287, 29);
+            cboDep.TabIndex = 22;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(21, 434);
+            label9.Name = "label9";
+            label9.Size = new Size(84, 21);
+            label9.TabIndex = 18;
+            label9.Text = "DISTRITO:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(22, 355);
+            label8.Name = "label8";
+            label8.Size = new Size(106, 21);
+            label8.TabIndex = 18;
+            label8.Text = "PROVINCIA:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(22, 281);
+            label7.Name = "label7";
+            label7.Size = new Size(146, 21);
+            label7.TabIndex = 18;
+            label7.Text = "DEPARTAMENTO:";
+            // 
             // groupBox2
             // 
             groupBox2.Controls.Add(optFemenino);
             groupBox2.Controls.Add(optMasculino);
-            groupBox2.Location = new Point(346, 171);
+            groupBox2.Location = new Point(346, 147);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(200, 100);
+            groupBox2.Size = new Size(200, 116);
             groupBox2.TabIndex = 17;
             groupBox2.TabStop = false;
             groupBox2.Text = "Genero";
@@ -119,10 +185,19 @@
             optMasculino.Text = "MASCULINO";
             optMasculino.UseVisualStyleBackColor = true;
             // 
+            // txtNdocum
+            // 
+            txtNdocum.Location = new Point(346, 107);
+            txtNdocum.MaxLength = 8;
+            txtNdocum.Name = "txtNdocum";
+            txtNdocum.Size = new Size(126, 27);
+            txtNdocum.TabIndex = 16;
+            txtNdocum.KeyPress += txtNdocum_KeyPress;
+            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(346, 39);
+            label6.Location = new Point(346, 83);
             label6.Name = "label6";
             label6.Size = new Size(43, 21);
             label6.TabIndex = 15;
@@ -131,25 +206,25 @@
             // dtpFecIng
             // 
             dtpFecIng.Format = DateTimePickerFormat.Short;
-            dtpFecIng.Location = new Point(184, 345);
+            dtpFecIng.Location = new Point(123, 617);
             dtpFecIng.Name = "dtpFecIng";
-            dtpFecIng.Size = new Size(136, 27);
+            dtpFecIng.Size = new Size(185, 27);
             dtpFecIng.TabIndex = 11;
             // 
             // lbltiempo
             // 
             lbltiempo.AutoSize = true;
-            lbltiempo.Location = new Point(22, 350);
+            lbltiempo.Location = new Point(22, 617);
             lbltiempo.Name = "lbltiempo";
-            lbltiempo.Size = new Size(144, 21);
+            lbltiempo.Size = new Size(86, 21);
             lbltiempo.TabIndex = 10;
-            lbltiempo.Text = "FECHA INGRESO:";
+            lbltiempo.Text = "INGRESO:";
             // 
             // btnIngresar
             // 
             btnIngresar.BackColor = SystemColors.ControlLight;
             btnIngresar.FlatStyle = FlatStyle.Flat;
-            btnIngresar.Location = new Point(22, 553);
+            btnIngresar.Location = new Point(285, 672);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(125, 40);
             btnIngresar.TabIndex = 13;
@@ -161,7 +236,7 @@
             // 
             btnSalir.BackColor = SystemColors.ControlLight;
             btnSalir.FlatStyle = FlatStyle.Flat;
-            btnSalir.Location = new Point(184, 553);
+            btnSalir.Location = new Point(437, 672);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(125, 40);
             btnSalir.TabIndex = 14;
@@ -173,17 +248,17 @@
             // 
             groupBox1.Controls.Add(optInactivo);
             groupBox1.Controls.Add(optActivo);
-            groupBox1.Location = new Point(22, 398);
+            groupBox1.Location = new Point(346, 297);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(287, 120);
+            groupBox1.Size = new Size(161, 120);
             groupBox1.TabIndex = 12;
             groupBox1.TabStop = false;
-            groupBox1.Text = "¿DESABILITAR PROFESOR?";
+            groupBox1.Text = "¿EL PROFESOR ESTA ACTIVO?";
             // 
             // optInactivo
             // 
             optInactivo.AutoSize = true;
-            optInactivo.Location = new Point(151, 47);
+            optInactivo.Location = new Point(21, 89);
             optInactivo.Name = "optInactivo";
             optInactivo.Size = new Size(109, 25);
             optInactivo.TabIndex = 1;
@@ -205,10 +280,10 @@
             // 
             // txtTelf
             // 
-            txtTelf.Location = new Point(22, 303);
+            txtTelf.Location = new Point(123, 549);
             txtTelf.MaxLength = 9;
             txtTelf.Name = "txtTelf";
-            txtTelf.Size = new Size(287, 27);
+            txtTelf.Size = new Size(186, 27);
             txtTelf.TabIndex = 9;
             // 
             // lblCodigo
@@ -270,7 +345,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(22, 276);
+            label2.Location = new Point(22, 552);
             label2.Name = "label2";
             label2.Size = new Size(95, 21);
             label2.TabIndex = 8;
@@ -285,20 +360,11 @@
             label1.TabIndex = 0;
             label1.Text = "ID PROFESOR";
             // 
-            // txtNdocum
-            // 
-            txtNdocum.Location = new Point(346, 107);
-            txtNdocum.MaxLength = 8;
-            txtNdocum.Name = "txtNdocum";
-            txtNdocum.Size = new Size(126, 27);
-            txtNdocum.TabIndex = 16;
-            txtNdocum.KeyPress += txtNdocum_KeyPress;
-            // 
             // FrmActualizarProfesor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(638, 706);
+            ClientSize = new Size(638, 776);
             Controls.Add(gbActulizar);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -339,5 +405,11 @@
         private Label label6;
         private RadioButton optFemenino;
         private TextBox txtNdocum;
+        private Label label7;
+        private Label label9;
+        private Label label8;
+        private ComboBox cboDep;
+        private ComboBox cboProvincia;
+        private ComboBox cboDistrito;
     }
 }

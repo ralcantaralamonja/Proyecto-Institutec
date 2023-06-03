@@ -38,6 +38,8 @@
             txtTelf = new TextBox();
             cboDep = new ComboBox();
             groupBox1 = new GroupBox();
+            groupBox3 = new GroupBox();
+            chkActivo = new CheckBox();
             btnCancelar = new Button();
             dtpFecIng = new DateTimePicker();
             btnIngresar = new Button();
@@ -49,14 +51,12 @@
             label7 = new Label();
             label6 = new Label();
             txtDni = new TextBox();
-            chkActivo = new CheckBox();
             groupBox2 = new GroupBox();
             optM = new RadioButton();
             optF = new RadioButton();
-            groupBox3 = new GroupBox();
             groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // txtNomPro
@@ -167,10 +167,30 @@
             groupBox1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(542, 622);
+            groupBox1.Size = new Size(542, 643);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "DATOS PERSONALES";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(chkActivo);
+            groupBox3.Location = new Point(350, 265);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(176, 116);
+            groupBox3.TabIndex = 22;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "¿EL PROFESOR ESTA ACTIVO?";
+            // 
+            // chkActivo
+            // 
+            chkActivo.AutoSize = true;
+            chkActivo.Location = new Point(24, 52);
+            chkActivo.Name = "chkActivo";
+            chkActivo.Size = new Size(93, 25);
+            chkActivo.TabIndex = 10;
+            chkActivo.Text = "ACTIVO";
+            chkActivo.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
@@ -278,16 +298,6 @@
             txtDni.TabIndex = 7;
             txtDni.KeyPress += txtDni_KeyPress;
             // 
-            // chkActivo
-            // 
-            chkActivo.AutoSize = true;
-            chkActivo.Location = new Point(24, 52);
-            chkActivo.Name = "chkActivo";
-            chkActivo.Size = new Size(93, 25);
-            chkActivo.TabIndex = 10;
-            chkActivo.Text = "ACTIVO";
-            chkActivo.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             groupBox2.Controls.Add(optM);
@@ -321,24 +331,14 @@
             optF.Text = "FEMENINO";
             optF.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(chkActivo);
-            groupBox3.Location = new Point(350, 265);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(176, 116);
-            groupBox3.TabIndex = 22;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "¿EL PROFESOR ESTA ACTIVO?";
-            // 
             // FrmInsertarProfesor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(570, 630);
+            ClientSize = new Size(570, 667);
             Controls.Add(groupBox1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmInsertarProfesor";
@@ -347,10 +347,10 @@
             Load += FrmInsertarProfesor_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
         }
 
