@@ -65,6 +65,7 @@
             cboCarrera.Name = "cboCarrera";
             cboCarrera.Size = new Size(397, 29);
             cboCarrera.TabIndex = 4;
+            cboCarrera.SelectedIndexChanged += cboCarrera_SelectedIndexChanged;
             // 
             // label2
             // 

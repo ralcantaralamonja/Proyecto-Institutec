@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-// Agregar....
+﻿// Agregar....
+using Proy_InstitutecBE;
 using System.Data;
 using System.Data.SqlClient;
-using Proy_InstitutecBE;
 
 
 namespace Proy_Institutec_ADO
@@ -114,7 +109,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@vIdFacu", objCarreraBE.IdFacu);
                 cmd.Parameters.AddWithValue("@vDesCar", objCarreraBE.DesCar);
-                cmd.Parameters.AddWithValue("@vUsu_Regi", objCarreraBE.Usu_Registro);
+                cmd.Parameters.AddWithValue("@vUsu_regi", objCarreraBE.Usu_Registro);
                 cmd.Parameters.AddWithValue("@vest_carr", objCarreraBE.Est_carr);
 
                 cnx.Open();
@@ -146,6 +141,7 @@ namespace Proy_Institutec_ADO
                 cmd.Connection = cnx;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_ActualizarCarrera";
+
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@vdescar", objCarreraBE.DesCar);
                 cmd.Parameters.AddWithValue("@vusu_ult_regis", objCarreraBE.Usu_Ult_Mod); // ultimo usuario que cambio

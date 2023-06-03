@@ -171,6 +171,8 @@ namespace ProyInstitutec_GUI
                 objAlumnoBE = objAlumnoBL.ConsultarAlumno(this.Codigo);
 
 
+
+
                 //foto
                 if (objAlumnoBE.Foto.Length == 0)
                 {
@@ -182,6 +184,7 @@ namespace ProyInstitutec_GUI
                     pcbFoto.Image = Image.FromStream(fotoStream);
                     FotoOriginal = objAlumnoBE.Foto;
                 }
+
 
 
                 lblCodigo.Text = objAlumnoBE.IdAlum;
