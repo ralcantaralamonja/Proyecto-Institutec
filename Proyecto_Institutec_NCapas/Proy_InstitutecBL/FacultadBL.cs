@@ -19,5 +19,10 @@ namespace Proy_InstitutecBL
             return objCategoriaADO.ListarFacultad();
         }
 
+        public DataTable facultadCarrera(String strIdFacu)
+        {
+            return objCategoriaADO.facultadCarrera(strIdFacu);
+        }
+
     }
 }

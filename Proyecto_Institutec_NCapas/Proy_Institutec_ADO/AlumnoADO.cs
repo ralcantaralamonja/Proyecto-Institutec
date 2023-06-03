@@ -17,7 +17,7 @@ namespace Proy_Institutec_ADO
         ConexionADO MiConexion = new ConexionADO();
         SqlConnection cnx = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
-        SqlDataReader dr;
+        SqlDataReader drt;
         AlumnoBE objAlumnoBE = new AlumnoBE();
 
         // METODOS DE LOS MANTENIMIENTOS
@@ -63,25 +63,28 @@ namespace Proy_Institutec_ADO
                 //Codifique
                 cmd.Parameters.AddWithValue("@IdAlum", strid);
                 cnx.Open();
-                dr = cmd.ExecuteReader();
+                drt = cmd.ExecuteReader();
 
-                if (dr.HasRows == true)
+                if (drt.HasRows == true)
                 {
-                    dr.Read();
-                    objAlumnoBE.IdAlum = dr["IdAlum"].ToString();
-                    objAlumnoBE.Ndocum = dr["Ndocum"].ToString();
-                    objAlumnoBE.NomAlu = dr["NomAlu"].ToString();
-                    objAlumnoBE.ApePat = dr["ApePat"].ToString();
-                    objAlumnoBE.ApeMat = dr["ApeMat"].ToString();
-                    objAlumnoBE.SexoAl = dr["SexoAl"].ToString();
-                    objAlumnoBE.Id_Ubi = dr["Id_Ubi"].ToString();
-                    objAlumnoBE.TelAlu = dr["TelAlu"].ToString();
-                    objAlumnoBE.FecNac = Convert.ToDateTime(dr["FecNac"]);
-                    objAlumnoBE.Estado = Convert.ToBoolean(dr["Estado"]);
+                    drt.Read();
+                    objAlumnoBE.IdAlum = drt["IdAlum"].ToString();
+                    objAlumnoBE.Ndocum = drt["Ndocum"].ToString();
+                    objAlumnoBE.NomAlu = drt["NomAlu"].ToString();
+                    objAlumnoBE.ApePat = drt["ApePat"].ToString();
+                    objAlumnoBE.ApeMat = drt["ApeMat"].ToString();
+                    objAlumnoBE.SexoAl = drt["SexoAl"].ToString();
+                    objAlumnoBE.Id_Ubi = drt["Id_Ubi"].ToString();
+                    objAlumnoBE.TelAlu = drt["TelAlu"].ToString();
+                    objAlumnoBE.CorAlu = drt["CorAlu"].ToString();
+                    objAlumnoBE.direccion = drt["direccion"].ToString();
+                    objAlumnoBE.FecNac = Convert.ToDateTime(drt["FecNac"]);
+                    objAlumnoBE.Estado = Convert.ToBoolean(drt["Estado"]);
+                    objAlumnoBE.Foto = (Byte[])(drt["Foto"]);
 
 
                 }
-                dr.Close();
+                drt.Close();
                 return objAlumnoBE;
 
             }
@@ -110,20 +113,22 @@ namespace Proy_Institutec_ADO
                 cmd.CommandText = "usp_InsertarAlumnos";
                 cmd.Parameters.Clear();
 
+                cmd.Parameters.AddWithValue("@Ndocum", objAlumnoBE.Ndocum);
                 cmd.Parameters.AddWithValue("@NomAlu", objAlumnoBE.NomAlu);
                 cmd.Parameters.AddWithValue("@ApePat", objAlumnoBE.ApePat);
                 cmd.Parameters.AddWithValue("@ApeMat", objAlumnoBE.ApeMat);
-                cmd.Parameters.AddWithValue("@Ndocum", objAlumnoBE.Ndocum);
-                cmd.Parameters.AddWithValue("@IdFacu", objAlumnoBE.IdFacu);
-                cmd.Parameters.AddWithValue("@Id_Ubi", objAlumnoBE.Id_Ubi);
                 cmd.Parameters.AddWithValue("@Sexoal", objAlumnoBE.SexoAl);
-                cmd.Parameters.AddWithValue("@FecNac", objAlumnoBE.FecNac);
-                cmd.Parameters.AddWithValue("@CorAlu", objAlumnoBE.CorAlu);
-                cmd.Parameters.AddWithValue("@TelAlu", objAlumnoBE.TelAlu);
-                cmd.Parameters.AddWithValue("@Usu_Regi", objAlumnoBE.Usu_Registro);
                 cmd.Parameters.AddWithValue("@Estado", objAlumnoBE.Estado);
+                //cmd.Parameters.AddWithValue("@IdFacu", objAlumnoBE.IdFacu);
                 cmd.Parameters.AddWithValue("@CodCar", objAlumnoBE.CodCar);
-                
+                cmd.Parameters.AddWithValue("@Id_Ubi", objAlumnoBE.Id_Ubi);
+                cmd.Parameters.AddWithValue("@CorAlu", objAlumnoBE.CorAlu);
+                cmd.Parameters.AddWithValue("@FecNac", objAlumnoBE.FecNac);
+                cmd.Parameters.AddWithValue("@TelAlu", objAlumnoBE.TelAlu);
+                cmd.Parameters.AddWithValue("@direcc", objAlumnoBE.direccion);
+                cmd.Parameters.AddWithValue("@FotoAlum", objAlumnoBE.Foto);
+                cmd.Parameters.AddWithValue("@Usu_Regi", objAlumnoBE.Usu_Registro);
+
 
                 cnx.Open();
                 cmd.ExecuteNonQuery();
@@ -158,14 +163,23 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.Clear();
 
                 cmd.Parameters.AddWithValue("@IdAlum", objAlumnoBE.IdAlum);
+                cmd.Parameters.AddWithValue("@Ndocum", objAlumnoBE.Ndocum);
                 cmd.Parameters.AddWithValue("@NomAlu", objAlumnoBE.NomAlu);
-                cmd.Parameters.AddWithValue("@ApeMat", objAlumnoBE.ApeMat);
                 cmd.Parameters.AddWithValue("@ApePat", objAlumnoBE.ApePat);
-                cmd.Parameters.AddWithValue("@TelAlu", objAlumnoBE.TelAlu);
+                cmd.Parameters.AddWithValue("@ApeMat", objAlumnoBE.ApeMat);
+                cmd.Parameters.AddWithValue("@Sexoal", objAlumnoBE.SexoAl);
                 cmd.Parameters.AddWithValue("@Estado", objAlumnoBE.Estado);
+                //cmd.Parameters.AddWithValue("@IdFacu", objAlumnoBE.IdFacu);
+                cmd.Parameters.AddWithValue("@CodCar", objAlumnoBE.CodCar);
+                cmd.Parameters.AddWithValue("@Id_Ubi", objAlumnoBE.Id_Ubi);
+                cmd.Parameters.AddWithValue("@CorAlu", objAlumnoBE.CorAlu);
                 cmd.Parameters.AddWithValue("@FecNac", objAlumnoBE.FecNac);
-              
-                
+                cmd.Parameters.AddWithValue("@TelAlu", objAlumnoBE.TelAlu);
+                cmd.Parameters.AddWithValue("@direcc", objAlumnoBE.direccion);
+                cmd.Parameters.AddWithValue("@FotoAlum", objAlumnoBE.Foto);
+                cmd.Parameters.AddWithValue("@Usu_Regi", objAlumnoBE.Usu_Registro);
+
+
                 cnx.Open();
                 cmd.ExecuteNonQuery();
 
@@ -186,12 +200,47 @@ namespace Proy_Institutec_ADO
 
         }
 
-        
 
-        
+        public Boolean EliminarAlumno(String strCodigo)
+        {
 
 
-       
+            try
+            {
+                //Codifique
+                cnx.ConnectionString = MiConexion.GetCnx(); //cadena de conexion
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_BorrarAlumno";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@IdAlum", strCodigo); //lo que borrare
+
+                cnx.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+
+
+            }
+            catch (SqlException x)
+            {
+                throw new Exception(x.Message);
+                return false;
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+
+            }
+
+
+        }
+
+
+
+
 
     }
 }

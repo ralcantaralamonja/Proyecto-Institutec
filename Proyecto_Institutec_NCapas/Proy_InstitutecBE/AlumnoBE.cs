@@ -39,9 +39,11 @@ namespace Proy_InstitutecBE
 
         public String Usu_Ult_Mod { get;set;}
 
-        public String Foto { get;set;}
+        public byte[] Foto { get; set; }
 
         public String direccion { get;set;}
+
+        public String departamento { get; set; }
 
         public String distrito { get; set; }
 

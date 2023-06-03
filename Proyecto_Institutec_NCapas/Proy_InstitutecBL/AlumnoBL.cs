@@ -31,6 +31,9 @@ namespace Proy_InstitutecBL
             return objAlumnoADO.ActualizarAlumno(objAlumnoBE);
         }
 
-
+        public Boolean EliminarAlumno(String strCodigo)
+        {
+            return objAlumnoADO.EliminarAlumno(strCodigo);
+        }
     }
 }

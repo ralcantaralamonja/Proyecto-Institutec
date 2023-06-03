@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace Proy_Institutec_ADO
 {
@@ -37,5 +38,37 @@ namespace Proy_Institutec_ADO
             }
 
         }
+
+        public DataTable facultadCarrera(String strIdFacu)
+        {
+            DataSet dts = new DataSet();
+            cnx.ConnectionString = MiConexion.GetCnx();
+            cmd.Connection = cnx;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "usp_facultadCarrera";
+
+
+            try
+            {
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@CodCar", strIdFacu);
+                SqlDataAdapter miada;
+                miada = new SqlDataAdapter(cmd);
+                miada.Fill(dts, "Facultades");
+                return dts.Tables["Facultades"];
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+
+
     }
+
+
+    
 }

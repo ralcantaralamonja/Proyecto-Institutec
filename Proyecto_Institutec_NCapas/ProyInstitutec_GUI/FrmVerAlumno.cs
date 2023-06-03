@@ -20,29 +20,23 @@ namespace ProyInstitutec_GUI
             InitializeComponent();
         }
 
+        private void VerAlumno_Load(object sender, EventArgs e)
+        {
+            dtgAlumno.AutoGenerateColumns = false;
+            CargarDatos("");
+
+        }
+
         public void CargarDatos(String strFiltro)
         {
             dtv = new DataView(objAlumnoBL.ListarAlumno());
             dtv.RowFilter = "DNI like '%" + strFiltro + "%'";
             dtgAlumno.DataSource = dtv;
-
             lblRegistros.Text = dtgAlumno.Rows.Count.ToString();
-        }
-        private void VerAlumno_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                CargarDatos(String.Empty);
-                dtgAlumno.AutoGenerateColumns = false;
-                dtv = objAlumnoBL.ListarAlumno().DefaultView;
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error:" + ex.Message);
-            }
+            dtgAlumno.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
 
         }
+
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -51,37 +45,77 @@ namespace ProyInstitutec_GUI
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            String strCod = dtgAlumno.CurrentRow.Cells[0].Value.ToString();
-            FrmActualizarAlumno objActualizarAlumno = new FrmActualizarAlumno();
-            objActualizarAlumno.Codigo = strCod;
-            objActualizarAlumno.Show();
 
-            dtv = objAlumnoBL.ListarAlumno().DefaultView;
-            CargarDatos(mskDNIAlumno.Text.Trim());
+
+            try
+            {
+                FrmActualizarAlumno objActualizarAlumno = new FrmActualizarAlumno();
+                objActualizarAlumno.Codigo = dtgAlumno.CurrentRow.Cells[0].Value.ToString();
+                objActualizarAlumno.ShowDialog();
+
+                CargarDatos(mskDNIAlumno.Text.Trim());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex.Message);
+            }
+
+
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            FrmInsertarAlumno objInsertarAlumno = new FrmInsertarAlumno();
-            objInsertarAlumno.Show();
+            try
+            {
+                // instancia
 
-            CargarDatos(mskDNIAlumno.Text.Trim());
+                FrmInsertarAlumno objInsertarAlumno = new FrmInsertarAlumno();
+                objInsertarAlumno.ShowDialog();
+
+
+                //refrescamos el datagrid - para que se vea apenas se haga el cambio
+                CargarDatos(mskDNIAlumno.Text.Trim());
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex.Message);
+            }
+
+
         }
 
-
-
-        private void dtgAlumno_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void mskDNIAlumno_TextChanged(object sender, EventArgs e)
         {
-            CargarDatos(mskDNIAlumno.Text.Trim());
+
+
+            try
+            {
+                // Pasaremos al metodo CargarDatos el texto que se va escribiendo
+                // en la caja de texto 
+                CargarDatos(mskDNIAlumno.Text.Trim());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error:" + ex.Message);
+            }
+
+
         }
-        private void dtgAlumno_DoubleClick(object sender, DataGridViewCellEventArgs e)
+
+        private void mskDNIAlumno_KeyPress(object sender, KeyPressEventArgs e)
         {
-            btnActualizar.PerformClick();
+            if (e.KeyChar != 8)
+            {
+                if (char.IsDigit(e.KeyChar) == false) // Ni tampoco es digito
+                {
+
+                    e.Handled = true; //Se atrapa el caracter y no se imprime 
+                }
+            }
         }
+
     }
 }
