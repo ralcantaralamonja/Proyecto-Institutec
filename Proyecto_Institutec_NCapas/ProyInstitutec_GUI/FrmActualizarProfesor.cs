@@ -33,6 +33,7 @@ namespace ProyInstitutec_GUI
                 txtApeMat.Text = objProfesorBE.ApeMat;
                 txtApePat.Text = objProfesorBE.ApePat;
                 txtTelf.Text = objProfesorBE.TelPro;
+                txtNdocum.Text = objProfesorBE.Ndocum;
                 dtpFecIng.Value = ingreso;
                 if (objProfesorBE.Estado == true)
                 {
@@ -41,6 +42,14 @@ namespace ProyInstitutec_GUI
                 else
                 {
                     optInactivo.Checked = true;
+                }
+                if (objProfesorBE.Sexopr == "M")
+                {
+                    optMasculino.Checked = true;
+                }
+                else
+                {
+                    optFemenino.Checked = true;
                 }
             }
             catch (Exception)
@@ -83,6 +92,15 @@ namespace ProyInstitutec_GUI
                 {
                     activo = false;
                 }
+                String Sexo;
+                if (optMasculino.Checked == true)
+                {
+                    Sexo = "M";
+                }
+                else
+                {
+                    Sexo = "F";
+                }
                 DateTime fechaIng = dtpFecIng.Value;
                 //Pasamos valores alas propiedades de la instancia...
 
@@ -93,7 +111,8 @@ namespace ProyInstitutec_GUI
                 objProfesorBE.TelPro = txtTelf.Text.Trim();
                 objProfesorBE.Estado = activo;
                 objProfesorBE.FecIng = fechaIng;
-                //objprofesorBE.FecIng = fechaIng;
+                objProfesorBE.Sexopr = Sexo;
+                objProfesorBE.Ndocum = txtNdocum.Text.Trim();
                 //objprofesorBE.Id_Ubi = cboDep.SelectedValue.ToString() + cboProvincia.SelectedValue.ToString() +
                 //    cboDistrito.SelectedValue.ToString();
                 if (objProfesorBL.ActualizarProfesor(objProfesorBE) == true)
@@ -125,6 +144,18 @@ namespace ProyInstitutec_GUI
         private void optActivo_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtNdocum_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != 8)
+            {
+                if (char.IsDigit(e.KeyChar) == false) // Ni tampoco es digito
+                {
+
+                    e.Handled = true; //Se atrapa el caracter y no se imprime 
+                }
+            }
         }
     }
 }

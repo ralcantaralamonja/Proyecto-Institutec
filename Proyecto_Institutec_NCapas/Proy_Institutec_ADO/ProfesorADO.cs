@@ -67,6 +67,8 @@ namespace Proy_Institutec_ADO
                 objProfesorBE.Estado = Convert.ToBoolean(dtr["Estado"]);
                 objProfesorBE.TelPro = dtr["TelPro"].ToString();
                 objProfesorBE.FecIng = Convert.ToDateTime(dtr["FecIng"]);
+                objProfesorBE.Ndocum = dtr["Ndocum"].ToString();
+                objProfesorBE.Sexopr = dtr["Sexopr"].ToString();
                 
                 
                 }
@@ -103,6 +105,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
                 cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
                 cmd.Parameters.AddWithValue("@FecIng", objProfesorBE.FecIng);
+                 
                 //
                 cnx.Open();
                 cmd.ExecuteNonQuery();
@@ -141,8 +144,8 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
                 cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
                 cmd.Parameters.AddWithValue("@FecIng", objProfesorBE.FecIng);
-                
-            
+                cmd.Parameters.AddWithValue("@Ndocum", objProfesorBE.Ndocum);
+                cmd.Parameters.AddWithValue("@Sexopr", objProfesorBE.Sexopr);
 
 
                 cnx.Open();
@@ -155,6 +158,6 @@ namespace Proy_Institutec_ADO
                 throw;
             }
         }
-        //crear actualizar cnx.ConnectionString = MiConexion.GetCnx();
+        
     }
 }
