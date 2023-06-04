@@ -173,8 +173,7 @@ namespace ProyInstitutec_GUI
 
 
 
-                //foto
-                if (objAlumnoBE.Foto.Length == 0)
+                if (objAlumnoBE.Foto == null || objAlumnoBE.Foto.Length == 0)
                 {
                     pcbFoto.Image = null;
                 }
