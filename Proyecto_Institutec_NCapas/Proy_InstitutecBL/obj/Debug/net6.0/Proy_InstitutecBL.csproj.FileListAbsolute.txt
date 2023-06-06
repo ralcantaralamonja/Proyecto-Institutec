@@ -15,3 +15,20 @@ D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_
 D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\refint\Proy_InstitutecBL.dll
 D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.pdb
 D:\ambar\isil 2023 01\aplicaciones de desarrollo I\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\ref\Proy_InstitutecBL.dll
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBL.deps.json
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBL.dll
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBL.pdb
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBE.dll
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_Institutec_ADO.dll
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_InstitutecBE.pdb
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\bin\Debug\net6.0\Proy_Institutec_ADO.pdb
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.csproj.AssemblyReference.cache
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.AssemblyInfoInputs.cache
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.AssemblyInfo.cs
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.csproj.CoreCompileInputs.cache
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.csproj.CopyComplete
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.dll
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\refint\Proy_InstitutecBL.dll
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\Proy_InstitutecBL.pdb
+C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBL\obj\Debug\net6.0\ref\Proy_InstitutecBL.dll
