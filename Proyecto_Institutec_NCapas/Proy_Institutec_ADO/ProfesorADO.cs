@@ -20,10 +20,10 @@ namespace Proy_Institutec_ADO
         ProfesorBE objProfesorBE = new ProfesorBE();
         public DataTable ListarProfesor()
         {
-           
+
             try
             {
-                cnx.ConnectionString=MiConexion.GetCnx();
+                cnx.ConnectionString = MiConexion.GetCnx();
                 cmd.Connection = cnx;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_VerProfesor";
@@ -46,7 +46,8 @@ namespace Proy_Institutec_ADO
 
             }
         }
-        public ProfesorBE ConsultarProfesor(String strid) {
+        public ProfesorBE ConsultarProfesor(String strid)
+        {
             try
             {
                 cnx.ConnectionString = MiConexion.GetCnx();
@@ -57,20 +58,23 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", strid);
                 cnx.Open();
-                dtr=cmd.ExecuteReader();
-                if (dtr.HasRows == true) { 
-                dtr.Read();
-                objProfesorBE.IdProf =dtr["IdProf"].ToString();
-                objProfesorBE.NomPro = dtr["NomPro"].ToString();
-                objProfesorBE.ApePat = dtr["ApePat"].ToString();
-                objProfesorBE.ApeMat = dtr["ApeMat"].ToString();
-                objProfesorBE.Estado = Convert.ToBoolean(dtr["Estado"]);
-                objProfesorBE.TelPro = dtr["TelPro"].ToString();
-                objProfesorBE.FecIng = Convert.ToDateTime(dtr["FecIng"]);
-                objProfesorBE.Ndocum = dtr["Ndocum"].ToString();
-                objProfesorBE.Sexopr = dtr["Sexopr"].ToString();
-                
-                
+                dtr = cmd.ExecuteReader();
+                if (dtr.HasRows == true)
+                {
+                    dtr.Read();
+                    objProfesorBE.IdProf = dtr["IdProf"].ToString();
+                    objProfesorBE.NomPro = dtr["NomPro"].ToString();
+                    objProfesorBE.ApePat = dtr["ApePat"].ToString();
+                    objProfesorBE.ApeMat = dtr["ApeMat"].ToString();
+                    objProfesorBE.Estado = Convert.ToBoolean(dtr["Estado"]);
+                    objProfesorBE.TelPro = dtr["TelPro"].ToString();
+                    objProfesorBE.FecIng = Convert.ToDateTime(dtr["FecIng"]);
+                    objProfesorBE.Ndocum = dtr["Ndocum"].ToString();
+                    objProfesorBE.Id_Ubi = dtr["Id_Ubi"].ToString();
+                    objProfesorBE.Sexopr = dtr["Sexopr"].ToString();
+
+
+
                 }
                 dtr.Close();
                 return objProfesorBE;
@@ -80,15 +84,18 @@ namespace Proy_Institutec_ADO
 
                 throw new Exception(ex.Message);
             }
-            finally {
-                if (cnx.State == ConnectionState.Open) { 
-                cnx.Close();
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
                 }
-                    
-                        }
+
+            }
         }
 
-        public Boolean InsertarProfesor (ProfesorBE objProfesorBE) {
+        public Boolean InsertarProfesor(ProfesorBE objProfesorBE)
+        {
             try
             {
                 cnx.ConnectionString = MiConexion.GetCnx();
@@ -105,7 +112,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
                 cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
                 cmd.Parameters.AddWithValue("@FecIng", objProfesorBE.FecIng);
-                 
+
                 //
                 cnx.Open();
                 cmd.ExecuteNonQuery();
@@ -126,7 +133,7 @@ namespace Proy_Institutec_ADO
                 }
 
             }
-            
+
         }
         public Boolean ActualizarProfesor(ProfesorBE objProfesorBE)
         {
@@ -146,7 +153,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@FecIng", objProfesorBE.FecIng);
                 cmd.Parameters.AddWithValue("@Ndocum", objProfesorBE.Ndocum);
                 cmd.Parameters.AddWithValue("@Sexopr", objProfesorBE.Sexopr);
-
+                cmd.Parameters.AddWithValue("@Id_Ubi", objProfesorBE.Id_Ubi);
 
                 cnx.Open();
                 cmd.ExecuteNonQuery();
@@ -157,7 +164,15 @@ namespace Proy_Institutec_ADO
 
                 throw;
             }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+
         }
-        
     }
 }
+

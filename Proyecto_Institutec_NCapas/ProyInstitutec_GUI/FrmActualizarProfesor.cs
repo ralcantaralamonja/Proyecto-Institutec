@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 // Agregamos
 using Proy_InstitutecBE;
+using Proy_InstitutecBl;
 using Proy_InstitutecBL;
 namespace ProyInstitutec_GUI
 {
@@ -51,6 +52,12 @@ namespace ProyInstitutec_GUI
                 {
                     optFemenino.Checked = true;
                 }
+                String Id_Ubigeo = objProfesorBE.Id_Ubi;
+             
+                CargarUbigeo(Id_Ubigeo.Substring(0, 2), Id_Ubigeo.Substring(2, 2),
+                    Id_Ubigeo.Substring(4, 2));
+
+        
             }
             catch (Exception)
             {
@@ -58,7 +65,37 @@ namespace ProyInstitutec_GUI
                 throw;
             }
         }
+        private void cboProvincia_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDep.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
+        }
 
+        private void cboDep_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDep.SelectedValue.ToString(), "01", "01");
+        }
+
+        private void CargarUbigeo(String IdDepa, String IdProv, String IdDist)
+        {
+
+            UbigeoBL objUbigeoBL = new UbigeoBL();
+            cboDep.DataSource = objUbigeoBL.Ubigeo_Departamentos();
+            cboDep.ValueMember = "IdDepa";
+            cboDep.DisplayMember = "Departamento";
+            cboDep.SelectedValue = IdDepa;
+
+            cboProvincia.DataSource = objUbigeoBL.Ubigeo_ProvinciasDepartamento(IdDepa);
+            cboProvincia.ValueMember = "IdProv";
+            cboProvincia.DisplayMember = "Provincia";
+            cboProvincia.SelectedValue = IdProv;
+
+            cboDistrito.DataSource = objUbigeoBL.Ubigeo_DistritosProvinciaDepartamento(IdDepa, IdProv);
+            cboDistrito.ValueMember = "IdDist";
+            cboDistrito.DisplayMember = "Distrito";
+            cboDistrito.SelectedValue = IdDist;
+
+        }
+  
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             try
@@ -113,8 +150,8 @@ namespace ProyInstitutec_GUI
                 objProfesorBE.FecIng = fechaIng;
                 objProfesorBE.Sexopr = Sexo;
                 objProfesorBE.Ndocum = txtNdocum.Text.Trim();
-                //objprofesorBE.Id_Ubi = cboDep.SelectedValue.ToString() + cboProvincia.SelectedValue.ToString() +
-                //    cboDistrito.SelectedValue.ToString();
+                objProfesorBE.Id_Ubi = cboDep.SelectedValue.ToString() + cboProvincia.SelectedValue.ToString() +
+                          cboDistrito.SelectedValue.ToString();
                 if (objProfesorBL.ActualizarProfesor(objProfesorBE) == true)
                 {
                     this.Close();
@@ -129,8 +166,10 @@ namespace ProyInstitutec_GUI
 
                 throw;
             }
+          
         }
 
+         
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();

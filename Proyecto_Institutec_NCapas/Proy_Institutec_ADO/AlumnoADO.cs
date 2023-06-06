@@ -80,7 +80,14 @@ namespace Proy_Institutec_ADO
                     objAlumnoBE.direccion = drt["direccion"].ToString();
                     objAlumnoBE.FecNac = Convert.ToDateTime(drt["FecNac"]);
                     objAlumnoBE.Estado = Convert.ToBoolean(drt["Estado"]);
-                    objAlumnoBE.Foto = (Byte[])(drt["Foto"]);
+                    if (drt["Foto"] != DBNull.Value)
+                    {
+                        objAlumnoBE.Foto = (byte[])drt["Foto"];
+                    }
+                    else
+                    {
+                        objAlumnoBE.Foto = null;
+                    }
 
 
                 }
@@ -176,8 +183,16 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@FecNac", objAlumnoBE.FecNac);
                 cmd.Parameters.AddWithValue("@TelAlu", objAlumnoBE.TelAlu);
                 cmd.Parameters.AddWithValue("@direcc", objAlumnoBE.direccion);
-                cmd.Parameters.AddWithValue("@FotoAlum", objAlumnoBE.Foto);
                 cmd.Parameters.AddWithValue("@Usu_Regi", objAlumnoBE.Usu_Registro);
+                if (objAlumnoBE.Foto != null)
+                {
+                    cmd.Parameters.AddWithValue("@FotoAlum", objAlumnoBE.Foto);
+                }
+                else
+                {
+                    cmd.Parameters.AddWithValue("@FotoAlum", DBNull.Value);
+                }
+                
 
 
                 cnx.Open();

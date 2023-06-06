@@ -148,7 +148,7 @@ namespace ProyInstitutec_GUI
                 {
                     throw new Exception("Debe registrar la foto.");
                 }
-
+                objAlumnoBE.Foto = File.ReadAllBytes(openFileDialog1.FileName);
                 DateTime fechaNac = dtpFecha_Nac.Value;
 
                 String Genero = "";
