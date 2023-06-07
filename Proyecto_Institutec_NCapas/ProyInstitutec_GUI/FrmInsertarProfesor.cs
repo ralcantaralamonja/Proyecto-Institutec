@@ -13,6 +13,8 @@ using Proy_Institutec_ADO;
 using Proy_InstitutecBE;
 using Proy_InstitutecBl;
 using Proy_InstitutecBL;
+using System.IO;// para la clase File
+
 namespace ProyInstitutec_GUI
 {
     public partial class FrmInsertarProfesor : Form
@@ -94,6 +96,11 @@ namespace ProyInstitutec_GUI
                 {
                     throw new Exception("Numero de telefono invalido");
                 }
+                if (pcbFoto.Image == null)
+                {
+                    throw new Exception("Debe registrar la foto.");
+                }
+                objprofesorBE.Foto = File.ReadAllBytes(openFileDialog1.FileName);
 
                 String Genero = "";
                 if (optM.Checked == true)
@@ -113,6 +120,13 @@ namespace ProyInstitutec_GUI
                 {
                     activo = false;
                 }
+
+                // Convertimos la foto en un arreglo de Bytes y lo almacenamos en su respectiva propiedad
+                objprofesorBE.Foto = File.ReadAllBytes(openFileDialog1.FileName);
+
+
+
+
                 DateTime fechaIng = dtpFecIng.Value;
                 //Pasamos valores alas propiedades de la instancia...
                 objprofesorBE.NomPro = txtNomPro.Text.Trim();
@@ -161,6 +175,34 @@ namespace ProyInstitutec_GUI
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnImagen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                openFileDialog1.FileName = String.Empty;
+                openFileDialog1.Multiselect = false;
+                openFileDialog1.ShowDialog();
+
+                // Si se escogio una foto se carga en el picture Box
+                if (openFileDialog1.FileName != String.Empty)
+                {
+                    pcbFoto.Image = Image.FromFile(openFileDialog1.FileName);
+                }
+
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void pcbFoto_Click(object sender, EventArgs e)
         {
 
         }

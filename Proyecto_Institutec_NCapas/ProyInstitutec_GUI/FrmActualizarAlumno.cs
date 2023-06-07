@@ -342,5 +342,20 @@ namespace ProyInstitutec_GUI
             string codCar = cboCarrera.SelectedValue.ToString();
             CargarFacultades(codCar);
         }
+
+        private void pcbFoto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFoto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
