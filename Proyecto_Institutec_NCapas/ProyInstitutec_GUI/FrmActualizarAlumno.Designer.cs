@@ -128,7 +128,7 @@
             pcbFoto.SizeMode = PictureBoxSizeMode.StretchImage;
             pcbFoto.TabIndex = 98;
             pcbFoto.TabStop = false;
-            pcbFoto.Click += pcbFoto_Click;
+             
             // 
             // btnActualizarImagen
             // 
