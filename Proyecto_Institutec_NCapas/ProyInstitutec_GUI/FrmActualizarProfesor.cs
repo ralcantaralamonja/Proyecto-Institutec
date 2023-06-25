@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,9 @@ namespace ProyInstitutec_GUI
         {
             try
             {
+    
+
+                objProfesorBE = objProfesorBL.ConsultarProfesor(this.Codigo);
                 if (objProfesorBE.Foto == null || objProfesorBE.Foto.Length == 0)
                 {
                     pcbFoto.Image = null;
@@ -39,8 +43,6 @@ namespace ProyInstitutec_GUI
                     pcbFoto.Image = Image.FromStream(fotoStream);
                     FotoOriginal = objProfesorBE.Foto;
                 }
-
-                objProfesorBE = objProfesorBL.ConsultarProfesor(this.Codigo);
                 DateTime ingreso = objProfesorBE.FecIng;
                 lblCodigo.Text = objProfesorBE.IdProf;
                 txtNompro.Text = objProfesorBE.NomPro;
@@ -162,7 +164,7 @@ namespace ProyInstitutec_GUI
                 }
                 DateTime fechaIng = dtpFecIng.Value;
                 //Pasamos valores alas propiedades de la instancia...
-
+                objProfesorBE.Usu_Ult_Mod = clsCredenciales.Login_Usuario;
                 objProfesorBE.IdProf = lblCodigo.Text.Trim();
                 objProfesorBE.NomPro = txtNompro.Text.Trim();
                 objProfesorBE.ApeMat = txtApeMat.Text.Trim();
@@ -183,11 +185,12 @@ namespace ProyInstitutec_GUI
                     throw new Exception("No se inserto ");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show("Error " + ex.Message);
             }
+            
 
         }
 

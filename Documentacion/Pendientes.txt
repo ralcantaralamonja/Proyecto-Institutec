@@ -3,25 +3,42 @@ Correciones pendientes :
 1 - Validar formularios no se modifiquen en tiempo de ejecución.
 		- Arreglar grilla de ver profesor que tapa la columna sexo.
 		- Validar tabulación.
+
+Encargado :Orlando
 		
 2 - Agregar auditoria a las tablas profesor y curso
 		- Que aparesca usuario que hizo insert y hora
 		- Que aparesca usuario que hizo modificación y hora
+		
+Encargado :Ricardo		
 
 3 - Formulario actulizar y insertar alumnos tienen el siguiente bug :
 		- Los combo box carrera y curso no estan tomando los datos
 		que corresponden.
+		
+Encargada :Brigita 		
  
 Para avance 3 :
 
-1 - Crear 4 formularios web que abarquen las siguientes consultas de negocio :
-	1 - Ver Detalle de matricula de un alumno.
-	2 - Ver Detalle de cursos que dicta un profesor.
-	3 - Ver cursos disponibles por sección - horario - día - Aula - sede
-	4 - Por ver
+1 - Crear 4 formularios web que abarquen las siguientes consultas de negocio : //Roboto
+//hacer solo front queda a criterio info de negocio debe contener Paguinación 
+
+	1 - Ver Detalle de matricula de un alumno. Encargada : Ambar
+		Poner como filtro Dni que muestre 'ConsultarAlumno' y datos relevantes
+		
+	2 - Ver Detalle de cursos que dicta un profesor Encargado: Ricardo
+		Poner filtro Dni :
+		Poner como filtro Dni que muestre 'ConsultarProfe' y datos relevantes
+		
+	3 - Ver Cursos disponibles por sección - horario - día - Aula - sede  	Encargo: Orlando
+		Poner nombre curso :
+			
+	4 - Por Ver  Encargo : Brigita
 	
-2 - Formulario para implementar procesos bajo escenarios transaccionales :
+2 - Formulario para implementar procesos bajo escenarios transaccionales : 
+		Encargos : Ricardo y Ambar 
 	- Crear apartado web donde el formulario matricule un alumno para ello tener en cuenta :
+		
 		1 - Estado de la matricula debe ser valido.
 		2 - La sección de estar disponible.
 		3 - Debe contar inscripciones aforo mayor a 0.
@@ -30,7 +47,7 @@ Para avance 3 :
 		6 - Se debe descontar restar 1 vacante cada que se matricule un alumno.
 		7 - Una vez las vacantes lleguen a 0 no permitir el ingreso. 
 		
-3 -  Formulario inicio de sesión
+3 -  Formulario inicio de sesión Crear formulario : Brigita
 		- Validando los datos.
 
 Reglas de negocio a tener en cuenta :

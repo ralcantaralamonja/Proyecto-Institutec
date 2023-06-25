@@ -19,7 +19,7 @@ namespace Proy_InstitutecBE
             public string Sexopr { get; set; }
             public DateTime FecIng { get; set; }
             public bool Estado { get; set; }
-            public DateTime Fec_Registro { get; set; }
+            public DateTime Fec_Registro { get; set; } 
             public string Usu_Registro { get; set; }
             public DateTime Fec_Ult_Mod { get; set; }
             public string Usu_Ult_Mod { get; set; }

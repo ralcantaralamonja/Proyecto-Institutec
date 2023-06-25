@@ -122,9 +122,9 @@ namespace ProyInstitutec_GUI
                 }
 
                 // Convertimos la foto en un arreglo de Bytes y lo almacenamos en su respectiva propiedad
+                 
                 objprofesorBE.Foto = File.ReadAllBytes(openFileDialog1.FileName);
-
-
+                objprofesorBE.Usu_Registro = clsCredenciales.Login_Usuario;
 
 
                 DateTime fechaIng = dtpFecIng.Value;

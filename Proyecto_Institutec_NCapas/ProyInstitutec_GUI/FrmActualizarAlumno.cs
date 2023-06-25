@@ -312,29 +312,7 @@ namespace ProyInstitutec_GUI
 
         private void btnImagen_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    openFileDialog1.FileName = String.Empty;
-            //    openFileDialog1.Multiselect = false;
-            //    openFileDialog1.ShowDialog();
-
-            //    Si se escogio una foto se carga en el picture Box
-            //    if (openFileDialog1.FileName != String.Empty)
-            //    {
-            //        pcbFoto.Image = Image.FromFile(openFileDialog1.FileName);
-            //        blnCambio = true;
-            //    }
-            //    else
-            //    {
-            //        blnCambio = false;
-            //    }
-
-            //}
-            //catch (Exception ex)
-            //{
-
-            //    MessageBox.Show("Error:" + ex.Message);
-            //}
+ 
         }
 
         private void cboCarrera_SelectedIndexChanged(object sender, EventArgs e)
