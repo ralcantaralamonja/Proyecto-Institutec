@@ -79,8 +79,7 @@ namespace ProyInstitutec_GUI
                     objCursoBE.Activo = false;
                 }
                 objCursoBE.CodCar = codCar; // Asignar el CodCar de carrera seleccionado
-                objCursoBE.Usu_Registro = "ogonzales";
-
+                objCursoBE.Usu_Registro = clsCredenciales.Login_Usuario;
                 // Insertamos el registro
                 if (objCursoBL.InsertarCurso(objCursoBE))
                 {
@@ -91,6 +90,7 @@ namespace ProyInstitutec_GUI
                 {
                     throw new Exception("Registro no insertado, contacte con el área de TI");
                 }
+                
             }
             catch (Exception ex)
             {
