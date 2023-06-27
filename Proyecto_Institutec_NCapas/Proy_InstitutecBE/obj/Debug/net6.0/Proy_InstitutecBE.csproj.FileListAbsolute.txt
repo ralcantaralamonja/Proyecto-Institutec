@@ -10,3 +10,15 @@ E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACI
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\refint\Proy_InstitutecBE.dll
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.pdb
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\ref\Proy_InstitutecBE.dll
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\bin\Debug\net6.0\Proy_InstitutecBE.deps.json
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\bin\Debug\net6.0\Proy_InstitutecBE.dll
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\bin\Debug\net6.0\Proy_InstitutecBE.pdb
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.csproj.AssemblyReference.cache
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.GeneratedMSBuildEditorConfig.editorconfig
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.AssemblyInfoInputs.cache
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.AssemblyInfo.cs
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.csproj.CoreCompileInputs.cache
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.dll
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\refint\Proy_InstitutecBE.dll
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\Proy_InstitutecBE.pdb
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_InstitutecBE\obj\Debug\net6.0\ref\Proy_InstitutecBE.dll

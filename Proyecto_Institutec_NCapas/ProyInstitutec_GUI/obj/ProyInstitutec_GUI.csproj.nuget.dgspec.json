@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {}
+    "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {}
   },
   "projects": {
-    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {
+    "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
+        "projectUniqueName": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
         "projectName": "ProyInstitutec_GUI",
-        "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\obj\\",
+        "projectPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
+        "packagesPath": "C:\\Users\\OLGA LIDIA\\.nuget\\packages\\",
+        "outputPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\OLGA LIDIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,11 +33,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
+              "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
+                "projectPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
               },
-              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
-                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj"
+              "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
+                "projectPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj"
               }
             }
           }
@@ -70,24 +70,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
+    "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
+        "projectUniqueName": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
         "projectName": "Proy_InstitutecBE",
-        "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\obj\\",
+        "projectPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
+        "packagesPath": "C:\\Users\\OLGA LIDIA\\.nuget\\packages\\",
+        "outputPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\OLGA LIDIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -130,24 +130,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
+    "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
+        "projectUniqueName": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
         "projectName": "Proy_InstitutecBL",
-        "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\obj\\",
+        "projectPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
+        "packagesPath": "C:\\Users\\OLGA LIDIA\\.nuget\\packages\\",
+        "outputPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\OLGA LIDIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -163,11 +163,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
+              "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
+                "projectPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
               },
-              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
-                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj"
+              "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
+                "projectPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj"
               }
             }
           }
@@ -197,24 +197,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
+    "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
+        "projectUniqueName": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
         "projectName": "Proy_Institutec_ADO",
-        "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
-        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
-        "outputPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\obj\\",
+        "projectPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
+        "packagesPath": "C:\\Users\\OLGA LIDIA\\.nuget\\packages\\",
+        "outputPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\OLGA LIDIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -230,8 +230,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\DESARROLLO DE APLICACIONES 1\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
+              "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
+                "projectPath": "C:\\AplicacionesI\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
               }
             }
           }
@@ -271,7 +271,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

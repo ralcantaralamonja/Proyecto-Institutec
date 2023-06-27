@@ -176,8 +176,10 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@ApeMat", objAlumnoBE.ApeMat);
                 cmd.Parameters.AddWithValue("@Sexoal", objAlumnoBE.SexoAl);
                 cmd.Parameters.AddWithValue("@Estado", objAlumnoBE.Estado);
-                //cmd.Parameters.AddWithValue("@IdFacu", objAlumnoBE.IdFacu);
+                cmd.Parameters.AddWithValue("@IdFacu", objAlumnoBE.IdFacu);
+                cmd.Parameters.AddWithValue("@DescFacu", objAlumnoBE.DescFacu);
                 cmd.Parameters.AddWithValue("@CodCar", objAlumnoBE.CodCar);
+                cmd.Parameters.AddWithValue("@DescCar", objAlumnoBE.DescCar);
                 cmd.Parameters.AddWithValue("@Id_Ubi", objAlumnoBE.Id_Ubi);
                 cmd.Parameters.AddWithValue("@CorAlu", objAlumnoBE.CorAlu);
                 cmd.Parameters.AddWithValue("@FecNac", objAlumnoBE.FecNac);
@@ -251,6 +253,70 @@ namespace Proy_Institutec_ADO
             }
 
 
+        }
+
+        public String ObtenerFacultadAlumno(string idAlumno)
+        {
+            try
+            {
+                string idFacultad = string.Empty;
+
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ObtenerFacultadAlumno";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@IdAlum", idAlumno);
+
+                cnx.Open();
+                idFacultad = cmd.ExecuteScalar().ToString();
+
+                return idFacultad;
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+        }
+
+
+        public String ObtenerCarreraAlumno(string idAlumno)
+        {
+            try
+            {
+                string idCarrera = string.Empty;
+
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ObtenerCarreraAlumno";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@IdAlum", idAlumno);
+
+                cnx.Open();
+                object result = cmd.ExecuteScalar();
+                idCarrera = cmd.ExecuteScalar().ToString();
+
+                return idCarrera;
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
         }
 
 

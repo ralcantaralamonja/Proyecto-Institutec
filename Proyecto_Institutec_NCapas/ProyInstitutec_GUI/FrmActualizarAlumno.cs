@@ -202,25 +202,47 @@ namespace ProyInstitutec_GUI
                 CargarUbigeo(Id_Ubigeo.Substring(0, 2), Id_Ubigeo.Substring(2, 2),
                     Id_Ubigeo.Substring(4, 2));
 
+                string idCarreraAlumno = objAlumnoBL.ObtenerCarreraAlumno(objAlumnoBE.IdAlum);
 
 
-                //cargamos los combos
                 DataTable dt2 = objCarreraBL.ListarCarrera();
                 //instancia de datarow , instancia de fila
                 DataRow dtr;
                 dtr = dt2.NewRow(); // fila vacia
-                dtr["CodCar"] = 0;
-                dtr["DesCar"] = "--Seleccione--";
-                //primera fila que se visualice:
-                dt2.Rows.InsertAt(dtr, 0);
                 cboCarrera.DataSource = dt2;
                 cboCarrera.DisplayMember = "DesCar";
                 cboCarrera.ValueMember = "CodCar";
 
+
+                if (!string.IsNullOrEmpty(idCarreraAlumno))
+                {
+                    cboCarrera.SelectedValue = idCarreraAlumno;
+                }
+
+
                 //combos 
                 objAlumnoBE.CodCar = cboCarrera.SelectedValue.ToString();
 
+                string idFacultadAlumno = objAlumnoBL.ObtenerFacultadAlumno(objAlumnoBE.IdAlum);
+                // Reemplaza idAlumno con el valor correspondiente
 
+
+                // Cargar los datos en el combobox cboFacultad
+                DataTable dt = objFacultadBL.ListarFacultad();
+                //instancia de datarow , instancia de fila
+                DataRow dtrr;
+                dtrr = dt.NewRow(); // fila vacia
+                cboFacultad.DataSource = dt;
+                cboFacultad.DisplayMember = "DesFac";
+                cboFacultad.ValueMember = "IdFacu";
+
+
+
+                // Establecer la facultad seleccionada en el combobox cboFacultad
+                if (!string.IsNullOrEmpty(idFacultadAlumno))
+                {
+                    cboFacultad.SelectedValue = idFacultadAlumno;
+                }
 
 
 
@@ -283,6 +305,7 @@ namespace ProyInstitutec_GUI
             CargarUbigeo(cboDep.SelectedValue.ToString(), "01", "01");
         }
 
+
         private void CargarFacultades(string codCar)
         {
             DataTable dtFacultades = objFacultadBL.facultadCarrera(codCar);
@@ -312,38 +335,75 @@ namespace ProyInstitutec_GUI
 
         private void btnImagen_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    openFileDialog1.FileName = String.Empty;
-            //    openFileDialog1.Multiselect = false;
-            //    openFileDialog1.ShowDialog();
+            try
+            {
+                openFileDialog1.FileName = String.Empty;
+                openFileDialog1.Multiselect = false;
+                openFileDialog1.ShowDialog();
 
-            //    Si se escogio una foto se carga en el picture Box
-            //    if (openFileDialog1.FileName != String.Empty)
-            //    {
-            //        pcbFoto.Image = Image.FromFile(openFileDialog1.FileName);
-            //        blnCambio = true;
-            //    }
-            //    else
-            //    {
-            //        blnCambio = false;
-            //    }
+                //  Si se escogio una foto se carga en el picture Box
+                if (openFileDialog1.FileName != String.Empty)
+                {
+                    pcbFoto.Image = Image.FromFile(openFileDialog1.FileName);
+                    blnCambio = true;
+                }
+                else
+                {
+                    blnCambio = false;
+                }
 
-            //}
-            //catch (Exception ex)
-            //{
+            }
+            catch (Exception ex)
+            {
 
-            //    MessageBox.Show("Error:" + ex.Message);
-            //}
+                MessageBox.Show("Error:" + ex.Message);
+            }
         }
 
         private void cboCarrera_SelectedIndexChanged(object sender, EventArgs e)
+
         {
-            string codCar = cboCarrera.SelectedValue.ToString();
-            CargarFacultades(codCar);
+
+
+
+            if (cboFacultad.SelectedValue != null)
+            {
+                string codCar = cboCarrera.SelectedValue.ToString();
+                CargarFacultades(codCar);
+
+                string idFacultadSeleccionada = cboFacultad.SelectedValue.ToString();
+                FacultadBL facultadBL = new FacultadBL();
+                DataTable carreras = facultadBL.facultadCarrera(idFacultadSeleccionada);
+
+                cboCarrera.DisplayMember = "DesCar";
+                cboCarrera.ValueMember = "CodCar";
+                cboCarrera.DataSource = carreras;
+
+                // Obtener el valor del campo carrera del alumno seleccionado
+                string idCarreraAlumno = objAlumnoBL.ObtenerCarreraAlumno(objAlumnoBE.IdAlum); // Reemplaza idAlumno con el valor correspondiente
+
+                // Establecer la carrera seleccionada en el combobox cboCarrera
+                if (!string.IsNullOrEmpty(idCarreraAlumno))
+                {
+                    cboCarrera.SelectedValue = idCarreraAlumno;
+
+                    DataTable dt2 = objCarreraBL.ListarCarrera();
+                    //instancia de datarow , instancia de fila
+                    DataRow dtr;
+                    dtr = dt2.NewRow(); // fila vacia
+                    cboCarrera.DataSource = dt2;
+                    cboCarrera.DisplayMember = "DesCar";
+                    cboCarrera.ValueMember = "CodCar";
+
+                    //combos 
+                    objAlumnoBE.CodCar = cboCarrera.SelectedValue.ToString();
+
+
+                }
+            }
         }
 
-  
+
 
         private void btnFoto_Click(object sender, EventArgs e)
         {
@@ -373,6 +433,21 @@ namespace ProyInstitutec_GUI
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboFacultad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }

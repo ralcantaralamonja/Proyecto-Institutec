@@ -35,5 +35,14 @@ namespace Proy_InstitutecBL
         {
             return objAlumnoADO.EliminarAlumno(strCodigo);
         }
+        public String ObtenerCarreraAlumno(String idAlumno)
+        {
+            return objAlumnoADO.ObtenerCarreraAlumno(idAlumno);
+        }
+
+        public String ObtenerFacultadAlumno(String idAlumno)
+        {
+            return objAlumnoADO.ObtenerFacultadAlumno(idAlumno);
+        }
     }
 }
