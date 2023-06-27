@@ -1,0 +1,6 @@
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\bin\Debug\Proy_InstitutecBE.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\bin\Debug\Proy_InstitutecBE.pdb
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.csproj.AssemblyReference.cache
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.csproj.CoreCompileInputs.cache
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.pdb

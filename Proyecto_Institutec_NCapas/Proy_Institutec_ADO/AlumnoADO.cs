@@ -176,10 +176,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@ApeMat", objAlumnoBE.ApeMat);
                 cmd.Parameters.AddWithValue("@Sexoal", objAlumnoBE.SexoAl);
                 cmd.Parameters.AddWithValue("@Estado", objAlumnoBE.Estado);
-                cmd.Parameters.AddWithValue("@IdFacu", objAlumnoBE.IdFacu);
-                cmd.Parameters.AddWithValue("@DescFacu", objAlumnoBE.DescFacu);
                 cmd.Parameters.AddWithValue("@CodCar", objAlumnoBE.CodCar);
-                cmd.Parameters.AddWithValue("@DescCar", objAlumnoBE.DescCar);
                 cmd.Parameters.AddWithValue("@Id_Ubi", objAlumnoBE.Id_Ubi);
                 cmd.Parameters.AddWithValue("@CorAlu", objAlumnoBE.CorAlu);
                 cmd.Parameters.AddWithValue("@FecNac", objAlumnoBE.FecNac);
