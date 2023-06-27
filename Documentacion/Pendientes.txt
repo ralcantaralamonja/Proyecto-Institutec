@@ -1,23 +1,62 @@
-1. Correciones de la bitacora (profesor, alumno,curso,carrera) C# 
-2. Aplicar auditoria en tablas con nombre de usuario 
+Correciones pendientes :
+
+1 - Validar formularios no se modifiquen en tiempo de ejecución.
+		- Arreglar grilla de ver profesor que tapa la columna sexo.
+		- Validar tabulación.
+
+Encargado :Orlando
+		
+2 - Agregar auditoria a las tablas profesor y curso
+		- Que aparesca usuario que hizo insert y hora
+		- Que aparesca usuario que hizo modificación y hora
+		
+Encargado :Ricardo		
+
+3 - Formulario actulizar y insertar alumnos tienen el siguiente bug :
+		- Los combo box carrera y curso no estan tomando los datos
+		que corresponden.
+		
+Encargada :Brigita 		
  
+Para avance 3 :
 
-***** por ver ********
-Auditoria de tb usuario con Triggers SQL
-Crear Sp para registrar un alumno en un curso  SQL
-(Al final un aula no puede estar con 2 profes en el mismo horario)
-(tener mapeo de aulas ocupadas)
+1 - Crear 4 formularios web que abarquen las siguientes consultas de negocio : //Roboto
+//hacer solo front queda a criterio info de negocio debe contener Paguinación 
 
-- un profe no puede dictar otra clase el mismo dia y horario 
+	1 - Ver Detalle de matricula de un alumno. Encargada : Ambar
+		Poner como filtro Dni que muestre 'ConsultarAlumno' y datos relevantes
+		
+	2 - Ver Detalle de cursos que dicta un profesor Encargado: Ricardo
+		Poner filtro Dni :
+		Poner como filtro Dni que muestre 'ConsultarProfe' y datos relevantes
+		
+	3 - Ver Cursos disponibles por sección - horario - día - Aula - sede  	Encargo: Orlando
+		Poner nombre curso :
+			
+	4 - Por Ver  Encargo : Brigita
+	
+2 - Formulario para implementar procesos bajo escenarios transaccionales : 
+		Encargos : Ricardo y Ambar 
+	- Crear apartado web donde el formulario matricule un alumno para ello tener en cuenta :
+		
+		1 - Estado de la matricula debe ser valido.
+		2 - La sección de estar disponible.
+		3 - Debe contar inscripciones aforo mayor a 0.
+		4 - La sección debe tener profesor asignado.
+		5 - Un alumno no puede matricularce mas de 1 vez en el mismo curso.
+		6 - Se debe descontar restar 1 vacante cada que se matricule un alumno.
+		7 - Una vez las vacantes lleguen a 0 no permitir el ingreso. 
+		
+3 -  Formulario inicio de sesión Crear formulario : Brigita
+		- Validando los datos.
 
+Reglas de negocio a tener en cuenta :
 
-
-
-
-
-
-
-
+- un profe no puede dictar otra clase el mismo dia y horario. 
+- el mismo aula no puede estar ocupada el mismo horario y día si ya hay una clase
+	programada para ese día y hora.
+- Crear Sp para registrar un alumno en un curso  SQL
+  
 
 
 

@@ -97,7 +97,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@NomCur", objCursoBE.NomCur);
                 cmd.Parameters.AddWithValue("@Activo", objCursoBE.Activo);
                 cmd.Parameters.AddWithValue("@CodCar", objCursoBE.CodCar);
-
+                cmd.Parameters.AddWithValue("@Usu_Registro", objCursoBE.Usu_Registro);
                 cnx.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -130,7 +130,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@Activo", objCursoBE.Activo);
                 cmd.Parameters.AddWithValue("@CodCar", objCursoBE.CodCar);
                 cmd.Parameters.AddWithValue("@Usu_Ult_Mod", objCursoBE.Usu_Ult_Mod);
-                cmd.Parameters.AddWithValue("@Fec_Ult_Mod", objCursoBE.Fec_Ult_Mod);
+                 
 
 
                 cnx.Open();

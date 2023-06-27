@@ -121,6 +121,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
                 cmd.Parameters.AddWithValue("@FecIng", objProfesorBE.FecIng);
                 cmd.Parameters.AddWithValue("@Foto", objProfesorBE.Foto);
+                cmd.Parameters.AddWithValue("@Usu_Registro", objProfesorBE.Usu_Registro);
                 //
                 cnx.Open();
                 cmd.ExecuteNonQuery();
@@ -162,6 +163,8 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@Ndocum", objProfesorBE.Ndocum);
                 cmd.Parameters.AddWithValue("@Sexopr", objProfesorBE.Sexopr);
                 cmd.Parameters.AddWithValue("@Id_Ubi", objProfesorBE.Id_Ubi);
+                cmd.Parameters.AddWithValue("@Usu_Ult_Mod", objProfesorBE.Usu_Ult_Mod);
+                
                 if (objProfesorBE.Foto != null)
                 {
                     cmd.Parameters.AddWithValue("@Foto", objProfesorBE.Foto);
