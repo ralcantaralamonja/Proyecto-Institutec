@@ -2,7 +2,7 @@
 using Proy_InstitutecBE;
 using System.Data;
 using System.Data.SqlClient;
-
+using System;
 
 namespace Proy_Institutec_ADO
 {
