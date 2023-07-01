@@ -122,7 +122,7 @@
             dtgProfesor.RowsDefaultCellStyle = dataGridViewCellStyle5;
             dtgProfesor.RowTemplate.Height = 33;
             dtgProfesor.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtgProfesor.Size = new Size(1157, 503);
+            dtgProfesor.Size = new Size(1293, 503);
             dtgProfesor.TabIndex = 2;
             dtgProfesor.TabStop = false;
             dtgProfesor.CellContentClick += dataGridView1_CellContentClick;
@@ -173,7 +173,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(980, 564);
+            label2.Location = new Point(1094, 569);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(100, 21);
@@ -187,7 +187,7 @@
             LblRegistros.BackColor = SystemColors.Window;
             LblRegistros.BorderStyle = BorderStyle.FixedSingle;
             LblRegistros.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            LblRegistros.Location = new Point(1086, 564);
+            LblRegistros.Location = new Point(1222, 564);
             LblRegistros.Margin = new Padding(4, 0, 4, 0);
             LblRegistros.Name = "LblRegistros";
             LblRegistros.Size = new Size(84, 30);
@@ -203,7 +203,7 @@
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1184, 661);
+            ClientSize = new Size(1320, 661);
             Controls.Add(LblRegistros);
             Controls.Add(label2);
             Controls.Add(btnSalir);

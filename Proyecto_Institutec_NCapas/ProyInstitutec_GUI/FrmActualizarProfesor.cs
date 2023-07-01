@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,12 +23,26 @@ namespace ProyInstitutec_GUI
             InitializeComponent();
         }
         public String Codigo { get; set; }
+        public byte[] FotoOriginal { get; private set; }
+
+        public bool blnCambio { get; set; }
         private void FrmActualizarProfesor_Load(object sender, EventArgs e)
         {
             try
             {
 
+
                 objProfesorBE = objProfesorBL.ConsultarProfesor(this.Codigo);
+                if (objProfesorBE.Foto == null || objProfesorBE.Foto.Length == 0)
+                {
+                    pcbFoto.Image = null;
+                }
+                else
+                {
+                    MemoryStream fotoStream = new MemoryStream(objProfesorBE.Foto);
+                    pcbFoto.Image = Image.FromStream(fotoStream);
+                    FotoOriginal = objProfesorBE.Foto;
+                }
                 DateTime ingreso = objProfesorBE.FecIng;
                 lblCodigo.Text = objProfesorBE.IdProf;
                 txtNompro.Text = objProfesorBE.NomPro;
@@ -53,11 +68,11 @@ namespace ProyInstitutec_GUI
                     optFemenino.Checked = true;
                 }
                 String Id_Ubigeo = objProfesorBE.Id_Ubi;
-             
+
                 CargarUbigeo(Id_Ubigeo.Substring(0, 2), Id_Ubigeo.Substring(2, 2),
                     Id_Ubigeo.Substring(4, 2));
 
-        
+
             }
             catch (Exception)
             {
@@ -95,7 +110,7 @@ namespace ProyInstitutec_GUI
             cboDistrito.SelectedValue = IdDist;
 
         }
-  
+
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             try
@@ -119,6 +134,15 @@ namespace ProyInstitutec_GUI
                     throw new Exception("Numero de telefono debe tener 9 digitos");
                 }
 
+                if (blnCambio == true)
+                {
+                    objProfesorBE.Foto = File.ReadAllBytes(openFileDialog1.FileName);
+                }
+                else
+                {
+                    objProfesorBE.Foto = FotoOriginal;
+                }
+
 
                 Boolean activo;
                 if (optActivo.Checked == true)
@@ -140,7 +164,7 @@ namespace ProyInstitutec_GUI
                 }
                 DateTime fechaIng = dtpFecIng.Value;
                 //Pasamos valores alas propiedades de la instancia...
-
+                objProfesorBE.Usu_Ult_Mod = clsCredenciales.Login_Usuario;
                 objProfesorBE.IdProf = lblCodigo.Text.Trim();
                 objProfesorBE.NomPro = txtNompro.Text.Trim();
                 objProfesorBE.ApeMat = txtApeMat.Text.Trim();
@@ -161,15 +185,16 @@ namespace ProyInstitutec_GUI
                     throw new Exception("No se inserto ");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show("Error " + ex.Message);
             }
-          
+
+
         }
 
-         
+
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -194,6 +219,33 @@ namespace ProyInstitutec_GUI
 
                     e.Handled = true; //Se atrapa el caracter y no se imprime 
                 }
+            }
+        }
+
+        private void btnFoto_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                openFileDialog1.FileName = String.Empty;
+                openFileDialog1.Multiselect = false;
+                openFileDialog1.ShowDialog();
+
+                // Si se escogio una foto se carga en el picture Box
+                if (openFileDialog1.FileName != String.Empty)
+                {
+                    pcbFoto.Image = Image.FromFile(openFileDialog1.FileName);
+                    blnCambio = true;
+                }
+                else
+                {
+                    blnCambio = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error:" + ex.Message);
             }
         }
     }

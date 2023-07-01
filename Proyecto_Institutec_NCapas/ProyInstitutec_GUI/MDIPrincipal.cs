@@ -91,5 +91,20 @@ namespace ProyInstitutec_GUI
             objAlumno.Show();
 
         }
+
+        private void MDIPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MDIPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult vrpta;
+            vrpta = MessageBox.Show("Seguro de salir de la aplicación", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (vrpta == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

@@ -72,6 +72,14 @@ namespace Proy_Institutec_ADO
                     objProfesorBE.Ndocum = dtr["Ndocum"].ToString();
                     objProfesorBE.Id_Ubi = dtr["Id_Ubi"].ToString();
                     objProfesorBE.Sexopr = dtr["Sexopr"].ToString();
+                    if (dtr["Foto"] != DBNull.Value)
+                    {
+                        objProfesorBE.Foto = (byte[])dtr["Foto"];
+                    }
+                    else
+                    {
+                        objProfesorBE.Foto = null;
+                    }
 
 
 
@@ -112,7 +120,8 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@TelPro", objProfesorBE.TelPro);
                 cmd.Parameters.AddWithValue("@Estado", objProfesorBE.Estado);
                 cmd.Parameters.AddWithValue("@FecIng", objProfesorBE.FecIng);
-
+                cmd.Parameters.AddWithValue("@Foto", objProfesorBE.Foto);
+                cmd.Parameters.AddWithValue("@Usu_Registro", objProfesorBE.Usu_Registro);
                 //
                 cnx.Open();
                 cmd.ExecuteNonQuery();
@@ -154,6 +163,18 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@Ndocum", objProfesorBE.Ndocum);
                 cmd.Parameters.AddWithValue("@Sexopr", objProfesorBE.Sexopr);
                 cmd.Parameters.AddWithValue("@Id_Ubi", objProfesorBE.Id_Ubi);
+                cmd.Parameters.AddWithValue("@Usu_Ult_Mod", objProfesorBE.Usu_Ult_Mod);
+                
+                if (objProfesorBE.Foto != null)
+                {
+                    cmd.Parameters.AddWithValue("@Foto", objProfesorBE.Foto);
+                }
+                else
+                {
+                    cmd.Parameters.AddWithValue("@Foto", DBNull.Value);
+                }
+
+
 
                 cnx.Open();
                 cmd.ExecuteNonQuery();
