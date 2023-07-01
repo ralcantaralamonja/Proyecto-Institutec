@@ -70,12 +70,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Consultas\ConsultaAlumno.aspx" />
     <Content Include="Consultas\ConsultaProfesor.aspx" />
     <Content Include="CSS\style.css" />
     <Content Include="JS\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\ConsultaAlumno.aspx.cs">
+      <DependentUpon>ConsultaAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaAlumno.aspx.designer.cs">
+      <DependentUpon>ConsultaAlumno.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\ConsultaProfesor.aspx.cs">
       <DependentUpon>ConsultaProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
