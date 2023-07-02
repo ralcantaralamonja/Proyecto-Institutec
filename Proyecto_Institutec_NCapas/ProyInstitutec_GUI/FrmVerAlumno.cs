@@ -117,5 +117,9 @@ namespace ProyInstitutec_GUI
             }
         }
 
+        private void dtgAlumno_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -60,7 +60,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(92, 70);
+            label1.Location = new Point(12, 15);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
             label1.Size = new Size(207, 20);
@@ -69,7 +69,7 @@
             // 
             // mskDNIAlumno
             // 
-            mskDNIAlumno.Location = new Point(309, 67);
+            mskDNIAlumno.Location = new Point(229, 12);
             mskDNIAlumno.Margin = new Padding(5);
             mskDNIAlumno.Name = "mskDNIAlumno";
             mskDNIAlumno.Size = new Size(241, 25);
@@ -87,7 +87,7 @@
             dtgAlumno.BorderStyle = BorderStyle.None;
             dtgAlumno.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgAlumno.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, Genero, Correo, Telefono, direccion, Departamento, Carrera, Facultad, Foto, Estado });
-            dtgAlumno.Location = new Point(90, 116);
+            dtgAlumno.Location = new Point(13, 54);
             dtgAlumno.Margin = new Padding(5);
             dtgAlumno.Name = "dtgAlumno";
             dtgAlumno.ReadOnly = true;
@@ -107,9 +107,10 @@
             dtgAlumno.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dtgAlumno.RowTemplate.Height = 33;
             dtgAlumno.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtgAlumno.Size = new Size(1588, 589);
+            dtgAlumno.Size = new Size(1293, 503);
             dtgAlumno.TabIndex = 2;
             dtgAlumno.TabStop = false;
+            dtgAlumno.CellContentClick += dtgAlumno_CellContentClick;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -220,7 +221,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(1415, 723);
+            label2.Location = new Point(1094, 569);
             label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
             label2.Size = new Size(89, 20);
@@ -231,20 +232,20 @@
             // 
             lblRegistros.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             lblRegistros.BorderStyle = BorderStyle.FixedSingle;
-            lblRegistros.Location = new Point(1572, 722);
+            lblRegistros.Location = new Point(1222, 564);
             lblRegistros.Margin = new Padding(5, 0, 5, 0);
             lblRegistros.Name = "lblRegistros";
-            lblRegistros.Size = new Size(116, 43);
+            lblRegistros.Size = new Size(84, 30);
             lblRegistros.TabIndex = 5;
             // 
             // btnInsertar
             // 
             btnInsertar.BackColor = SystemColors.ControlLight;
             btnInsertar.FlatStyle = FlatStyle.Flat;
-            btnInsertar.Location = new Point(1199, 791);
+            btnInsertar.Location = new Point(715, 609);
             btnInsertar.Margin = new Padding(3, 4, 3, 4);
             btnInsertar.Name = "btnInsertar";
-            btnInsertar.Size = new Size(161, 45);
+            btnInsertar.Size = new Size(125, 40);
             btnInsertar.TabIndex = 6;
             btnInsertar.Text = "INSERTAR";
             btnInsertar.UseVisualStyleBackColor = false;
@@ -254,10 +255,10 @@
             // 
             btnActualizar.BackColor = SystemColors.ControlLight;
             btnActualizar.FlatStyle = FlatStyle.Flat;
-            btnActualizar.Location = new Point(1389, 791);
+            btnActualizar.Location = new Point(846, 609);
             btnActualizar.Margin = new Padding(5);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(161, 45);
+            btnActualizar.Size = new Size(125, 40);
             btnActualizar.TabIndex = 7;
             btnActualizar.Text = "ACTUALIZAR";
             btnActualizar.UseVisualStyleBackColor = false;
@@ -267,10 +268,10 @@
             // 
             btnSalir.BackColor = SystemColors.ControlLight;
             btnSalir.FlatStyle = FlatStyle.Flat;
-            btnSalir.Location = new Point(1572, 791);
+            btnSalir.Location = new Point(1045, 609);
             btnSalir.Margin = new Padding(5);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(161, 45);
+            btnSalir.Size = new Size(125, 40);
             btnSalir.TabIndex = 8;
             btnSalir.Text = "SALIR";
             btnSalir.UseVisualStyleBackColor = false;
@@ -296,7 +297,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1786, 875);
+            ClientSize = new Size(1320, 661);
             Controls.Add(btnSalir);
             Controls.Add(btnActualizar);
             Controls.Add(btnInsertar);

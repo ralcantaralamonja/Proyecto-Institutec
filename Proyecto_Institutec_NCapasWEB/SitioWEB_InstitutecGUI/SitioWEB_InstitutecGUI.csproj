@@ -70,9 +70,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Consultas\ConsultaAlumno.aspx" />
+    <Content Include="Consultas\ConsultaProfesor.aspx" />
+    <Content Include="CSS\style.css" />
+    <Content Include="JS\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\ConsultaAlumno.aspx.cs">
+      <DependentUpon>ConsultaAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaAlumno.aspx.designer.cs">
+      <DependentUpon>ConsultaAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaProfesor.aspx.cs">
+      <DependentUpon>ConsultaProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaProfesor.aspx.designer.cs">
+      <DependentUpon>ConsultaProfesor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +111,9 @@
       <Project>{9a072ea2-7525-45fa-9c74-bea212bbb9e4}</Project>
       <Name>Proy_InstitutecBL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
