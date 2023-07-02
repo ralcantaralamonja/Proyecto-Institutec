@@ -76,7 +76,7 @@
             label1.Location = new Point(42, 82);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(136, 30);
+            label1.Size = new Size(91, 21);
             label1.TabIndex = 2;
             label1.Text = "NOMBRES:";
             // 
@@ -85,7 +85,7 @@
             txtNombre.Location = new Point(252, 79);
             txtNombre.Margin = new Padding(4);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(267, 37);
+            txtNombre.Size = new Size(267, 27);
             txtNombre.TabIndex = 3;
             // 
             // label2
@@ -94,8 +94,8 @@
             label2.Location = new Point(42, 130);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(247, 30);
-            label2.TabIndex = 5;
+            label2.Size = new Size(169, 21);
+            label2.TabIndex = 4;
             label2.Text = "APELLIDO PATERNO:";
             // 
             // txtApePat
@@ -103,8 +103,8 @@
             txtApePat.Location = new Point(252, 127);
             txtApePat.Margin = new Padding(4);
             txtApePat.Name = "txtApePat";
-            txtApePat.Size = new Size(267, 37);
-            txtApePat.TabIndex = 6;
+            txtApePat.Size = new Size(267, 27);
+            txtApePat.TabIndex = 5;
             txtApePat.TextChanged += textBox2_TextChanged;
             // 
             // label3
@@ -113,8 +113,8 @@
             label3.Location = new Point(42, 178);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(256, 30);
-            label3.TabIndex = 7;
+            label3.Size = new Size(175, 21);
+            label3.TabIndex = 6;
             label3.Text = "APELLIDO MATERNO:";
             // 
             // txtApeMat
@@ -122,8 +122,8 @@
             txtApeMat.Location = new Point(252, 175);
             txtApeMat.Margin = new Padding(4);
             txtApeMat.Name = "txtApeMat";
-            txtApeMat.Size = new Size(267, 37);
-            txtApeMat.TabIndex = 8;
+            txtApeMat.Size = new Size(267, 27);
+            txtApeMat.TabIndex = 7;
             // 
             // gpbSexoAlu
             // 
@@ -134,7 +134,7 @@
             gpbSexoAlu.Name = "gpbSexoAlu";
             gpbSexoAlu.Padding = new Padding(4);
             gpbSexoAlu.Size = new Size(326, 99);
-            gpbSexoAlu.TabIndex = 4;
+            gpbSexoAlu.TabIndex = 8;
             gpbSexoAlu.TabStop = false;
             gpbSexoAlu.Text = "GÉNERO";
             // 
@@ -143,7 +143,7 @@
             optF.AutoSize = true;
             optF.Location = new Point(205, 47);
             optF.Name = "optF";
-            optF.Size = new Size(162, 34);
+            optF.Size = new Size(112, 25);
             optF.TabIndex = 1;
             optF.TabStop = true;
             optF.Text = "FEMENINO";
@@ -154,7 +154,7 @@
             optM.AutoSize = true;
             optM.Location = new Point(17, 47);
             optM.Name = "optM";
-            optM.Size = new Size(182, 34);
+            optM.Size = new Size(126, 25);
             optM.TabIndex = 0;
             optM.TabStop = true;
             optM.Text = "MASCULINO";
@@ -166,8 +166,8 @@
             label4.Location = new Point(38, 309);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(211, 30);
-            label4.TabIndex = 15;
+            label4.Size = new Size(146, 21);
+            label4.TabIndex = 10;
             label4.Text = "DEPARTAMENTO:";
             // 
             // label5
@@ -176,8 +176,8 @@
             label5.Location = new Point(42, 374);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(154, 30);
-            label5.TabIndex = 17;
+            label5.Size = new Size(106, 21);
+            label5.TabIndex = 14;
             label5.Text = "PROVINCIA:";
             // 
             // label6
@@ -186,8 +186,8 @@
             label6.Location = new Point(42, 439);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(120, 30);
-            label6.TabIndex = 19;
+            label6.Size = new Size(84, 21);
+            label6.TabIndex = 14;
             label6.Text = "DISTRITO:";
             // 
             // cboDep
@@ -197,8 +197,8 @@
             cboDep.Location = new Point(252, 306);
             cboDep.Margin = new Padding(4);
             cboDep.Name = "cboDep";
-            cboDep.Size = new Size(290, 38);
-            cboDep.TabIndex = 16;
+            cboDep.Size = new Size(290, 29);
+            cboDep.TabIndex = 11;
             cboDep.SelectionChangeCommitted += cboDep_SelectionChangeCommitted;
             // 
             // cboProvincia
@@ -208,8 +208,8 @@
             cboProvincia.Location = new Point(252, 371);
             cboProvincia.Margin = new Padding(4);
             cboProvincia.Name = "cboProvincia";
-            cboProvincia.Size = new Size(290, 38);
-            cboProvincia.TabIndex = 18;
+            cboProvincia.Size = new Size(290, 29);
+            cboProvincia.TabIndex = 16;
             cboProvincia.SelectionChangeCommitted += cboProvincia_SelectionChangeCommitted;
             // 
             // cboDistrito
@@ -219,8 +219,8 @@
             cboDistrito.Location = new Point(252, 436);
             cboDistrito.Margin = new Padding(4);
             cboDistrito.Name = "cboDistrito";
-            cboDistrito.Size = new Size(290, 38);
-            cboDistrito.TabIndex = 20;
+            cboDistrito.Size = new Size(290, 29);
+            cboDistrito.TabIndex = 6;
             // 
             // groupBox2
             // 
@@ -237,7 +237,7 @@
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(4);
             groupBox2.Size = new Size(524, 285);
-            groupBox2.TabIndex = 21;
+            groupBox2.TabIndex = 16;
             groupBox2.TabStop = false;
             groupBox2.Text = "DATOS PERSONALES";
             // 
@@ -246,7 +246,7 @@
             txtDireccionAlum.Location = new Point(210, 231);
             txtDireccionAlum.Margin = new Padding(4);
             txtDireccionAlum.Name = "txtDireccionAlum";
-            txtDireccionAlum.Size = new Size(294, 37);
+            txtDireccionAlum.Size = new Size(294, 27);
             txtDireccionAlum.TabIndex = 7;
             // 
             // label14
@@ -255,7 +255,7 @@
             label14.Location = new Point(58, 231);
             label14.Margin = new Padding(4, 0, 4, 0);
             label14.Name = "label14";
-            label14.Size = new Size(157, 30);
+            label14.Size = new Size(107, 21);
             label14.TabIndex = 6;
             label14.Text = "DIRECCION:";
             // 
@@ -264,8 +264,8 @@
             txtCorreoAlu.Location = new Point(210, 52);
             txtCorreoAlu.Margin = new Padding(4);
             txtCorreoAlu.Name = "txtCorreoAlu";
-            txtCorreoAlu.Size = new Size(294, 37);
-            txtCorreoAlu.TabIndex = 1;
+            txtCorreoAlu.Size = new Size(294, 27);
+            txtCorreoAlu.TabIndex = 0;
             // 
             // mskTelAlu
             // 
@@ -273,7 +273,7 @@
             mskTelAlu.Margin = new Padding(4);
             mskTelAlu.Mask = "999999999";
             mskTelAlu.Name = "mskTelAlu";
-            mskTelAlu.Size = new Size(231, 37);
+            mskTelAlu.Size = new Size(231, 27);
             mskTelAlu.TabIndex = 5;
             // 
             // dtpFecha_Nac
@@ -283,7 +283,7 @@
             dtpFecha_Nac.Location = new Point(269, 109);
             dtpFecha_Nac.Margin = new Padding(4);
             dtpFecha_Nac.Name = "dtpFecha_Nac";
-            dtpFecha_Nac.Size = new Size(142, 37);
+            dtpFecha_Nac.Size = new Size(142, 27);
             dtpFecha_Nac.TabIndex = 3;
             dtpFecha_Nac.Value = new DateTime(2023, 5, 26, 0, 0, 0, 0);
             // 
@@ -293,7 +293,7 @@
             label9.Location = new Point(58, 174);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(140, 30);
+            label9.Size = new Size(95, 21);
             label9.TabIndex = 4;
             label9.Text = "TELÉFONO:";
             // 
@@ -303,7 +303,7 @@
             label8.Location = new Point(58, 115);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(296, 30);
+            label8.Size = new Size(203, 21);
             label8.TabIndex = 2;
             label8.Text = "FECHA DE NACIMIENTO:";
             // 
@@ -313,7 +313,7 @@
             label7.Location = new Point(58, 52);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(125, 30);
+            label7.Size = new Size(84, 21);
             label7.TabIndex = 0;
             label7.Text = "CORREO:";
             // 
@@ -347,8 +347,8 @@
             chkActivo.Location = new Point(675, 184);
             chkActivo.Margin = new Padding(4);
             chkActivo.Name = "chkActivo";
-            chkActivo.Size = new Size(131, 34);
-            chkActivo.TabIndex = 10;
+            chkActivo.Size = new Size(93, 25);
+            chkActivo.TabIndex = 13;
             chkActivo.Text = "ACTIVO";
             chkActivo.UseVisualStyleBackColor = true;
             // 
@@ -358,7 +358,7 @@
             label10.Location = new Point(42, 28);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
-            label10.Size = new Size(62, 30);
+            label10.Size = new Size(43, 21);
             label10.TabIndex = 0;
             label10.Text = "DNI:";
             // 
@@ -368,7 +368,7 @@
             mskDNIAlu.Margin = new Padding(4);
             mskDNIAlu.Mask = "99999999";
             mskDNIAlu.Name = "mskDNIAlu";
-            mskDNIAlu.Size = new Size(201, 37);
+            mskDNIAlu.Size = new Size(201, 27);
             mskDNIAlu.TabIndex = 1;
             // 
             // label11
@@ -377,8 +377,8 @@
             label11.Location = new Point(38, 251);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(132, 30);
-            label11.TabIndex = 11;
+            label11.Size = new Size(92, 21);
+            label11.TabIndex = 8;
             label11.Text = "CARRERA:";
             // 
             // cboCarrera
@@ -388,8 +388,8 @@
             cboCarrera.Location = new Point(252, 241);
             cboCarrera.Margin = new Padding(4);
             cboCarrera.Name = "cboCarrera";
-            cboCarrera.Size = new Size(290, 38);
-            cboCarrera.TabIndex = 12;
+            cboCarrera.Size = new Size(290, 29);
+            cboCarrera.TabIndex = 9;
             cboCarrera.SelectedIndexChanged += cboCarrera_SelectedIndexChanged;
             // 
             // label12
@@ -398,8 +398,8 @@
             label12.Location = new Point(595, 244);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
-            label12.Size = new Size(142, 30);
-            label12.TabIndex = 13;
+            label12.Size = new Size(99, 21);
+            label12.TabIndex = 11;
             label12.Text = "FACULTAD:";
             // 
             // cboFacultad
@@ -409,8 +409,8 @@
             cboFacultad.Location = new Point(713, 241);
             cboFacultad.Margin = new Padding(4);
             cboFacultad.Name = "cboFacultad";
-            cboFacultad.Size = new Size(271, 38);
-            cboFacultad.TabIndex = 14;
+            cboFacultad.Size = new Size(271, 29);
+            cboFacultad.TabIndex = 12;
             // 
             // label13
             // 
@@ -418,7 +418,7 @@
             label13.Location = new Point(591, 184);
             label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
-            label13.Size = new Size(112, 30);
+            label13.Size = new Size(78, 21);
             label13.TabIndex = 9;
             label13.Text = "ESTADO:";
             // 
@@ -446,7 +446,7 @@
             // 
             // FrmInsertarAlumno
             // 
-            AutoScaleDimensions = new SizeF(14F, 30F);
+            AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1005, 854);
             Controls.Add(pcbFoto);
@@ -477,7 +477,10 @@
             Controls.Add(label1);
             Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(4);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FrmInsertarAlumno";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Insertar Alumno";
             Load += FrmInsertarAlumno_Load;
             gpbSexoAlu.ResumeLayout(false);

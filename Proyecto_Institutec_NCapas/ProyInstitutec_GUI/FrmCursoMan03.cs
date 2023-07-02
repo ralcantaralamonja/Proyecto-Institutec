@@ -101,7 +101,7 @@ namespace ProyInstitutec_GUI
                     objCursoBE.Activo = false;
                 }
                 objCursoBE.CodCar = cboCarrera.SelectedValue.ToString();
-                
+
                 objCursoBE.Usu_Ult_Mod = clsCredenciales.Login_Usuario;
 
                 //Actualizamos el registro

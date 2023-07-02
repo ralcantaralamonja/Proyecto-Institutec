@@ -54,16 +54,15 @@ namespace ProyInstitutec_GUI
         {
             CargarDatos("");
         }
-        private void CargarDatos(String strFiltro)
+        private void CargarDatos(string strFiltro)
         {
             dtv = new DataView(objprofesorBL.ListarProfesor());
             dtv.RowFilter = "DNI like '" + strFiltro + "%'";
             dtgProfesor.DataSource = dtv;
             LblRegistros.Text = dtgProfesor.Rows.Count.ToString();
-            dtgProfesor.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
-
-
+            dtgProfesor.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.DisplayedCells);
         }
+
 
         private void mskDNIProfesor_TextChanged(object sender, EventArgs e)
         {

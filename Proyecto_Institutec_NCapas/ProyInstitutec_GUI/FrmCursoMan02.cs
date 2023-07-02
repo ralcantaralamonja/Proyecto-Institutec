@@ -19,7 +19,7 @@ namespace ProyInstitutec_GUI
         CursoBL objCursoBL = new CursoBL();
         CursoBE objCursoBE = new CursoBE();
         CarreraBL objCarreraBL = new CarreraBL();
-        FacultadBL objFacultadBl= new FacultadBL();
+        FacultadBL objFacultadBl = new FacultadBL();
 
         public FrmCursoMan02()
         {
@@ -90,7 +90,7 @@ namespace ProyInstitutec_GUI
                 {
                     throw new Exception("Registro no insertado, contacte con el área de TI");
                 }
-                
+
             }
             catch (Exception ex)
             {

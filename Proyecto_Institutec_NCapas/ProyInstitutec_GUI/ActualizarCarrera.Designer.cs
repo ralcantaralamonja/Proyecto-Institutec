@@ -46,7 +46,7 @@
             btnCancelar.Location = new Point(334, 231);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(125, 40);
-            btnCancelar.TabIndex = 6;
+            btnCancelar.TabIndex = 8;
             btnCancelar.Text = "CANCELAR";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
@@ -58,7 +58,7 @@
             btnGrabar.Location = new Point(203, 231);
             btnGrabar.Name = "btnGrabar";
             btnGrabar.Size = new Size(125, 40);
-            btnGrabar.TabIndex = 5;
+            btnGrabar.TabIndex = 7;
             btnGrabar.Text = "GRABAR";
             btnGrabar.UseVisualStyleBackColor = true;
             btnGrabar.Click += btnGrabar_Click;
@@ -72,7 +72,7 @@
             cboFacultad.Location = new Point(21, 175);
             cboFacultad.Name = "cboFacultad";
             cboFacultad.Size = new Size(439, 29);
-            cboFacultad.TabIndex = 4;
+            cboFacultad.TabIndex = 5;
             // 
             // label5
             // 
@@ -81,7 +81,7 @@
             label5.Location = new Point(21, 151);
             label5.Name = "label5";
             label5.Size = new Size(210, 21);
-            label5.TabIndex = 3;
+            label5.TabIndex = 4;
             label5.Text = "SELECCIONE FACTULTAD:";
             // 
             // txtDescripcion
@@ -90,7 +90,7 @@
             txtDescripcion.Location = new Point(21, 105);
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new Size(439, 27);
-            txtDescripcion.TabIndex = 2;
+            txtDescripcion.TabIndex = 3;
             // 
             // label1
             // 
@@ -99,7 +99,7 @@
             label1.Location = new Point(21, 81);
             label1.Name = "label1";
             label1.Size = new Size(161, 21);
-            label1.TabIndex = 1;
+            label1.TabIndex = 2;
             label1.Text = "NOMBRE CARRERA";
             // 
             // lblCodigo
@@ -129,7 +129,7 @@
             chkActivo.Margin = new Padding(4, 3, 4, 3);
             chkActivo.Name = "chkActivo";
             chkActivo.Size = new Size(93, 25);
-            chkActivo.TabIndex = 0;
+            chkActivo.TabIndex = 6;
             chkActivo.Text = "ACTIVO";
             chkActivo.UseVisualStyleBackColor = true;
             // 

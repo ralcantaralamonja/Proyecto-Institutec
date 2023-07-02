@@ -92,6 +92,7 @@
             // cboCarrera
             // 
             cboCarrera.BackColor = SystemColors.ScrollBar;
+            cboCarrera.DropDownStyle = ComboBoxStyle.DropDownList;
             cboCarrera.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cboCarrera.FormattingEnabled = true;
             cboCarrera.Location = new Point(21, 175);

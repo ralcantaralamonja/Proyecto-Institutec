@@ -79,7 +79,6 @@
             dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(88, 183, 213);
             dataGridViewCellStyle1.SelectionForeColor = Color.White;
             dtgProfesor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dtgProfesor.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dtgProfesor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgProfesor.BackgroundColor = SystemColors.ScrollBar;
             dtgProfesor.BorderStyle = BorderStyle.None;
