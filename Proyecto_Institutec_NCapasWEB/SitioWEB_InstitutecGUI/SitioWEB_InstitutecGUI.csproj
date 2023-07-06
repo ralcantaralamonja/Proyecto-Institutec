@@ -72,8 +72,8 @@
   <ItemGroup>
     <Content Include="ConsultasGraficos\GenerosCarrera.aspx" />
     <Content Include="ConsultasGraficos\MatriculadosSeccion.aspx" />
-    <Content Include="Consultas\ConsultasAlumno.aspx" />
-    <Content Include="Consultas\ConsultasProfesor.aspx" />
+    <Content Include="Consultas\ConsultaAlumno.aspx" />
+    <Content Include="Consultas\ConsultaProfesor.aspx" />
     <Content Include="CSS\style.css" />
     <Content Include="JS\main.js" />
     <Content Include="Web.config" />
@@ -93,19 +93,19 @@
     <Compile Include="ConsultasGraficos\MatriculadosSeccion.aspx.designer.cs">
       <DependentUpon>MatriculadosSeccion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\ConsultasAlumno.aspx.cs">
-      <DependentUpon>ConsultasAlumno.aspx</DependentUpon>
+    <Compile Include="Consultas\ConsultaAlumno.aspx.cs">
+      <DependentUpon>ConsultaAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Consultas\ConsultasAlumno.aspx.designer.cs">
-      <DependentUpon>ConsultasAlumno.aspx</DependentUpon>
+    <Compile Include="Consultas\ConsultaAlumno.aspx.designer.cs">
+      <DependentUpon>ConsultaAlumno.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\ConsultasProfesor.aspx.cs">
-      <DependentUpon>ConsultasProfesor.aspx</DependentUpon>
+    <Compile Include="Consultas\ConsultaProfesor.aspx.cs">
+      <DependentUpon>ConsultaProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Consultas\ConsultasProfesor.aspx.designer.cs">
-      <DependentUpon>ConsultasProfesor.aspx</DependentUpon>
+    <Compile Include="Consultas\ConsultaProfesor.aspx.designer.cs">
+      <DependentUpon>ConsultaProfesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
