@@ -9,3 +9,14 @@ E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Pr
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\obj\Debug\Proy_Institutec_ADO.csproj.CopyComplete
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\obj\Debug\Proy_Institutec_ADO.dll
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\obj\Debug\Proy_Institutec_ADO.pdb
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\bin\Debug\Proy_Institutec_ADO.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\bin\Debug\Proy_Institutec_ADO.pdb
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\bin\Debug\Proy_InstitutecBE.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\bin\Debug\System.Data.SqlClient.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\bin\Debug\Proy_InstitutecBE.pdb
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\bin\Debug\System.Data.SqlClient.xml
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\obj\Debug\Proy_Institutec_ADO.csproj.AssemblyReference.cache
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\obj\Debug\Proy_Institutec_ADO.csproj.CoreCompileInputs.cache
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\obj\Debug\Proy_Institutec_ADO.csproj.CopyComplete
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\obj\Debug\Proy_Institutec_ADO.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_Institutec_ADO\obj\Debug\Proy_Institutec_ADO.pdb

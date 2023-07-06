@@ -21,6 +21,12 @@ namespace Proy_InstitutecBL
         {
             return objCursoADO.ConsultarCurso(strCodigo);
         }
+
+        public DataTable ConsultaProfesorCurso(String strCodigo)
+        {
+            return objCursoADO.ConsultaProfesorCurso(strCodigo);
+        }
+
         public Boolean InsertarCurso(CursoBE objCursoBE)
         {
             return objCursoADO.InsertarCurso(objCursoBE);
@@ -32,6 +38,11 @@ namespace Proy_InstitutecBL
         public Boolean EliminarCurso(String strCodigo)
         {
             return objCursoADO.EliminarCurso(strCodigo);
+        }
+
+        public DataTable ConsultaAlumnoCurso(String strCodigo, DateTime FecIni, DateTime FecFin)
+        {
+            return objCursoADO.ConsultaAlumnoCurso(strCodigo, FecIni, FecFin);
         }
 
     }

@@ -320,7 +320,58 @@ namespace Proy_Institutec_ADO
         }
 
 
+        public AlumnoBE ConsultarWebAlumno(String strid)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                AlumnoBE objAlumnoBE = new AlumnoBE();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ConsultaWebAlumno";
+                cmd.Parameters.Clear();
+                //Codifique
+                cmd.Parameters.AddWithValue("@idAlu", strid);
+                cnx.Open();
+                drt = cmd.ExecuteReader();
 
+                if (drt.HasRows == true)
+                {
+                    drt.Read();
+                    objAlumnoBE.IdAlum = drt["IdAlum"].ToString();
+                    objAlumnoBE.Ndocum = drt["Ndocum"].ToString();
+                    objAlumnoBE.NomAlu = drt["NomAlu"].ToString();
+                    objAlumnoBE.ApePat = drt["ApePat"].ToString();
+                    objAlumnoBE.ApeMat = drt["ApeMat"].ToString();
+                    objAlumnoBE.TelAlu = drt["TelAlu"].ToString();
+                    objAlumnoBE.CorAlu = drt["CorAlu"].ToString();
+                    objAlumnoBE.Estado = Convert.ToBoolean(drt["Estado"]);
+                    objAlumnoBE.departamento = drt["Departamento"].ToString();
+                    objAlumnoBE.provincia = drt["Provincia"].ToString();
+                    objAlumnoBE.distrito = drt["Distrito"].ToString();
+                    objAlumnoBE.DescCar = drt["DesCar"].ToString();
+                    objAlumnoBE.DescFacu = drt["DesFac"].ToString();
+
+
+                }
+                drt.Close();
+                return objAlumnoBE;
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+
+            }
+
+        }
 
 
     }

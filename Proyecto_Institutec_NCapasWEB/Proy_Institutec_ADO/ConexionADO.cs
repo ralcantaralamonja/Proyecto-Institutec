@@ -12,7 +12,7 @@ namespace Proy_Institutec_ADO
         public string GetCnx()
         {
             string strCnx =
-                ConfigurationManager.ConnectionStrings["Instituto"].ConnectionString;
+                ConfigurationManager.ConnectionStrings["Institutec"].ConnectionString;
             if (object.ReferenceEquals(strCnx, string.Empty))
             {
                 return string.Empty;

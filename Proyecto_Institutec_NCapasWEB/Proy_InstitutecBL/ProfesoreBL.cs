@@ -32,5 +32,10 @@ namespace Proy_InstitutecBL
             return objProfesorADO.ActualizarProfesor(objProfesorBE);
         }
 
+        public ProfesorBE ConsultarProfesorCurso(String strId)
+        {
+            return objProfesorADO.ConsultarProfesorCurso(strId);
+        }
+
     }
 }

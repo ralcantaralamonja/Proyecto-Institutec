@@ -70,26 +70,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Consultas\ConsultaAlumno.aspx" />
-    <Content Include="Consultas\ConsultaProfesor.aspx" />
+    <Content Include="Consultas\ConsultasAlumno.aspx" />
+    <Content Include="Consultas\ConsultasProfesor.aspx" />
     <Content Include="CSS\style.css" />
     <Content Include="JS\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Consultas\ConsultaAlumno.aspx.cs">
-      <DependentUpon>ConsultaAlumno.aspx</DependentUpon>
+    <Compile Include="Consultas\ConsultasAlumno.aspx.cs">
+      <DependentUpon>ConsultasAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Consultas\ConsultaAlumno.aspx.designer.cs">
-      <DependentUpon>ConsultaAlumno.aspx</DependentUpon>
+    <Compile Include="Consultas\ConsultasAlumno.aspx.designer.cs">
+      <DependentUpon>ConsultasAlumno.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Consultas\ConsultaProfesor.aspx.cs">
-      <DependentUpon>ConsultaProfesor.aspx</DependentUpon>
+    <Compile Include="Consultas\ConsultasProfesor.aspx.cs">
+      <DependentUpon>ConsultasProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Consultas\ConsultaProfesor.aspx.designer.cs">
-      <DependentUpon>ConsultaProfesor.aspx</DependentUpon>
+    <Compile Include="Consultas\ConsultasProfesor.aspx.designer.cs">
+      <DependentUpon>ConsultasProfesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,3 +4,9 @@ E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Pr
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.csproj.CoreCompileInputs.cache
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.dll
 E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.pdb
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\bin\Debug\Proy_InstitutecBE.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\bin\Debug\Proy_InstitutecBE.pdb
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.csproj.AssemblyReference.cache
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.csproj.CoreCompileInputs.cache
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapasWEB\Proy_InstitutecBE\obj\Debug\Proy_InstitutecBE.pdb

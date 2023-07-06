@@ -26,7 +26,12 @@ namespace Proy_InstitutecBE
             public byte[] Foto { get; set; }
             public string Direccion { get; set; }
             public string Id_Ubi { get; set; }
-            
+
+        public String Departamento { get; set; }
+
+        public String Provincia { get; set; }
+
+        public String Distrito { get; set; }
 
 
 

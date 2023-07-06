@@ -102,6 +102,55 @@ namespace Proy_Institutec_ADO
             }
         }
 
+        public ProfesorBE ConsultarProfesorCurso(String strid)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                ProfesorBE objProfesorBE = new ProfesorBE();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ListaConsultarProfesorCurso";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@vcod", strid);
+                cnx.Open();
+                dtr = cmd.ExecuteReader();
+                if (dtr.HasRows == true)
+                {
+                    dtr.Read();
+                    objProfesorBE.IdProf = dtr["IdProf"].ToString();
+                    objProfesorBE.Ndocum = dtr["Ndocum"].ToString();
+                    objProfesorBE.NomPro = dtr["NomPro"].ToString();
+                    objProfesorBE.ApePat = dtr["ApePat"].ToString();
+                    objProfesorBE.ApeMat = dtr["ApeMat"].ToString();
+                    objProfesorBE.Estado = Convert.ToBoolean(dtr["Estado"]);
+                    objProfesorBE.Direccion = dtr["direccion"].ToString();
+                    objProfesorBE.FecIng = Convert.ToDateTime(dtr["FecIng"]);
+                    objProfesorBE.CorIns = dtr["CorIns"].ToString();
+                    objProfesorBE.Departamento = dtr["Departamento"].ToString();
+                    objProfesorBE.Provincia = dtr["Provincia"].ToString();
+                    objProfesorBE.Distrito = dtr["Distrito"].ToString();
+
+
+                }
+                dtr.Close();
+                return objProfesorBE;
+            }
+            catch (SqlException ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+
+            }
+        }
+
         public Boolean InsertarProfesor(ProfesorBE objProfesorBE)
         {
             try
