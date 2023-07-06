@@ -18,6 +18,14 @@ namespace Proy_InstitutecBL
         {
             return objCarreraADO.ListarCarrera();
         }
+        public DataTable CarreraGenero()
+        {
+            return objCarreraADO.CarreraGenero();
+        }
+        public DataTable MatriculadosSeccion()
+        {
+            return objCarreraADO.MatriculadosSeccion();
+        }
 
         public CarreraBE ConsultarCarrera(string strCodigo)
         {
@@ -38,6 +46,7 @@ namespace Proy_InstitutecBL
         {
             return objCarreraADO.EliminarCarrera(strCodigo);
         }
+
 
     }
 }

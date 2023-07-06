@@ -70,6 +70,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConsultasGraficos\GenerosCarrera.aspx" />
+    <Content Include="ConsultasGraficos\MatriculadosSeccion.aspx" />
     <Content Include="Consultas\ConsultasAlumno.aspx" />
     <Content Include="Consultas\ConsultasProfesor.aspx" />
     <Content Include="CSS\style.css" />
@@ -77,6 +79,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultasGraficos\GenerosCarrera.aspx.cs">
+      <DependentUpon>GenerosCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultasGraficos\GenerosCarrera.aspx.designer.cs">
+      <DependentUpon>GenerosCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasGraficos\MatriculadosSeccion.aspx.cs">
+      <DependentUpon>MatriculadosSeccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultasGraficos\MatriculadosSeccion.aspx.designer.cs">
+      <DependentUpon>MatriculadosSeccion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\ConsultasAlumno.aspx.cs">
       <DependentUpon>ConsultasAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -91,9 +107,17 @@
     <Compile Include="Consultas\ConsultasProfesor.aspx.designer.cs">
       <DependentUpon>ConsultasProfesor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Master.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
