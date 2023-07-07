@@ -146,7 +146,7 @@ namespace Proy_Institutec_ADO
             catch (SqlException ex) 
             {
                 throw new Exception(ex.Message);
-                return false;
+                
             }
             finally
             {
@@ -205,7 +205,7 @@ namespace Proy_Institutec_ADO
             catch (SqlException x) 
             {
                 throw new Exception(x.Message);
-                return false;
+             
             }
             finally 
             {
@@ -241,7 +241,7 @@ namespace Proy_Institutec_ADO
             catch (SqlException x)
             {
                 throw new Exception(x.Message);
-                return false;
+            
             }
             finally
             {

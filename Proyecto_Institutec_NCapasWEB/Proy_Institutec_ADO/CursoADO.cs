@@ -173,7 +173,7 @@ namespace Proy_Institutec_ADO
             {
 
                 throw new Exception(x.Message);
-                return false;
+               
             }
             finally
             {
@@ -236,7 +236,7 @@ namespace Proy_Institutec_ADO
             {
 
                 throw new Exception(x.Message);
-                return false;
+             
             }
             finally
             {

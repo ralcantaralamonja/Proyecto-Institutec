@@ -6,9 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-//Agregamos
-using Proy_InstitutecBL;
-using Proy_InstitutecBE;
+ 
 
 namespace SitioWEB_InstitutecGUI.Consultas
 {
