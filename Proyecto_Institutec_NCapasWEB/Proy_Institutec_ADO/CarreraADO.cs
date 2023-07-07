@@ -40,7 +40,13 @@ namespace Proy_Institutec_ADO
             {
                 throw new Exception(ex.Message);
             }
-
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
         }
         public DataTable CarreraGenero()
         {

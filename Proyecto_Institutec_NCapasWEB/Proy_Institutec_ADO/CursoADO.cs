@@ -42,7 +42,13 @@ namespace Proy_Institutec_ADO
             {
                 throw new Exception(ex.Message);
             }
-
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
 
         }
 
@@ -105,6 +111,13 @@ namespace Proy_Institutec_ADO
             {
                 throw new Exception(ex.Message);
             }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
         }
 
         public DataTable ConsultaAlumnoCurso(String strCodigo, DateTime FecIni, DateTime FecFin)
@@ -129,6 +142,13 @@ namespace Proy_Institutec_ADO
             catch (SqlException ex)
             {
                 throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
             }
         }
 
@@ -188,6 +208,13 @@ namespace Proy_Institutec_ADO
             {
 
                 throw;
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
             }
         }
         public Boolean EliminarCurso(String strCodigo)

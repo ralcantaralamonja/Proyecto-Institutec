@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -14,6 +15,13 @@ namespace SitioWEB_InstitutecGUI.ConsultasGraficos
         {
             grvQuery2.DataSource = objCarreras.MatriculadosSeccion();
             grvQuery2.DataBind();
+
+
+            DataTableReader dtrNrc= objCarreras.MatriculadosSeccion().CreateDataReader();
+            CantidadMatriculados.Series.Add("Matriculados");
+            CantidadMatriculados.Series["Matriculados"].Points.DataBindXY(dtrNrc, "NRC", dtrNrc, "Alumnos");
+            CantidadMatriculados.Series["Matriculados"].IsValueShownAsLabel = true;
+            CantidadMatriculados.Series["Matriculados"].LabelFormat = "n";
         }
     }
 }
