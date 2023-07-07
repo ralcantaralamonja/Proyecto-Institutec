@@ -9,25 +9,23 @@
 <head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONSULTA DE ALUMNO - CURSOS / SEMESTRE </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="../CSS/style.css">
+ 
  
 </head>
 <body>
   
         
-    <div class="center-containerAlumno" >
-        <asp:ScriptManager ID="ScriptManager1" 
-                               runat="server" />
+    <div class="center-containerAlumno">
+        <asp:ScriptManager ID="ScriptManager1"
+            runat="server" />
 
         <div runat="server" class="container form-container">
-            <h2 class="tituloConsul" >Consulta Alumno: Cursos por Semestre </h2>
-            <div >
-                <div  class="form-group">
-                    <label  class="auto-style1">Ingrese Codigo del Alumno:</label>
-                    <asp:TextBox ID="txtCod" class="form-control" runat  ="server"  ></asp:TextBox>
+            <h2 class="tituloConsul">Consulta Alumno: Cursos por Semestre </h2>
+            <div>
+                <div class="form-group">
+                    <label class="auto-style1">Ingrese Codigo del Alumno:</label>
+                    <asp:TextBox ID="txtCod" class="form-control" runat="server"></asp:TextBox>
 
                 </div>
 
@@ -35,18 +33,18 @@
 
             </div>
             <br />
-         
+
             <div id="resultado">
                 <h3>Datos del Alumno:</h3>
 
                 <div class="form-group">
-                    <label >DNI:</label>
-                    <asp:TextBox class="form-control" id="txtDni" runat="server" ReadOnly="True"  ></asp:TextBox>
+                    <label>DNI:</label>
+                    <asp:TextBox class="form-control" ID="txtDni" runat="server" ReadOnly="True"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
-                    <label >Nombre y Apellidos:</label>
-                    <asp:TextBox class="form-control" id="txtnombreApell" runat="server" ReadOnly="True"  ></asp:TextBox>
+                    <label>Nombre y Apellidos:</label>
+                    <asp:TextBox class="form-control" ID="txtnombreApell" runat="server" ReadOnly="True"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
@@ -60,13 +58,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label >Estado:</label>
-                    <asp:TextBox class="form-control" id="txtEstado" runat="server" ReadOnly="True"  ></asp:TextBox>
+                    <label>Estado:</label>
+                    <asp:TextBox class="form-control" ID="txtEstado" runat="server" ReadOnly="True"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
-                    <label >Ubigeo:</label>
-                    <asp:TextBox class="form-control" id="txtUbigeo" runat="server" ReadOnly="True"  ></asp:TextBox>
+                    <label>Ubigeo:</label>
+                    <asp:TextBox class="form-control" ID="txtUbigeo" runat="server" ReadOnly="True"></asp:TextBox>
                 </div>
 
                 <div class="form-group">
@@ -83,31 +81,31 @@
 
                 <div class="form-group">
                     <h6>INGRESE FECHAS DE CONSULTA (* Obligatorios):</h6>
-                    
+
                     <asp:Label ID="Label1" runat="server" Text="Fecha 1: 02/01/2023 al 02/04/2023"></asp:Label><br />
                     <asp:Label ID="Label2" runat="server" Text="Fecha 2: 27/04/2023 al 24/08/2023"></asp:Label><br />
                     <asp:Label ID="Label3" runat="server" Text="Fecha 3: 27/08/2023 al 23/12/2023"></asp:Label>
                 </div>
-                
+
 
                 <div class="form-group">
                     <div>Fecha inicio (*):</div>
                     <div>
-                        <asp:TextBox ID="txtFecIni" runat="server"  Width="100px"></asp:TextBox>
+                        <asp:TextBox ID="txtFecIni" runat="server" Width="100px"></asp:TextBox>
                         <ajaxToolkit:CalendarExtender ID="txtFecIni_CalendarExtender" runat="server" BehaviorID="txtFecIni_CalendarExtender" TargetControlID="txtFecIni" />
-                        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red"  ControlToValidate="txtFecIni" ErrorMessage="*"></asp:RequiredFieldValidator>
+                        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ControlToValidate="txtFecIni" ErrorMessage="*"></asp:RequiredFieldValidator>
                     </div>
                     <div>Fecha fin (*):</div>
                     <div>
-                        <asp:TextBox ID="txtFecFin" runat="server"  Width="100px"></asp:TextBox>
+                        <asp:TextBox ID="txtFecFin" runat="server" Width="100px"></asp:TextBox>
                         <ajaxToolkit:CalendarExtender ID="txtFecFin_CalendarExtender" runat="server" BehaviorID="txtFecFin_CalendarExtender" TargetControlID="txtFecFin" />
-                        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ForeColor="Red"  ControlToValidate="txtFecFin" ErrorMessage="*"></asp:RequiredFieldValidator>
+                        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ForeColor="Red" ControlToValidate="txtFecFin" ErrorMessage="*"></asp:RequiredFieldValidator>
                     </div>
                 </div>
             </div>
 
             <asp:Button class="btn btn-success" ID="btnConsultar" runat="server" Text="Consultar" OnClick="btnConsultar_Click1" OnClientClick="btnConsultar_Click1" />
-            
+
         </div>
     </div>
     <br />

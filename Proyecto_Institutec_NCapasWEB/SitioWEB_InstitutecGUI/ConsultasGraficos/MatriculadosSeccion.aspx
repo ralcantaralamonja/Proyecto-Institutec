@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Titulo</h1>
+    <h1 class="tituloConsul">Generos por carrera</h1>
     <asp:GridView ID="grvQuery2" runat="server">
     </asp:GridView>
     <asp:Chart ID="Chart1" runat="server">

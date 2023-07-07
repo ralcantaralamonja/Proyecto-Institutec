@@ -5,11 +5,13 @@
 
 <html>
 <head runat="server">
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Instutec</title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-         <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="CSS/style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -17,7 +19,8 @@
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                  <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True"></asp:ScriptManager>
-            </asp:ContentPlaceHolder>
+  
+                </asp:ContentPlaceHolder>
         </div>
     </form>
 </body>
