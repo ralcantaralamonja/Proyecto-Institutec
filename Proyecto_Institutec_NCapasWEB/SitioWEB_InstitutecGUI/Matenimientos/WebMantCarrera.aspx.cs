@@ -8,12 +8,12 @@ using System.Web.UI.WebControls;
 using Proy_InstitutecBL;
 using Proy_InstitutecBE;
 
-namespace SitioWEB_InstitutecGUI.Mantenimientos
+namespace SitioWEB_InstitutecGUI.Matenimientos
 {
     public partial class WebMantCarrera : System.Web.UI.Page
     {
         CarreraBL objCarreraBL = new CarreraBL();
-        FacultadBL objFacultadBL = new FacultadBL(); 
+        FacultadBL objFacultadBL = new FacultadBL();
         CarreraBE objCarreraBE = new CarreraBE();
         DataView dtv;
 
@@ -71,7 +71,7 @@ namespace SitioWEB_InstitutecGUI.Mantenimientos
 
         private void CargarFacultad(Int16 intAccion)
         {
-            DataTable dtFacultad= objFacultadBL.ListarFacultad();
+            DataTable dtFacultad = objFacultadBL.ListarFacultad();
             //COMBOS DE UBIGEO PARA EL CRUD CURSO
             if (intAccion == 1) //COMBOS DE INSERCCION
             {

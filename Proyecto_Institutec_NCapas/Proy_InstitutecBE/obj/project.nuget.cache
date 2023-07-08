@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "0ZdoFlm9DOyEf31px5/1WhQH/1bfI3ZICcxqiLFcarCr5YLTZdx1ReBX2FwoB6Syx1PJ0SgzBOkGRDMyBgDR+g==",
   "success": true,
   "projectFilePath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
+=======
+  "dgSpecHash": "3hAdyd1Ig3XkexTTcH0iIlyQ8QDGBNbksEdoW2xl5muKDAL6DGSq9wq7DkglOus/tIHrtVi48PHQpdEKUJrgIg==",
+  "success": true,
+  "projectFilePath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
+>>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -44,5 +44,10 @@ namespace Proy_InstitutecBL
         {
             return objAlumnoADO.ObtenerFacultadAlumno(idAlumno);
         }
+
+        public AlumnoBE ConsultarWebAlumno(String strid)
+        {
+            return objAlumnoADO.ConsultarWebAlumno(strid);
+        }
     }
 }

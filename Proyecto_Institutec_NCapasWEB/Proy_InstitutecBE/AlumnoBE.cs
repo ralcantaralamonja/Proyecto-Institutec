@@ -8,6 +8,7 @@ namespace Proy_InstitutecBE
 {
     public class AlumnoBE
     {
+       
         public String IdAlum { get; set;}
 
         public String Ndocum { get; set;}
@@ -22,6 +23,8 @@ namespace Proy_InstitutecBE
         public String CorAlu { get; set;}
 
         public bool Estado { get; set; }
+
+        public Int16 Est { get; set; }
 
         public String SexoAl { get; set;}
 
@@ -44,6 +47,8 @@ namespace Proy_InstitutecBE
         public String direccion { get;set;}
 
         public String departamento { get; set; }
+
+        public String provincia { get; set; }
 
         public String distrito { get; set; }
 

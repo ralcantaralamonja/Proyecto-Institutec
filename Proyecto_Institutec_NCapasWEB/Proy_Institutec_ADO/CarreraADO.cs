@@ -6,7 +6,7 @@ using System;
 
 namespace Proy_Institutec_ADO
 {
-    public  class CarreraADO
+    public class CarreraADO
     {
         // Instancias.....
         ConexionADO MiConexion = new ConexionADO();
@@ -16,11 +16,11 @@ namespace Proy_Institutec_ADO
 
         public DataTable ListarCarrera()
         {
-            
+
             try
             {
 
-                
+
                 cnx.ConnectionString = MiConexion.GetCnx(); //cadena de conexion
                 cmd.Connection = cnx;
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -40,11 +40,89 @@ namespace Proy_Institutec_ADO
             {
                 throw new Exception(ex.Message);
             }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+        }
+        public DataTable CarreraGenero()
+        {
+
+            try
+            {
+
+
+                cnx.ConnectionString = MiConexion.GetCnx(); //cadena de conexion
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_CarreraXGenero";
+                cmd.Parameters.Clear();
+
+
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                DataSet dts = new DataSet();
+                ada.Fill(dts, "Carreras");
+
+                return dts.Tables["Carreras"];
+
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
 
         }
-        public CarreraBE ConsultarCarrera (String strCodigo)
+
+
+        public DataTable MatriculadosSeccion()
         {
-            
+
+            try
+            {
+
+
+                cnx.ConnectionString = MiConexion.GetCnx(); //cadena de conexion
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_MatriculadosSeccion";
+                cmd.Parameters.Clear();
+
+
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                DataSet dts = new DataSet();
+                ada.Fill(dts, "Carreras");
+
+                return dts.Tables["Carreras"];
+
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+
+        }
+        public CarreraBE ConsultarCarrera(String strCodigo)
+        {
+
             try
             {
                 //declaro la instancia de carrera
@@ -54,8 +132,8 @@ namespace Proy_Institutec_ADO
 
                 //Codifique
                 cnx.ConnectionString = MiConexion.GetCnx(); //cadena de conexion
-                cmd.Connection= cnx;
-                cmd.CommandType= CommandType.StoredProcedure;
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_ConsultarCarrera";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@vcod", strCodigo);
@@ -63,13 +141,13 @@ namespace Proy_Institutec_ADO
                 dtr = cmd.ExecuteReader();
 
                 //preguntamos
-                if(dtr.HasRows == true)
+                if (dtr.HasRows == true)
                 {
                     dtr.Read();
-                 
-                  objCarreraBE.CodCar = dtr["CodCar"].ToString();
-                  objCarreraBE.DesFac = dtr["DesFac"].ToString();
-                  objCarreraBE.DesCar = dtr["DesCar"].ToString() ;
+
+                    objCarreraBE.CodCar = dtr["CodCar"].ToString();
+                    objCarreraBE.DesFac = dtr["DesFac"].ToString();
+                    objCarreraBE.DesCar = dtr["DesCar"].ToString();
                     objCarreraBE.IdFacu = dtr["IdFacu"].ToString();
                     objCarreraBE.Est_carr = Convert.ToInt16(dtr["Est_carr_2"].ToString());
 
@@ -98,7 +176,7 @@ namespace Proy_Institutec_ADO
 
         public Boolean InsertarCarrera(CarreraBE objCarreraBE)
         {
-          
+
             try
             {
                 //Codifique
@@ -121,7 +199,7 @@ namespace Proy_Institutec_ADO
             catch (SqlException x)
             {
                 throw new Exception(x.Message);
-                return false;
+               
             }
             finally
             {
@@ -158,7 +236,7 @@ namespace Proy_Institutec_ADO
             catch (SqlException x)
             {
                 throw new Exception(x.Message);
-                return false;
+              
             }
             finally
             {
@@ -174,7 +252,7 @@ namespace Proy_Institutec_ADO
 
         public Boolean EliminarCarrera(String strCodigo)
         {
-           
+
 
             try
             {
@@ -186,7 +264,7 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@vcod", strCodigo); //lo que borrare
 
-                cnx.Open() ;
+                cnx.Open();
                 cmd.ExecuteNonQuery();
                 return true;
 
@@ -195,7 +273,7 @@ namespace Proy_Institutec_ADO
             catch (SqlException x)
             {
                 throw new Exception(x.Message);
-                return false;
+             
             }
             finally
             {

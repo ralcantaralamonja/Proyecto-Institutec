@@ -18,6 +18,16 @@ namespace Proy_InstitutecBE
         public DateTime Fec_Ult_Mod { get; set; }
         public string Usu_Ult_Mod { get; set; }
         public string DesCar { get; set; }
+
+        public string Dia { get; set; }
+
+        public TimeZone HoraIni { get; set; }
+
+        public TimeZone HoraFin { get; set; }
+
+        public string centro { get; set; }
+
+        public string aula { get; set; }
     }
 }
 

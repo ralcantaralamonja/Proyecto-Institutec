@@ -42,7 +42,13 @@ namespace Proy_Institutec_ADO
             {
                 throw new Exception(ex.Message);
             }
-
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
 
         }
 
@@ -85,6 +91,67 @@ namespace Proy_Institutec_ADO
             }
         }
 
+        public DataTable ConsultaProfesorCurso(String strCodigo)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ConsultaProfesor";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@cod", strCodigo);
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                DataSet dts = new DataSet();
+                ada.Fill(dts, "CursoProfesor");
+
+                return dts.Tables["CursoProfesor"];
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+        }
+
+        public DataTable ConsultaAlumnoCurso(String strCodigo, DateTime FecIni, DateTime FecFin)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ListarCursosAlumnoFechas";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@IdAlum", strCodigo);
+                cmd.Parameters.AddWithValue("@FecInc", FecIni);
+                cmd.Parameters.AddWithValue("@FecFin", FecFin);
+
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                DataSet dts = new DataSet();
+                ada.Fill(dts, "CursosAlumnoFecha");
+
+                return dts.Tables["CursosAlumnoFecha"];
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+        }
+
         public Boolean InsertarCurso(CursoBE objCursoBE)
         {
             try
@@ -105,7 +172,7 @@ namespace Proy_Institutec_ADO
             {
 
                 throw new Exception(x.Message);
-                return false;
+               
             }
             finally
             {
@@ -171,7 +238,7 @@ namespace Proy_Institutec_ADO
             {
 
                 throw new Exception(x.Message);
-                return false;
+             
             }
             finally
             {

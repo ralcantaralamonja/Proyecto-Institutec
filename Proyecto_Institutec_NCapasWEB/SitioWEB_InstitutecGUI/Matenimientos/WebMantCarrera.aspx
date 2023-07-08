@@ -1,6 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="WebMantCarrera.aspx.cs" Inherits="SitioWEB_InstitutecGUI.Mantenimientos.WebMantCarrera" %>
-
-<asp:Content ID="Content1" ContentPlaceHolderID="Cabecera" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="WebMantCarrera.aspx.cs" Inherits="SitioWEB_InstitutecGUI.Matenimientos.WebMantCarrera" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .modal-overlay {
             position: fixed;
@@ -45,9 +44,8 @@
             width: 68%
         }
     </style>
-
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="Principal" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="center-container">
         <div class="container">
             <h2> MATENIMIENTO CARRERA </h2>
@@ -91,7 +89,7 @@
                 </asp:GridView>
             </div>
 
-
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
             <%--Modalpopup extender PopMan01 para nuevos registros : vease el TargetControl que apunta al linkbutton  lnkPopup1 
                   y el PopupcontrolID que apunta al panel PanelMan1--%>            <%--Panel cuyo contenido se mostrara en el ModalPopup de Insercion--%>            <%--Modalpopup extender PopMan01 para nuevos registros : vease el TargetControl que apunta al linkbutton  lnkPopup1 
                   y el PopupcontrolID que apunta al panel PanelMan1--%>
@@ -241,8 +239,6 @@
                 </div>
             </asp:Panel>
 
-
-            </asp:Panel>
             <%--Modalpopup extender PopMan01 para nuevos registros : vease el TargetControl que apunta al linkbutton  lnkPopup1 
                   y el PopupcontrolID que apunta al panel PanelMan1--%>
             <ajaxToolkit:ModalPopupExtender ID="PopMensaje" TargetControlID="lnkMensaje"

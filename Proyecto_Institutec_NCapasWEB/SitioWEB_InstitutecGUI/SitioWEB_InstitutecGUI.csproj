@@ -47,6 +47,7 @@
       <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,16 +71,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConsultasGraficos\GenerosCarrera.aspx" />
+    <Content Include="ConsultasGraficos\MatriculadosSeccion.aspx" />
     <Content Include="Consultas\ConsultaAlumno.aspx" />
     <Content Include="Consultas\ConsultaProfesor.aspx" />
     <Content Include="CSS\style.css" />
     <Content Include="images\Editar.png" />
     <Content Include="JS\main.js" />
-    <Content Include="Mantenimientos\WebMantCarrera.aspx" />
-    <Content Include="Mantenimientos\WebMantCurso.aspx" />
+    <Content Include="Matenimientos\WebMantCarrera.aspx" />
+    <Content Include="Matenimientos\WebMantCurso.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultasGraficos\GenerosCarrera.aspx.cs">
+      <DependentUpon>GenerosCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultasGraficos\GenerosCarrera.aspx.designer.cs">
+      <DependentUpon>GenerosCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultasGraficos\MatriculadosSeccion.aspx.cs">
+      <DependentUpon>MatriculadosSeccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultasGraficos\MatriculadosSeccion.aspx.designer.cs">
+      <DependentUpon>MatriculadosSeccion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\ConsultaAlumno.aspx.cs">
       <DependentUpon>ConsultaAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,26 +111,26 @@
     <Compile Include="Consultas\ConsultaProfesor.aspx.designer.cs">
       <DependentUpon>ConsultaProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimientos\WebMantCarrera.aspx.cs">
-      <DependentUpon>WebMantCarrera.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Mantenimientos\WebMantCarrera.aspx.designer.cs">
-      <DependentUpon>WebMantCarrera.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Mantenimientos\WebMantCurso.aspx.cs">
-      <DependentUpon>WebMantCurso.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Mantenimientos\WebMantCurso.aspx.designer.cs">
-      <DependentUpon>WebMantCurso.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Matenimientos\WebMantCarrera.aspx.cs">
+      <DependentUpon>WebMantCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Matenimientos\WebMantCarrera.aspx.designer.cs">
+      <DependentUpon>WebMantCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Matenimientos\WebMantCurso.aspx.cs">
+      <DependentUpon>WebMantCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Matenimientos\WebMantCurso.aspx.designer.cs">
+      <DependentUpon>WebMantCurso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

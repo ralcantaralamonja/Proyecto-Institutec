@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.deps.json
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.dll
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.pdb
@@ -13,3 +14,65 @@ C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\refint\Proy_Institutec_ADO.dll
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.pdb
 C:\OrlandoBD\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\ref\Proy_Institutec_ADO.dll
+=======
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.deps.json
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.pdb
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_InstitutecBE.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_InstitutecBE.pdb
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.AssemblyReference.cache
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.GeneratedMSBuildEditorConfig.editorconfig
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.AssemblyInfoInputs.cache
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.AssemblyInfo.cs
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.CoreCompileInputs.cache
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.CopyComplete
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\refint\Proy_Institutec_ADO.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.pdb
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\DESARROLLO DE APLICACIONES 1\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\ref\Proy_Institutec_ADO.dll
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.deps.json
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.dll
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.pdb
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_InstitutecBE.dll
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_InstitutecBE.pdb
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.AssemblyReference.cache
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.GeneratedMSBuildEditorConfig.editorconfig
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.AssemblyInfoInputs.cache
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.AssemblyInfo.cs
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.CoreCompileInputs.cache
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.CopyComplete
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.dll
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\refint\Proy_Institutec_ADO.dll
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.pdb
+C:\AplicacionesI\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\ref\Proy_Institutec_ADO.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.deps.json
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.pdb
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_InstitutecBE.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_InstitutecBE.pdb
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.AssemblyReference.cache
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.GeneratedMSBuildEditorConfig.editorconfig
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.AssemblyInfoInputs.cache
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.AssemblyInfo.cs
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.CoreCompileInputs.cache
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.CopyComplete
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\refint\Proy_Institutec_ADO.dll
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.pdb
+E:\ISIL DESARROLLO DE SOTFWARE\DESARROLLO DE APLICACIONES\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\ref\Proy_Institutec_ADO.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.deps.json
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_Institutec_ADO.pdb
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_InstitutecBE.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\bin\Debug\net6.0\Proy_InstitutecBE.pdb
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.AssemblyReference.cache
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.GeneratedMSBuildEditorConfig.editorconfig
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.AssemblyInfoInputs.cache
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.AssemblyInfo.cs
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.CoreCompileInputs.cache
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.csproj.CopyComplete
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\refint\Proy_Institutec_ADO.dll
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\Proy_Institutec_ADO.pdb
+F:\ambar\isil 2023 01\Proyecto-Institutec\Proyecto_Institutec_NCapas\Proy_Institutec_ADO\obj\Debug\net6.0\ref\Proy_Institutec_ADO.dll
+>>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
