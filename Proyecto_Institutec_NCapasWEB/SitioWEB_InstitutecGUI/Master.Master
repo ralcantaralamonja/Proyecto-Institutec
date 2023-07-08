@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="SitioWEB_InstitutecGUI.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> InstituTec</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+    <asp:ContentPlaceHolder ID="Cabecera" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background:#f3f4ee;">
+    <form id="form1" runat="server">
+        <%--Para facilitar el empleo de AJAX dentro de los formularios hijos del Masterpage--%>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True"></asp:ScriptManager>
+        <div>
+            <%--Contenedor principal para la personalizacion de los formularios hijos del MasterPage--%>
+            <asp:ContentPlaceHolder id="Principal" runat="server">
+             </asp:ContentPlaceHolder>
+        </div>
+    </form></body>
+</html>

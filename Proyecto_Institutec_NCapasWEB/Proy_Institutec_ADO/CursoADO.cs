@@ -97,7 +97,6 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@NomCur", objCursoBE.NomCur);
                 cmd.Parameters.AddWithValue("@Activo", objCursoBE.Activo);
                 cmd.Parameters.AddWithValue("@CodCar", objCursoBE.CodCar);
-                cmd.Parameters.AddWithValue("@Usu_Registro", objCursoBE.Usu_Registro);
                 cnx.Open();
                 cmd.ExecuteNonQuery();
                 return true;
@@ -116,7 +115,7 @@ namespace Proy_Institutec_ADO
                 }
             }
         }
-        public Boolean ActualizarCurso(CursoBE objCursoBE)
+        public bool ActualizarCurso(CursoBE objCursoBE)
         {
             try
             {
@@ -130,19 +129,29 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@Activo", objCursoBE.Activo);
                 cmd.Parameters.AddWithValue("@CodCar", objCursoBE.CodCar);
                 cmd.Parameters.AddWithValue("@Usu_Ult_Mod", objCursoBE.Usu_Ult_Mod);
-                 
+                //cmd.Parameters.AddWithValue("@Fec_Ult_Mod", DateTime.Now);
 
+                if (cnx.State != ConnectionState.Open)
+                {
+                    cnx.Open();
+                }
 
-                cnx.Open();
                 cmd.ExecuteNonQuery();
                 return true;
             }
             catch (Exception)
             {
-
                 throw;
             }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
         }
+
         public Boolean EliminarCurso(String strCodigo)
         {
             try

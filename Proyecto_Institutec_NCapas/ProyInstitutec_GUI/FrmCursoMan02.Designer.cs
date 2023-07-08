@@ -55,6 +55,7 @@
             txtIngresarCurso.Name = "txtIngresarCurso";
             txtIngresarCurso.Size = new Size(401, 27);
             txtIngresarCurso.TabIndex = 1;
+            txtIngresarCurso.TextChanged += txtIngresarCurso_TextChanged;
             // 
             // cboCarrera
             // 

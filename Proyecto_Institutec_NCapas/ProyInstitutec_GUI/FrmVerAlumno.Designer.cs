@@ -309,6 +309,7 @@
             Font = new Font("Century Gothic", 11F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FrmVerAlumno";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VER ALUMNO";

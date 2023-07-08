@@ -73,7 +73,10 @@
     <Content Include="Consultas\ConsultaAlumno.aspx" />
     <Content Include="Consultas\ConsultaProfesor.aspx" />
     <Content Include="CSS\style.css" />
+    <Content Include="images\Editar.png" />
     <Content Include="JS\main.js" />
+    <Content Include="Mantenimientos\WebMantCarrera.aspx" />
+    <Content Include="Mantenimientos\WebMantCurso.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -91,9 +94,31 @@
     <Compile Include="Consultas\ConsultaProfesor.aspx.designer.cs">
       <DependentUpon>ConsultaProfesor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\WebMantCarrera.aspx.cs">
+      <DependentUpon>WebMantCarrera.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantCarrera.aspx.designer.cs">
+      <DependentUpon>WebMantCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantCurso.aspx.cs">
+      <DependentUpon>WebMantCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantCurso.aspx.designer.cs">
+      <DependentUpon>WebMantCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Master.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

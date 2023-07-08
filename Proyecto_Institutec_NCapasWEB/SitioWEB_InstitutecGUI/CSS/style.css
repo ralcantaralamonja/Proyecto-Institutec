@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif
+}
+
 .center-container {
     display: flex;
     justify-content: center;
@@ -10,3 +14,4 @@
     padding: 20px;
     border-radius: 5px;
   }
+
