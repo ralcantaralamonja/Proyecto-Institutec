@@ -127,7 +127,6 @@ namespace SitioWEB_InstitutecGUI.Matenimientos
 
         protected void cboFacultad1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CargarFacultad(1);
             PopMan01.Show();
         }
 

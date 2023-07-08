@@ -127,7 +127,6 @@ namespace SitioWEB_InstitutecGUI.Mantenimientos
 
         protected void cboCarrera1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CargarCarrera(1);
             PopMan01.Show();
         }
 
