@@ -27,7 +27,7 @@
             <div id="profesor-form" >
                 <div  class="form-group">
                     <label  class="auto-style1">Ingrese Codigo del Profesor:</label>
-                    <asp:TextBox ID="txtCodi" class="form-control" runat  ="server"></asp:TextBox>
+                    <asp:TextBox ID="txtCodi" class="form-control" runat  ="server" MaxLength="4" placeholder="P001"></asp:TextBox>
 
                 </div>
                 

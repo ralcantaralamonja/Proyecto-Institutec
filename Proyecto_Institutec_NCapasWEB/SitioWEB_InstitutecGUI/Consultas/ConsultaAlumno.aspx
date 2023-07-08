@@ -25,7 +25,7 @@
             <div>
                 <div class="form-group">
                     <label class="auto-style1">Ingrese Codigo del Alumno:</label>
-                    <asp:TextBox ID="txtCod" class="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtCod" class="form-control" runat="server" MaxLength="4" placeholder="A001"></asp:TextBox>
 
                 </div>
 
