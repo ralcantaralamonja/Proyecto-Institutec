@@ -215,17 +215,18 @@
             <asp:LinkButton ID="lnkMensaje" runat="server"></asp:LinkButton>
             <%-- El panel cuyo contenido se mostrara en el ModalPopup de mensajes--%>
             <asp:Panel ID="pnlMensaje" runat="server" CssClass="CajaDialogo" Style="display: normal;" Width="500">
-                <table border="0" style="margin: 0px; padding: 0px; background-color: #0d6efd; color: #0d6efd;" width="500px">
+                <table class="table" style="margin: 0px; padding: 0px; background-color: #0d6efd; color: #0d6efd;" width="500px">
                     <tr>
-                        <td align="center">
+                        <td align="center" class="auto-style10">
                             <asp:Label ID="lblTitulo" runat="server" Text="Mensaje" />
+                            &nbsp;
                         </td>
-                        <td class="auto-style1" width="12%">
-                            <asp:ImageButton ID="ImageButton1" runat="server" ImageAlign="Right" ImageUrl="~/Images/Cancelar.png" Style="vertical-align: top;" />
+                        <td class="text-right" style="vertical-align: middle;">
+                            <asp:ImageButton ID="ImageButton1" runat="server" ImageAlign="Right" ImageUrl="~/Images/Cancelar.png" Style="vertical-align: middle;" />
                         </td>
                     </tr>
                 </table>
-                 <div style="background-color: white;">
+                <div style="background-color: white;">
                     <asp:Label ID="lblMensajePopup" runat="server" ForeColor="Black" CssClass="labelTitulo" />
                 </div>
                 <div style="background-color: white;">
