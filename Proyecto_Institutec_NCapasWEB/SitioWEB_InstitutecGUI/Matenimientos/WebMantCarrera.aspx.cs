@@ -176,7 +176,7 @@ namespace SitioWEB_InstitutecGUI.Matenimientos
                     //Obtenemos el valor del campo Estado de cada fila
                     String estado = e.Row.Cells[4].Text;
                     //Si esta inactivo el color sera rojo
-                    if (estado == "Inactivo")
+                    if (estado == "False")
                     {
                         e.Row.ForeColor = System.Drawing.Color.Red;
                     }
@@ -203,7 +203,7 @@ namespace SitioWEB_InstitutecGUI.Matenimientos
                 objCarreraBE.DesCar = txtRS2.Text.Trim();
                 objCarreraBE.Est_carr = Convert.ToInt16(chkEstado2.Checked);
                 objCarreraBE.IdFacu = cboFacultad2.SelectedValue.ToString();
-                objCarreraBE.DesFac = cboFacultad2.SelectedValue.ToString();
+                //objCarreraBE.DesFac = cboFacultad2.SelectedValue.ToString();
 
                 objCarreraBE.Usu_Ult_Mod = "jleon";
 
