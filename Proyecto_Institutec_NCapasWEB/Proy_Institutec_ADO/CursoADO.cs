@@ -248,5 +248,35 @@ namespace Proy_Institutec_ADO
                 }
             }
         }
+
+        public DataTable CursosDispobiblesAlumno(String dni) {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_CursosDisponiblesAlumno";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@dni", dni);
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                DataSet dts = new DataSet();
+                ada.Fill(dts, "CursosAlumnoFecha");
+
+                return dts.Tables["CursosDispobiblesCarrera"];
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+
+        }
+
     }
 }
