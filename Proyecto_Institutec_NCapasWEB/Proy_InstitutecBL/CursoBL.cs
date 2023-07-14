@@ -26,7 +26,10 @@ namespace Proy_InstitutecBL
         {
             return objCursoADO.ConsultaProfesorCurso(strCodigo);
         }
-
+        public DataTable CursosDispobiblesAlumno(String dni)
+        {
+            return objCursoADO.CursosDispobiblesAlumno(dni);
+        }
         public Boolean InsertarCurso(CursoBE objCursoBE)
         {
             return objCursoADO.InsertarCurso(objCursoBE);
