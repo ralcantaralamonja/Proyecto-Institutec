@@ -16,7 +16,7 @@ namespace SitioWEB_InstitutecGUI.transacciones
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            grvCursosDisponibles = objcursoBL.CursosDispobiblesAlumno();
+            //grvCursosDisponibles = objcursoBL.CursosDispobiblesAlumno();
         }
     }
 }

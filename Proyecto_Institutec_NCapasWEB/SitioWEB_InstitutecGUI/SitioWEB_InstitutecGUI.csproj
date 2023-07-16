@@ -81,6 +81,7 @@
     <Content Include="Matenimientos\WebMantCarrera.aspx" />
     <Content Include="Matenimientos\WebMantCurso.aspx" />
     <Content Include="transacciones\Mantricula.aspx" />
+    <Content Include="transacciones\Matricula1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +141,13 @@
     </Compile>
     <Compile Include="transacciones\Mantricula.aspx.designer.cs">
       <DependentUpon>Mantricula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transacciones\Matricula1.aspx.cs">
+      <DependentUpon>Matricula1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transacciones\Matricula1.aspx.designer.cs">
+      <DependentUpon>Matricula1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

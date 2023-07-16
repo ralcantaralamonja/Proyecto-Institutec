@@ -23,6 +23,9 @@ namespace Proy_InstitutecBE
         public String CorAlu { get; set;}
 
         public bool Estado { get; set; }
+        
+        public String EstadoAl { get; set; }
+        public String EstMat { get; set; }
 
         public Int16 Est { get; set; }
 

@@ -12,6 +12,9 @@ namespace Proy_InstitutecBL
     public class AlumnoBL
     {
         AlumnoADO objAlumnoADO = new AlumnoADO();
+        public AlumnoBE PreMatricula(String dni) { 
+            return objAlumnoADO.PreMatricula(dni);
+            }
 
         public DataTable ListarAlumno()
         {
