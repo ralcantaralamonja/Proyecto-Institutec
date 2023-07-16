@@ -135,6 +135,7 @@ namespace Proy_Institutec_ADO
                     objAlumnoBE.DescCar = drt["DesCar"].ToString();
                     objAlumnoBE.EstadoAl = drt["Estado"].ToString();
                     objAlumnoBE.EstMat = drt["Matricula"].ToString();
+                    objAlumnoBE.CodCar = drt["CodCar"].ToString();
                 }
                 drt.Close();
                 return objAlumnoBE;
@@ -154,10 +155,7 @@ namespace Proy_Institutec_ADO
             }
 
         }
-
-
-
-
+ 
         public Boolean InsertarAlumno(AlumnoBE objAlumnoBE) 
         {
            

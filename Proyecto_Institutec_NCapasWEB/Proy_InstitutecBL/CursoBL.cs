@@ -42,7 +42,9 @@ namespace Proy_InstitutecBL
         {
             return objCursoADO.EliminarCurso(strCodigo);
         }
-
+        public CursoBE PrematriculaCursos(String codcar) {
+            return objCursoADO.PrematriculaCursos(codcar);
+        }
         public DataTable ConsultaAlumnoCurso(String strCodigo, DateTime FecIni, DateTime FecFin)
         {
             return objCursoADO.ConsultaAlumnoCurso(strCodigo, FecIni, FecFin);

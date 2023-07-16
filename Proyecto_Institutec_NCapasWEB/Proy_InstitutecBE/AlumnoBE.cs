@@ -8,21 +8,22 @@ namespace Proy_InstitutecBE
 {
     public class AlumnoBE
     {
-       
-        public String IdAlum { get; set;}
 
-        public String Ndocum { get; set;}
-        public String NomAlu { get; set;}
+        public String IdAlum { get; set; }
 
-        public String ApePat { get; set;}
+        public String Ndocum { get; set; }
+        public String NomAlu { get; set; }
 
-        public String ApeMat { get; set;}
+        public String ApePat { get; set; }
 
-        public String TelAlu { get; set;}
+        public String ApeMat { get; set; }
 
-        public String CorAlu { get; set;}
+        public String TelAlu { get; set; }
+
+        public String CorAlu { get; set; }
 
         public bool Estado { get; set; }
+       
         
         public String EstadoAl { get; set; }
         public String EstMat { get; set; }

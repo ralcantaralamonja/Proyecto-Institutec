@@ -15,6 +15,8 @@ namespace SitioWEB_InstitutecGUI.transacciones
     {
         AlumnoBL objAlumnobl = new AlumnoBL();
         AlumnoBE objAlumnobe = new AlumnoBE();
+        CursoBE objCursobe = new CursoBE();
+        CursoBL objCursobeBL = new CursoBL();
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -35,6 +37,8 @@ namespace SitioWEB_InstitutecGUI.transacciones
                 objAlumnobe = objAlumnobl.PreMatricula(txtDni.Text.Trim());
                 txtNombre.Text = objAlumnobe.NomAlu + " " + objAlumnobe.ApePat + " " + objAlumnobe.ApeMat;
                 txtCarrera.Text = objAlumnobe.DescCar;
+                String carrera = objAlumnobe.CodCar;
+
 
                 // Validar si el alumno es apto para matricularse
                 if (txtDni.Text.Trim() == String.Empty || txtDni.Text.Trim().Length != 8)
@@ -67,6 +71,26 @@ namespace SitioWEB_InstitutecGUI.transacciones
             }
         }
 
+        protected void btnMatricular_Click(object sender, EventArgs e)
+        {   
+            String carrera = objAlumnobe.CodCar.ToString();
+            
+            grvCursos.DataSource = objCursobeBL.PrematriculaCursos(carrera);
+            grvCursos.DataBind();
+            //objcursoBE.nrc = dtr["NRC"].ToString();
+            //objcursoBE.NomCur = dtr["Curso"].ToString();
+            //objcursoBE.CodCar = dtr["Codigo"].ToString();
+            //objcursoBE.nomprof = dtr["NomPro"].ToString();
+            //objcursoBE.apepatprof = dtr["ApePat"].ToString();
+            //objcursoBE.apematprof = dtr["ApeMat"].ToString();
+            //objcursoBE.estadoCurso = dtr["Estado"].ToString();
+            //objcursoBE.centro = dtr["Local"].ToString();
+            //objcursoBE.Dia = dtr["DIA"].ToString();
+            //objcursoBE.HoraIni = Convert.ToDateTime(dtr["Inicio"]);
+            //objcursoBE.HoraFin = Convert.ToDateTime(dtr["Fin"]);
+            //objcursoBE.DesCar = dtr["Carrera"].ToString();
+            //objcursoBE.vacante = Convert.ToInt16(dtr["Vacant"]);
+        }
     }
 
     }

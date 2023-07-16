@@ -63,10 +63,18 @@
     <br />
     <br />
     <asp:Label ID="lblExito" runat="server"></asp:Label>
-    <br />
+    &nbsp;<br />
     <br />
     <asp:Button ID="btnConsulta" runat="server" Text="Consultar" class="btn-primary" OnClick="btnDatos_Click"/>
-    <asp:Button ID="btnMatricular" runat="server" Text="Ver cursos" class="btn-secondary" />
+    <asp:Button ID="btnMatricular" runat="server" Text="Ver cursos" class="btn-secondary" OnClick="btnMatricular_Click" />
+    <br />
+    <br />
+    <br />
+    <asp:GridView ID="grvCursos" runat="server">
+        <Columns>
+            <asp:BoundField />
+        </Columns>
+    </asp:GridView>
     <br />
     <br />
 </asp:Content>

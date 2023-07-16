@@ -18,13 +18,17 @@ namespace Proy_InstitutecBE
         public DateTime Fec_Ult_Mod { get; set; }
         public string Usu_Ult_Mod { get; set; }
         public string DesCar { get; set; }
-
+        public string nrc { get; set; }
+        public string nomprof { get; set; }
+        public string apepatprof { get; set; }
+        public string apematprof { get; set; }
+        public string estadoCurso { get; set; }
         public string Dia { get; set; }
 
-        public TimeZone HoraIni { get; set; }
+        public DateTime HoraIni { get; set; }
 
-        public TimeZone HoraFin { get; set; }
-
+        public DateTime HoraFin { get; set; }
+        public int vacante { get; set; }
         public string centro { get; set; }
 
         public string aula { get; set; }
