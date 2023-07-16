@@ -27,17 +27,18 @@
             height: 25px;
         }
     </style>
+    <script src="../JS/main.js"></script>  
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <h1> MATRICULAR ALUMNO </h1>
+    <h1> MATRICULAR ALUMNO </h1>
     
     <table class="auto-style1">
         <tr>
             <td class="auto-style4">
-                <asp:Label ID="lblDni" runat="server" Text="Dni :"></asp:Label>
+                <asp:Label ID="lblDni" runat="server" Text="Dni :" ></asp:Label>
             </td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtDni" runat="server" MaxLength="8"></asp:TextBox>
+                <asp:TextBox ID="txtDni" runat="server" MaxLength="8" oninput="validarNumeros(this)"></asp:TextBox>
             </td>
         </tr>
         <tr>
