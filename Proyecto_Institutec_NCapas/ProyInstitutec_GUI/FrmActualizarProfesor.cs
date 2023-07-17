@@ -67,6 +67,7 @@ namespace ProyInstitutec_GUI
                 {
                     optFemenino.Checked = true;
                 }
+
                 String Id_Ubigeo = objProfesorBE.Id_Ubi;
 
                 CargarUbigeo(Id_Ubigeo.Substring(0, 2), Id_Ubigeo.Substring(2, 2),
@@ -82,12 +83,20 @@ namespace ProyInstitutec_GUI
         }
         private void cboProvincia_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            CargarUbigeo(cboDep.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
+            string idDepa = cboDep.SelectedValue.ToString();
+            string idProv = cboProvincia.SelectedValue.ToString();
+            string idDist = cboDistrito.SelectedValue.ToString();
+
+            CargarUbigeo(idDepa, idProv, idDist);
         }
 
         private void cboDep_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            CargarUbigeo(cboDep.SelectedValue.ToString(), "01", "01");
+            string idDepa = cboDep.SelectedValue.ToString();
+            string idProv = "01"; // Valor predeterminado para la provincia
+            string idDist = "01"; // Valor predeterminado para el distrito
+
+            CargarUbigeo(idDepa, idProv, idDist);
         }
 
         private void CargarUbigeo(String IdDepa, String IdProv, String IdDist)

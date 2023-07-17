@@ -27,7 +27,11 @@ namespace SitioWEB_InstitutecGUI.transacciones
         }
 
         protected void btnDatos_Click(object sender, EventArgs e)
+
+
+
         {
+           
             try
             {
                 // Limpiar mensaje de éxito
@@ -37,7 +41,7 @@ namespace SitioWEB_InstitutecGUI.transacciones
                 objAlumnobe = objAlumnobl.PreMatricula(txtDni.Text.Trim());
                 txtNombre.Text = objAlumnobe.NomAlu + " " + objAlumnobe.ApePat + " " + objAlumnobe.ApeMat;
                 txtCarrera.Text = objAlumnobe.DescCar;
-                String carrera = objAlumnobe.CodCar;
+                txtCodCarrera.Text = objAlumnobe.CodCar;
 
 
                 // Validar si el alumno es apto para matricularse
@@ -72,24 +76,17 @@ namespace SitioWEB_InstitutecGUI.transacciones
         }
 
         protected void btnMatricular_Click(object sender, EventArgs e)
-        {   
-            String carrera = objAlumnobe.CodCar.ToString();
+        {
             
-            grvCursos.DataSource = objCursobeBL.PrematriculaCursos(carrera);
+            string curso = txtCodCarrera.Text;
+            DataTable dt = objCursobeBL.PrematriculaCursos(curso);
+
+            grvCursos.DataSource = dt;
             grvCursos.DataBind();
-            //objcursoBE.nrc = dtr["NRC"].ToString();
-            //objcursoBE.NomCur = dtr["Curso"].ToString();
-            //objcursoBE.CodCar = dtr["Codigo"].ToString();
-            //objcursoBE.nomprof = dtr["NomPro"].ToString();
-            //objcursoBE.apepatprof = dtr["ApePat"].ToString();
-            //objcursoBE.apematprof = dtr["ApeMat"].ToString();
-            //objcursoBE.estadoCurso = dtr["Estado"].ToString();
-            //objcursoBE.centro = dtr["Local"].ToString();
-            //objcursoBE.Dia = dtr["DIA"].ToString();
-            //objcursoBE.HoraIni = Convert.ToDateTime(dtr["Inicio"]);
-            //objcursoBE.HoraFin = Convert.ToDateTime(dtr["Fin"]);
-            //objcursoBE.DesCar = dtr["Carrera"].ToString();
-            //objcursoBE.vacante = Convert.ToInt16(dtr["Vacant"]);
+
+
+
+
         }
     }
 

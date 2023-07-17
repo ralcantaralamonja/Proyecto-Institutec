@@ -280,42 +280,64 @@ namespace Proy_Institutec_ADO
         }
 
 
-        public CursoBE PrematriculaCursos(String codcar)
+        public DataTable PrematriculaCursos(string codcar)
         {
             try
             {
                 cnx.ConnectionString = MiConexion.GetCnx();
-                CursoBE objcursoBE = new CursoBE();
                 cmd.Connection = cnx;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "usp_prematriculaCursos";
                 cmd.Parameters.Clear();
-                //Codifique
-                cmd.Parameters.AddWithValue("@codcar ", codcar);
+                cmd.Parameters.AddWithValue("@codcar", codcar);
                 cnx.Open();
                 dtr = cmd.ExecuteReader();
 
-                if (dtr.HasRows == true)
-                {
-                    dtr.Read();
-                    objcursoBE.nrc = dtr["NRC"].ToString();
-                    objcursoBE.NomCur = dtr["Curso"].ToString();
-                    objcursoBE.CodCar = dtr["Codigo"].ToString();
-                    objcursoBE.nomprof = dtr["NomPro"].ToString();
-                    objcursoBE.apepatprof = dtr["ApePat"].ToString();
-                    objcursoBE.apematprof = dtr["ApeMat"].ToString();
-                    objcursoBE.estadoCurso = dtr["Estado"].ToString();
-                    objcursoBE.centro = dtr["Local"].ToString();
-                    objcursoBE.Dia = dtr["DIA"].ToString();
-                    objcursoBE.HoraIni = Convert.ToDateTime( dtr["Inicio"]);
-                    objcursoBE.HoraFin = Convert.ToDateTime(dtr["Fin"]);
-                    objcursoBE.DesCar = dtr["Carrera"].ToString();
-                    objcursoBE.vacante = Convert.ToInt16(dtr["Vacant"]);
-                   
-                }
-                dtr.Close();
-                return objcursoBE;
+                DataTable dt = new DataTable();
+                dt.Columns.Add("NRC", typeof(string));
+                dt.Columns.Add("Curso", typeof(string));
+                dt.Columns.Add("Codigo", typeof(string));
+                dt.Columns.Add("Profesor", typeof(string));
+             
+                dt.Columns.Add("Estado", typeof(string));
+                dt.Columns.Add("Local", typeof(string));
+                dt.Columns.Add("DIA", typeof(string));
+                dt.Columns.Add("Inicio", typeof(TimeSpan));
+                dt.Columns.Add("Fin", typeof(TimeSpan));
+                dt.Columns.Add("Carrera", typeof(string));
+                dt.Columns.Add("Vacant", typeof(int));
 
+                while (dtr.Read())
+                {
+                    DataRow row = dt.NewRow();
+                    row["NRC"] = dtr["NRC"].ToString();
+                    row["Curso"] = dtr["Curso"].ToString();
+                    row["Codigo"] = dtr["Codigo"].ToString();
+                    row["Profesor"] = dtr["Profesor"].ToString();
+                    row["Estado"] = dtr["Estado"].ToString();
+                    row["Local"] = dtr["Local"].ToString();
+                    row["DIA"] = dtr["DIA"].ToString();
+
+                    TimeSpan horaIni;
+                    if (TimeSpan.TryParse(dtr["Inicio"].ToString(), out horaIni))
+                    {
+                        row["Inicio"] = horaIni;
+                    }
+
+                    TimeSpan horaFin;
+                    if (TimeSpan.TryParse(dtr["Fin"].ToString(), out horaFin))
+                    {
+                        row["Fin"] = horaFin;
+                    }
+
+                    row["Carrera"] = dtr["Carrera"].ToString();
+                    row["Vacant"] = Convert.ToInt32(dtr["Vacant"]);
+
+                    dt.Rows.Add(row);
+                }
+
+                dtr.Close();
+                return dt;
             }
             catch (SqlException ex)
             {
@@ -327,10 +349,10 @@ namespace Proy_Institutec_ADO
                 {
                     cnx.Close();
                 }
-
             }
-
         }
+
+
 
     }
 }
