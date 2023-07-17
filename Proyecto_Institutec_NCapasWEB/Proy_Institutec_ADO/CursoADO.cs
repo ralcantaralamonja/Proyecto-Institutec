@@ -21,6 +21,7 @@ namespace Proy_Institutec_ADO
         SqlConnection cnx = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dtr;
+        
 
         public DataTable ListarCurso()
         {
@@ -274,6 +275,59 @@ namespace Proy_Institutec_ADO
                 {
                     cnx.Close();
                 }
+            }
+
+        }
+
+
+        public CursoBE PrematriculaCursos(String codcar)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                CursoBE objcursoBE = new CursoBE();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_prematriculaCursos";
+                cmd.Parameters.Clear();
+                //Codifique
+                cmd.Parameters.AddWithValue("@codcar ", codcar);
+                cnx.Open();
+                dtr = cmd.ExecuteReader();
+
+                if (dtr.HasRows == true)
+                {
+                    dtr.Read();
+                    objcursoBE.nrc = dtr["NRC"].ToString();
+                    objcursoBE.NomCur = dtr["Curso"].ToString();
+                    objcursoBE.CodCar = dtr["Codigo"].ToString();
+                    objcursoBE.nomprof = dtr["NomPro"].ToString();
+                    objcursoBE.apepatprof = dtr["ApePat"].ToString();
+                    objcursoBE.apematprof = dtr["ApeMat"].ToString();
+                    objcursoBE.estadoCurso = dtr["Estado"].ToString();
+                    objcursoBE.centro = dtr["Local"].ToString();
+                    objcursoBE.Dia = dtr["DIA"].ToString();
+                    objcursoBE.HoraIni = Convert.ToDateTime( dtr["Inicio"]);
+                    objcursoBE.HoraFin = Convert.ToDateTime(dtr["Fin"]);
+                    objcursoBE.DesCar = dtr["Carrera"].ToString();
+                    objcursoBE.vacante = Convert.ToInt16(dtr["Vacant"]);
+                   
+                }
+                dtr.Close();
+                return objcursoBE;
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+
             }
 
         }

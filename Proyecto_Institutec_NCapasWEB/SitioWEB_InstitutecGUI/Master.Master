@@ -10,6 +10,7 @@
     <title>Instutec</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="CSS/style.css">
+      <script src="JS/main.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     
     </asp:ContentPlaceHolder>
@@ -23,5 +24,6 @@
                 </asp:ContentPlaceHolder>
         </div>
     </form>
+  
 </body>
 </html>

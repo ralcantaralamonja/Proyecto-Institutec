@@ -61,7 +61,7 @@
 
             <br />
            <div class="d-flex justify-content-center align-items-center text-center" style="height: 100vh;">
-                <asp:GridView ID="grvCarrera" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="90%" AllowPaging="True" PageSize="15" AutoGenerateColumns="False" OnPageIndexChanging="grvCarrera_PageIndexChanging" OnRowCommand="grvCarrera_RowCommand" EnableTheming="False" OnRowDataBound="grvCarrera_RowDataBound" BorderStyle="Outset" BorderColor="#333333" BorderWidth="2px">
+                <asp:GridView ID="grvCarrera" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="90%" AllowPaging="True" PageSize="15" AutoGenerateColumns="False" EnableTheming="False"  BorderStyle="Outset" BorderColor="#333333" BorderWidth="2px">
                     <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#2461BF" />
                     <FooterStyle BackColor="#0d6efd" Font-Bold="True" ForeColor="White" />
@@ -83,11 +83,12 @@
                              <asp:Button ID="btnCerrar1" class="btn btn-primary" runat="server" Text="Cancelar" Width="100px" />
                         </td>
                     <td class="auto-style5">&nbsp;&nbsp;
-                            <asp:Button ID="btnGrabar1" class="btn btn-primary" runat="server" Text="Grabar" Width="100px" OnClick="btnGrabar1_Click" />
+                            <asp:Button ID="btnGrabar1" class="btn btn-primary" runat="server" Text="Grabar" Width="100px"   />
                             &nbsp;</td>
                 </tr>
             </table>
             <br />
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
             <%-- El panel cuyo contenido se mostrara en el ModalPopup de mensajes--%>            <%--Modalpopup extender PopMan01 para nuevos registros : vease el TargetControl que apunta al linkbutton  lnkPopup1 
                   y el PopupcontrolID que apunta al panel PanelMan1--%>

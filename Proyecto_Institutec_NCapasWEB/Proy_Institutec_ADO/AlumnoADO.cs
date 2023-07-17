@@ -109,6 +109,53 @@ namespace Proy_Institutec_ADO
             }
 
         }
+
+        //Consultar Alumno
+        public AlumnoBE PreMatricula(String dni)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                AlumnoBE objAlumnoBE = new AlumnoBE();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_PreMatricula";
+                cmd.Parameters.Clear();
+                //Codifique
+                cmd.Parameters.AddWithValue("@dni ", dni);
+                cnx.Open();
+                drt = cmd.ExecuteReader();
+
+                if (drt.HasRows == true)
+                {
+                    drt.Read();
+                    objAlumnoBE.NomAlu = drt["NomAlu"].ToString();
+                    objAlumnoBE.ApePat = drt["ApePat"].ToString();
+                    objAlumnoBE.ApeMat = drt["ApeMat"].ToString();
+                    objAlumnoBE.DescCar = drt["DesCar"].ToString();
+                    objAlumnoBE.EstadoAl = drt["Estado"].ToString();
+                    objAlumnoBE.EstMat = drt["Matricula"].ToString();
+                    objAlumnoBE.CodCar = drt["CodCar"].ToString();
+                }
+                drt.Close();
+                return objAlumnoBE;
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+
+            }
+
+        }
+ 
         public Boolean InsertarAlumno(AlumnoBE objAlumnoBE) 
         {
            
