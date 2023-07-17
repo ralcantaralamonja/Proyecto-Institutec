@@ -51,6 +51,15 @@ namespace SitioWEB_InstitutecGUI.transacciones
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
 
         /// <summary>
+        /// Control txtCodCarrera.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCodCarrera;
+
+        /// <summary>
         /// Control lblCarrera.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace SitioWEB_InstitutecGUI.transacciones
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCarrera;
+
+        /// <summary>
+        /// Control lblCodcar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCodcar;
 
         /// <summary>
         /// Control lblMensajeError.

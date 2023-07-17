@@ -24,10 +24,10 @@ namespace Proy_InstitutecBE
         public string apematprof { get; set; }
         public string estadoCurso { get; set; }
         public string Dia { get; set; }
+        public string profesor { get; set; }
+        public TimeSpan HoraIni { get; set; }
 
-        public DateTime HoraIni { get; set; }
-
-        public DateTime HoraFin { get; set; }
+        public TimeSpan HoraFin { get; set; }
         public int vacante { get; set; }
         public string centro { get; set; }
 

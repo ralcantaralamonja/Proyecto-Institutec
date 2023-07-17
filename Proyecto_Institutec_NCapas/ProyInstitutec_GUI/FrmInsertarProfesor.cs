@@ -40,6 +40,7 @@ namespace ProyInstitutec_GUI
                 throw;
             }
         }
+
         private void CargarUbigeo(String IdDepa, String IdProv, String IdDist)
         {
 

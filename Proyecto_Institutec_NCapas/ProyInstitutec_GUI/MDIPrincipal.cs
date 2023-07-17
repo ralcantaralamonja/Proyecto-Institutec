@@ -106,5 +106,10 @@ namespace ProyInstitutec_GUI
                 e.Cancel = true;
             }
         }
+
+        private void sALIRToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

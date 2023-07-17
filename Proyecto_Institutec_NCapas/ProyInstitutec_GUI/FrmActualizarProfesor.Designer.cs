@@ -98,7 +98,7 @@
             gbActulizar.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             gbActulizar.Location = new Point(17, 8);
             gbActulizar.Name = "gbActulizar";
-            gbActulizar.Size = new Size(589, 796);
+            gbActulizar.Size = new Size(589, 821);
             gbActulizar.TabIndex = 0;
             gbActulizar.TabStop = false;
             gbActulizar.Text = "DATOS A ACTUALIZAR";
@@ -396,7 +396,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(638, 630);
+            ClientSize = new Size(638, 785);
             Controls.Add(gbActulizar);
             MaximizeBox = false;
             MinimizeBox = false;

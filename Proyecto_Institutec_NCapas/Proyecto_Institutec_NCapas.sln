@@ -9,12 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proy_InstitutecBL", "Proy_I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proy_Institutec_ADO", "Proy_Institutec_ADO\Proy_Institutec_ADO.csproj", "{3C139F84-D75F-49D8-88AF-377A0790206D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyInstitutec_GUI", "ProyInstitutec_GUI\ProyInstitutec_GUI.csproj", "{679BD796-C988-4A36-9A84-F60B8CBBB68D}"
-<<<<<<< HEAD
-=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyInstitutec_GUI", "ProyInstitutec_GUI\ProyInstitutec_GUI.csproj", "{679BD796-C988-4A36-9A84-F60B8CBBB68D}" 
+ 
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{355B6D33-ACC2-44B4-9D08-F65B80427C3B}"
->>>>>>> 2c8dc6eca943db5b245f76f94d6ebfbc6a931860
+ 
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

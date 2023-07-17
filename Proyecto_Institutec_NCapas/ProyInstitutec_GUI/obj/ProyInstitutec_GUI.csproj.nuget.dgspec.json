@@ -1,41 +1,23 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {}
+    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {}
   },
   "projects": {
-    "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {
+    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
+        "projectUniqueName": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
         "projectName": "ProyInstitutec_GUI",
-        "projectPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
-        "packagesPath": "C:\\Users\\orlan\\.nuget\\packages\\",
-        "outputPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\obj\\",
-=======
-    "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {}
-  },
-  "projects": {
-    "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
-        "projectName": "ProyInstitutec_GUI",
-        "projectPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
-        "packagesPath": "C:\\Users\\Users\\.nuget\\packages\\",
-        "outputPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\obj\\",
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+        "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\ProyInstitutec_GUI.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\ProyInstitutec_GUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\orlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Users\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -51,19 +33,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-<<<<<<< HEAD
-              "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-                "projectPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
+              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
+                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
               },
-              "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
-                "projectPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj"
-=======
-              "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-                "projectPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
-              },
-              "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
-                "projectPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj"
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
+                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj"
               }
             }
           }
@@ -96,39 +70,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
-    "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
+    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
+        "projectUniqueName": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
         "projectName": "Proy_InstitutecBE",
-        "projectPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
-        "packagesPath": "C:\\Users\\orlan\\.nuget\\packages\\",
-        "outputPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\obj\\",
-=======
-    "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
-        "projectName": "Proy_InstitutecBE",
-        "projectPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
-        "packagesPath": "C:\\Users\\Users\\.nuget\\packages\\",
-        "outputPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\obj\\",
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+        "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\orlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Users\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -171,39 +130,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
-    "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
+    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
+        "projectUniqueName": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
         "projectName": "Proy_InstitutecBL",
-        "projectPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
-        "packagesPath": "C:\\Users\\orlan\\.nuget\\packages\\",
-        "outputPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\obj\\",
-=======
-    "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
-        "projectName": "Proy_InstitutecBL",
-        "projectPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
-        "packagesPath": "C:\\Users\\Users\\.nuget\\packages\\",
-        "outputPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\obj\\",
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+        "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\Proy_InstitutecBL.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\orlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Users\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -219,19 +163,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-<<<<<<< HEAD
-              "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-                "projectPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
+              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
+                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
               },
-              "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
-                "projectPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj"
-=======
-              "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-                "projectPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
-              },
-              "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
-                "projectPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj"
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
+                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj"
               }
             }
           }
@@ -261,39 +197,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
-    "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
+    "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
+        "projectUniqueName": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
         "projectName": "Proy_Institutec_ADO",
-        "projectPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
-        "packagesPath": "C:\\Users\\orlan\\.nuget\\packages\\",
-        "outputPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\obj\\",
-=======
-    "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
-        "projectName": "Proy_Institutec_ADO",
-        "projectPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
-        "packagesPath": "C:\\Users\\Users\\.nuget\\packages\\",
-        "outputPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\obj\\",
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+        "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\Proy_Institutec_ADO.csproj",
+        "packagesPath": "C:\\Users\\Ricardo\\.nuget\\packages\\",
+        "outputPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_Institutec_ADO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\orlan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Users\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+          "C:\\Users\\Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -309,13 +230,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-<<<<<<< HEAD
-              "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-                "projectPath": "C:\\OrlandoBD\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
-=======
-              "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
-                "projectPath": "F:\\ambar\\isil 2023 01\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
->>>>>>> 470738df00a55a1d36634e7bbd78c48edcba293b
+              "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj": {
+                "projectPath": "E:\\ISIL DESARROLLO DE SOTFWARE\\DESARROLLO DE APLICACIONES\\Proyecto-Institutec\\Proyecto_Institutec_NCapas\\Proy_InstitutecBE\\Proy_InstitutecBE.csproj"
               }
             }
           }
@@ -355,7 +271,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

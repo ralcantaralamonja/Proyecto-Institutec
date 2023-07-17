@@ -33,6 +33,14 @@
             label1 = new Label();
             mskDNIAlumno = new TextBox();
             dtgAlumno = new DataGridView();
+            label2 = new Label();
+            lblRegistros = new Label();
+            btnInsertar = new Button();
+            btnActualizar = new Button();
+            btnSalir = new Button();
+            IdAlum = new DataGridViewTextBoxColumn();
+            Ndocum = new DataGridViewTextBoxColumn();
+            Alumno = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
@@ -46,14 +54,6 @@
             Facultad = new DataGridViewTextBoxColumn();
             Foto = new DataGridViewImageColumn();
             Estado = new DataGridViewTextBoxColumn();
-            label2 = new Label();
-            lblRegistros = new Label();
-            btnInsertar = new Button();
-            btnActualizar = new Button();
-            btnSalir = new Button();
-            IdAlum = new DataGridViewTextBoxColumn();
-            Ndocum = new DataGridViewTextBoxColumn();
-            Alumno = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dtgAlumno).BeginInit();
             SuspendLayout();
             // 
@@ -111,6 +111,81 @@
             dtgAlumno.TabIndex = 2;
             dtgAlumno.TabStop = false;
             dtgAlumno.CellContentClick += dtgAlumno_CellContentClick;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(1094, 569);
+            label2.Margin = new Padding(5, 0, 5, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(89, 20);
+            label2.TabIndex = 4;
+            label2.Text = "REGISTROS:";
+            // 
+            // lblRegistros
+            // 
+            lblRegistros.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            lblRegistros.BorderStyle = BorderStyle.FixedSingle;
+            lblRegistros.Location = new Point(1222, 564);
+            lblRegistros.Margin = new Padding(5, 0, 5, 0);
+            lblRegistros.Name = "lblRegistros";
+            lblRegistros.Size = new Size(84, 30);
+            lblRegistros.TabIndex = 5;
+            // 
+            // btnInsertar
+            // 
+            btnInsertar.BackColor = SystemColors.ControlLight;
+            btnInsertar.FlatStyle = FlatStyle.Flat;
+            btnInsertar.Location = new Point(715, 609);
+            btnInsertar.Margin = new Padding(3, 4, 3, 4);
+            btnInsertar.Name = "btnInsertar";
+            btnInsertar.Size = new Size(125, 40);
+            btnInsertar.TabIndex = 6;
+            btnInsertar.Text = "INSERTAR";
+            btnInsertar.UseVisualStyleBackColor = false;
+            btnInsertar.Click += btnInsertar_Click;
+            // 
+            // btnActualizar
+            // 
+            btnActualizar.BackColor = SystemColors.ControlLight;
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Location = new Point(846, 609);
+            btnActualizar.Margin = new Padding(5);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(125, 40);
+            btnActualizar.TabIndex = 7;
+            btnActualizar.Text = "ACTUALIZAR";
+            btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
+            // 
+            // btnSalir
+            // 
+            btnSalir.BackColor = SystemColors.ControlLight;
+            btnSalir.FlatStyle = FlatStyle.Flat;
+            btnSalir.Location = new Point(1045, 609);
+            btnSalir.Margin = new Padding(5);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(125, 40);
+            btnSalir.TabIndex = 8;
+            btnSalir.Text = "SALIR";
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
+            // 
+            // IdAlum
+            // 
+            IdAlum.HeaderText = "ID";
+            IdAlum.Name = "IdAlum";
+            // 
+            // Ndocum
+            // 
+            Ndocum.HeaderText = "DNI";
+            Ndocum.Name = "Ndocum";
+            // 
+            // Alumno
+            // 
+            Alumno.DataPropertyName = "Alumno";
+            Alumno.HeaderText = "Alumno";
+            Alumno.Name = "Alumno";
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -203,7 +278,9 @@
             // Foto
             // 
             Foto.DataPropertyName = "Foto";
+            Foto.FillWeight = 50F;
             Foto.HeaderText = "Foto";
+            Foto.MinimumWidth = 3;
             Foto.Name = "Foto";
             Foto.ReadOnly = true;
             Foto.Resizable = DataGridViewTriState.True;
@@ -217,81 +294,6 @@
             Estado.Name = "Estado";
             Estado.ReadOnly = true;
             Estado.Width = 83;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(1094, 569);
-            label2.Margin = new Padding(5, 0, 5, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(89, 20);
-            label2.TabIndex = 4;
-            label2.Text = "REGISTROS:";
-            // 
-            // lblRegistros
-            // 
-            lblRegistros.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            lblRegistros.BorderStyle = BorderStyle.FixedSingle;
-            lblRegistros.Location = new Point(1222, 564);
-            lblRegistros.Margin = new Padding(5, 0, 5, 0);
-            lblRegistros.Name = "lblRegistros";
-            lblRegistros.Size = new Size(84, 30);
-            lblRegistros.TabIndex = 5;
-            // 
-            // btnInsertar
-            // 
-            btnInsertar.BackColor = SystemColors.ControlLight;
-            btnInsertar.FlatStyle = FlatStyle.Flat;
-            btnInsertar.Location = new Point(715, 609);
-            btnInsertar.Margin = new Padding(3, 4, 3, 4);
-            btnInsertar.Name = "btnInsertar";
-            btnInsertar.Size = new Size(125, 40);
-            btnInsertar.TabIndex = 6;
-            btnInsertar.Text = "INSERTAR";
-            btnInsertar.UseVisualStyleBackColor = false;
-            btnInsertar.Click += btnInsertar_Click;
-            // 
-            // btnActualizar
-            // 
-            btnActualizar.BackColor = SystemColors.ControlLight;
-            btnActualizar.FlatStyle = FlatStyle.Flat;
-            btnActualizar.Location = new Point(846, 609);
-            btnActualizar.Margin = new Padding(5);
-            btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(125, 40);
-            btnActualizar.TabIndex = 7;
-            btnActualizar.Text = "ACTUALIZAR";
-            btnActualizar.UseVisualStyleBackColor = false;
-            btnActualizar.Click += btnActualizar_Click;
-            // 
-            // btnSalir
-            // 
-            btnSalir.BackColor = SystemColors.ControlLight;
-            btnSalir.FlatStyle = FlatStyle.Flat;
-            btnSalir.Location = new Point(1045, 609);
-            btnSalir.Margin = new Padding(5);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(125, 40);
-            btnSalir.TabIndex = 8;
-            btnSalir.Text = "SALIR";
-            btnSalir.UseVisualStyleBackColor = false;
-            btnSalir.Click += btnSalir_Click;
-            // 
-            // IdAlum
-            // 
-            IdAlum.HeaderText = "ID";
-            IdAlum.Name = "IdAlum";
-            // 
-            // Ndocum
-            // 
-            Ndocum.HeaderText = "DNI";
-            Ndocum.Name = "Ndocum";
-            // 
-            // Alumno
-            // 
-            Alumno.DataPropertyName = "Alumno";
-            Alumno.HeaderText = "Alumno";
-            Alumno.Name = "Alumno";
             // 
             // FrmVerAlumno
             // 
