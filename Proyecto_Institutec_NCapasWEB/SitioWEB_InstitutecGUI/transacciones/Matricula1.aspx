@@ -12,7 +12,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="container">
+    <div class="container">
     <div class="container">
         <h2 class="text-center">MATRICULAR ALUMNO</h2>
 
@@ -63,12 +63,42 @@
                     </table>
                 </div>
 
-                <asp:Label ID="lblCodcar" runat="server"></asp:Label>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
-                <br />
-                <asp:Label ID="lblMensajeError" runat="server" EnableTheming="False"></asp:Label>
-                <br />
-                <asp:Label ID="lblExito" runat="server"></asp:Label>
+            <%-- El panel cuyo contenido se mostrara en el ModalPopup de mensajes--%>           
+                <asp:LinkButton ID="lnkMensaje" runat="server"></asp:LinkButton>
+            <%-- El panel cuyo contenido se mostrara en el ModalPopup de mensajes--%>
+                <asp:Panel ID="pnlMensaje" runat="server" CssClass="CajaDialogo" Style="display: normal;" Width="500">
+                    <table class="table" style="margin: 0px; padding: 0px; background-color: #0d6efd; color: #0d6efd;" width="500px">
+                        <tr>
+                            <td align="center" class="auto-style10">
+                                <asp:Label ID="lblTitulo" runat="server" Text="Mensaje" />
+                                &nbsp; </td>
+                            <td class="text-right" style="vertical-align: middle;">
+                                <asp:ImageButton ID="ImageButton1" runat="server" ImageAlign="Right" ImageUrl="~/Images/Cancelar.png" Style="vertical-align: middle;" />
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="background-color: white;">
+                        <asp:Label ID="lblMensajeError" runat="server" CssClass="labelTitulo" ForeColor="Black" />
+                        <asp:Label ID="lblExito" runat="server" CssClass="labelTitulo" ForeColor="Black" />
+                    </div>
+                    <div style="background-color: white;">
+                    <br />
+                    </div>
+                    <div style="background-color: white;">
+                        <asp:Button ID="btnAceptar" runat="server" class="btn btn-primary" Text="Aceptar" />
+                    </div>
+                    <div style="background-color: white;">
+                    <br />
+                    </div>
+                </asp:Panel>
+
+            <%--Modalpopup extender PopMan01 para nuevos registros :vease el TargetControl que apunta al linkbutton  lnkPopup1 
+                  y el PopupcontrolID que apunta al panel PanelMan1--%>
+                <ajaxToolkit:ModalPopupExtender ID="PopMensaje" runat="server" BackgroundCssClass="modal-overlay" PopupControlID="pnlMensaje" TargetControlID="lnkMensaje">
+                </ajaxToolkit:ModalPopupExtender>
+
                 <br />
                 <div class="text-center">
                     <asp:Button ID="btnConsulta" runat="server" Text="Consultar" CssClass="btn btn-primary" OnClick="btnDatos_Click" />

@@ -66,13 +66,15 @@ namespace SitioWEB_InstitutecGUI.transacciones
                 lblMensajeError.Text = "";
                 lblExito.ForeColor = System.Drawing.Color.Blue;
                 lblExito.Text = "Alumno apto para matrícula";
-                
+                PopMensaje.Show();
+
             }
             catch (Exception exception)
             {
                 btnMatricular.Enabled = false; // Alumno no válido, deshabilitar el botón
                 lblMensajeError.ForeColor = System.Drawing.Color.Red;
                 lblMensajeError.Text = "Mensaje: " + exception.Message;
+                PopMensaje.Show();
             }
         }
 
