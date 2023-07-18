@@ -27,9 +27,6 @@ namespace SitioWEB_InstitutecGUI.transacciones
         }
 
         protected void btnDatos_Click(object sender, EventArgs e)
-
-
-
         {
            
             try
@@ -87,9 +84,6 @@ namespace SitioWEB_InstitutecGUI.transacciones
             grvCursos.DataSource = dt;
             grvCursos.DataBind();
 
-
-
-
         }
 
         protected void grvCursos_SelectedIndexChanged(object sender, EventArgs e)
@@ -99,17 +93,34 @@ namespace SitioWEB_InstitutecGUI.transacciones
 
         protected void grvCursos_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            int fila = Convert.ToInt32(e.CommandArgument);
-            string nrc = grvCursos.Rows[fila].Cells[1].Text;
-            String mat = txtMatricula.Text;
-            objAlumnobl.MatriculaAlumno(mat, nrc);
-            lblMatriculado.Text = "Usted se a matriculado correctamente";
+            try
+            {
+                lblExito.Text = "";
+                lblMensajeError.Text = "";
+                int fila = Convert.ToInt32(e.CommandArgument);
+                string nrc = grvCursos.Rows[fila].Cells[1].Text;
+                String mat = txtMatricula.Text;
+                if (objAlumnobl.MatriculaAlumno(mat, nrc))
+                {
+                    objAlumnobl.MatriculaAlumno(mat, nrc);
+                    lblMatriculado.Text = "Usted se a matriculado correctamente";
+                    PopMensaje.Show();
+                }
+                else
+                {
+                    lblMensajeError.ForeColor = System.Drawing.Color.Red;
+                    lblMensajeError.Text = "Usted Ya se encuentra matriculado en este curso";
+                    PopMensaje.Show();
+                }
 
-            PopMensaje.Show
-            ();
-
+            }
+            catch (Exception ex)
+            {
+                lblMensajeError.ForeColor = System.Drawing.Color.Red;
+                lblMensajeError.Text = "Mensaje: " + ex.Message;
+                PopMensaje.Show();
+            }
         }
     }
-
-    }
+}
 
