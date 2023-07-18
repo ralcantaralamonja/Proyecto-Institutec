@@ -23,6 +23,8 @@ namespace SitioWEB_InstitutecGUI.transacciones
         {
             if (Page.IsPostBack == false) { 
             btnMatricular.Enabled = false;
+                btnVerDetalle.Enabled = false;
+
             }
         }
 
@@ -59,6 +61,7 @@ namespace SitioWEB_InstitutecGUI.transacciones
 
                 // Si el código llega hasta aquí, el alumno es válido y se habilita el botón
                 btnMatricular.Enabled = true;
+                btnVerDetalle.Enabled = true;
                 lblMensajeError.ForeColor = System.Drawing.Color.Black;
                 lblMensajeError.Text = "";
                 lblExito.ForeColor = System.Drawing.Color.Blue;
@@ -132,6 +135,18 @@ namespace SitioWEB_InstitutecGUI.transacciones
             }
         }
 
+        protected void btnVerDetalle_Click(object sender, EventArgs e)
+        {
+            String dni = txtDni.Text;
+            DataTable dt = objCursobeBL.VerDetMatricula(dni);
+            grvDetalle.DataSource = dt;
+            grvDetalle.DataBind();
+        
+
+
+
+
+        }
     }
 }
 

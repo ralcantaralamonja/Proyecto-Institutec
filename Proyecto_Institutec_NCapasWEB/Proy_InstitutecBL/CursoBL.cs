@@ -26,6 +26,10 @@ namespace Proy_InstitutecBL
         {
             return objCursoADO.ConsultaProfesorCurso(strCodigo);
         }
+
+        public DataTable VerDetMatricula(string dni) {
+            return objCursoADO.VerDetMatricula(dni);
+        }
         public DataTable PrematriculaCursos(string codcar)
         {
             return objCursoADO.PrematriculaCursos(codcar);

@@ -280,6 +280,8 @@ namespace Proy_Institutec_ADO
         }
 
 
+ 
+
         public DataTable PrematriculaCursos(string codcar)
         {
             try
@@ -352,7 +354,75 @@ namespace Proy_Institutec_ADO
             }
         }
 
+        public DataTable VerDetMatricula(string dni)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_VerDetMatricula";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@dni", dni);
+                cnx.Open();
+                dtr = cmd.ExecuteReader();
 
+                DataTable dt = new DataTable();
+                dt.Columns.Add("NRC", typeof(string));
+                dt.Columns.Add("Curso", typeof(string));
+                dt.Columns.Add("Profesor", typeof(string));
+                dt.Columns.Add("Local", typeof(string));
+                dt.Columns.Add("Dia", typeof(string));
+                dt.Columns.Add("Aula", typeof(string));
+                dt.Columns.Add("Inicio", typeof(TimeSpan));
+                dt.Columns.Add("Fin", typeof(TimeSpan));
+                
+ 
+
+                while (dtr.Read())
+                {
+                    DataRow row = dt.NewRow();
+                    row["NRC"] = dtr["NRC"].ToString();
+                    row["Curso"] = dtr["Curso"].ToString();
+                    row["Profesor"] = dtr["Profesor"].ToString();
+                    row["Local"] = dtr["Local"].ToString();
+                    row["Dia"] = dtr["Dia"].ToString();
+                    row["Aula"] = dtr["Aula"].ToString();
+                    row["Inicio"] = dtr["Inicio"].ToString();
+                    row["Fin"] = dtr["Fin"].ToString();
+
+                    TimeSpan horaIni;
+                    if (TimeSpan.TryParse(dtr["Inicio"].ToString(), out horaIni))
+                    {
+                        row["Inicio"] = horaIni;
+                    }
+
+                    TimeSpan horaFin;
+                    if (TimeSpan.TryParse(dtr["Fin"].ToString(), out horaFin))
+                    {
+                        row["Fin"] = horaFin;
+                    }
+
+          
+
+                    dt.Rows.Add(row);
+                }
+
+                dtr.Close();
+                return dt;
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+        }
 
     }
 }
