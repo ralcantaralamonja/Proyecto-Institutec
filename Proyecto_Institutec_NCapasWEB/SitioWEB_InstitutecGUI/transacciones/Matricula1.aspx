@@ -37,10 +37,19 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="text-right">
-                                Codigo de carrera</td>
-                            <td>
+                            <td class="auto-style1">
+                                <asp:Label ID="Label2" runat="server" Text="Codigo de carrera :"></asp:Label>
+                            </td>
+                            <td class="auto-style2">
                                 <asp:TextBox ID="txtCodCarrera" runat="server" ReadOnly="True" Width="100%" CssClass="form-control"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right">
+                                <asp:Label ID="Label1" runat="server" Text="Numero de Matricula :"></asp:Label>
+                            </td>
+                            <td aria-atomic="True">
+                                <asp:TextBox ID="txtMatricula" runat="server" ReadOnly="True" Width="100%" CssClass="form-control"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
@@ -74,6 +83,7 @@
                 <asp:GridView ID="grvCursos" runat="server" CssClass="table table-bordered" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1021px">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
+                        <asp:ButtonField ButtonType="Image" HeaderText="Matricularme" ImageUrl="~/images/Add Green Button.ico" Text="Botón" />
                         <asp:BoundField DataField="NRC" HeaderText="NRC" />
                         <asp:BoundField DataField="Curso" HeaderText="Curso" />
                         <asp:BoundField DataField="Estado" HeaderText="Estado" />

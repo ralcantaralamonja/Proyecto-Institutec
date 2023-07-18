@@ -42,7 +42,7 @@ namespace SitioWEB_InstitutecGUI.transacciones
                 txtNombre.Text = objAlumnobe.NomAlu + " " + objAlumnobe.ApePat + " " + objAlumnobe.ApeMat;
                 txtCarrera.Text = objAlumnobe.DescCar;
                 txtCodCarrera.Text = objAlumnobe.CodCar;
-
+                txtMatricula.Text = objAlumnobe.NroMat;
 
                 // Validar si el alumno es apto para matricularse
                 if (txtDni.Text.Trim() == String.Empty || txtDni.Text.Trim().Length != 8)
@@ -66,6 +66,7 @@ namespace SitioWEB_InstitutecGUI.transacciones
                 lblMensajeError.Text = "";
                 lblExito.ForeColor = System.Drawing.Color.Blue;
                 lblExito.Text = "Alumno apto para matrícula";
+                
             }
             catch (Exception exception)
             {

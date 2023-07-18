@@ -136,6 +136,7 @@ namespace Proy_Institutec_ADO
                     objAlumnoBE.EstadoAl = drt["Estado"].ToString();
                     objAlumnoBE.EstMat = drt["Matricula"].ToString();
                     objAlumnoBE.CodCar = drt["CodCar"].ToString();
+                    objAlumnoBE.NroMat = drt["NroMat"].ToString();
                 }
                 drt.Close();
                 return objAlumnoBE;
@@ -173,7 +174,6 @@ namespace Proy_Institutec_ADO
                 cmd.Parameters.AddWithValue("@ApeMat", objAlumnoBE.ApeMat);
                 cmd.Parameters.AddWithValue("@Sexoal", objAlumnoBE.SexoAl);
                 cmd.Parameters.AddWithValue("@Estado", objAlumnoBE.Estado);
-                //cmd.Parameters.AddWithValue("@IdFacu", objAlumnoBE.IdFacu);
                 cmd.Parameters.AddWithValue("@CodCar", objAlumnoBE.CodCar);
                 cmd.Parameters.AddWithValue("@Id_Ubi", objAlumnoBE.Id_Ubi);
                 cmd.Parameters.AddWithValue("@CorAlu", objAlumnoBE.CorAlu);

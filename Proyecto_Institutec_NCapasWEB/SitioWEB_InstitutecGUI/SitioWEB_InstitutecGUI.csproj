@@ -76,6 +76,7 @@
     <Content Include="Consultas\ConsultaAlumno.aspx" />
     <Content Include="Consultas\ConsultaProfesor.aspx" />
     <Content Include="CSS\style.css" />
+    <Content Include="images\Add Green Button.ico" />
     <Content Include="images\Cancelar.png" />
     <Content Include="images\Editar.png" />
     <Content Include="inicio.aspx" />

@@ -59,6 +59,7 @@ namespace Proy_InstitutecBE
         public String Id_Ubi { get;set;}
 
         public String IdFacu { get;set;}
+        public String NroMat { get; set; }
 
         public String DescFacu { get; set; }
 
