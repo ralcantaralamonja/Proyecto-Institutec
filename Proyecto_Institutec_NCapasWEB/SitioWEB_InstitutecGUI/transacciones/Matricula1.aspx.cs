@@ -91,6 +91,21 @@ namespace SitioWEB_InstitutecGUI.transacciones
 
 
         }
+
+        protected void grvCursos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblShowNRC.Text = txtMatricula.Text;
+        }
+
+        protected void grvCursos_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            int fila = Convert.ToInt32(e.CommandArgument);
+            string nrc = grvCursos.Rows[fila].Cells[1].Text;
+            String mat = txtMatricula.Text;
+            objAlumnobl.MatriculaAlumno(mat, nrc);
+
+
+        }
     }
 
     }

@@ -9,6 +9,13 @@
         .auto-style2 {
             height: 27px;
         }
+        .auto-style3 {
+            text-align: right;
+            height: 31px;
+        }
+        .auto-style4 {
+            height: 31px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -53,21 +60,26 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="text-right">
+                            <td class="auto-style3">
                                 <asp:Label ID="lblCarrera" runat="server" Text="Carrera :"></asp:Label>
                             </td>
-                            <td>
+                            <td class="auto-style4">
                                 <asp:TextBox ID="txtCarrera" runat="server" Height="24px" ReadOnly="True" Width="100%" CssClass="form-control"></asp:TextBox>
                             </td>
                         </tr>
                     </table>
                 </div>
 
+                <asp:Label ID="lblShowNRC" runat="server"></asp:Label>
+                <br />
+                <asp:Label ID="lblShowMAT" runat="server"></asp:Label>
+                <br />
+
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
             <%-- El panel cuyo contenido se mostrara en el ModalPopup de mensajes--%>           
                 <asp:LinkButton ID="lnkMensaje" runat="server"></asp:LinkButton>
-            <%-- El panel cuyo contenido se mostrara en el ModalPopup de mensajes--%>
+                <%-- El panel cuyo contenido se mostrara en el ModalPopup de mensajes--%>
                 <asp:Panel ID="pnlMensaje" runat="server" CssClass="CajaDialogo" Style="display: normal;" Width="500">
                     <table class="table" style="margin: 0px; padding: 0px; background-color: #0d6efd; color: #0d6efd;" width="500px">
                         <tr>
@@ -110,7 +122,7 @@
 
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <asp:GridView ID="grvCursos" runat="server" CssClass="table table-bordered" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1021px">
+                <asp:GridView ID="grvCursos" runat="server" CssClass="table table-bordered" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1021px" OnSelectedIndexChanged="grvCursos_SelectedIndexChanged" OnRowCommand="grvCursos_RowCommand">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:ButtonField ButtonType="Image" HeaderText="Matricularme" ImageUrl="~/images/Add Green Button.ico" Text="Botón" />

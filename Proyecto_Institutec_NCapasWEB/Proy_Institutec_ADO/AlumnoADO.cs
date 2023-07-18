@@ -1,4 +1,5 @@
-﻿using Proy_InstitutecBE;
+﻿using Microsoft.SqlServer.Server;
+using Proy_InstitutecBE;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -204,6 +205,41 @@ namespace Proy_Institutec_ADO
             }
 
         }
+
+
+        public Boolean MatriculaAlumno(String Mat, String Nrc)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_Matricular";
+                cmd.Parameters.Clear();
+
+                cmd.Parameters.AddWithValue("@NroMat", Mat);  // Utilizar el parámetro 'Mat' en lugar de 'objAlumnoBE.NroMat'
+                cmd.Parameters.AddWithValue("@IdCods", Nrc);  // Utilizar el parámetro 'Nrc' en lugar de 'objAlumnoBE.CodCar'
+
+                cnx.Open();
+                cmd.ExecuteNonQuery();
+
+                return true;
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+        }
+
+
+
 
         public Boolean ActualizarAlumno(AlumnoBE objAlumnoBE)
         {

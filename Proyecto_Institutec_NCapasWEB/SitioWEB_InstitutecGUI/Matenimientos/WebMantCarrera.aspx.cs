@@ -203,7 +203,7 @@ namespace SitioWEB_InstitutecGUI.Matenimientos
                 objCarreraBE.DesCar = txtRS2.Text.Trim();
                 objCarreraBE.Est_carr = Convert.ToInt16(chkEstado2.Checked);
                 objCarreraBE.IdFacu = cboFacultad2.SelectedValue.ToString();
-                //objCarreraBE.DesFac = cboFacultad2.SelectedValue.ToString();
+                objCarreraBE.DesFac = cboFacultad2.SelectedValue.ToString();
 
                 objCarreraBE.Usu_Ult_Mod = "jleon";
 

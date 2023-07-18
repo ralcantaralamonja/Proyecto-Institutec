@@ -24,7 +24,9 @@ namespace Proy_InstitutecBL
         {
             return objAlumnoADO.InsertarAlumno(objAlumnoBE);
         }
-
+        public Boolean MatriculaAlumno(String Mat, String Nrc) {
+            return objAlumnoADO.MatriculaAlumno(Mat, Nrc);
+        }
         public AlumnoBE ConsultarAlumno(String strId)
         {
             return objAlumnoADO.ConsultarAlumno(strId);
