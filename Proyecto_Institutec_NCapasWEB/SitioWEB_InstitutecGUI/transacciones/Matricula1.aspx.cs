@@ -94,7 +94,7 @@ namespace SitioWEB_InstitutecGUI.transacciones
 
         protected void grvCursos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            lblShowNRC.Text = txtMatricula.Text;
+            
         }
 
         protected void grvCursos_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -103,7 +103,10 @@ namespace SitioWEB_InstitutecGUI.transacciones
             string nrc = grvCursos.Rows[fila].Cells[1].Text;
             String mat = txtMatricula.Text;
             objAlumnobl.MatriculaAlumno(mat, nrc);
+            lblMatriculado.Text = "Usted se a matriculado correctamente";
 
+            PopMensaje.Show
+            ();
 
         }
     }

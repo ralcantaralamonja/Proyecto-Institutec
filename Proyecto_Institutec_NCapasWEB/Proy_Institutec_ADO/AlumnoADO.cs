@@ -217,10 +217,27 @@ namespace Proy_Institutec_ADO
                 cmd.CommandText = "usp_Matricular";
                 cmd.Parameters.Clear();
 
-                cmd.Parameters.AddWithValue("@NroMat", Mat);  // Utilizar el parámetro 'Mat' en lugar de 'objAlumnoBE.NroMat'
-                cmd.Parameters.AddWithValue("@IdCods", Nrc);  // Utilizar el parámetro 'Nrc' en lugar de 'objAlumnoBE.CodCar'
+                cmd.Parameters.AddWithValue("@NroMat", Mat);
+                cmd.Parameters.AddWithValue("@IdCods", Nrc);
 
-                cnx.Open();
+                cnx.Open(); // Abre la conexión antes de la consulta
+
+                // Verificar si ya existe una entrada con los mismos valores en la tabla TB_Det_Mat
+                string checkQuery = "SELECT COUNT(*) FROM TB_Det_Mat WHERE NroMat = @NroMat AND IdCods = @IdCods";
+                SqlCommand checkCmd = new SqlCommand(checkQuery, cnx);
+                checkCmd.Parameters.AddWithValue("@NroMat", Mat);
+                checkCmd.Parameters.AddWithValue("@IdCods", Nrc);
+                int count = (int)checkCmd.ExecuteScalar();
+
+                cnx.Close(); // Cierra la conexión después de la consulta
+
+                if (count > 0)
+                {
+                    // Ya existe una entrada con los mismos valores, devuelve false o realiza alguna acción adicional según tu necesidad
+                    return false;
+                }
+
+                cnx.Open(); // Vuelve a abrir la conexión antes de ejecutar la siguiente consulta
                 cmd.ExecuteNonQuery();
 
                 return true;
@@ -237,6 +254,7 @@ namespace Proy_Institutec_ADO
                 }
             }
         }
+
 
 
 

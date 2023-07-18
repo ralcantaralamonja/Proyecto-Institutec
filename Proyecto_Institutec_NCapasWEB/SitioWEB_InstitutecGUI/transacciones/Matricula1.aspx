@@ -70,9 +70,7 @@
                     </table>
                 </div>
 
-                <asp:Label ID="lblShowNRC" runat="server"></asp:Label>
                 <br />
-                <asp:Label ID="lblShowMAT" runat="server"></asp:Label>
                 <br />
 
             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
@@ -94,6 +92,7 @@
                     <div style="background-color: white;">
                         <asp:Label ID="lblMensajeError" runat="server" CssClass="labelTitulo" ForeColor="Black" />
                         <asp:Label ID="lblExito" runat="server" CssClass="labelTitulo" ForeColor="Black" />
+                       <asp:Label ID="lblMatriculado" runat="server" CssClass="labelTitulo" ForeColor="Black" /> 
                     </div>
                     <div style="background-color: white;">
                     <br />
