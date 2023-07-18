@@ -77,12 +77,15 @@ namespace SitioWEB_InstitutecGUI.transacciones
 
         protected void btnMatricular_Click(object sender, EventArgs e)
         {
-            
-            string curso = txtCodCarrera.Text;
-            DataTable dt = objCursobeBL.PrematriculaCursos(curso);
 
-            grvCursos.DataSource = dt;
-            grvCursos.DataBind();
+         
+                string curso = txtCodCarrera.Text;
+                DataTable dt = objCursobeBL.PrematriculaCursos(curso);
+
+                grvCursos.DataSource = dt;
+                grvCursos.DataBind();
+          
+
 
         }
 
@@ -102,17 +105,24 @@ namespace SitioWEB_InstitutecGUI.transacciones
                 String mat = txtMatricula.Text;
                 if (objAlumnobl.MatriculaAlumno(mat, nrc))
                 {
-                    objAlumnobl.MatriculaAlumno(mat, nrc);
-                    lblMatriculado.Text = "Usted se a matriculado correctamente";
+                    lblMatriculado.Text = "Usted se ha matriculado correctamente";
+
+                    // Vuelve a cargar los datos de los cursos después de la matrícula
+                    string curso = txtCodCarrera.Text;
+                    DataTable dt = objCursobeBL.PrematriculaCursos(curso);
+
+                    grvCursos.DataSource = dt;
+                    grvCursos.DataBind();
+
                     PopMensaje.Show();
                 }
                 else
                 {
+                    lblMatriculado.Text = "";
                     lblMensajeError.ForeColor = System.Drawing.Color.Red;
-                    lblMensajeError.Text = "Usted Ya se encuentra matriculado en este curso";
+                    lblMensajeError.Text = "Usted ya se encuentra matriculado en este curso";
                     PopMensaje.Show();
                 }
-
             }
             catch (Exception ex)
             {
@@ -121,6 +131,7 @@ namespace SitioWEB_InstitutecGUI.transacciones
                 PopMensaje.Show();
             }
         }
+
     }
 }
 
