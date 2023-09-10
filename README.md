@@ -5,4 +5,4 @@ participantes
 * Alcantara Lamonja	Ricardo Luis Alejandro 
 * Gonzales Paz Orlando Alonso 
 * Fernandez Canales Ambar Teresa 
-
+* Sedano Solórzano Kimberly Raysa
